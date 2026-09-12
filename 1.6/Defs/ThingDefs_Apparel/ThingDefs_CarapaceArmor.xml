@@ -1072,7 +1072,7 @@
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>UFR_ScoutCarapaceArmor</defName>
     <label>Scout Carapace Armor</label>
-    <description>A suit of armor, made up of lightweight plasteel-weave plates which provide moderate protection, additional plates fitted for increased protection, and with an integrated webbing system configured for assault and raiding uses. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army commandos and urbworld military shocktroopers and is marked as such.</description>
+    <description>A suit of armor, made up of lightweight plasteel-weave plates which provide moderate protection, featuring a bandoleer for high caliber bullets, and a thermooptical camoflague generator. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army commandos and urbworld military shocktroopers and is marked as such.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/ScoutCarapaceArmor/ScoutCarapaceArmor</texPath>
@@ -1171,7 +1171,7 @@
   <ThingDef ParentName="ArmorHelmetMakeableBase">
     <defName>UFR_ScoutCarapaceHelmet</defName>
     <label>Scout Carapace Helmet</label>
-    <description>A armored helmet with built in communication system, a protective plasteel-weave plate, and modified to include a face guard. Armor like this is often used by imperial army commandos and urbworld military shocktroopers and is marked as such.</description>
+    <description>A armored helmet with built in communication system, protective plasteel-weave plate, an advanced targeting system, and a oxygen recycler for hazardous environments. Armor like this is often used by imperial army scouts and urbworld assassins and is marked as such.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/ScoutCarapaceArmor/ScoutCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
