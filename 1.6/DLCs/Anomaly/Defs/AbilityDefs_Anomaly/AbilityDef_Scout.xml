@@ -19,7 +19,7 @@
     <defName>UFR_StealthField</defName>
     <label>stealth field</label>
     <description>Activate the stealth field, bending light around the wearer to render them invisible for a short time. Weapon usage collapses the stealth field.</description>
-    <iconPath>UI/Abilities/RevenantInvisibility</iconPath>
+    <iconPath>UFR/UI/Abilities/UFR_StealthEffectUI</iconPath>
     <cooldownTicksRange>15000</cooldownTicksRange>
     <writeCombatLog>True</writeCombatLog>
     <hotKey>Misc12</hotKey>
