@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="EmpireBaseFighter">
+    <defName>UFR_Empire_Trooper</defName>
+    <label>trooper</label>
+    <labelPlural>troopers</labelPlural>
+    <defaultFactionType>Empire</defaultFactionType>
+    <combatPower>90</combatPower>
+    <isFighter>true</isFighter>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>45</maxGenerationAge>
+    <apparelMoney>1200~1800</apparelMoney>
+    <weaponMoney>1000~2500</weaponMoney>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>Gun_ChargeRifle</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>UFR_CarapaceArmor</li>
+      <li>UFR_CarapaceHelmet</li>
+    </apparelRequired>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>200~600</techHediffsMoney>
+    <techHediffsTags>
+      <li>Simple</li>
+    </techHediffsTags>
+  </PawnKindDef>
+
+</Defs>
