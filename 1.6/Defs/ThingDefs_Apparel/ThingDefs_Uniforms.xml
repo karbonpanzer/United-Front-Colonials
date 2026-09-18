@@ -73,7 +73,7 @@
     </tradeTags>
   </ThingDef>
 
-  <ThingDef ParentName="HatMakeableBase">
+  <!--ThingDef ParentName="HatMakeableBase">
     <defName>UFR_Hat_Ushanka</defName>
     <label>ushanka</label>
     <description>A fur hat with ear-covering flaps which can protect the head from most cold and used my imperial army personal and urbworld ice cream dealers.</description>
@@ -137,7 +137,7 @@
       <li>Clothing</li>
       <li>UFR_Uniforms</li>
     </tradeTags>
-  </ThingDef>
+  </ThingDef-->
 
   <ThingDef ParentName="HatMakeableBase">
     <defName>UFR_Hat_Beret</defName>
@@ -205,7 +205,7 @@
     </tradeTags>
   </ThingDef>
 
-  <ThingDef ParentName="HatMakeableBase">
+  <!--ThingDef ParentName="HatMakeableBase">
     <defName>UFR_Hat_FieldCap</defName>
     <label>field cap</label>
     <description>A soft cap with a stiff rounded visor, good for warmer climates and often used by imperial army personal and urbworld revolutionaries.</description>
@@ -269,7 +269,7 @@
       <li>Clothing</li>
       <li>UFR_Uniforms</li>
     </tradeTags>
-  </ThingDef>
+  </ThingDef-->
 
   <ThingDef ParentName="HatMakeableBase">
     <defName>UFR_OfficerHat_Cap</defName>
@@ -342,7 +342,7 @@
     </tradeTags>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelMakeableBase">
+  <!--ThingDef ParentName="ApparelMakeableBase">
     <defName>UFR_Hat_Campaign</defName>
     <label>campaign hat</label>
     <description>A broad-brimmed felt hat famed for its practicality and often used by imperial army militias and rimworld rangers.</description>
@@ -400,6 +400,6 @@
       <li>Clothing</li>
       <li>UFR_Uniforms</li>
     </tradeTags>
-  </ThingDef>
+  </ThingDef-->
 
 </Defs>
