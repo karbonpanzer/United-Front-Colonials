@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <!-- Ion Charge -->
+    <SoundDef>
+        <defName>UFR_Bolt_IonCharge</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+            <li>
+            <grains>
+                <li Class="AudioGrain_Folder">
+                    <clipFolderPath>UFR/Bolt_plasma</clipFolderPath>
+                </li>
+            </grains>
+            <volumeRange>55.2941~55.2941</volumeRange>
+            <pitchRange>1.85513~2.17787</pitchRange>
+            <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>  
+    
+    <SoundDef>
+        <defName>UFR_Bolt_IonChargeHeavy</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+            <li>
+            <grains>
+                <li Class="AudioGrain_Folder">
+                    <clipFolderPath>UFR/Bolt_plasma</clipFolderPath>
+                </li>
+            </grains>
+            <volumeRange>55.2941~55.2941</volumeRange>
+            <pitchRange>1.35513~1.57787</pitchRange>
+            <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>      
+    
+    <!-- ETC/Sabot Weapons -->
+    <SoundDef>
+        <defName>UFR_Shot_ETCSmall</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+        <li>
+            <grains>
+            <li Class="AudioGrain_Folder">
+                <clipFolderPath>UFR/Shot_etcsmall</clipFolderPath>
+            </li>
+            </grains>
+            <volumeRange>28~32</volumeRange>
+            <pitchRange>0.97~1.08</pitchRange>
+            <sustainLoop>False</sustainLoop>
+        </li>
+        </subSounds>
+    </SoundDef>
+    
+    <SoundDef>
+        <defName>UFR_Shot_ETCMedium</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+        <li>
+            <grains>
+            <li Class="AudioGrain_Folder">
+                <clipFolderPath>UFR/Shot_etcmedium</clipFolderPath>
+            </li>
+            </grains>
+            <volumeRange>32~38</volumeRange>
+            <pitchRange>0.95~1.05</pitchRange>
+            <sustainLoop>False</sustainLoop>
+        </li>
+        </subSounds>
+    </SoundDef>
+    
+    <SoundDef>
+        <defName>UFR_Shot_ETCHeavy</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+        <li>
+            <grains>
+            <li Class="AudioGrain_Folder">
+                <clipFolderPath>UFR/Shot_etcheavy</clipFolderPath>
+            </li>
+            </grains>
+            <volumeRange>40~48</volumeRange>
+            <pitchRange>0.90~1.00</pitchRange>
+            <sustainLoop>False</sustainLoop>
+        </li>
+        </subSounds>
+    </SoundDef>
+    
+    <SoundDef>
+        <defName>UFR_Shot_ETCFlechette</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+        <li>
+            <grains>
+            <li Class="AudioGrain_Folder">
+                <clipFolderPath>UFR/Shot_etcflechette</clipFolderPath>
+            </li>
+            </grains>
+            <volumeRange>34~40</volumeRange>
+            <pitchRange>0.93~1.03</pitchRange>
+            <sustainLoop>False</sustainLoop>
+        </li>
+        </subSounds>
+    </SoundDef>   
+
+</Defs>
