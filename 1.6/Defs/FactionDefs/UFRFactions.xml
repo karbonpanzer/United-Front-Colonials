@@ -30,7 +30,7 @@
                 <li>Synthread</li>
             </thingDefs>
         </apparelStuffFilter>
-        <factionIconPath>UFR/UI/Factions/frontplayer</factionIconPath>
+        <factionIconPath>UFR/UI/Factions/playercolonist</factionIconPath>
         <startingResearchTags>
             <li>ClassicStart</li>
         </startingResearchTags>
@@ -70,7 +70,7 @@
                 <li>Synthread</li>
             </thingDefs>
         </apparelStuffFilter>
-        <factionIconPath>UFR/UI/Factions/frontplayer</factionIconPath>
+        <factionIconPath>UFR/UI/Factions/playeroccupier</factionIconPath>
         <startingResearchTags>
             <li>ClassicStart</li>
         </startingResearchTags>
@@ -95,7 +95,7 @@
         <canSiege>true</canSiege>
         <canStageAttacks>true</canStageAttacks>
         <leaderTitle>governor</leaderTitle>
-        <factionIconPath>UFR/UI/Factions/frontrefugee</factionIconPath>
+        <factionIconPath>UFR/UI/Factions/colonistadmin</factionIconPath>
         <factionNameMaker>Namer_UFRFactionColonial</factionNameMaker>
         <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
         <colorSpectrum>
@@ -291,7 +291,7 @@
         <canSiege>true</canSiege>
         <canStageAttacks>true</canStageAttacks>
         <leaderTitle>boss</leaderTitle>
-        <factionIconPath>UFR/UI/Factions/freebooter</factionIconPath>
+        <factionIconPath>UFR/UI/Factions/colonistmilitia</factionIconPath>
         <factionNameMaker>Namer_UFRFactionMilitia</factionNameMaker>
         <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
         <colorSpectrum>
