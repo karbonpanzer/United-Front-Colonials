@@ -147,6 +147,8 @@
       <li>UFR_CarapaceArmor</li>
       <li>UFR_CarapaceHelmet</li>       
       <li>UFR_InfantryUniform</li>
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -178,6 +180,8 @@
       <li>UFR_CarapaceArmor</li>
       <li>UFR_CarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -212,6 +216,8 @@
       <li>UFR_VeteranCarapaceArmor</li>
       <li>UFR_VeteranCarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -246,6 +252,8 @@
       <li>UFR_VeteranCarapaceArmor</li>
       <li>UFR_VeteranCarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -286,6 +294,8 @@
       <li>UFR_CommanderCarapaceArmor</li>
       <li>UFR_CommanderCarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <li>UFR_OfficerHeadwear</li>
@@ -344,6 +354,8 @@
       <li>UFR_MedicCarapaceArmor</li>
       <li>UFR_MedicCarapaceHelmet</li>
       <li>UFR_InfantryUniform</li>
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -394,6 +406,8 @@
       <li>UFR_EngineerCarapaceArmor</li>
       <li>UFR_EngineerCarapaceHelmet</li>
       <li>UFR_InfantryUniform</li>
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -442,6 +456,8 @@
       <li>UFR_ScoutCarapaceArmor</li>
       <li>UFR_ScoutCarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -495,6 +511,8 @@
       <li>UFR_AssaultCarapaceArmor</li>
       <li>UFR_AssaultCarapaceHelmet</li>
       <li>UFR_InfantryUniform</li>
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
