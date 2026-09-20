@@ -175,7 +175,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
     <defName>UFR_CarapaceBoots</defName>
     <label>carapace boots</label>
-    <description>A set of simple plasteel reinforced boots. They provide decent protection and cause no hinderence to the wearer.</description>
+    <description>A set of plasteel-weave plate boots. They provide decent protection and cause no hinderence to the wearer.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceAccessories/CarapaceBoots</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -245,7 +245,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>UFR_CarapaceGloves</defName>
     <label>carapace gloves</label>
-    <description>A set of simple plasteel reinforced gloves. They provide decent protection and cause no hinderence to the wearer.</description>
+    <description>A set of plasteel-weave plate gloves. They provide decent protection and cause no hinderence to the wearer.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceAccessories/CarapaceGloves</texPath>
       <graphicClass>Graphic_Single</graphicClass>
