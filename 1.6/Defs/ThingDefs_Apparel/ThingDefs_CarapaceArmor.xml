@@ -171,6 +171,147 @@
     </modExtensions>
   </ThingDef>
 
+  <!-- Carapace Boots and Gloves -->
+    <ThingDef ParentName="ApparelMakeableBase">
+    <defName>UFR_CarapaceBoots</defName>
+    <label>carapace boots</label>
+    <description>A set of simple plasteel reinforced boots. They provide decent protection and cause no hinderence to the wearer.</description>
+    <graphicData>
+      <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceAccessories/CarapaceBoots</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <color>(0.95, 0.95, 0.95)</color>
+      </options>
+    </colorGenerator>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <generateCommonality>0.1</generateCommonality>
+    <costList>
+      <Steel>15</Steel>
+      <Plasteel>8</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>0.9</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.62</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
+      <Insulation_Cold>3</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>0.05</MoveSpeed>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>UFR_CarapaceArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <tags>
+        <li>UFR_Armor</li>
+        <li>UFR_CarapaceBoots</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+      <li>UFR_Armor</li>
+    </tradeTags>
+  </ThingDef>
+ 
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>UFR_CarapaceGloves</defName>
+    <label>carapace gloves</label>
+    <description>A set of simple plasteel reinforced gloves. They provide decent protection and cause no hinderence to the wearer.</description>
+    <graphicData>
+      <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceAccessories/CarapaceGloves</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <color>(0.95, 0.95, 0.95)</color>
+      </options>
+    </colorGenerator>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <generateCommonality>0.1</generateCommonality>
+    <costList>
+      <Steel>15</Steel>
+      <Plasteel>8</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MaxHitPoints>90</MaxHitPoints>
+      <WorkToMake>9000</WorkToMake>
+      <Mass>0.9</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.62</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
+      <Insulation_Cold>3</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <researchPrerequisite>UFR_CarapaceArmor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <tags>
+        <li>UFR_Armor</li>
+        <li>UFR_CarapaceGloves</li>
+      </tags>
+    </apparel>
+    <tradeTags>
+      <li>Armor</li>
+      <li>UFR_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
   <!-- Medic Carapace Armor -->
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>UFR_MedicCarapaceArmor</defName>
