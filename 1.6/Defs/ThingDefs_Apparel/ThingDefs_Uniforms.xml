@@ -272,8 +272,8 @@
   </ThingDef-->
 
   <ThingDef ParentName="HatMakeableBase">
-    <defName>UFR_OfficerHat_Cap</defName>
-    <label>officer cap</label>
+    <defName>UFR_CommanderCap</defName>
+    <label>commander cap</label>
     <description>A hat featuring a short visor, a polished leather strap, and high quality fabrics. Often worn by imperial army commanders and urbworld dictators.</description>
     <graphicData>
       <texPath>UFR/Things/Pawn/Humanlike/Clothes/FrontOfficerCap</texPath>
