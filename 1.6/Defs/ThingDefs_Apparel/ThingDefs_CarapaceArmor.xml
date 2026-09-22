@@ -25,8 +25,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>15</Steel>
-      <Plasteel>40</Plasteel>
+      <Steel>20</Steel>
+      <Plasteel>55</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <statBases>
@@ -113,8 +113,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>6</Steel>
-      <Plasteel>10</Plasteel>
+      <Steel>8</Steel>
+      <Plasteel>18</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <statBases>
@@ -181,10 +181,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <color>(0.95, 0.95, 0.95)</color>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.95, 0.95, 0.95)</color>
     </colorGenerator>
     <techLevel>Spacer</techLevel>
     <tradeability>Sellable</tradeability>
@@ -251,10 +249,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <color>(0.95, 0.95, 0.95)</color>
-      </options>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.95, 0.95, 0.95)</color>
     </colorGenerator>
     <techLevel>Spacer</techLevel>
     <tradeability>Sellable</tradeability>
@@ -336,8 +332,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>15</Steel>
-      <Plasteel>40</Plasteel>
+      <Steel>20</Steel>
+      <Plasteel>55</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <statBases>
@@ -425,8 +421,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>6</Steel>
-      <Plasteel>10</Plasteel>
+      <Steel>8</Steel>
+      <Plasteel>18</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <statBases>
@@ -507,8 +503,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>15</Steel>
-      <Plasteel>40</Plasteel>
+      <Steel>20</Steel>
+      <Plasteel>55</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <statBases>
@@ -596,8 +592,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>6</Steel>
-      <Plasteel>10</Plasteel>
+      <Steel>8</Steel>
+      <Plasteel>18</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <statBases>
@@ -678,8 +674,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>15</Steel>
-      <Plasteel>40</Plasteel>
+      <Steel>20</Steel>
+      <Plasteel>55</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <statBases>
@@ -767,8 +763,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>6</Steel>
-      <Plasteel>10</Plasteel>
+      <Steel>8</Steel>
+      <Plasteel>18</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <statBases>
@@ -849,8 +845,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>15</Steel>
-      <Plasteel>40</Plasteel>
+      <Steel>20</Steel>
+      <Plasteel>55</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
       <Gold>8</Gold>
     </costList>
@@ -942,8 +938,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>6</Steel>
-      <Plasteel>10</Plasteel>
+      <Steel>8</Steel>
+      <Plasteel>18</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <Gold>4</Gold>
     </costList>
@@ -1028,9 +1024,9 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>20</Steel>
-      <Plasteel>60</Plasteel>
-      <ComponentIndustrial>7</ComponentIndustrial>
+      <Steel>25</Steel>
+      <Plasteel>70</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <statBases>
@@ -1151,7 +1147,7 @@
     </recipeMaker>
     <costList>
       <Steel>10</Steel>
-      <Plasteel>18</Plasteel>
+      <Plasteel>22</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
@@ -1233,10 +1229,10 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>18</Steel>
-      <Plasteel>45</Plasteel>
+      <Steel>22</Steel>
+      <Plasteel>60</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
-      <ComponentSpacer>1</ComponentSpacer>
+      <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <statBases>
       <WorkToMake>56000</WorkToMake>
@@ -1327,8 +1323,8 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>8</Steel>
-      <Plasteel>15</Plasteel>
+      <Steel>10</Steel>
+      <Plasteel>22</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>
@@ -1410,9 +1406,9 @@
       </recipeUsers>
     </recipeMaker>
     <costList>
-      <Steel>20</Steel>
-      <Plasteel>60</Plasteel>
-      <ComponentIndustrial>7</ComponentIndustrial>
+      <Steel>25</Steel>
+      <Plasteel>70</Plasteel>
+      <ComponentIndustrial>5</ComponentIndustrial>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
     <statBases>
@@ -1501,7 +1497,7 @@
     </recipeMaker>
     <costList>
       <Steel>10</Steel>
-      <Plasteel>18</Plasteel>
+      <Plasteel>22</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
     </costList>

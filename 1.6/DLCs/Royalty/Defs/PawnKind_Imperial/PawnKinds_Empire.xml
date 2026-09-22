@@ -12,6 +12,9 @@
     <apparelRequired>
       <li>UFR_CarapaceArmor</li>
       <li>UFR_CarapaceHelmet</li>
+      <li>UFR_InfantryUniform</li>      
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>      
     </apparelRequired>
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>1000~2500</weaponMoney>

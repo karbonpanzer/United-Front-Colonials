@@ -67,6 +67,18 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceGloves</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceBoots</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>                                
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
                     <thingDef>Silver</thingDef>
                     <count>400</count>
                 </li>
@@ -196,6 +208,18 @@
                     <count>3</count>
                     <quality>Normal</quality>
                 </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceGloves</thingDef>
+                    <count>5</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceBoots</thingDef>
+                    <count>5</count>
+                    <quality>Normal</quality>
+                </li>                  
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>UFR_MedicCarapaceArmor</thingDef>
