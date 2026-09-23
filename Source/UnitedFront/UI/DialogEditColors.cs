@@ -16,6 +16,16 @@ namespace UnitedFront.UI
             public CompColorMarker Comp;
             public List<Color> Working;
             public List<Color> Original;
+
+            public readonly float[] H = new float[ColorCount];
+            public readonly float[] S = new float[ColorCount];
+            public readonly float[] V = new float[ColorCount];
+
+            public void SyncHsv()
+            {
+                for (int i = 0; i < ColorCount; i++)
+                    Color.RGBToHSV(Working[i], out H[i], out S[i], out V[i]);
+            }
         }
 
         private const int ColorCount = 2;
@@ -26,11 +36,17 @@ namespace UnitedFront.UI
         private bool _committed;
         private List<Color> _allColors;
 
+        private readonly ColorPicker[] _pickers = new ColorPicker[ColorCount];
+        private readonly Vector2[] _paletteScroll = new Vector2[ColorCount];
+        private readonly float[] _paletteHeight = new float[ColorCount];
+
         private static readonly Vector2 ButSize = new Vector2(200f, 40f);
         private static readonly Vector3 PortraitOffset = new Vector3(0f, 0f, 0.15f);
         private const float PortraitZoom = 1.3f;
         private const float LeftRectPercent = 0.42f;
         private const float TabMargin = 18f;
+        private const float MinPaletteWidth = 140f;
+        private const float PickerGap = 10f;
 
         public override Vector2 InitialSize => new Vector2(1000f, 760f);
 
@@ -43,6 +59,8 @@ namespace UnitedFront.UI
             closeOnCancel = false;
             absorbInputAroundWindow = true;
 
+            for (int i = 0; i < ColorCount; i++) _pickers[i] = new ColorPicker();
+
             if (pawn.apparel != null)
             {
                 foreach (Apparel ap in pawn.apparel.WornApparel)
@@ -50,19 +68,25 @@ namespace UnitedFront.UI
                     CompColorMarker comp = ap.TryGetComp<CompColorMarker>();
                     if (comp == null) continue;
 
-                    var working = new List<Color>(comp.ZoneColors);
-                    while (working.Count < ColorCount) working.Add(Color.white);
-                    if (working.Count > ColorCount) working.RemoveRange(ColorCount, working.Count - ColorCount);
-
-                    _pieces.Add(new Piece
+                    var piece = new Piece
                     {
                         Apparel = ap,
                         Comp = comp,
-                        Working = working,
+                        Working = Normalized(comp.ZoneColors),
                         Original = new List<Color>(comp.ZoneColors)
-                    });
+                    };
+                    piece.SyncHsv();
+                    _pieces.Add(piece);
                 }
             }
+        }
+
+        private static List<Color> Normalized(List<Color> source)
+        {
+            var list = new List<Color>(source);
+            while (list.Count < ColorCount) list.Add(Color.white);
+            if (list.Count > ColorCount) list.RemoveRange(ColorCount, list.Count - ColorCount);
+            return list;
         }
 
         private static bool IsHelmet(Apparel ap)
@@ -169,8 +193,8 @@ namespace UnitedFront.UI
             float defaultBlockH = hasDefault ? defaultH + 4f : 0f;
 
             Rect btnRow = new Rect(row.x, row.yMax - btnH, row.width, btnH);
-            Rect palette = new Rect(row.x, row.y + labelH + defaultBlockH, row.width,
-                                    row.height - labelH - defaultBlockH - btnH - gap);
+            Rect body = new Rect(row.x, row.y + labelH + defaultBlockH, row.width,
+                                 row.height - labelH - defaultBlockH - btnH - gap);
 
             // Default swatch + button, sitting directly above the palette.
             if (hasDefault)
@@ -190,8 +214,22 @@ namespace UnitedFront.UI
                 }
             }
 
-            float paletteHeight;
-            Widgets.ColorSelector(palette, ref c, AllColors(), out paletteHeight, null, 22, 2);
+            float pickerH = body.height;
+            float pickerW = ColorPicker.WidthFor(pickerH);
+            float maxPickerW = body.width - MinPaletteWidth - PickerGap;
+            if (pickerW > maxPickerW)
+            {
+                pickerW = Mathf.Max(maxPickerW, 0f);
+                pickerH = Mathf.Max(ColorPicker.HeightFor(pickerW), 0f);
+            }
+
+            Rect pickerRect = new Rect(body.xMax - pickerW, body.y, pickerW, pickerH);
+            Rect palette = new Rect(body.x, body.y, body.width - pickerW - PickerGap, body.height);
+
+            DrawPalette(palette, ref c, index);
+
+            float h = p.H[index], s = p.S[index], v = p.V[index];
+            bool pickerChanged = pickerH > 0f && _pickers[index].Draw(pickerRect, ref h, ref s, ref v);
 
             // Remaining quick-pick buttons, laid out evenly along the bottom row.
             List<string> labels = new List<string>();
@@ -230,12 +268,41 @@ namespace UnitedFront.UI
                 SoundDefOf.Tick_Low.PlayOneShotOnCamera();
             }
 
-            if (!original.IndistinguishableFrom(c))
+            if (pickerChanged)
+            {
+                p.H[index] = h;
+                p.S[index] = s;
+                p.V[index] = v;
+
+                Color picked = Color.HSVToRGB(h, s, v);
+                if (!p.Working[index].IndistinguishableFrom(picked))
+                {
+                    p.Working[index] = picked;
+                    Apply(p);
+                }
+            }
+            else if (!original.IndistinguishableFrom(c))
             {
                 p.Working[index] = c;
-                p.Comp.PreviewZones(p.Working);
-                PortraitsCache.SetDirty(_pawn);
+                Color.RGBToHSV(c, out p.H[index], out p.S[index], out p.V[index]);
+                Apply(p);
             }
+        }
+
+        private void DrawPalette(Rect rect, ref Color c, int index)
+        {
+            if (rect.width < 40f || rect.height < 40f) return;
+
+            Rect view = new Rect(0f, 0f, rect.width - 16f, Mathf.Max(_paletteHeight[index], rect.height));
+            Widgets.BeginScrollView(rect, ref _paletteScroll[index], view);
+            Widgets.ColorSelector(view, ref c, AllColors(), out _paletteHeight[index], null, 22, 2);
+            Widgets.EndScrollView();
+        }
+
+        private void Apply(Piece p)
+        {
+            p.Comp.PreviewZones(p.Working);
+            PortraitsCache.SetDirty(_pawn);
         }
 
         private static bool TryGetDefaultColor(Piece p, int index, out Color c)
@@ -269,8 +336,8 @@ namespace UnitedFront.UI
             {
                 foreach (Piece p in _pieces)
                 {
-                    p.Working = new List<Color>(p.Original);
-                    while (p.Working.Count < ColorCount) p.Working.Add(Color.white);
+                    p.Working = Normalized(p.Original);
+                    p.SyncHsv();
                     p.Comp.PreviewZones(p.Working);
                 }
                 PortraitsCache.SetDirty(_pawn);
