@@ -31,14 +31,14 @@ namespace UnitedFront.HarmonyPatches
 
             ApparelLayerDef last = apparel.def.apparel.LastLayer;
             bool perBodyType = last != ApparelLayerDefOf.Overhead
-                            && last != ApparelLayerDefOf.EyeCover
-                            && !apparel.RenderAsPack()
-                            && basePath != BaseContent.PlaceholderImagePath
-                            && basePath != BaseContent.PlaceholderGearImagePath;
+                               && last != ApparelLayerDefOf.EyeCover
+                               && !apparel.RenderAsPack()
+                               && basePath != BaseContent.PlaceholderImagePath
+                               && basePath != BaseContent.PlaceholderGearImagePath;
 
             string path = perBodyType ? basePath + "_" + bodyType.defName : basePath;
 
-            Graphic graphic = MultiColorGraphicUtil.Get(path, null, shader, apparel.def.graphicData.drawSize, comp.ZoneColors);
+            Graphic graphic = MultiColorGraphicUtil.Get(path, null, shader, apparel.def.graphicData.drawSize, comp.DisplayZones());
             if (graphic != null)
                 rec = new ApparelGraphicRecord(graphic, apparel);
         }

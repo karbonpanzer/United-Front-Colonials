@@ -9,28 +9,51 @@ namespace UnitedFront.Comps
     public sealed class CompColorMarker : ThingComp
     {
         public List<Color> ZoneColors = new List<Color>();
-        private bool zonesCustomized;
+        private bool _zonesCustomized;
 
         public CompPropertiesColorMarker Props => (CompPropertiesColorMarker)props;
         public int ZoneCount => Props.zoneCount;
 
+        private CompColorable Colorable => parent.TryGetComp<CompColorable>();
+
+        private Color BaseColor
+        {
+            get
+            {
+                if (parent.Stuff != null) return parent.Stuff.stuffProps.color;
+                return parent.def.graphicData != null ? parent.def.graphicData.color : Color.white;
+            }
+        }
+
+        public Color DefaultZone(int index)
+        {
+            ArmorColorExtension ext = parent.def.GetModExtension<ArmorColorExtension>();
+            if (ext != null)
+            {
+                if (index == 0 && ext.setColorOne) return ext.colorOne;
+                if (index == 1 && ext.setColorTwo) return ext.colorTwo;
+            }
+
+            if (Props.defaultZoneColors != null && index >= 0 && index < Props.defaultZoneColors.Count)
+                return Props.defaultZoneColors[index];
+
+            return BaseColor;
+        }
+
         public override void PostPostMake()
         {
             base.PostPostMake();
-            EnsureZoneDefaults();
-            ApplyArmorDefaults();
+            ApplyDefaults();
         }
 
-        private void ApplyArmorDefaults()
+        private void ApplyDefaults()
         {
-            if (zonesCustomized) return;
-            ArmorColorExtension ext = parent.def.GetModExtension<ArmorColorExtension>();
-            if (ext == null) return;
+            if (_zonesCustomized) return;
 
             EnsureZoneDefaults();
-            Color drawColor = parent is Apparel ap ? ap.DrawColor : Color.white;
-            if (ZoneColors.Count > 0) ZoneColors[0] = ext.setColorOne ? ext.colorOne : drawColor;
-            if (ZoneColors.Count > 1) ZoneColors[1] = ext.setColorTwo ? ext.colorTwo : drawColor;
+            for (int i = 0; i < ZoneColors.Count; i++)
+                ZoneColors[i] = DefaultZone(i);
+
             SetDirty();
         }
 
@@ -51,12 +74,27 @@ namespace UnitedFront.Comps
 
         public Color GetZone(int index) => (index >= 0 && index < ZoneColors.Count) ? ZoneColors[index] : Color.white;
 
+        public Color DisplayZone(int index)
+        {
+            Color c = GetZone(index);
+            if (parent is Apparel ap && ap.WornByCorpse)
+                c = PawnRenderUtility.GetRottenColor(c);
+            return c;
+        }
+
+        public List<Color> DisplayZones()
+        {
+            var list = new List<Color>(ZoneColors.Count);
+            for (int i = 0; i < ZoneColors.Count; i++) list.Add(DisplayZone(i));
+            return list;
+        }
+
         public void SetZone(int index, Color c, bool markCustomized = true)
         {
             EnsureZoneDefaults();
             if (index < 0 || index >= ZoneColors.Count) return;
             ZoneColors[index] = c;
-            if (markCustomized) zonesCustomized = true;
+            if (markCustomized) _zonesCustomized = true;
             SetDirty();
         }
 
@@ -70,8 +108,26 @@ namespace UnitedFront.Comps
         public void CommitZones(List<Color> colors)
         {
             ZoneColors = new List<Color>(colors);
-            zonesCustomized = true;
+            _zonesCustomized = true;
             EnsureZoneDefaults();
+            SetDirty();
+        }
+
+        public override Color? ForceColor()
+        {
+            if (ZoneColors.Count == 0) return null;
+            return ZoneColors[0];
+        }
+
+        public void SyncPrimaryFromColorable(Color dyed)
+        {
+            if (props == null) return;
+
+            EnsureZoneDefaults();
+            if (ZoneColors.Count == 0 || ZoneColors[0].IndistinguishableFrom(dyed)) return;
+
+            ZoneColors[0] = dyed;
+            _zonesCustomized = true;
             SetDirty();
         }
 
@@ -79,13 +135,15 @@ namespace UnitedFront.Comps
         {
             if (parent is Apparel ap && ap.Wearer != null)
                 ap.Wearer.Drawer?.renderer?.SetAllGraphicsDirty();
+            else
+                parent.Notify_ColorChanged();
         }
 
         public override void PostExposeData()
         {
             base.PostExposeData();
             Scribe_Collections.Look(ref ZoneColors, "UnitedFrontZoneColors", LookMode.Value);
-            Scribe_Values.Look(ref zonesCustomized, "UnitedFrontZonesCustomized", false);
+            Scribe_Values.Look(ref _zonesCustomized, "UnitedFrontZonesCustomized", false);
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
                 EnsureZoneDefaults();
@@ -94,23 +152,7 @@ namespace UnitedFront.Comps
         public override void Notify_Equipped(Pawn pawn)
         {
             base.Notify_Equipped(pawn);
-
-            if (!zonesCustomized && Props.defaultZoneColors.NullOrEmpty() && parent is Apparel ap)
-            {
-                EnsureZoneDefaults();
-                ArmorColorExtension armorExt = parent.def.GetModExtension<ArmorColorExtension>();
-                if (armorExt != null)
-                {
-                    if (ZoneColors.Count > 0) ZoneColors[0] = armorExt.setColorOne ? armorExt.colorOne : ap.DrawColor;
-                    if (ZoneColors.Count > 1) ZoneColors[1] = armorExt.setColorTwo ? armorExt.colorTwo : ap.DrawColor;
-                }
-                else
-                {
-                    for (int i = 0; i < ZoneColors.Count; i++)
-                        ZoneColors[i] = ap.DrawColor;
-                }
-                SetDirty();
-            }
+            ApplyDefaults();
         }
     }
 }

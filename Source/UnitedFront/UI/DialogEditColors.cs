@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using RimWorld;
 using UnitedFront.Comps;
-using UnitedFront.Defs;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -22,6 +21,7 @@ namespace UnitedFront.UI
 
         private readonly Pawn _pawn;
         private readonly List<Piece> _pieces = new List<Piece>();
+        private readonly int _firstZone = ModsConfig.IdeologyActive ? 1 : 0;
         private int _sel;
         private bool _committed;
         private List<Color> _allColors;
@@ -143,11 +143,14 @@ namespace UnitedFront.UI
             if (_sel < 0 || _sel >= _pieces.Count) _sel = 0;
             Piece p = _pieces[_sel];
 
+            int visible = ColorCount - _firstZone;
+            if (visible < 1) return;
+
             float rowGap = 14f;
-            float rowH = (rect.height - rowGap * (ColorCount - 1)) / ColorCount;
-            for (int c = 0; c < ColorCount; c++)
+            float rowH = (rect.height - rowGap * (visible - 1)) / visible;
+            for (int c = _firstZone; c < ColorCount; c++)
             {
-                Rect row = new Rect(rect.x, rect.y + c * (rowH + rowGap), rect.width, rowH);
+                Rect row = new Rect(rect.x, rect.y + (c - _firstZone) * (rowH + rowGap), rect.width, rowH);
                 DrawColorRow(row, p, c);
             }
         }
@@ -240,20 +243,7 @@ namespace UnitedFront.UI
 
         private static bool TryGetDefaultColor(Piece p, int index, out Color c)
         {
-            c = Color.white;
-            Color drawColor = p.Apparel.DrawColor;
-            ArmorColorExtension ext = p.Apparel.def.GetModExtension<ArmorColorExtension>();
-
-            if (ext == null)
-            {
-                c = drawColor;
-                return true;
-            }
-
-            if (index == 0) c = ext.setColorOne ? ext.colorOne : drawColor;
-            else if (index == 1) c = ext.setColorTwo ? ext.colorTwo : drawColor;
-            else return false;
-
+            c = p.Comp.DefaultZone(index);
             return true;
         }
 

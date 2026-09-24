@@ -22,7 +22,7 @@ namespace UnitedFront.HarmonyPatches
             GraphicData gd = apparel.def.graphicData;
             if (gd == null || gd.texPath.NullOrEmpty()) return;
 
-            __result = MultiColorGraphicUtil.Get(gd.texPath, null, shader, gd.drawSize, comp.ZoneColors, typeof(Graphic_Single));
+            __result = MultiColorGraphicUtil.Get(gd.texPath, null, shader, gd.drawSize, comp.DisplayZones(), typeof(Graphic_Single));
         }
     }
 }
