@@ -7,7 +7,7 @@
     <label>uranium slug</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Projectile/stakeprojectile</texPath>
+      <texPath>UFR/Things/Projectile/sabotprojectile</texPath>
       <drawSize>0.85</drawSize>
     </graphicData>
     <projectile>
@@ -25,7 +25,7 @@
     <description>An electrothermal-chemical handgun. Using a plasma cartridge, it fires a dense uranium sabot at high speeds with devastating effect against armored targets.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/stakepistol</texPath>
+      <texPath>UFR/Things/Item/Equipment/sabotpistol</texPath>
       <drawSize>1.0</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
@@ -93,6 +93,8 @@
       </li>
     </tools>
   </ThingDef>
+  
+  <!-- Sabot SMG -->
 
   <!-- Sabot Rifle -->
   <ThingDef ParentName="BaseBullet">
@@ -100,7 +102,7 @@
     <label>uranium rod</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Projectile/stakeprojectile</texPath>
+      <texPath>UFR/Things/Projectile/sabotprojectile</texPath>
       <drawSize>0.85</drawSize>
     </graphicData>
     <projectile>
@@ -118,7 +120,7 @@
     <description>An electrothermal-chemical assault rifle. Using a plasma cartridge, it fires a dense uranium sabot at high speeds with devastating effect against armored targets.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/stakerifle</texPath>
+      <texPath>UFR/Things/Item/Equipment/sabotassaultrifle</texPath>
       <drawSize>1.0</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
@@ -189,13 +191,13 @@
     </tools>
   </ThingDef>
 
-  <!-- Heavy Sabot Rifle -->
+  <!-- Sabot Battle Rifle -->
   <ThingDef ParentName="BaseBullet">
     <defName>UFR_Bolt_SabotHeavyRifle</defName>
     <label>heavy uranium rod</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Projectile/stakeprojectile</texPath>
+      <texPath>UFR/Things/Projectile/sabotprojectile</texPath>
       <drawSize>0.9</drawSize>
     </graphicData>
     <projectile>
@@ -208,12 +210,12 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotHeavyRifle">
-    <defName>UFR_SabotHeavyRifle</defName>
-    <label>heavy sabot rifle</label>
+    <defName>UFR_SabotBattleRifle</defName>
+    <label>sabot battle rifle</label>
     <description>An electrothermal-chemical battle rifle. Using a plasma cartridge, it fires a dense uranium sabot at high speeds with devastating effect against armored targets.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/stakeheavyrifle</texPath>
+      <texPath>UFR/Things/Item/Equipment/sabotbattlerifle</texPath>
       <drawSize>1.1</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
@@ -282,13 +284,15 @@
     </tools>
   </ThingDef>
 
+  <!-- Sabot Repeater/LMG -->
+
   <!-- Sabot Sniper Rifle -->
   <ThingDef ParentName="BaseBullet">
     <defName>UFR_Bolt_SabotSniperRifle</defName>
     <label>uranium penetrator</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Projectile/stakeprojectile</texPath>
+      <texPath>UFR/Things/Projectile/sabotprojectile</texPath>
       <drawSize>1.0</drawSize>
     </graphicData>
     <projectile>
@@ -306,7 +310,7 @@
     <description>An electrothermal-chemical sniper rifle. Using a plasma cartridge, it fires a dense uranium sabot at high speeds with devastating effect against armored targets.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/stakesniper</texPath>
+      <texPath>UFR/Things/Item/Equipment/sabotsniper</texPath>
       <drawSize>1.1</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
@@ -381,7 +385,7 @@
     <label>uranium rod</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Projectile/stakeprojectile</texPath>
+      <texPath>UFR/Things/Projectile/sabotprojectile</texPath>
       <drawSize>0.95</drawSize>
     </graphicData>
     <projectile>
@@ -399,7 +403,7 @@
     <description>An electrothermal-chemical repeating cannon. Using a plasma cartridge, it fires a dense uranium sabot at high speeds with devastating effect against armored targets.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/stakecannon</texPath>
+      <texPath>UFR/Things/Item/Equipment/sabotautocannon</texPath>
       <drawSize>1.15</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
@@ -471,7 +475,7 @@
     <label>flechette</label>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Projectile/stakeprojectileflechettes</texPath>
+      <texPath>UFR/Things/Projectile/sabotprojectileflechettes</texPath>
       <drawSize>0.7</drawSize>
     </graphicData>
     <projectile>
@@ -489,7 +493,7 @@
     <description>An electrothermal-chemical shotgun. Using a plasma cartridge, it fires dense uranium flechettes at high speeds with devastating effect against armored targets.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/stakeshotgun</texPath>
+      <texPath>UFR/Things/Item/Equipment/flechetteshotgun</texPath>
       <drawSize>1.0</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
