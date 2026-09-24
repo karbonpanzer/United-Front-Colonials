@@ -93,6 +93,8 @@
       </li>
     </tools>
   </ThingDef>
+  
+  <!-- Sabot SMG -->
 
   <!-- Sabot Rifle -->
   <ThingDef ParentName="BaseBullet">
@@ -189,7 +191,7 @@
     </tools>
   </ThingDef>
 
-  <!-- Heavy Sabot Rifle -->
+  <!-- Sabot Battle Rifle -->
   <ThingDef ParentName="BaseBullet">
     <defName>UFR_Bolt_SabotHeavyRifle</defName>
     <label>heavy uranium rod</label>
@@ -281,6 +283,8 @@
       </li>
     </tools>
   </ThingDef>
+
+  <!-- Sabot Repeater/LMG -->
 
   <!-- Sabot Sniper Rifle -->
   <ThingDef ParentName="BaseBullet">
