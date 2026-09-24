@@ -72,7 +72,7 @@
       </tags>
     </apparel>
     <techLevel>Spacer</techLevel>
-    <comps>
+    <comps>     
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>
     <thingCategories>
@@ -83,7 +83,7 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- white -->
+      <!--white -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
         <colorTwo>(0.95, 0.95, 0.95)</colorTwo>
       </li>

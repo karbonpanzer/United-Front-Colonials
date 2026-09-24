@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    
-    <!-- Ion Charge -->
-    <SoundDef>
-        <defName>UFR_Bolt_IonCharge</defName>
-        <context>MapOnly</context>
-        <maxSimultaneous>3</maxSimultaneous>
-        <subSounds>
-            <li>
-            <grains>
-                <li Class="AudioGrain_Folder">
-                    <clipFolderPath>UFR/Bolt_plasma</clipFolderPath>
-                </li>
-            </grains>
-            <volumeRange>55.2941~55.2941</volumeRange>
-            <pitchRange>1.85513~2.17787</pitchRange>
-            <sustainLoop>False</sustainLoop>
-            </li>
-        </subSounds>
-    </SoundDef>  
-    
-    <SoundDef>
-        <defName>UFR_Bolt_IonChargeHeavy</defName>
-        <context>MapOnly</context>
-        <maxSimultaneous>3</maxSimultaneous>
-        <subSounds>
-            <li>
-            <grains>
-                <li Class="AudioGrain_Folder">
-                    <clipFolderPath>UFR/Bolt_plasma</clipFolderPath>
-                </li>
-            </grains>
-            <volumeRange>55.2941~55.2941</volumeRange>
-            <pitchRange>1.35513~1.57787</pitchRange>
-            <sustainLoop>False</sustainLoop>
-            </li>
-        </subSounds>
-    </SoundDef>      
-    
+      
+ 
     <!-- ETC/Sabot Weapons -->
     <SoundDef>
         <defName>UFR_Shot_ETCSmall</defName>

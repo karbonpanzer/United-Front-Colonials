@@ -200,35 +200,6 @@
     </ResearchProjectDef>   
 
     <ResearchProjectDef>
-        <defName>UFR_IonizedGasMunitions</defName>
-        <label>Ionized Gas Munitions</label>
-        <description>Build weapons which use ionized gas to coat pulse-charged munitions for EMP damage. Note these also require advanced components.</description>
-        <baseCost>3200</baseCost>
-        <tab>UFR_ResearchTab</tab>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>UFR_ColonialFabricationMethods</li>
-            <li>ChargedShot</li>
-        </prerequisites>
-        <researchViewX>1</researchViewX>
-        <researchViewY>4.9</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>UFR_RefinedIonizedGas</defName>
-        <label>Refined Ionized Gas Methods</label>
-        <description>Build weapons which use refined ionized gas to enhance pulse-charged munitions while increasing damage. Note these also require advanced components.</description>
-        <baseCost>4000</baseCost>
-        <tab>UFR_ResearchTab</tab>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>UFR_IonizedGasMunitions</li>
-        </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>4.9</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
         <defName>UFR_ETCMunitions</defName>
         <label>Electrothermal-Chemical Munitions</label>
         <description>Build weapons which use electrothermal-chemical plasma charges to fire depleted uranium sabots. Note these also require advanced components</description>
