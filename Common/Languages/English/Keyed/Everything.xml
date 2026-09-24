@@ -24,12 +24,12 @@
   <UFR_DevEditColorsDesc>Open the United Front color editor for this pawn.</UFR_DevEditColorsDesc>
 
   <!-- Fabrication Bench-->
-  <UFR_EditArmor>Customise armor</UFR_EditArmor>
-  <UFR_EditArmorUnreachable>Cannot customise armor (unreachable)</UFR_EditArmorUnreachable>
+  <UFR_EditArmor>Change armor role color</UFR_EditArmor>
+  <UFR_EditArmorUnreachable>Cannot change role color (unreachable)</UFR_EditArmorUnreachable>
 
   <!-- Style Bench -->
-  <UFR_EditDecals>Customise armor</UFR_EditDecals>
-  <UFR_EditDecalsUnreachable>Cannot customise armor (unreachable)</UFR_EditDecalsUnreachable>
+  <UFR_EditDecals>Change armor role color</UFR_EditDecals>
+  <UFR_EditDecalsUnreachable>Cannot change role color (unreachable)</UFR_EditDecalsUnreachable>
 
   <!-- Assault Shield -->
   <UFR_ShieldRecharging>Recharging {0}s</UFR_ShieldRecharging>
