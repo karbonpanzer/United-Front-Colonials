@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>UFR_Colonists</defName>
+        <label>opportunistic colonists</label>
+        <description>a group of colonists from a spacer civilization. Armed with spacer level military gear that they can maintain, they have arrived on this rimworld with the goal of long term settlement.</description>
+        <colorSpectrum>
+            <li>(0, 0.737, 0.847)</li>
+        </colorSpectrum>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>UFR_Colonists</basicMemberKind>
+        <pawnSingular>colonist</pawnSingular>
+        <pawnsPlural>colonists</pawnsPlural>
+        <techLevel>Spacer</techLevel>
+        <allowedCultures>
+            <li>Astropolitan</li>
+        </allowedCultures>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Outlander</li>
+                    <li>Pirate</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Synthread</li>
+            </thingDefs>
+        </apparelStuffFilter>
+        <factionIconPath>UFR/UI/Factions/playercolonist</factionIconPath>
+        <startingResearchTags>
+            <li>ClassicStart</li>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>ClassicStart</li>
+            <li>ClassicStartTechprints</li>
+        </startingTechprintsResearchTags>
+    </FactionDef>
+
+    <FactionDef ParentName="PlayerFactionBase">
+        <defName>UFR_Occupiers</defName>
+        <label>occupation force</label>
+        <description>a group of soldiers from a spacer civilization. Armed with the best equipment that was assigned to them, they are part of efforts to "civilize" this world to support the colonial efforts.</description>
+        <colorSpectrum>
+            <li>(0, 0.737, 0.847)</li>
+        </colorSpectrum>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>UFR_Occupiers</basicMemberKind>
+        <pawnSingular>occupier</pawnSingular>
+        <pawnsPlural>occupiers</pawnsPlural>
+        <techLevel>Spacer</techLevel>
+        <allowedCultures>
+            <li>Astropolitan</li>
+        </allowedCultures>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Outlander</li>
+                    <li>Pirate</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Synthread</li>
+            </thingDefs>
+        </apparelStuffFilter>
+        <factionIconPath>UFR/UI/Factions/playeroccupier</factionIconPath>
+        <startingResearchTags>
+            <li>ClassicStart</li>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>ClassicStart</li>
+            <li>ClassicStartTechprints</li>
+        </startingTechprintsResearchTags>
+    </FactionDef>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>UFR_ColonialAdministration</defName>
+        <label>colonial administration</label>
+        <description>a faction of colonists from a spacer civilization who are part of a colonization effort on this rimworld. These colonists come from all walks of life but all want to have a piece of the frontier before it is all gone.\n\nThey possess some spacer level military gear but lack the facilities to create more. Rather than rely on technology, they possess a strong will and cooperative spirit which has kept them going this long. They are generally willing to trade with outsiders and ally to those that are good friends to them, but will fiercely defend their new homes against any and all.</description>
+        <categoryTag>Spacer</categoryTag>
+        <pawnSingular>citizen</pawnSingular>
+        <pawnsPlural>citizens</pawnsPlural>
+        <listOrderPriority>13</listOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>governor</leaderTitle>
+        <factionIconPath>UFR/UI/Factions/colonistadmin</factionIconPath>
+        <factionNameMaker>Namer_UFRFactionColonial</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <colorSpectrum>
+            <li>(0.80, 0.80, 0.95)</li>
+        </colorSpectrum>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Cloth</li>
+            </thingDefs>
+        </apparelStuffFilter>
+        <permanentEnemy>false</permanentEnemy>
+        <techLevel>Spacer</techLevel>
+        <allowedCultures>
+            <li>Astropolitan</li>
+        </allowedCultures>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+        </requiredMemes>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+        </disallowedMemes>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Outlander</li>
+                    <li>Pirate</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.12</Hussar>
+                <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.06</Dirtmole>
+                <Impid MayRequire="Ludeon.RimWorld.Biotech">0.02</Impid>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.08</Genie>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.02</Yttakin>
+            </xenotypeChances>
+        </xenotypeSet>
+        <allowedArrivalTemperatureRange>-40~50</allowedArrivalTemperatureRange>
+        <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+        <caravanTraderKinds>
+            <li>Caravan_UFR_BulkGoods</li>
+            <li>Caravan_UFR_ArmsDealer</li>
+            <li>Caravan_UFR_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_UFR_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_UFR_Standard</li>
+        </baseTraderKinds>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 40)</li>
+                <li>(70, 60)</li>
+                <li>(700, 120)</li>
+                <li>(1300, 200)</li>
+                <li>(100000,10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>45</commonality>
+                <options>
+                    <UFR_Civil_Infantry_Ranged>15</UFR_Civil_Infantry_Ranged>
+                    <UFR_Civil_Infantry_Melee>6</UFR_Civil_Infantry_Melee>
+                    <UFR_Civil_Veteran_Ranged>8</UFR_Civil_Veteran_Ranged>
+                    <UFR_Civil_Veteran_Melee>5</UFR_Civil_Veteran_Melee>
+                    <UFR_Civil_Marksman>7</UFR_Civil_Marksman>
+                    <UFR_Civil_Shocktrooper>2</UFR_Civil_Shocktrooper>
+                    <UFR_Civil_Medic>3</UFR_Civil_Medic>
+                    <UFR_Civil_Engineer>3</UFR_Civil_Engineer>
+                    <UFR_Civil_Commander>3</UFR_Civil_Commander>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>35</commonality>
+                <options>
+                    <UFR_Civil_Infantry_Ranged>20</UFR_Civil_Infantry_Ranged>
+                    <UFR_Civil_Infantry_Melee>10</UFR_Civil_Infantry_Melee>
+                    <UFR_Civil_Marksman>4</UFR_Civil_Marksman>
+                    <UFR_Civil_Medic>8</UFR_Civil_Medic>
+                    <UFR_Civil_Engineer>8</UFR_Civil_Engineer>
+                    <UFR_Civil_Commander>1</UFR_Civil_Commander>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <commonality>20</commonality>
+                <options>
+                    <UFR_Civil_Settler>12</UFR_Civil_Settler>
+                    <UFR_Civil_Laborer>8</UFR_Civil_Laborer>
+                    <UFR_Civil_Trader>8</UFR_Civil_Trader>
+                    <UFR_Civil_Representative>2</UFR_Civil_Representative>
+                    <UFR_Civil_Marksman>4</UFR_Civil_Marksman>
+                    <UFR_Civil_Infantry_Ranged>4</UFR_Civil_Infantry_Ranged>
+                    <UFR_Civil_Infantry_Melee>2</UFR_Civil_Infantry_Melee>
+                    <UFR_Civil_Medic>2</UFR_Civil_Medic>
+                    <UFR_Civil_Engineer>2</UFR_Civil_Engineer>
+                    <UFR_Civil_Commander>1</UFR_Civil_Commander>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <UFR_Civil_Trader>1</UFR_Civil_Trader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <UFR_Civil_Infantry_Ranged>10</UFR_Civil_Infantry_Ranged>
+                    <UFR_Civil_Infantry_Melee>4</UFR_Civil_Infantry_Melee>
+                    <UFR_Civil_Marksman>4</UFR_Civil_Marksman>
+                    <UFR_Civil_Commander>1</UFR_Civil_Commander>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <UFR_Civil_Settler>20</UFR_Civil_Settler>
+                    <UFR_Civil_Laborer>12</UFR_Civil_Laborer>
+                    <UFR_Civil_Engineer>4</UFR_Civil_Engineer>
+                    <UFR_Civil_Medic>4</UFR_Civil_Medic>
+                    <UFR_Civil_Infantry_Ranged>6</UFR_Civil_Infantry_Ranged>
+                    <UFR_Civil_Infantry_Melee>2</UFR_Civil_Infantry_Melee>
+                    <UFR_Civil_Marksman>6</UFR_Civil_Marksman>
+                    <UFR_Civil_Veteran_Ranged>3</UFR_Civil_Veteran_Ranged>
+                    <UFR_Civil_Representative>1</UFR_Civil_Representative>
+                    <UFR_Civil_Commander>3</UFR_Civil_Commander>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Miners</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Miner>1</Miner>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Hunters</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Hunter>1</Hunter>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Loggers</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Logger>1</Logger>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Farmers</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Farmer>1</Farmer>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>25</configurationListOrderPriority>
+    </FactionDef>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>UFR_ColonialMilitia</defName>
+        <label>colonial militia</label>
+        <description>a heavily armed faction from a spacer civilization who were formally part of the colonization efforts. These militia members come from mostly criminal backgrounds who have converted the colonial defense force into a army of bandits.\n\nOrganized into various gangs and outfits, they raid, pillage, and plunder both the inhabitants and the administration they are sworn to protect. They use spacer level military equipment to take what they want from those who cannot protect themselves. They view the world not as a new home but a place where their actions have little consequences. They are nothing by outlaws without counter.</description>
+        <categoryTag>Spacer</categoryTag>
+        <pawnSingular>militiaman</pawnSingular>
+        <pawnsPlural>militiamen</pawnsPlural>
+        <listOrderPriority>13</listOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>boss</leaderTitle>
+        <factionIconPath>UFR/UI/Factions/colonistmilitia</factionIconPath>
+        <factionNameMaker>Namer_UFRFactionMilitia</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <colorSpectrum>
+            <li>(0.60, 0.15, 0.15)</li>
+        </colorSpectrum>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Cloth</li>
+            </thingDefs>
+        </apparelStuffFilter>
+        <permanentEnemy>true</permanentEnemy>
+        <techLevel>Spacer</techLevel>
+        <allowedCultures>
+            <li>Astropolitan</li>
+        </allowedCultures>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+        </requiredMemes>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+        </disallowedMemes>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Outlander</li>
+                    <li>Pirate</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.12</Hussar>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.08</Pigskin>
+                <Impid MayRequire="Ludeon.RimWorld.Biotech">0.08</Impid>
+                <Waster MayRequire="Ludeon.RimWorld.Biotech">0.10</Waster>
+            </xenotypeChances>
+        </xenotypeSet>
+        <allowedArrivalTemperatureRange>-40~50</allowedArrivalTemperatureRange>
+        <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+        <caravanTraderKinds>
+            <li>Caravan_UFR_BulkGoods</li>
+            <li>Caravan_UFR_ArmsDealer</li>
+            <li>Caravan_UFR_Exotic</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_UFR_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_UFR_Standard</li>
+        </baseTraderKinds>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 40)</li>
+                <li>(70, 60)</li>
+                <li>(700, 120)</li>
+                <li>(1300, 200)</li>
+                <li>(100000,10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>45</commonality>
+                <options>
+                    <UFR_Rough_Infantry_Ranged>15</UFR_Rough_Infantry_Ranged>
+                    <UFR_Rough_Infantry_Melee>6</UFR_Rough_Infantry_Melee>
+                    <UFR_Rough_Veteran_Ranged>8</UFR_Rough_Veteran_Ranged>
+                    <UFR_Rough_Veteran_Melee>5</UFR_Rough_Veteran_Melee>
+                    <UFR_Rough_Marksman>7</UFR_Rough_Marksman>
+                    <UFR_Rough_Shocktrooper>2</UFR_Rough_Shocktrooper>
+                    <UFR_Rough_Medic>3</UFR_Rough_Medic>
+                    <UFR_Rough_Engineer>3</UFR_Rough_Engineer>
+                    <UFR_Rough_Commander>1</UFR_Rough_Commander>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>35</commonality>
+                <options>
+                    <UFR_Rough_Infantry_Ranged>20</UFR_Rough_Infantry_Ranged>
+                    <UFR_Rough_Infantry_Melee>10</UFR_Rough_Infantry_Melee>
+                    <UFR_Rough_Marksman>4</UFR_Rough_Marksman>
+                    <UFR_Rough_Medic>8</UFR_Rough_Medic>
+                    <UFR_Rough_Engineer>8</UFR_Rough_Engineer>
+                    <UFR_Rough_Commander>1</UFR_Rough_Commander>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <commonality>20</commonality>
+                <options>
+                    <UFR_Rough_Settler>12</UFR_Rough_Settler>
+                    <UFR_Rough_Laborer>8</UFR_Rough_Laborer>
+                    <UFR_Rough_Trader>8</UFR_Rough_Trader>
+                    <UFR_Rough_Representative>2</UFR_Rough_Representative>
+                    <UFR_Rough_Marksman>4</UFR_Rough_Marksman>
+                    <UFR_Rough_Infantry_Ranged>4</UFR_Rough_Infantry_Ranged>
+                    <UFR_Rough_Infantry_Melee>2</UFR_Rough_Infantry_Melee>
+                    <UFR_Rough_Medic>2</UFR_Rough_Medic>
+                    <UFR_Rough_Engineer>2</UFR_Rough_Engineer>
+                    <UFR_Rough_Commander>1</UFR_Rough_Commander>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <UFR_Rough_Trader>1</UFR_Rough_Trader>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <UFR_Rough_Infantry_Ranged>10</UFR_Rough_Infantry_Ranged>
+                    <UFR_Rough_Infantry_Melee>4</UFR_Rough_Infantry_Melee>
+                    <UFR_Rough_Marksman>4</UFR_Rough_Marksman>
+                    <UFR_Rough_Commander>1</UFR_Rough_Commander>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <UFR_Rough_Settler>20</UFR_Rough_Settler>
+                    <UFR_Rough_Laborer>12</UFR_Rough_Laborer>
+                    <UFR_Rough_Engineer>4</UFR_Rough_Engineer>
+                    <UFR_Rough_Medic>4</UFR_Rough_Medic>
+                    <UFR_Rough_Infantry_Ranged>6</UFR_Rough_Infantry_Ranged>
+                    <UFR_Rough_Infantry_Melee>2</UFR_Rough_Infantry_Melee>
+                    <UFR_Rough_Marksman>6</UFR_Rough_Marksman>
+                    <UFR_Rough_Veteran_Ranged>3</UFR_Rough_Veteran_Ranged>
+                    <UFR_Rough_Representative>1</UFR_Rough_Representative>
+                    <UFR_Rough_Commander>3</UFR_Rough_Commander>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Miners</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Miner>1</Miner>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Hunters</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Hunter>1</Hunter>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Loggers</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Logger>1</Logger>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Farmers</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Farmer>1</Farmer>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>25</configurationListOrderPriority>
+    </FactionDef>
+    
+</Defs>

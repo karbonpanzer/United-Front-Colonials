@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="DrugBase">
+    <defName>UFR_Promachus</defName>
+    <label>promachus</label>
+    <description>A manufactured cocktail of alcohol, painkillers, and radioactive materials for usage by assault troops. It possesses a chemically sweet flavor, though it should not be drunk recreationally. Excessive consumption can lead to alcohol blackouts, seizures, psychosis, addiction, and even death.</description>
+    <descriptionHyperlinks>
+      <HediffDef>AlcoholHigh</HediffDef>
+      <HediffDef>AlcoholTolerance</HediffDef>
+      <HediffDef>Hangover</HediffDef>
+      <HediffDef>AlcoholAddiction</HediffDef>
+      <HediffDef>Cirrhosis</HediffDef>
+      <HediffDef>ChemicalDamageModerate</HediffDef>
+      <HediffDef>UFR_PromachusRush</HediffDef>
+      <HediffDef>ToxicBuildup</HediffDef>
+      <HediffDef>DrugOverdose</HediffDef>
+    </descriptionHyperlinks>
+    <possessionCount>6</possessionCount>
+    <graphicData>
+      <texPath>UFR/Things/Item/Drug/GreenWhiskey</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <MarketValue>12</MarketValue>
+      <Mass>0.3</Mass>
+      <Flammability>0.5</Flammability>
+      <Nutrition>0.08</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed, Liquor</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Hard</drugCategory>
+      <ingestSound>Ingest_Beer</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <tableDesired>false</tableDesired>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholHigh</hediffDef>
+          <severity>0.25</severity>
+          <toleranceChemical>Alcohol</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlcoholTolerance</hediffDef>
+          <toleranceChemical>Alcohol</toleranceChemical>
+          <severity>0.016</severity>
+          <divideByBodySize>true</divideByBodySize>
+          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>UFR_PromachusRush</hediffDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ToxicBuildup</hediffDef>
+          <severity>0.03</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <techLevel>Spacer</techLevel>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Alcohol</chemical>
+        <addictiveness>0.010</addictiveness>
+        <minToleranceToAddict>0.25</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <overdoseSeverityOffset>0.05~0.10</overdoseSeverityOffset>
+        <largeOverdoseChance>0.03</largeOverdoseChance>
+        <listOrder>10</listOrder>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>UFR_Drugs</li>
+    </tradeTags>
+    <allowedArchonexusCount>20</allowedArchonexusCount>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>UFR_PromachusRush</defName>
+    <label>promachus rush</label>
+    <description>A chemical combat high. Pain is dulled and reflexes are sharpened for assault.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.4, 0.9, 0.4)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-4.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painFactor>0.35</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.10</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.10</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

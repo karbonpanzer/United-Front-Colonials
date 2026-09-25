@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>UFR_Bullet_PulseRifleClassic</defName>
+    <label>pulse rifle round</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationBase>0.30</armorPenetrationBase>
+      <speed>85</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>UFR_Grenade_PulseRifleClassic</defName>
+    <label>pulse rifle grenade</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>true</flyOverhead>
+      <speed>20</speed>
+      <damageDef>Bomb</damageDef>
+      <explosionRadius>2.1</explosionRadius>
+      <arcHeightFactor>0.5</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+  </ThingDef>
+
+  <AbilityDef>
+    <defName>UFR_UnderbarrelPulseRifleGL</defName>
+    <label>launch grenade</label>
+    <description>Use the underbarrel launcher to fire a grenade.</description>
+    <iconPath>UFR/UI/Abilities/underbarrelgl_frag</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsIncendiary>false</ai_IsIncendiary>
+    <showOnCharacterCard>false</showOnCharacterCard>
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <statBases>
+      <Ability_EffectRadius>2.1</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <label>fire grenade</label>
+      <verbClass>Verb_CastAbility</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <onlyManualCast>True</onlyManualCast>
+      <range>21</range>
+      <warmupTime>1.8</warmupTime>
+      <noiseRadius>6</noiseRadius>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      <soundCastTail>GunTail_Medium</soundCastTail>
+      <muzzleFlashScale>14</muzzleFlashScale>
+      <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>UFR_Grenade_PulseRifleClassic</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>UFR_PulseRifleClassic</defName>
+    <label>Pulse Rifle</label>
+    <description>A pulse action rifle fitted with an underbarrel grenade launcher. A versatile combat rifle favored by imperial and colonial marine groups. Decent power and range though slower than other weapons.</description>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/m41apulserifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.15</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>38000</WorkToMake>
+      <Mass>4.5</Mass>
+      <AccuracyTouch>0.62</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.64</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
+      <MarketValue>2400</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>UFR_Bullet_PulseRifleClassic</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>32</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>UFR_UnderbarrelPulseRifleGL</abilityDef>
+        <maxCharges>4</maxCharges>
+        <ammoDef>Steel</ammoDef>
+        <ammoCountPerCharge>10</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>grenade</chargeNoun>
+      </li>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities><li>Blunt</li></capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities><li>Poke</li></capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>stock</label>
+        <capacities><li>Blunt</li></capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite>UFR_PulseActionFirearms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

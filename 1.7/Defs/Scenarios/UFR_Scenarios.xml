@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ScenarioDef ParentName="ScenarioBase">
+        <defName>UFR_Colonization</defName>
+        <label>Colonization Efforts</label>
+        <description>Looking for opportunity away from home, you three have chosen to embark on a colonization effort. With the government subsidizing your efforts you arrive with decent stores of resources but will be expected to make a life here. You don't care about this though, because this spot is yours.</description>
+        <scenario>
+            <summary>Three colonists try and make it work - a twist on the classic Rimworld experience.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>UFR_Colonists</factionDef>
+            </playerFaction>
+            <parts>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>Looking for opportunity away from home, you three have chosen to embark on a colonization effort.\n\nWith the government subsidizing your efforts you arrive with decent stores of resources but will be expected to make a life here.\n\nYou don't care about this though, because this spot is yours.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>3</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                    <visible>false</visible>
+                </li>
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <visible>false</visible>
+                    <context>PlayerStarter</context>
+                    <chance>0.5</chance>
+                    <hediff>CryptosleepSickness</hediff>
+                    <hideOffMap>true</hideOffMap>
+                    <severityRange>1~1</severityRange>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_HeavyShotgun</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_ServicePistol</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_Vibroblade</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceArmor</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceHelmet</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceGloves</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceBoots</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>                                
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>400</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>150</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>40</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>60</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>Steel</thingDef>
+                    <count>450</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>ShipChunk</thingDef>
+                    <allowRoofed>false</allowRoofed>
+                    <count>3</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>Steel</thingDef>
+                    <count>720</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>7</count>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+    <ScenarioDef ParentName="ScenarioBase">
+        <defName>UFR_Occupation</defName>
+        <label>Occupation Force</label>
+        <description>Under the orders of your government in their efforts to expand. The five of you were sent to scout this world for the eventual coming of the fleet. Equipped with the best that the army could afford your goal is to establish a foothold for those who will come later.\n\nSince you start with five armored and armed people, this is an easy start.</description>
+        <scenario>
+            <summary>Five soldiers attempt to occupy the world. Very Easy</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>UFR_Occupiers</factionDef>
+            </playerFaction>
+            <parts>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>Under the orders of your government in their efforts to expand.\n\nThe five of you were sent to scout this world for the eventual coming of the fleet. Equipped with the best that the army could afford your goal is to establish a foothold for those who will come later.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>5</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                    <visible>false</visible>
+                </li>
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <visible>false</visible>
+                    <context>PlayerStarter</context>
+                    <chance>0.5</chance>
+                    <hediff>CryptosleepSickness</hediff>
+                    <hideOffMap>true</hideOffMap>
+                    <severityRange>1~1</severityRange>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_HeavyShotgun</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_AssaultPistol</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_Vibrosword</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_PulseRifle</thingDef>
+                    <count>2</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceArmor</thingDef>
+                    <count>3</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceHelmet</thingDef>
+                    <count>3</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceGloves</thingDef>
+                    <count>5</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CarapaceBoots</thingDef>
+                    <count>5</count>
+                    <quality>Normal</quality>
+                </li>                  
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_MedicCarapaceArmor</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_MedicCarapaceHelmet</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>  
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_EngineerCarapaceArmor</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_EngineerCarapaceHelmet</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>                               
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>400</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>150</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>40</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>60</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>Steel</thingDef>
+                    <count>450</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>ShipChunk</thingDef>
+                    <allowRoofed>false</allowRoofed>
+                    <count>3</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>Steel</thingDef>
+                    <count>720</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>7</count>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>

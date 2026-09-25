@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>UFR_ColonialFabricationMethods</defName>
+        <label>Colonial Fabrication Methods</label>
+        <description>Discover methods of fabrication of colonial technology.</description>
+        <baseCost>1000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>Fabrication</li>
+        </prerequisites>
+        <researchViewX>0</researchViewX>
+        <researchViewY>2.8</researchViewY>
+    </ResearchProjectDef>
+
+    <!-- Apparel -->
+    <ResearchProjectDef>
+        <defName>UFR_CarapaceArmor</defName>
+        <label>Carapace Armor</label>
+        <description>Craft carapace armor, a light suit of armor used by most armies. Note that these also require advanced components.</description>
+        <baseCost>1600</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_ColonialFabricationMethods</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>1.4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_MedicCarapaceArmor</defName>
+        <label>Medic Carapace Armor</label>
+        <description>Craft a medic variant of carapace armor with medical supplies. Note that these also require advanced components.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_CarapaceArmor</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_EngineerCarapaceArmor</defName>
+        <label>Engineer Carapace Armor</label>
+        <description>Craft a engineer variant of carapace armor with tool kits. Note that these also require advanced components.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_CarapaceArmor</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>0.7</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_PoliceCarapaceArmor</defName>
+        <label>Police Carapace Armor</label>
+        <description>Craft a police variant of carapace armor with handcuffs and pouches. Note that these also require advanced components.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_CarapaceArmor</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>1.4</researchViewY>
+    </ResearchProjectDef> 
+    
+    <ResearchProjectDef>
+        <defName>UFR_ScoutCarapaceArmor</defName>
+        <label>Scout Carapace Armor</label>
+        <description>Craft a marksmen variant of carapace armor with a thermal cloak. Note that these also require advanced components.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_CarapaceArmor</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2.1</researchViewY>
+    </ResearchProjectDef>   
+   
+    <ResearchProjectDef>
+        <defName>UFR_AssaultCarapaceArmor</defName>
+        <label>Assault Carapace Armor</label>
+        <description>Craft a assault variant of carapace armor with additional armor. Note that these also require advanced components.</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_CarapaceArmor</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2.8</researchViewY>
+    </ResearchProjectDef> 
+    
+    <ResearchProjectDef>
+        <defName>UFR_VeteranCarapaceArmor</defName>
+        <label>Veteran Carapace Armor</label>
+        <description>Craft a veteran variant of carapace armor with additional armor. Note that these also require advanced components.</description>
+        <baseCost>3200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_CarapaceArmor</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2.8</researchViewY>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef>
+        <defName>UFR_CommanderCarapaceArmor</defName>
+        <label>Commander Carapace Armor</label>
+        <description>Craft a commander variant of carapace armor with gold trim. Note that these also require advanced components.</description>
+        <baseCost>3200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_CarapaceArmor</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>1.4</researchViewY>
+    </ResearchProjectDef>    
+
+    <ResearchProjectDef>
+        <defName>UFR_ColonialUniforms</defName>
+        <label>Colonial Uniforms</label>
+        <description>Tailor garments often worn by colonial groups. Providing a variety of versatile apparel.</description>
+        <baseCost>1200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>ComplexClothing</li>
+        </prerequisites>
+        <researchViewX>0</researchViewX>
+        <researchViewY>1.4</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_ModifiedShields</defName>
+        <label>Modified Shields</label>
+        <description>Build modified shield gear. This shield modifies the momentum-repulsion technology to also prevent heat based projectiles and allowing the wearer to shoot out. At a cost however.</description>
+        <baseCost>1000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>ShieldBelt</li>
+        </prerequisites>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0</researchViewY>
+    </ResearchProjectDef>
+
+    <!-- Weapons -->
+    <ResearchProjectDef>
+        <defName>UFR_PulseActionFirearms</defName>
+        <label>Pulse Action</label>
+        <description>Craft pulse-action firearms which have increased power but come at increased cost.</description>
+        <baseCost>1600</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>PrecisionRifling</li>
+            <li>GasOperation</li>
+        </prerequisites>
+        <researchViewX>0</researchViewX>
+        <researchViewY>0.7</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_HighFrequencyResonators</defName>
+        <label>High-Frequency Resonators</label>
+        <description>Build weapons which use high frequency resonators to create devastating melee damage. Note these also require advanced components.</description>
+        <baseCost>2800</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_ColonialFabricationMethods</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>4.2</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_OverclockedResonators</defName>
+        <label>Overclocked Resonators</label>
+        <description>Craft weapons with reinforced structures to handle more powerful resonators, creating larger and more powerful weapons. Note these also require advanced components.</description>
+        <baseCost>2000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_HighFrequencyResonators</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>4.2</researchViewY>
+    </ResearchProjectDef>   
+
+    <ResearchProjectDef>
+        <defName>UFR_ETCMunitions</defName>
+        <label>Electrothermal-Chemical Munitions</label>
+        <description>Build weapons which use electrothermal-chemical plasma charges to fire depleted uranium sabots. Note these also require advanced components</description>
+        <baseCost>2400</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_ColonialFabricationMethods</li>
+        </prerequisites>
+        <researchViewX>1</researchViewX>
+        <researchViewY>5.6</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_SpecializedPlasmaCharges</defName>
+        <label>Specialized Plasma Charges</label>
+        <description>Refine the electrothermo-chemical plasma charges to be able to fire larger depleted uranium sabots. Note these also require advanced components</description>
+        <baseCost>4000</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_ETCMunitions</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>5.6</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

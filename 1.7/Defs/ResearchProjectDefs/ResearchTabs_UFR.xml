@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+	<ResearchTabDef>
+		<defName>UFR_ResearchTab</defName>
+		<generalTitle>United Front research projects</generalTitle>
+		<generalDescription>Unlock United Front technologies by researching at a research bench. Only one project at a time.\n\nTurns out you can put these in a research tab.</generalDescription>
+		<label>The United Front</label>
+	</ResearchTabDef>
+</Defs>

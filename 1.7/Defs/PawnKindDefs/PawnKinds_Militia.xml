@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Civilian -->
+    <PawnKindDef ParentName="UFR_CivilianBase">
+        <defName>UFR_Rough_Settler</defName>
+        <label>drifter</label>
+        <labelPlural>drifters</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>35</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.2~2.0</gearHealthRange>
+        <maxGenerationAge>65</maxGenerationAge>
+        <apparelMoney>200~350</apparelMoney>
+        <weaponMoney>900~1500</weaponMoney>
+        <techHediffsChance>0.02</techHediffsChance>
+        <techHediffsMoney>300~600</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>20~30</initialResistanceRange>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_CivilianBase">
+        <defName>UFR_Rough_Trader</defName>
+        <label>merchant</label>
+        <labelPlural>merchants</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>50</combatPower>
+        <trader>true</trader>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>1.0~1.0</gearHealthRange>
+        <minGenerationAge>25</minGenerationAge>
+        <maxGenerationAge>55</maxGenerationAge>
+        <apparelMoney>300~600</apparelMoney>
+        <weaponMoney>1350~1950</weaponMoney>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>500~900</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>15~25</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Social</skill>
+                <range>4~10</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>2~8</range>
+            </li>
+        </skills>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LaborerBase">
+        <defName>UFR_Rough_Laborer</defName>
+        <label>hand</label>
+        <labelPlural>hands</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>25</combatPower>
+        <skills>
+            <li>
+                <skill>Construction</skill>
+                <range>2~8</range>
+            </li>
+            <li>
+                <skill>Mining</skill>
+                <range>2~8</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>1~5</range>
+            </li>
+        </skills>
+        <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <!-- Leader -->
+    <PawnKindDef ParentName="UFR_LeadershipBase">
+        <defName>UFR_Rough_Representative</defName>
+        <label>negotiator</label>
+        <labelPlural>negotiators</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>80</combatPower>
+        <factionLeader>true</factionLeader>
+        <trader>true</trader>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>1.0~1.0</gearHealthRange>
+        <minGenerationAge>35</minGenerationAge>
+        <maxGenerationAge>65</maxGenerationAge>
+        <apparelMoney>1000~1500</apparelMoney>
+        <weaponMoney>3600~4500</weaponMoney>
+        <techHediffsChance>0.2</techHediffsChance>
+        <techHediffsMoney>1600~2400</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>30~40</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Social</skill>
+                <range>8~15</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>6~12</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~10</range>
+            </li>
+        </skills>
+        <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <!-- Fighter -->
+    <PawnKindDef ParentName="UFR_LineInfantryRanged">
+        <defName>UFR_Rough_Infantry_Ranged</defName>
+        <label>mercenary</label>
+        <labelPlural>mercenaries</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>105</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LineInfantryMelee">
+        <defName>UFR_Rough_Infantry_Melee</defName>
+        <label>mercenary</label>
+        <labelPlural>mercenaries</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>105</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LineVeteranRanged">
+        <defName>UFR_Rough_Veteran_Ranged</defName>
+        <label>legionaire</label>
+        <labelPlural>legionaires</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>130</combatPower>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LineVeteranMelee">
+        <defName>UFR_Rough_Veteran_Melee</defName>
+        <label>legionaire</label>
+        <labelPlural>legionaires</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>130</combatPower>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+        <weaponMoney>3700~5000</weaponMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LeaderBase">
+        <defName>UFR_Rough_Commander</defName>
+        <label>captain</label>
+        <labelPlural>captains</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>105</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_MedicBase">
+        <defName>UFR_Rough_Medic</defName>
+        <label>surgeon</label>
+        <labelPlural>surgeons</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>80</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_EngineerBase">
+        <defName>UFR_Rough_Engineer</defName>
+        <label>sapper</label>
+        <labelPlural>sappers</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>80</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_ScoutBase">
+        <defName>UFR_Rough_Marksman</defName>
+        <label>assassin</label>
+        <labelPlural>assassins</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>110</combatPower>
+        <weaponMoney>1950~2550</weaponMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_ShocktrooperBase">
+        <defName>UFR_Rough_Shocktrooper</defName>
+        <label>berserker</label>
+        <labelPlural>berserkers</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>140</combatPower>
+        <minGenerationAge>25</minGenerationAge>
+        <maxGenerationAge>40</maxGenerationAge>
+    </PawnKindDef>
+
+</Defs>

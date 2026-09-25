@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="UFR_AssaultPistol">
+    <defName>UFR_AssaultPistol_Unique</defName>
+    <label>unique assault pistol</label>
+    <description>An assault pistol with customized parts.</description>
+    <recipeMaker IsNull="True" />
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/AssaultPistol</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <comps Inherit="False">
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Pistol</li>
+          <li>Sighted</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>assault pistol</li>
+          <li>pistol</li>
+          <li>sidearm</li>
+          <li>hand-cannon</li>
+          <li>thumper</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_AssaultPistol</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <ThingDef ParentName="UFR_HeavyShotgun">
+    <defName>UFR_HeavyShotgun_Unique</defName>
+    <label>unique Heavy shotgun</label>
+    <description>A Heavy shotgun with customized parts.</description>
+    <recipeMaker IsNull="True" />
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/HeavyShotgun</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+          <li>Gun</li>
+          <li>Shotgun</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>Heavy shotgun</li>
+          <li>shotgun</li>
+          <li>scattergun</li>
+          <li>boomstick</li>
+          <li>sweeper</li>
+          <li>gutspewer</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_HeavyShotgun</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <ThingDef ParentName="UFR_PulseRifle">
+    <defName>UFR_PulseRifle_Unique</defName>
+    <label>unique pulse rifle</label>
+    <description>A pulse rifle with customized parts.</description>
+    <recipeMaker IsNull="True" />
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/PulseRifle</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.1</drawSize>
+    </graphicData>
+    <comps Inherit="False">
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>      
+      <li Class="CompProperties_EquippableAbilityReloadable"/>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Sighted</li>
+          <li>Rifle</li>
+          <li>BurstFire</li>
+          <li>LowStoppingPower</li>
+          <li>Attachable</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>pulse rifle</li>
+          <li>rifle</li>
+          <li>carbine</li>
+          <li>battle rifle</li>
+          <li>service rifle</li>
+          <li>wargun</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_PulseRifle</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <ThingDef ParentName="UFR_HeavyPulseRifle">
+    <defName>UFR_HeavyPulseRifle_Unique</defName>
+    <label>unique heavy pulse rifle</label>
+    <description>A heavy pulse rifle with customized parts.</description>
+    <recipeMaker IsNull="True" />
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/HeavyPulseRifle</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.15</drawSize>
+    </graphicData>
+    <comps Inherit="False">
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Sighted</li>
+          <li>Rifle</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>heavy pulse rifle</li>
+          <li>marksman rifle</li>
+          <li>DMR</li>
+          <li>longarm</li>
+          <li>reach</li>
+          <li>sharpshooter</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_HeavyPulseRifle</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+</Defs>

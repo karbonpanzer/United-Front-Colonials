@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RulePackDef>
+		<defName>Namer_UFRFactionColonial</defName>
+		<include>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=6)->[nearnameinitial] [governance] [colonial_body]</li>
+				<li>r_name(p=4)->[nearnameinitial] [colonial_body]</li>
+				<li>r_name(p=4)->[founder] [colonial_body]</li>
+				<li>r_name(p=3)->[founder] [governance] [colonial_body]</li>
+				<li>r_name(p=5)->[governance] [governing_body] of [nearnameinitial]</li>
+				<!--li>r_name(p=1)->[nearnameinitial] Expeditionary Command</li>
+				<li>r_name(p=1)->Occupation Authority of [nearnameinitial]</li-->
+				<li>r_name(p=1)->[nearnameinitial]</li>
+
+				<li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+				<li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+
+				<li>governing_body->Authority</li>
+				<li>governing_body->Administration</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>colonial_body->UFR/ColonialBodies</li>
+				<li>governance->UFR/Governance</li>
+				<li>founder->UFR/FounderNames</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+
+	<RulePackDef>
+		<defName>Namer_UFRFactionMilitia</defName>
+		<include>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=4)->[ordinal] Colonial [unit]</li>
+				<li>r_name(p=3)->[ordinal] [unit]</li>
+				<li>r_name(p=3)->Colonial [unit]</li>
+				<li>r_name(p=3)->[defense_adjective] [unit]</li>
+				<li>r_name(p=2)->[ordinal] [defense_adjective] [unit]</li>
+				<li>r_name(p=3)->[boss]'s [unit]</li>
+				<li>r_name(p=1)->[boss]'s Colonial [unit]</li>
+				<li>r_name(p=3)->The [epithet] [unit]</li>
+				<li>r_name(p=1)->The [epithet] [ordinal]</li>
+
+				<li>r_name(p=2)->[ordinal] [nearnameinitial] [unit]</li>
+				<li>r_name(p=2)->[nearnameinitial] [unit]</li>
+				<li>r_name(p=1)->[nearnameinitial] Colonial [unit]</li>
+				<li>r_name(p=1)->The [nearnameinitial] [unit]</li>
+
+				<li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+				<li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>unit->UFR/MilitiaUnits</li>
+				<li>defense_adjective->UFR/DefenseAdjectives</li>
+				<li>ordinal->UFR/Ordinals</li>
+				<li>boss->UFR/BossNames</li>
+				<li>epithet->UFR/UnitEpithets</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+
+</Defs>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>UFR_AssaultShieldBelt</defName>
+    <label>assault shield belt</label>
+    <description>A modified projectile-repulsion device. It will still attempt to stop incoming projectiles and shrapnel but has been enhanced to provide stranger protection against heat and to allow the wearer to fire while the shield is active.\n\nThe cost though is that it takes longer to recharge, the shield is weaker, and shuts down instantly if hit by EMP.</description>
+    <thingClass>Apparel</thingClass>
+    <techLevel>Spacer</techLevel>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>UFR/Things/Pawn/Humanlike/Armor/AssaultShieldBelt/AssaultShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>3</Mass>
+      <WorkToMake>16000</WorkToMake>
+      <Flammability>0.4</Flammability>
+      <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Steel>50</Steel>
+      <Plasteel>25</Plasteel>
+    </costList>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+      <researchPrerequisite>UFR_ModifiedShields</researchPrerequisite>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>301</displayPriority>
+    </recipeMaker>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+        <li>UFR_CommanderAccessories</li>
+      </tags>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+    <comps>
+      <li Class="UnitedFront.Comps.CompProperties_ShieldUFR">
+        <bubbleTexPath>UFR/Things/Other/UFRShield</bubbleTexPath>
+        <randomizeRotation>true</randomizeRotation>
+        <lowEnergyPulseThreshold>0.25</lowEnergyPulseThreshold>
+        <blocksRangedWeapons>false</blocksRangedWeapons>
+        <blocksExplosiveDamage>true</blocksExplosiveDamage>
+        <energyLossPerDamage>0.01</energyLossPerDamage>
+        <startingTicksToReset>4800</startingTicksToReset>
+        <energyOnReset>2.0</energyOnReset>
+        <minDrawSize>2.00</minDrawSize>
+        <maxDrawSize>2.90</maxDrawSize>
+        <breakFlashScale>2.0</breakFlashScale>
+        <breakDustPuffs>0</breakDustPuffs>
+        <breakEffecterScale>1.0</breakEffecterScale>
+        <sharpEnergyLossMultiplier>1.0</sharpEnergyLossMultiplier>
+        <bluntEnergyLossMultiplier>1.0</bluntEnergyLossMultiplier>
+        <heatEnergyLossMultiplier>0.85</heatEnergyLossMultiplier>
+      </li>
+    </comps>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>Armor</li>
+      <li>UFR_Utility</li>
+    </tradeTags>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+  </ThingDef>
+
+</Defs>

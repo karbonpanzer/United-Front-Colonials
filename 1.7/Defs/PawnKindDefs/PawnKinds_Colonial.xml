@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Civilian -->
+    <PawnKindDef ParentName="UFR_CivilianBase">
+        <defName>UFR_Civil_Settler</defName>
+        <label>settler</label>
+        <labelPlural>settlers</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>35</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.2~2.0</gearHealthRange>
+        <maxGenerationAge>65</maxGenerationAge>
+        <apparelMoney>200~350</apparelMoney>
+        <weaponMoney>900~1500</weaponMoney>
+        <techHediffsChance>0.02</techHediffsChance>
+        <techHediffsMoney>300~600</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>20~30</initialResistanceRange>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_CivilianBase">
+        <defName>UFR_Civil_Trader</defName>
+        <label>trader</label>
+        <labelPlural>traders</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>50</combatPower>
+        <trader>true</trader>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>1.0~1.0</gearHealthRange>
+        <minGenerationAge>25</minGenerationAge>
+        <maxGenerationAge>55</maxGenerationAge>
+        <apparelMoney>300~600</apparelMoney>
+        <weaponMoney>1350~1950</weaponMoney>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>500~900</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>15~25</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Social</skill>
+                <range>4~10</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>2~8</range>
+            </li>
+        </skills>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LaborerBase">
+        <defName>UFR_Civil_Laborer</defName>
+        <label>laborer</label>
+        <labelPlural>laborers</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>25</combatPower>
+        <skills>
+            <li>
+                <skill>Construction</skill>
+                <range>2~8</range>
+            </li>
+            <li>
+                <skill>Mining</skill>
+                <range>2~8</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>1~5</range>
+            </li>
+        </skills>
+        <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+    </PawnKindDef>
+
+    <!-- Leader -->
+    <PawnKindDef ParentName="UFR_LeadershipBase">
+        <defName>UFR_Civil_Representative</defName>
+        <label>representative</label>
+        <labelPlural>representatives</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>80</combatPower>
+        <factionLeader>true</factionLeader>
+        <trader>true</trader>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>1.0~1.0</gearHealthRange>
+        <minGenerationAge>35</minGenerationAge>
+        <maxGenerationAge>65</maxGenerationAge>
+        <apparelMoney>1000~1500</apparelMoney>
+        <weaponMoney>3600~4500</weaponMoney>
+        <techHediffsChance>0.2</techHediffsChance>
+        <techHediffsMoney>1600~2400</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>30~40</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Social</skill>
+                <range>8~15</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>6~12</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~10</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <!-- Fighter -->
+    <PawnKindDef ParentName="UFR_LineInfantryRanged">
+        <defName>UFR_Civil_Infantry_Ranged</defName>
+        <label>infantry</label>
+        <labelPlural>infantry</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>105</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LineInfantryMelee">
+        <defName>UFR_Civil_Infantry_Melee</defName>
+        <label>infantry</label>
+        <labelPlural>infantry</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>105</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LineVeteranRanged">
+        <defName>UFR_Civil_Veteran_Ranged</defName>
+        <label>veteran</label>
+        <labelPlural>veterans</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>130</combatPower>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LineVeteranMelee">
+        <defName>UFR_Civil_Veteran_Melee</defName>
+        <label>veteran</label>
+        <labelPlural>veterans</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>130</combatPower>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_LeaderBase">
+        <defName>UFR_Civil_Commander</defName>
+        <label>commander</label>
+        <labelPlural>commanders</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>105</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_MedicBase">
+        <defName>UFR_Civil_Medic</defName>
+        <label>medic</label>
+        <labelPlural>medics</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>80</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_EngineerBase">
+        <defName>UFR_Civil_Engineer</defName>
+        <label>engineer</label>
+        <labelPlural>engineers</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>80</combatPower>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_ScoutBase">
+        <defName>UFR_Civil_Marksman</defName>
+        <label>marksman</label>
+        <labelPlural>marksmen</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>110</combatPower>
+        <weaponMoney>1950~2550</weaponMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="UFR_ShocktrooperBase">
+        <defName>UFR_Civil_Shocktrooper</defName>
+        <label>shocktrooper</label>
+        <labelPlural>shocktroopers</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>140</combatPower>
+        <minGenerationAge>25</minGenerationAge>
+        <maxGenerationAge>40</maxGenerationAge>
+    </PawnKindDef>
+
+</Defs>

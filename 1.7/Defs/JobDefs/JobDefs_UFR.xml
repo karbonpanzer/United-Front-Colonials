@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>UFR_EditColorsAtStation</defName>
+    <driverClass>UnitedFront.Jobs.JobDriver_EditColorsAtStation</driverClass>
+    <reportString>painting armor.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+</Defs>

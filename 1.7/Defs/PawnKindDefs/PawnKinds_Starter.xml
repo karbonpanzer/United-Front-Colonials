@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>UFR_Colonists</defName>
+		<label>opportunistic colonists</label>
+		<race>Human</race>
+		<defaultFactionType>UFR_Colonists</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>UFR_Uniform</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>0.6</max>
+		</gearHealthRange>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>
+			<min>1500</min>
+			<max>3000</max>
+		</apparelMoney>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+		<techHediffsMoney>
+			<min>0</min>
+			<max>300</max>
+		</techHediffsMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>UFR_Occupiers</defName>
+		<label>occupation force</label>
+		<race>Human</race>
+		<defaultFactionType>UFR_Occupiers</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags>
+			<li>UFR_Uniform</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<gearHealthRange>
+			<min>0.2</min>
+			<max>0.6</max>
+		</gearHealthRange>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>
+			<min>1500</min>
+			<max>3000</max>
+		</apparelMoney>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<backstoryCryptosleepCommonality>0.5</backstoryCryptosleepCommonality>
+		<techHediffsMoney>
+			<min>0</min>
+			<max>300</max>
+		</techHediffsMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>	
+</Defs>
