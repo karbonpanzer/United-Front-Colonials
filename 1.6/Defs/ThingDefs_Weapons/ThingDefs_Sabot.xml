@@ -95,6 +95,99 @@
   </ThingDef>
   
   <!-- Sabot SMG -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>UFR_Bolt_SabotSMG</defName>
+    <label>uranium slug</label>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>UFR/Things/Projectile/sabotprojectile</texPath>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationBase>0.38</armorPenetrationBase>
+      <stoppingPower>0.5</stoppingPower>
+      <speed>95</speed>
+    </projectile>
+  </ThingDef>
+ 
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotSMG">
+    <defName>UFR_SabotSMG</defName>
+    <label>sabot smg</label>
+    <description>An electrothermal-chemical submachine gun. Using a plasma cartridge, it fires rapid bursts of small uranium sabots, trading range and penetration for close-quarters volume.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>UFR/Things/Item/Equipment/sabotsmg</texPath>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>45</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Uranium>12</Uranium>
+    </costList>
+    <statBases>
+      <WorkToMake>48000</WorkToMake>
+      <Mass>3.0</Mass>
+      <MarketValue>2000</MarketValue>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>UFR_Bolt_SabotSMG</defaultProjectile>
+        <warmupTime>0.7</warmupTime>
+        <range>20.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <soundCast>UFR_Shot_ETCSmall</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>UFR_SpacerGun</li>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <tradeTags>
+      <li>UFR_WeaponSpacer</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 
   <!-- Sabot Rifle -->
   <ThingDef ParentName="BaseBullet">
@@ -253,7 +346,7 @@
         <warmupTime>1.6</warmupTime>
         <range>28.9</range>
         <soundCast>UFR_Shot_ETCMedium</soundCast>
-        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
@@ -285,6 +378,94 @@
   </ThingDef>
 
   <!-- Sabot Repeater/LMG -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>UFR_Bolt_SabotLMG</defName>
+    <label>uranium rod</label>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>UFR/Things/Projectile/sabotprojectile</texPath>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <stoppingPower>1.0</stoppingPower>
+      <speed>105</speed>
+    </projectile>
+  </ThingDef>
+ 
+  <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotLMG">
+    <defName>UFR_SabotLMG</defName>
+    <label>sabot LMG</label>
+    <description>An electrothermal-chemical light machine gun. Belt-fed and plasma-driven, it lays down sustained suppressive fire, but is heavy and slow to bring to bear.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>UFR/Things/Item/Equipment/sabotlmg</texPath>
+      <drawSize>1.15</drawSize>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>UFR_SpecializedPlasmaCharges</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Steel>100</Steel>
+      <Plasteel>70</Plasteel>
+      <ComponentSpacer>14</ComponentSpacer>
+      <Uranium>40</Uranium>
+    </costList>
+    <statBases>
+      <WorkToMake>90000</WorkToMake>
+      <Mass>12.0</Mass>
+      <MarketValue>4000</MarketValue>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.4</MoveSpeed>
+    </equippedStatOffsets>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>UFR_Bolt_SabotLMG</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>8</burstShotCount>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <soundCast>UFR_Shot_ETCMedium</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>UFR_SpacerGunHeavy</li>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <tradeTags>
+      <li>UFR_WeaponSpacer</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 
   <!-- Sabot Sniper Rifle -->
   <ThingDef ParentName="BaseBullet">

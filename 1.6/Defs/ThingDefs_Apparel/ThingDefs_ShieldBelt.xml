@@ -9,7 +9,7 @@
     <techLevel>Spacer</techLevel>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Armor/AssaultShieldBelt/AssaultShieldBelt</texPath>
+      <texPath>UFR/Things/Pawn/Humanlike/Armor/AssaultShieldBelt/AssaultShieldBelt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>

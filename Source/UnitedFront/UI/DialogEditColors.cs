@@ -21,7 +21,11 @@ namespace UnitedFront.UI
 
         private readonly Pawn _pawn;
         private readonly List<Piece> _pieces = new List<Piece>();
-        private readonly int _firstZone = ModsConfig.IdeologyActive ? 1 : 0;
+        private static readonly Color LockedTint = new Color(1f, 1f, 1f, 0.35f);
+        private static readonly Color LockedVeil = new Color(0f, 0f, 0f, 0.45f);
+        private static readonly Color LockedBoxFill = new Color(0.08f, 0.08f, 0.08f, 0.92f);
+        private static readonly Color LockedBoxBorder = new Color(1f, 1f, 1f, 0.45f);
+        private const float LockedBoxPad = 12f;
         private int _sel;
         private bool _committed;
         private List<Color> _allColors;
@@ -143,20 +147,27 @@ namespace UnitedFront.UI
             if (_sel < 0 || _sel >= _pieces.Count) _sel = 0;
             Piece p = _pieces[_sel];
 
-            int visible = ColorCount - _firstZone;
-            if (visible < 1) return;
-
             float rowGap = 14f;
-            float rowH = (rect.height - rowGap * (visible - 1)) / visible;
-            for (int c = _firstZone; c < ColorCount; c++)
+            float rowH = (rect.height - rowGap * (ColorCount - 1)) / ColorCount;
+            for (int c = 0; c < ColorCount; c++)
             {
-                Rect row = new Rect(rect.x, rect.y + (c - _firstZone) * (rowH + rowGap), rect.width, rowH);
+                Rect row = new Rect(rect.x, rect.y + c * (rowH + rowGap), rect.width, rowH);
                 DrawColorRow(row, p, c);
             }
         }
 
+        private bool ZoneLocked(int index) => index == 0 && ModsConfig.IdeologyActive;
+
         private void DrawColorRow(Rect row, Piece p, int index)
         {
+            bool locked = ZoneLocked(index);
+            Color prevGUI = GUI.color;
+            if (locked)
+            {
+                GUI.color = LockedTint;
+                if (Event.current.type == EventType.MouseDown && Mouse.IsOver(row)) Event.current.Use();
+            }
+
             float labelH = 26f;
             float defaultH = 26f;
             float btnH = 24f;
@@ -233,12 +244,48 @@ namespace UnitedFront.UI
                 SoundDefOf.Tick_Low.PlayOneShotOnCamera();
             }
 
+            if (locked)
+            {
+                GUI.color = prevGUI;
+                DrawLockedVeil(row);
+                return;
+            }
+
             if (!original.IndistinguishableFrom(c))
             {
                 p.Working[index] = c;
                 p.Comp.PreviewZones(p.Working);
                 PortraitsCache.SetDirty(_pawn);
             }
+        }
+
+        private static void DrawLockedVeil(Rect row)
+        {
+            Widgets.DrawBoxSolid(row, LockedVeil);
+
+            TextAnchor anchor = Text.Anchor;
+            GameFont font = Text.Font;
+            Text.Anchor = TextAnchor.MiddleCenter;
+            Text.Font = GameFont.Medium;
+
+            string label = "UFR_ColorPrimaryLocked".Translate();
+            float maxW = row.width - LockedBoxPad * 4f;
+            Vector2 size = Text.CalcSize(label);
+            float boxW = Mathf.Min(size.x, maxW) + LockedBoxPad * 2f;
+            float boxH = Mathf.Max(Text.CalcHeight(label, boxW - LockedBoxPad * 2f), size.y) + LockedBoxPad * 2f;
+
+            Rect box = new Rect(0f, 0f, boxW, boxH) { center = row.center };
+            Widgets.DrawBoxSolid(box, LockedBoxFill);
+
+            Color prev = GUI.color;
+            GUI.color = LockedBoxBorder;
+            Widgets.DrawBox(box);
+            GUI.color = prev;
+
+            Widgets.Label(box.ContractedBy(LockedBoxPad), label);
+
+            Text.Font = font;
+            Text.Anchor = anchor;
         }
 
         private static bool TryGetDefaultColor(Piece p, int index, out Color c)

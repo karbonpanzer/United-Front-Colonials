@@ -18,6 +18,7 @@
   <UFR_Cancel>Cancel</UFR_Cancel>
   <UFR_Reset>Reset</UFR_Reset>
   <UFR_Accept>Accept</UFR_Accept>
+  <UFR_ColorPrimaryLocked>Set at the styling station</UFR_ColorPrimaryLocked>
 
   <!-- Dev Debug Gizmo -->
   <UFR_DevEditColors>Edit colors</UFR_DevEditColors>
