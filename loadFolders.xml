@@ -14,4 +14,20 @@
 		<!--li IfModActive="CETeam.CombatExtended">1.6/Mods/CE</li-->	
 		<li IfModActive="niz.xenomorphtype">1.6/Mods/Xenomorph</li>		
 	</v1.6>
+
+	<v1.7>
+		<li>/</li>
+		<li>1.7</li>
+		<li>Common</li>
+	
+		<!-- DLC Patches-->
+		<!--li IfModActive="Ludeon.RimWorld.Odyssey">1.6/DLCs/Odyssey</li-->	
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.7/DLCs/Royalty</li>	
+		<!--li IfModActive="Ludeon.RimWorld.Biotech">1.6/DLCs/Biotech</li-->	
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.7/DLCs/Anomaly</li>	
+		
+		<!-- Mod Patches -->
+		<!--li IfModActive="CETeam.CombatExtended">1.6/Mods/CE</li-->	
+		<li IfModActive="niz.xenomorphtype">1.7/Mods/Xenomorph</li>		
+	</v1.7>	
 </loadFolders>
