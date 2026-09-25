@@ -185,8 +185,7 @@ namespace UnitedFront.UI
             Rect btnRow = new Rect(row.x, row.yMax - btnH, row.width, btnH);
             Rect palette = new Rect(row.x, row.y + labelH + defaultBlockH, row.width,
                                     row.height - labelH - defaultBlockH - btnH - gap);
-
-            // Default swatch + button, sitting directly above the palette.
+            
             if (hasDefault)
             {
                 Rect defRow = new Rect(row.x, row.y + labelH, row.width, defaultH);
@@ -206,13 +205,12 @@ namespace UnitedFront.UI
 
             float paletteHeight;
             Widgets.ColorSelector(palette, ref c, AllColors(), out paletteHeight, null, 22, 2);
-
-            // Remaining quick-pick buttons, laid out evenly along the bottom row.
+            
             List<string> labels = new List<string>();
             List<Color> picks = new List<Color>();
 
             labels.Add("UFR_ColorRandom".Translate());
-            picks.Add(Color.clear);                 // index 0 is handled as random
+            picks.Add(Color.clear);                 
 
             if (TryGetFavoriteColor(_pawn, out Color favColor))
             {
