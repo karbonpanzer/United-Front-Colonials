@@ -2,7 +2,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront.Comps
+namespace UnitedFront.AssaultShield
 {
     [StaticConstructorOnStartup]
     public class Gizmo_UFRShieldStatus : Gizmo

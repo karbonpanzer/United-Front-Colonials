@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront.ColorMask
+namespace UnitedFront.Utils
 {
     public static class MultiColorGraphicUtil
     {

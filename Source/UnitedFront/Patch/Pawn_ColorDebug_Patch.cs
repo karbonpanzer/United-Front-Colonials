@@ -1,12 +1,11 @@
 using System.Collections.Generic;
 using HarmonyLib;
-using RimWorld;
-using UnitedFront.ColorMask;
 using UnitedFront.UI;
+using UnitedFront.Utils;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront.HarmonyPatches
+namespace UnitedFront.Patch
 {
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.GetGizmos))]
     public static class Pawn_GetGizmos_EditColors_Patch

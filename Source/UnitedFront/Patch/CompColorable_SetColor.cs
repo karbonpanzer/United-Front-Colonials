@@ -3,7 +3,7 @@ using UnitedFront.Comps;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront.Patches
+namespace UnitedFront.Patch
 {
     [HarmonyPatch(typeof(CompColorable), nameof(CompColorable.SetColor))]
     public static class Patch_CompColorable_SetColor

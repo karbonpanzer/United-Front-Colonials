@@ -1,11 +1,11 @@
 using HarmonyLib;
 using RimWorld;
-using UnitedFront.ColorMask;
 using UnitedFront.Comps;
+using UnitedFront.Utils;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront.HarmonyPatches
+namespace UnitedFront.Patch
 {
     [HarmonyPatch(typeof(Thing), nameof(Thing.Graphic), MethodType.Getter)]
     public static class Thing_CarapaceItemGraphic_Patch

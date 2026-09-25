@@ -3,7 +3,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront.Comps
+namespace UnitedFront.AssaultShield
 {
     public class CompProperties_ShieldUFR : CompProperties_Shield
     {

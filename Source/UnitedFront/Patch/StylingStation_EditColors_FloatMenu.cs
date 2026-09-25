@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
-using UnitedFront.ColorMask;
 using UnitedFront.Jobs;
+using UnitedFront.Utils;
 using Verse;
 using Verse.AI;
 
-namespace UnitedFront.HarmonyPatches
+namespace UnitedFront.Patch
 {
     [HarmonyPatch(typeof(ThingWithComps), nameof(ThingWithComps.GetFloatMenuOptions))]
     public static class StylingStation_EditColors_FloatMenu

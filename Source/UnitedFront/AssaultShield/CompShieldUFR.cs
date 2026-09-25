@@ -4,7 +4,7 @@ using UnityEngine;
 using Verse;
 using Verse.Sound;
 
-namespace UnitedFront.Comps
+namespace UnitedFront.AssaultShield
 {
     public class CompShieldUFR : CompShield
     {

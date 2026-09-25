@@ -2,7 +2,7 @@ using RimWorld;
 using UnitedFront.Comps;
 using Verse;
 
-namespace UnitedFront.ColorMask
+namespace UnitedFront.Utils
 {
     public static class ColorMarkerUtil
     {

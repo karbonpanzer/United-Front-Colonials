@@ -1,12 +1,12 @@
 using System.Reflection;
 using HarmonyLib;
 using RimWorld;
-using UnitedFront.ColorMask;
 using UnitedFront.Comps;
+using UnitedFront.Utils;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront.HarmonyPatches
+namespace UnitedFront.Patch
 {
     [HarmonyPatch]
     public static class ApparelGraphic_CarapaceColor_Patch
