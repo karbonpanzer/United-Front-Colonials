@@ -48,7 +48,6 @@
     <statBases>
       <WorkToMake>40000</WorkToMake>
       <Mass>1.6</Mass>
-      <MarketValue>1600</MarketValue>
       <AccuracyTouch>0.85</AccuracyTouch>
       <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.55</AccuracyMedium>
@@ -145,7 +144,6 @@
     <statBases>
       <WorkToMake>48000</WorkToMake>
       <Mass>3.0</Mass>
-      <MarketValue>2000</MarketValue>
       <AccuracyTouch>0.75</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.45</AccuracyMedium>
@@ -245,7 +243,6 @@
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <Mass>3.8</Mass>
-      <MarketValue>2400</MarketValue>
       <AccuracyTouch>0.70</AccuracyTouch>
       <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.75</AccuracyMedium>
@@ -340,7 +337,6 @@
     <statBases>
       <WorkToMake>72000</WorkToMake>
       <Mass>6.5</Mass>
-      <MarketValue>3200</MarketValue>
       <AccuracyTouch>0.60</AccuracyTouch>
       <AccuracyShort>0.75</AccuracyShort>
       <AccuracyMedium>0.80</AccuracyMedium>
@@ -433,7 +429,6 @@
     <statBases>
       <WorkToMake>90000</WorkToMake>
       <Mass>12.0</Mass>
-      <MarketValue>4000</MarketValue>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.60</AccuracyShort>
       <AccuracyMedium>0.55</AccuracyMedium>
@@ -526,7 +521,6 @@
     <statBases>
       <WorkToMake>90000</WorkToMake>
       <Mass>9.0</Mass>
-      <MarketValue>4800</MarketValue>
       <AccuracyTouch>0.50</AccuracyTouch>
       <AccuracyShort>0.65</AccuracyShort>
       <AccuracyMedium>0.80</AccuracyMedium>
@@ -623,7 +617,6 @@
     <statBases>
       <WorkToMake>100000</WorkToMake>
       <Mass>14.0</Mass>
-      <MarketValue>4200</MarketValue>
       <AccuracyTouch>0.45</AccuracyTouch>
       <AccuracyShort>0.60</AccuracyShort>
       <AccuracyMedium>0.72</AccuracyMedium>
@@ -715,7 +708,6 @@
     <statBases>
       <WorkToMake>50000</WorkToMake>
       <Mass>4.0</Mass>
-      <MarketValue>2000</MarketValue>
       <AccuracyTouch>0.90</AccuracyTouch>
       <AccuracyShort>0.72</AccuracyShort>
       <AccuracyMedium>0.42</AccuracyMedium>
