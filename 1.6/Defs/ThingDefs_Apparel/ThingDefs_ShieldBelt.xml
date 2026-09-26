@@ -62,7 +62,7 @@
       <developmentalStageFilter>Child, Adult</developmentalStageFilter>
     </apparel>
     <comps>
-      <li Class="UnitedFront.Comps.CompProperties_ShieldUFR">
+      <li Class="UnitedFront.AssaultShield.CompProperties_ShieldUFR">
         <bubbleTexPath>UFR/Things/Other/UFRShield</bubbleTexPath>
         <randomizeRotation>true</randomizeRotation>
         <lowEnergyPulseThreshold>0.25</lowEnergyPulseThreshold>
