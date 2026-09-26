@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+  
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>UFR_Vibrosword</defName>
     <label>vibrosword</label>
@@ -76,7 +77,6 @@
       <li>WeaponMelee</li>
       <li>UFR_WeaponMelee</li>
     </tradeTags>
-
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
