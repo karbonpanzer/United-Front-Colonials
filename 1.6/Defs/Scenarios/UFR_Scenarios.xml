@@ -37,13 +37,13 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>UFR_HeavyShotgun</thingDef>
+                    <thingDef>UFR_SabotShotgun</thingDef>
                     <count>1</count>
                     <quality>Normal</quality>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>UFR_ServicePistol</thingDef>
+                    <thingDef>UFR_SabotPistol</thingDef>
                     <count>1</count>
                     <quality>Normal</quality>
                 </li>
@@ -174,13 +174,13 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>UFR_HeavyShotgun</thingDef>
+                    <thingDef>UFR_SabotShotgun</thingDef>
                     <count>1</count>
                     <quality>Normal</quality>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>UFR_AssaultPistol</thingDef>
+                    <thingDef>UFR_SabotSMG</thingDef>
                     <count>1</count>
                     <quality>Normal</quality>
                 </li>
@@ -192,7 +192,7 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>UFR_PulseRifle</thingDef>
+                    <thingDef>UFR_SabotRifle</thingDef>
                     <count>2</count>
                     <quality>Normal</quality>
                 </li>

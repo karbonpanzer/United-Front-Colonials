@@ -481,7 +481,7 @@
   <PawnKindDef Name="UFR_ShocktrooperBase" ParentName="UFR_MilitaryBase" Abstract="True">
     <itemQuality>Good</itemQuality>
     <apparelAllowHeadgearChance>0.95</apparelAllowHeadgearChance>
-    <weaponMoney>750~4000</weaponMoney>
+    <weaponMoney>2200~4000</weaponMoney>
     <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
     <techHediffsChance>0.18</techHediffsChance>
     <techHediffsMoney>1700~2500</techHediffsMoney>

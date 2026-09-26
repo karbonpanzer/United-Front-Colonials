@@ -157,21 +157,6 @@
 
     <!-- Weapons -->
     <ResearchProjectDef>
-        <defName>UFR_PulseActionFirearms</defName>
-        <label>Pulse Action</label>
-        <description>Craft pulse-action firearms which have increased power but come at increased cost.</description>
-        <baseCost>1600</baseCost>
-        <tab>UFR_ResearchTab</tab>
-        <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>PrecisionRifling</li>
-            <li>GasOperation</li>
-        </prerequisites>
-        <researchViewX>0</researchViewX>
-        <researchViewY>0.7</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
         <defName>UFR_HighFrequencyResonators</defName>
         <label>High-Frequency Resonators</label>
         <description>Build weapons which use high frequency resonators to create devastating melee damage. Note these also require advanced components.</description>
