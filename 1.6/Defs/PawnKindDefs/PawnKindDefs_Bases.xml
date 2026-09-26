@@ -136,19 +136,17 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineInfantryRanged" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>150~350</weaponMoney>
     <techHediffsChance>0.05</techHediffsChance>
     <techHediffsMoney>800~1200</techHediffsMoney>
+    <weaponMoney>1500~4000</weaponMoney>
     <weaponTags>
-      <li>UFR_IndustrialGunStandard</li>
+      <li>UFR_SpacerGun</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <apparelRequired>
       <li>UFR_CarapaceArmor</li>
       <li>UFR_CarapaceHelmet</li>       
       <li>UFR_InfantryUniform</li>
-      <li>UFR_CarapaceGloves</li>
-      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -169,7 +167,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineInfantryMelee" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>150~350</weaponMoney>
+    <weaponMoney>3000~5000</weaponMoney>
     <techHediffsChance>0.05</techHediffsChance>
     <techHediffsMoney>800~1200</techHediffsMoney>
     <weaponTags>
@@ -180,8 +178,6 @@
       <li>UFR_CarapaceArmor</li>
       <li>UFR_CarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
-      <li>UFR_CarapaceGloves</li>
-      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -197,28 +193,24 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineVeteranRanged" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>250~550</weaponMoney>
     <itemQuality>Good</itemQuality>
     <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
-    <weaponMoney>4500~10000</weaponMoney>
     <techHediffsChance>0.15</techHediffsChance>
     <techHediffsMoney>1500~2200</techHediffsMoney>
     <techHediffsTags>
       <li>Simple</li>
       <li>Advanced</li>
     </techHediffsTags>
+    <weaponMoney>4500~10000</weaponMoney>
     <weaponTags>
-      <li>UFR_IndustrialGunStandard</li>
-      <li>UFR_IndustrialGunElite</li>
       <li>UFR_SpacerGun</li>
-      <!--li>SpacerGun</li-->
+      <li>UFR_SpacerGunHeavy</li>
+      <li>SpacerGun</li>
     </weaponTags>
     <apparelRequired>
       <li>UFR_VeteranCarapaceArmor</li>
       <li>UFR_VeteranCarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
-      <li>UFR_CarapaceGloves</li>
-      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -236,7 +228,6 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineVeteranMelee" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>250~550</weaponMoney>
     <itemQuality>Good</itemQuality>
     <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
     <weaponMoney>4500~10000</weaponMoney>
@@ -254,8 +245,6 @@
       <li>UFR_VeteranCarapaceArmor</li>
       <li>UFR_VeteranCarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
-      <li>UFR_CarapaceGloves</li>
-      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -270,7 +259,6 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LeaderBase" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>350~650</weaponMoney>
     <itemQuality>Good</itemQuality>
     <gearHealthRange>1.0~1.0</gearHealthRange>
     <minGenerationAge>28</minGenerationAge>
@@ -287,17 +275,16 @@
     <disallowedTraits>
       <li>Nudist</li>
     </disallowedTraits>
+    <weaponMoney>3600~4500</weaponMoney>
     <weaponTags>
       <li>UFR_EliteMelee</li>
       <li>UFR_SpacerGun</li>
-      <!--li>SpacerGun</li-->
+      <li>SpacerGun</li>
     </weaponTags>
     <apparelRequired>
       <li>UFR_CommanderCarapaceArmor</li>
       <li>UFR_CommanderCarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
-      <li>UFR_CarapaceGloves</li>
-      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <li>UFR_OfficerHeadwear</li>
@@ -306,7 +293,6 @@
     <factionLeader>true</factionLeader>
     <trader>true</trader>
     <itemQuality>Excellent</itemQuality>
-    <weaponMoney>3600~4500</weaponMoney>
     <techHediffsChance>0.2</techHediffsChance>
     <techHediffsMoney>1800~2500</techHediffsMoney>
     <techHediffsTags>
@@ -337,7 +323,6 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_MedicBase" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>250~550</weaponMoney>
     <techHediffsChance>0.06</techHediffsChance>
     <techHediffsMoney>900~1400</techHediffsMoney>
     <techHediffsTags>
@@ -348,16 +333,15 @@
       <li>Brawler</li>
       <li>Nudist</li>
     </disallowedTraits>
+    <weaponMoney>800~2500</weaponMoney>
     <weaponTags>
-      <li>UFR_IndustrialGunStandard</li>
+      <li>UFR_SpacerGun</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <apparelRequired>
       <li>UFR_MedicCarapaceArmor</li>
       <li>UFR_MedicCarapaceHelmet</li>
       <li>UFR_InfantryUniform</li>
-      <li>UFR_CarapaceGloves</li>
-      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -389,7 +373,6 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_EngineerBase" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>250~550</weaponMoney>
     <techHediffsChance>0.06</techHediffsChance>
     <techHediffsMoney>900~1400</techHediffsMoney>
     <techHediffsTags>
@@ -400,16 +383,15 @@
       <li>Brawler</li>
       <li>Nudist</li>
     </disallowedTraits>
+    <weaponMoney>800~2500</weaponMoney>
     <weaponTags>
-      <li>UFR_IndustrialGunStandard</li>
+      <li>UFR_SpacerGun</li>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
     <apparelRequired>
       <li>UFR_EngineerCarapaceArmor</li>
       <li>UFR_EngineerCarapaceHelmet</li>
       <li>UFR_InfantryUniform</li>
-      <li>UFR_CarapaceGloves</li>
-      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -432,7 +414,6 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_ScoutBase" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>250~550</weaponMoney>
     <techHediffsChance>0.08</techHediffsChance>
     <techHediffsMoney>1000~1500</techHediffsMoney>
     <techHediffsTags>
@@ -449,8 +430,8 @@
       <li>Brawler</li>
       <li>Nudist</li>
     </disallowedTraits>
+    <weaponMoney>1500~8500</weaponMoney>
     <weaponTags>
-      <li>UFR_IndustrialGunSniper</li>
       <li>UFR_SpacerGunSniper</li>
       <li>SniperRifle</li>
     </weaponTags>
@@ -458,8 +439,6 @@
       <li>UFR_ScoutCarapaceArmor</li>
       <li>UFR_ScoutCarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
-      <li>UFR_CarapaceGloves</li>
-      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -481,7 +460,6 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_ShocktrooperBase" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>250~550</weaponMoney>
     <itemQuality>Good</itemQuality>
     <apparelAllowHeadgearChance>0.95</apparelAllowHeadgearChance>
     <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
@@ -503,18 +481,16 @@
         <range>7~13</range>
       </li>
     </skills>
+    <weaponMoney>2500~6000</weaponMoney>
     <weaponTags>
       <li>UFR_EliteMelee</li>
-      <li>UFR_IndustrialGunHeavy</li>
       <li>UFR_SpacerGunHeavy</li>
-      <!--li>MedievalMeleeAdvanced</li-->
+      <li>SpacerGun</li>
     </weaponTags>
     <apparelRequired>
       <li>UFR_AssaultCarapaceArmor</li>
       <li>UFR_AssaultCarapaceHelmet</li>
       <li>UFR_InfantryUniform</li>
-      <li>UFR_CarapaceGloves</li>
-      <li>UFR_CarapaceBoots</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <!--li>UFR_Headwear</li-->
@@ -530,5 +506,7 @@
       </subOptionsChooseOne>  
     </inventoryOptions>
   </PawnKindDef>
+
+</Defs>
 
 </Defs>    
