@@ -79,7 +79,7 @@
 
   </ThingDef>
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>UFR_Vibromaul</defName>
     <label>vibromaul</label>
     <description>A composite plasteel maul fitted with a resonator which vibrates the head at high frequencies. The oscillation of the head weakens molecular structure of anything it hits often shattering its targets, though it is quite heavy.</description>
@@ -301,7 +301,7 @@
     </tradeTags>
   </ThingDef>
 
-  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
     <defName>UFR_Vibrohammer</defName>
     <label>vibrohammer</label>
     <description>A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies. The oscillation of the head can not only weaken armor but with the right strike can shatter armor into pieces. The weight of the weapon provides an increased effect on strikes but it is slow to use.</description>
