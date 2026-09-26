@@ -71,6 +71,10 @@
       <li>UFR_SpacerGun</li>
       <li>SpacerGun</li>
     </weaponTags>
+    <weaponClasses>
+      <!-- Lighter than charge rifle, which is considered light. -->
+      <li>RangedLight</li>
+    </weaponClasses>    
     <tradeTags>
       <li>UFR_WeaponSpacer</li>
     </tradeTags>
@@ -166,6 +170,11 @@
       <li>UFR_SpacerGun</li>
       <li>SpacerGun</li>
     </weaponTags>
+    <weaponClasses>
+      <!-- Lighter than charge rifle, which is considered light. -->
+      <li>RangedLight</li>
+      <li>ShortShots</li>
+    </weaponClasses>    
     <tradeTags>
       <li>UFR_WeaponSpacer</li>
     </tradeTags>
@@ -452,6 +461,9 @@
       <li>UFR_SpacerGunHeavy</li>
       <li>SpacerGun</li>
     </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>    
     <tradeTags>
       <li>UFR_WeaponSpacer</li>
     </tradeTags>
@@ -537,6 +549,10 @@
       <li>UFR_SpacerGunSniper</li>
       <li>SpacerGun</li>
     </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>    
     <tradeTags>
       <li>UFR_WeaponSpacer</li>
     </tradeTags>
@@ -635,6 +651,9 @@
       <li>UFR_SpacerGunHeavy</li>
       <li>SpacerGun</li>
     </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>    
     <tradeTags>
       <li>UFR_WeaponSpacer</li>
     </tradeTags>
@@ -721,6 +740,10 @@
       <li>UFR_SpacerGunHeavy</li>
       <li>SpacerGun</li>
     </weaponTags>
+    <weaponClasses>
+      <!-- Lighter than charge rifle, which is considered light... but no shotguns are considered light, so not including the tag. -->
+      <li>ShortShots</li>
+    </weaponClasses>    
     <tradeTags>
       <li>UFR_WeaponSpacer</li>
     </tradeTags>
