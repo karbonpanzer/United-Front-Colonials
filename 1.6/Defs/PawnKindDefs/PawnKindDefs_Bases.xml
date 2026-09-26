@@ -136,7 +136,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineInfantryRanged" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>3000~5000</weaponMoney>
+    <weaponMoney>150~350</weaponMoney>
     <techHediffsChance>0.05</techHediffsChance>
     <techHediffsMoney>800~1200</techHediffsMoney>
     <weaponTags>
@@ -169,7 +169,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineInfantryMelee" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>3000~5000</weaponMoney>
+    <weaponMoney>150~350</weaponMoney>
     <techHediffsChance>0.05</techHediffsChance>
     <techHediffsMoney>800~1200</techHediffsMoney>
     <weaponTags>
@@ -197,6 +197,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineVeteranRanged" ParentName="UFR_MilitaryBase" Abstract="True">
+    <weaponMoney>250~550</weaponMoney>
     <itemQuality>Good</itemQuality>
     <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
     <weaponMoney>4500~10000</weaponMoney>
@@ -235,6 +236,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LineVeteranMelee" ParentName="UFR_MilitaryBase" Abstract="True">
+    <weaponMoney>250~550</weaponMoney>
     <itemQuality>Good</itemQuality>
     <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
     <weaponMoney>4500~10000</weaponMoney>
@@ -268,6 +270,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_LeaderBase" ParentName="UFR_MilitaryBase" Abstract="True">
+    <weaponMoney>350~650</weaponMoney>
     <itemQuality>Good</itemQuality>
     <gearHealthRange>1.0~1.0</gearHealthRange>
     <minGenerationAge>28</minGenerationAge>
@@ -284,7 +287,6 @@
     <disallowedTraits>
       <li>Nudist</li>
     </disallowedTraits>
-    <weaponMoney>500~5000</weaponMoney>
     <weaponTags>
       <li>UFR_EliteMelee</li>
       <li>UFR_SpacerGun</li>
@@ -335,7 +337,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_MedicBase" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>500~2200</weaponMoney>
+    <weaponMoney>250~550</weaponMoney>
     <techHediffsChance>0.06</techHediffsChance>
     <techHediffsMoney>900~1400</techHediffsMoney>
     <techHediffsTags>
@@ -387,7 +389,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_EngineerBase" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>500~2200</weaponMoney>
+    <weaponMoney>250~550</weaponMoney>
     <techHediffsChance>0.06</techHediffsChance>
     <techHediffsMoney>900~1400</techHediffsMoney>
     <techHediffsTags>
@@ -430,7 +432,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_ScoutBase" ParentName="UFR_MilitaryBase" Abstract="True">
-    <weaponMoney>1000~8500</weaponMoney>
+    <weaponMoney>250~550</weaponMoney>
     <techHediffsChance>0.08</techHediffsChance>
     <techHediffsMoney>1000~1500</techHediffsMoney>
     <techHediffsTags>
@@ -479,9 +481,9 @@
   </PawnKindDef>
 
   <PawnKindDef Name="UFR_ShocktrooperBase" ParentName="UFR_MilitaryBase" Abstract="True">
+    <weaponMoney>250~550</weaponMoney>
     <itemQuality>Good</itemQuality>
     <apparelAllowHeadgearChance>0.95</apparelAllowHeadgearChance>
-    <weaponMoney>2200~4000</weaponMoney>
     <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
     <techHediffsChance>0.18</techHediffsChance>
     <techHediffsMoney>1700~2500</techHediffsMoney>
