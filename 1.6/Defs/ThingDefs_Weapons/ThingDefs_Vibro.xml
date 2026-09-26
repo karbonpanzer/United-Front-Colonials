@@ -33,7 +33,6 @@
     <statBases>
       <WorkToMake>36000</WorkToMake>
       <Mass>1.6</Mass>
-      <MarketValue>3600</MarketValue>
     </statBases>
     <tools>
       <li>
@@ -113,7 +112,6 @@
     <statBases>
       <WorkToMake>36000</WorkToMake>
       <Mass>1.6</Mass>
-      <MarketValue>3600</MarketValue>
     </statBases>
     <tools>
       <li>
@@ -189,7 +187,6 @@
     <statBases>
       <WorkToMake>22000</WorkToMake>
       <Mass>0.7</Mass>
-      <MarketValue>1900</MarketValue>
     </statBases>
     <tools>
       <li>
@@ -268,7 +265,6 @@
     <statBases>
       <WorkToMake>44000</WorkToMake>
       <Mass>2.5</Mass>
-      <MarketValue>4400</MarketValue>
     </statBases>
     <tools>
       <li>
@@ -338,7 +334,6 @@
     <statBases>
       <WorkToMake>46000</WorkToMake>
       <Mass>3.0</Mass>
-      <MarketValue>4600</MarketValue>
     </statBases>
     <tools>
       <li>
@@ -409,7 +404,6 @@
     <statBases>
       <WorkToMake>52000</WorkToMake>
       <Mass>3.5</Mass>
-      <MarketValue>5200</MarketValue>
     </statBases>
     <tools>
       <li>
@@ -480,7 +474,6 @@
     <statBases>
       <WorkToMake>40000</WorkToMake>
       <Mass>2.2</Mass>
-      <MarketValue>3800</MarketValue>
     </statBases>
     <tools>
       <li>
