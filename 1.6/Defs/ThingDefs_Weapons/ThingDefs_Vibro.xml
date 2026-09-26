@@ -66,6 +66,10 @@
     <weaponTags>
       <li>UFR_StandardMelee</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>      
     <thingSetMakerTags>
       <li>RewardHighTech</li>
     </thingSetMakerTags>
@@ -139,6 +143,10 @@
     <weaponTags>
       <li>UFR_StandardMelee</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleeBlunt</li>
+    </weaponClasses>    
     <thingSetMakerTags>
       <li>RewardHighTech</li>
     </thingSetMakerTags>
@@ -214,6 +222,10 @@
     <weaponTags>
       <li>UFR_StandardMelee</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>      
     <thingSetMakerTags>
       <li>RewardStandardHighTech</li>
     </thingSetMakerTags>
@@ -280,6 +292,10 @@
     <weaponTags>
       <li>UFR_EliteMelee</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>      
     <thingSetMakerTags>
       <li>RewardHighTech</li>
     </thingSetMakerTags>
@@ -346,6 +362,10 @@
     <weaponTags>
       <li>UFR_EliteMelee</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleeBlunt</li>
+    </weaponClasses>      
     <thingSetMakerTags>
       <li>RewardHighTech</li>
     </thingSetMakerTags>
@@ -413,6 +433,10 @@
     <weaponTags>
       <li>UFR_EliteMelee</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>      
     <thingSetMakerTags>
       <li>RewardHighTech</li>
     </thingSetMakerTags>
@@ -480,6 +504,10 @@
     <weaponTags>
       <li>UFR_EliteMelee</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+      <li>MeleePiercer</li>
+    </weaponClasses>      
     <thingSetMakerTags>
       <li>RewardHighTech</li>
     </thingSetMakerTags>
@@ -489,4 +517,5 @@
     </tradeTags>
     <uiIconScale>0.95</uiIconScale>
   </ThingDef>
+  
 </Defs>
