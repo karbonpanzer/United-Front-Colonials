@@ -269,6 +269,9 @@
       <li>UFR_SpacerGun</li>
       <li>SpacerGun</li>
     </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
     <tradeTags>
       <li>UFR_WeaponSpacer</li>
     </tradeTags>
@@ -363,6 +366,10 @@
       <li>UFR_SpacerGunHeavy</li>
       <li>SpacerGun</li>
     </weaponTags>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedLight</li>
+    </weaponClasses>    
     <tradeTags>
       <li>UFR_WeaponSpacer</li>
     </tradeTags>
