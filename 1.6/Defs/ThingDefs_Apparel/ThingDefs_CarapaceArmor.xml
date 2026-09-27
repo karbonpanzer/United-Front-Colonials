@@ -80,6 +80,7 @@
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
+      <li>HiTechArmor</li>
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
@@ -159,10 +160,7 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- white -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -233,10 +231,7 @@
         <li>UFR_CarapaceBoots</li>
       </tags>
     </apparel>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
   </ThingDef>
  
   <ThingDef ParentName="ApparelMakeableBase">
@@ -300,10 +295,7 @@
         <li>UFR_CarapaceGloves</li>
       </tags>
     </apparel>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
   </ThingDef>
 
   <!-- Medic Carapace Armor -->
@@ -384,10 +376,7 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- bright azure -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -465,10 +454,7 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>    
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- bright azure -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -555,10 +541,7 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- burnt orange -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -636,10 +619,7 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>   
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- burnt orange -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -726,10 +706,7 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories> 
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- dark navy -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -807,10 +784,7 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>  
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- dark navy -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -901,10 +875,7 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- gold -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -986,10 +957,7 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>    
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- gold -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1108,10 +1076,7 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- crimson -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1189,10 +1154,7 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>     
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- crimson -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1283,10 +1245,7 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- olive -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1364,10 +1323,7 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>     
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- olive -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1454,10 +1410,7 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- very dark grey -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1535,10 +1488,7 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>
-    <tradeTags>
-      <li>Armor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
+    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
     <modExtensions>
       <!-- very dark grey -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
