@@ -67,6 +67,7 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <tags>
+        <li>SpacerMilitary</li>
         <li>UFR_Armor</li>
         <li>UFR_CarapaceArmor</li>
       </tags>
@@ -150,8 +151,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_CarapaceArmor</li>        
         <li>UFR_CarapaceHelmet</li>
       </tags>
@@ -226,8 +226,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_CarapaceBoots</li>
       </tags>
     </apparel>
@@ -290,8 +289,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_CarapaceGloves</li>
       </tags>
     </apparel>
@@ -364,8 +362,7 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_MedicCarapaceArmor</li>
       </tags>
     </apparel>
@@ -444,8 +441,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_MedicCarapaceArmor</li>        
         <li>UFR_MedicCarapaceHelmet</li>
       </tags>
@@ -529,8 +525,7 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_EngineerCarapaceArmor</li>
       </tags>
     </apparel>
@@ -609,8 +604,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_EngineerCarapaceArmor</li>        
         <li>UFR_EngineerCarapaceHelmet</li>
       </tags>
@@ -694,8 +688,7 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_MPCarapaceArmor</li>        
       </tags>
     </apparel>
@@ -774,8 +767,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_MPCarapaceArmor</li>        
         <li>UFR_MPCarapaceHelmet</li>
       </tags>
@@ -862,8 +854,7 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_CommanderCarapaceArmor</li>        
         <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
@@ -946,8 +937,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_CommanderCarapaceArmor</li>        
         <li>UFR_CommanderCarapaceHelmet</li>
         <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
@@ -1064,8 +1054,7 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_AssaultCarapaceArmor</li>
       </tags>
     </apparel>
@@ -1144,8 +1133,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_AssaultCarapaceArmor</li>
         <li>UFR_AssaultCarapacetHelmet</li>
       </tags>
@@ -1229,8 +1217,7 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_ScoutCarapaceArmor</li>
       </tags>
     </apparel>
@@ -1313,8 +1300,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_ScoutCarapaceArmor</li>
         <li>UFR_ScoutCarapaceHelmet</li>
       </tags>
@@ -1398,8 +1384,7 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_VeteranCarapaceArmor</li>
       </tags>
     </apparel>
@@ -1478,8 +1463,7 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>
-        <li>UFR_Armor</li>
+      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
         <li>UFR_VeteranCarapaceArmor</li>        
         <li>UFR_VeteranCarapaceHelmet</li>
       </tags>
