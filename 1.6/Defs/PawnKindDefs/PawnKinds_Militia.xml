@@ -86,7 +86,7 @@
         <label>negotiator</label>
         <labelPlural>negotiators</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>80</combatPower>
+        <combatPower>110</combatPower>
         <factionLeader>true</factionLeader>
         <trader>true</trader>
         <itemQuality>Excellent</itemQuality>
@@ -172,7 +172,7 @@
         <label>surgeon</label>
         <labelPlural>surgeons</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>80</combatPower>
+        <combatPower>110</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_EngineerBase">
@@ -180,7 +180,7 @@
         <label>sapper</label>
         <labelPlural>sappers</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>80</combatPower>
+        <combatPower>110</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_ScoutBase">

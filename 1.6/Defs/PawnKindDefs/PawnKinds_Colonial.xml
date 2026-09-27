@@ -86,7 +86,7 @@
         <label>representative</label>
         <labelPlural>representatives</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>80</combatPower>
+        <combatPower>110</combatPower>
         <factionLeader>true</factionLeader>
         <trader>true</trader>
         <itemQuality>Excellent</itemQuality>
@@ -170,7 +170,7 @@
         <label>medic</label>
         <labelPlural>medics</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>80</combatPower>
+        <combatPower>110</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_EngineerBase">
@@ -178,7 +178,7 @@
         <label>engineer</label>
         <labelPlural>engineers</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>80</combatPower>
+        <combatPower>110</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_ScoutBase">

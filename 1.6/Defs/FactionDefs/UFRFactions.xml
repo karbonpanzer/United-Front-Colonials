@@ -158,11 +158,11 @@
         </baseTraderKinds>
         <maxPawnCostPerTotalPointsCurve>
             <points>
-                <li>(0, 40)</li>
-                <li>(70, 60)</li>
-                <li>(700, 120)</li>
-                <li>(1300, 200)</li>
-                <li>(100000,10000)</li>
+                <li>(0, 60)</li>
+                <li>(500, 120)</li>
+                <li>(1000, 170)</li>
+                <li>(2000, 300)</li>
+                <li>(2001, 10000)</li>
             </points>
         </maxPawnCostPerTotalPointsCurve>
         <pawnGroupMakers>
@@ -351,11 +351,11 @@
         </baseTraderKinds>
         <maxPawnCostPerTotalPointsCurve>
             <points>
-                <li>(0, 40)</li>
-                <li>(70, 60)</li>
-                <li>(700, 120)</li>
-                <li>(1300, 200)</li>
-                <li>(100000,10000)</li>
+                <li>(0, 60)</li>
+                <li>(500, 120)</li>
+                <li>(1000, 170)</li>
+                <li>(2000, 300)</li>
+                <li>(2001, 10000)</li>
             </points>
         </maxPawnCostPerTotalPointsCurve>
         <pawnGroupMakers>
