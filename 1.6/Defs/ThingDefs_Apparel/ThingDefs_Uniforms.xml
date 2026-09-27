@@ -57,6 +57,8 @@
         <li>OnSkin</li>
       </layers>
       <tags>
+        <li>IndustrialBasic</li>
+				<li>IndustrialMilitaryAdvanced</li>
         <li>UFR_Uniform</li>
       </tags>
       <defaultOutfitTags>
@@ -123,6 +125,8 @@
         <li>Overhead</li>
       </layers>
       <tags>
+        <li>IndustrialBasic</li>
+				<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_Headwear</li>
       </tags>
       <defaultOutfitTags>
@@ -189,6 +193,8 @@
         <li>Overhead</li>
       </layers>
       <tags>
+        <li>IndustrialBasic</li>
+				<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_Headwear</li>
       </tags>
       <defaultOutfitTags>
@@ -255,6 +261,8 @@
         <li>Overhead</li>
       </layers>
       <tags>
+        <li>IndustrialBasic</li>
+				<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_Headwear</li>
       </tags>
       <defaultOutfitTags>
@@ -326,6 +334,8 @@
         <li>Overhead</li>
       </layers>
       <tags>
+        <li>IndustrialBasic</li>
+				<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_OfficerHeadwear</li>
       </tags>
       <defaultOutfitTags>
@@ -389,6 +399,8 @@
         <li>Overhead</li>
       </layers>
       <tags>
+        <li>IndustrialBasic</li>
+				<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_Headwear</li>
         <li>UFR_VeteranHeadwear</li>
       </tags>
