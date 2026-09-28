@@ -151,7 +151,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_CarapaceArmor</li>        
         <li>UFR_CarapaceHelmet</li>
       </tags>
@@ -160,7 +162,11 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>      
+       <li>HiTechArmor</li>       
+       <li>UFR_Armor</li>     
+      </tradeTags>
     <modExtensions>
       <!-- white -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -226,11 +232,17 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_CarapaceBoots</li>
       </tags>
     </apparel>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>    
+     </tradeTags>
   </ThingDef>
  
   <ThingDef ParentName="ApparelMakeableBase">
@@ -289,11 +301,17 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_CarapaceGloves</li>
       </tags>
     </apparel>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
   </ThingDef>
 
   <!-- Medic Carapace Armor -->
@@ -362,7 +380,9 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_MedicCarapaceArmor</li>
       </tags>
     </apparel>
@@ -373,7 +393,11 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- bright azure -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -441,7 +465,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_MedicCarapaceArmor</li>        
         <li>UFR_MedicCarapaceHelmet</li>
       </tags>
@@ -450,7 +476,11 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>    
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- bright azure -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -525,7 +555,9 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_EngineerCarapaceArmor</li>
       </tags>
     </apparel>
@@ -536,7 +568,11 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- burnt orange -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -604,7 +640,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_EngineerCarapaceArmor</li>        
         <li>UFR_EngineerCarapaceHelmet</li>
       </tags>
@@ -613,7 +651,11 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>   
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- burnt orange -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -688,7 +730,9 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_MPCarapaceArmor</li>        
       </tags>
     </apparel>
@@ -699,7 +743,11 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories> 
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- dark navy -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -767,7 +815,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_MPCarapaceArmor</li>        
         <li>UFR_MPCarapaceHelmet</li>
       </tags>
@@ -776,7 +826,11 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>  
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- dark navy -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -854,7 +908,9 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_CommanderCarapaceArmor</li>        
         <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
@@ -866,7 +922,11 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- gold -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -937,7 +997,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_CommanderCarapaceArmor</li>        
         <li>UFR_CommanderCarapaceHelmet</li>
         <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
@@ -947,7 +1009,11 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>    
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- gold -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1054,7 +1120,9 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_AssaultCarapaceArmor</li>
       </tags>
     </apparel>
@@ -1065,7 +1133,11 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- crimson -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1133,7 +1205,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_AssaultCarapaceArmor</li>
         <li>UFR_AssaultCarapacetHelmet</li>
       </tags>
@@ -1142,7 +1216,11 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>     
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>    
+    </tradeTags>
     <modExtensions>
       <!-- crimson -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1217,7 +1295,9 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_ScoutCarapaceArmor</li>
       </tags>
     </apparel>
@@ -1232,7 +1312,11 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>    
+     </tradeTags>
     <modExtensions>
       <!-- olive -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1300,7 +1384,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_ScoutCarapaceArmor</li>
         <li>UFR_ScoutCarapaceHelmet</li>
       </tags>
@@ -1309,7 +1395,11 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>     
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- olive -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1384,7 +1474,9 @@
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_VeteranCarapaceArmor</li>
       </tags>
     </apparel>
@@ -1395,7 +1487,11 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- very dark grey -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1463,7 +1559,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-      <tags>         <li>SpacerMilitary</li>         <li>UFR_Armor</li>
+      <tags>         
+        <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>
         <li>UFR_VeteranCarapaceArmor</li>        
         <li>UFR_VeteranCarapaceHelmet</li>
       </tags>
@@ -1472,7 +1570,11 @@
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
     </comps>
-    <tradeTags>       <li>Armor</li>       <li>HiTechArmor</li>       <li>UFR_Armor</li>     </tradeTags>
+    <tradeTags>       
+      <li>Armor</li>       
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
+    </tradeTags>
     <modExtensions>
       <!-- very dark grey -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">

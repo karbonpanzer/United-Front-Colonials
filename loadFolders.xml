@@ -11,7 +11,7 @@
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.6/DLCs/Anomaly</li>	
 		
 		<!-- Mod Patches -->
-		<!--li IfModActive="CETeam.CombatExtended">1.6/Mods/CE</li-->	
+		<li IfModActive="CETeam.CombatExtended">1.6/Mods/CE</li>	
 		<li IfModActive="niz.xenomorphtype">1.6/Mods/Xenomorph</li>		
 	</v1.6>
 
@@ -27,7 +27,7 @@
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.7/DLCs/Anomaly</li>	
 		
 		<!-- Mod Patches -->
-		<!--li IfModActive="CETeam.CombatExtended">1.6/Mods/CE</li-->	
+		<li IfModActive="CETeam.CombatExtended">1.6/Mods/CE</li>	
 		<li IfModActive="niz.xenomorphtype">1.7/Mods/Xenomorph</li>		
 	</v1.7>	
 </loadFolders>
