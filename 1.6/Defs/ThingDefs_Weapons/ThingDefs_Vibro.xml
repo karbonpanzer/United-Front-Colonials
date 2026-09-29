@@ -381,6 +381,7 @@
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.8</drawSize>
     </graphicData>
+    <uiIconScale>0.75</uiIconScale>
     <techLevel>Spacer</techLevel>
     <equippedAngleOffset>-50</equippedAngleOffset>
     <recipeMaker>

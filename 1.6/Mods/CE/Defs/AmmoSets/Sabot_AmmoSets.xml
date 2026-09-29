@@ -89,8 +89,9 @@
 		<defName>Bullet_UFR10x28mmETC_FMJ</defName>
 		<label>10x28mm ETC bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>11</damageAmountBase>
-			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>110</speed>
+			<armorPenetrationSharp>7</armorPenetrationSharp>
 			<armorPenetrationBlunt>9.66</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -99,8 +100,9 @@
 		<defName>Bullet_UFR10x28mmETC_AP</defName>
 		<label>10x28mm ETC bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>7</damageAmountBase>
-			<armorPenetrationSharp>8</armorPenetrationSharp>
+			<damageAmountBase>6</damageAmountBase>
+			<speed>115</speed>
+			<armorPenetrationSharp>13</armorPenetrationSharp>
 			<armorPenetrationBlunt>9.66</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -109,8 +111,9 @@
 		<defName>Bullet_UFR10x28mmETC_HP</defName>
 		<label>10x28mm ETC bullet (HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>13</damageAmountBase>
-			<armorPenetrationSharp>2</armorPenetrationSharp>
+			<damageAmountBase>12</damageAmountBase>
+			<speed>108</speed>
+			<armorPenetrationSharp>3</armorPenetrationSharp>
 			<armorPenetrationBlunt>9.66</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -315,8 +318,9 @@
 		<defName>Bullet_UFR14x48mmETC_FMJ</defName>
 		<label>14x48mm ETC bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>14</damageAmountBase>
-			<armorPenetrationSharp>6</armorPenetrationSharp>
+			<damageAmountBase>13</damageAmountBase>
+			<speed>215</speed>
+			<armorPenetrationSharp>11</armorPenetrationSharp>
 			<armorPenetrationBlunt>34.18</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -325,8 +329,9 @@
 		<defName>Bullet_UFR14x48mmETC_AP</defName>
 		<label>14x48mm ETC bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>9</damageAmountBase>
-			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<damageAmountBase>8</damageAmountBase>
+			<speed>225</speed>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
 			<armorPenetrationBlunt>34.18</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -335,8 +340,9 @@
 		<defName>Bullet_UFR14x48mmETC_HP</defName>
 		<label>14x48mm ETC bullet (HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>18</damageAmountBase>
-			<armorPenetrationSharp>3</armorPenetrationSharp>
+			<damageAmountBase>16</damageAmountBase>
+			<speed>210</speed>
+			<armorPenetrationSharp>5</armorPenetrationSharp>
 			<armorPenetrationBlunt>34.18</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -345,8 +351,9 @@
 		<defName>Bullet_UFR14x48mmETC_Incendiary</defName>
 		<label>14x48mm ETC bullet (AP-I)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>9</damageAmountBase>
-			<armorPenetrationSharp>12</armorPenetrationSharp>
+			<damageAmountBase>8</damageAmountBase>
+			<speed>225</speed>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
 			<armorPenetrationBlunt>34.18</armorPenetrationBlunt>
 			<secondaryDamage>
 				<li>
@@ -361,8 +368,9 @@
 		<defName>Bullet_UFR14x48mmETC_HE</defName>
 		<label>14x48mm ETC bullet (AP-HE)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>14</damageAmountBase>
-			<armorPenetrationSharp>6</armorPenetrationSharp>
+			<damageAmountBase>13</damageAmountBase>
+			<speed>215</speed>
+			<armorPenetrationSharp>11</armorPenetrationSharp>
 			<armorPenetrationBlunt>34.18</armorPenetrationBlunt>
 			<secondaryDamage>
 				<li>
@@ -377,10 +385,10 @@
 		<defName>Bullet_UFR14x48mmETC_Sabot</defName>
 		<label>14x48mm ETC bullet (Sabot)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>7</damageAmountBase>
-			<armorPenetrationSharp>21</armorPenetrationSharp>
-			<armorPenetrationBlunt>44.18</armorPenetrationBlunt>
-			<speed>227</speed>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationSharp>34</armorPenetrationSharp>
+			<armorPenetrationBlunt>50</armorPenetrationBlunt>
+			<speed>290</speed>
 		</projectile>
 	</ThingDef>
 
@@ -689,8 +697,9 @@
 		<defName>Bullet_UFR20x80mmETC_FMJ</defName>
 		<label>20x80mm ETC bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>42</damageAmountBase>
-			<armorPenetrationSharp>14</armorPenetrationSharp>
+			<damageAmountBase>40</damageAmountBase>
+			<speed>205</speed>
+			<armorPenetrationSharp>15.7</armorPenetrationSharp>
 			<armorPenetrationBlunt>360.34</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -699,8 +708,9 @@
 		<defName>Bullet_UFR20x80mmETC_AP</defName>
 		<label>20x80mm ETC bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>26</damageAmountBase>
-			<armorPenetrationSharp>28</armorPenetrationSharp>
+			<damageAmountBase>24</damageAmountBase>
+			<speed>215</speed>
+			<armorPenetrationSharp>31.4</armorPenetrationSharp>
 			<armorPenetrationBlunt>360.34</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -709,8 +719,9 @@
 		<defName>Bullet_UFR20x80mmETC_Incendiary</defName>
 		<label>20x80mm ETC bullet (AP-I)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>26</damageAmountBase>
-			<armorPenetrationSharp>28</armorPenetrationSharp>
+			<damageAmountBase>24</damageAmountBase>
+			<speed>215</speed>
+			<armorPenetrationSharp>31.4</armorPenetrationSharp>
 			<armorPenetrationBlunt>360.34</armorPenetrationBlunt>
 			<secondaryDamage>
 				<li>
@@ -725,8 +736,9 @@
 		<defName>Bullet_UFR20x80mmETC_HE</defName>
 		<label>20x80mm ETC bullet (AP-HE)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>42</damageAmountBase>
-			<armorPenetrationSharp>14</armorPenetrationSharp>
+			<damageAmountBase>40</damageAmountBase>
+			<speed>205</speed>
+			<armorPenetrationSharp>15.7</armorPenetrationSharp>
 			<armorPenetrationBlunt>360.34</armorPenetrationBlunt>
 			<secondaryDamage>
 				<li>
@@ -741,10 +753,10 @@
 		<defName>Bullet_UFR20x80mmETC_Sabot</defName>
 		<label>20x80mm ETC bullet (Sabot)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>22</damageAmountBase>
-			<armorPenetrationSharp>49</armorPenetrationSharp>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>60</armorPenetrationSharp>
 			<armorPenetrationBlunt>462.92</armorPenetrationBlunt>
-			<speed>221</speed>
+			<speed>270</speed>
 		</projectile>
 	</ThingDef>
 
@@ -1034,9 +1046,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>12</damageAmountBase>
+			<damageAmountBase>11</damageAmountBase>
+			<speed>95</speed>
 			<pelletCount>9</pelletCount>
-			<armorPenetrationSharp>1</armorPenetrationSharp>
+			<armorPenetrationSharp>2</armorPenetrationSharp>
 			<armorPenetrationBlunt>2</armorPenetrationBlunt>
 			<spreadMult>8.9</spreadMult>
 			<shieldDamageMultiplier>0.25</shieldDamageMultiplier>
@@ -1051,9 +1064,10 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>8</damageAmountBase>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>95</speed>
 			<pelletCount>9</pelletCount>
-			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<armorPenetrationSharp>5</armorPenetrationSharp>
 			<armorPenetrationBlunt>4.52</armorPenetrationBlunt>
 			<spreadMult>8.9</spreadMult>
 			<shieldDamageMultiplier>0.25</shieldDamageMultiplier>
@@ -1068,9 +1082,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>114</speed>
-			<damageAmountBase>28</damageAmountBase>
-			<armorPenetrationSharp>6</armorPenetrationSharp>
+			<speed>150</speed>
+			<damageAmountBase>26</damageAmountBase>
+			<armorPenetrationSharp>14</armorPenetrationSharp>
 			<armorPenetrationBlunt>85.2</armorPenetrationBlunt>
 			<casingMoteDefname>Fleck_ShotgunShell_Green</casingMoteDefname>
 			<casingFilthDefname>Filth_ShotgunAmmoCasings_Green</casingFilthDefname>

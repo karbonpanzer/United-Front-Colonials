@@ -874,6 +874,12 @@
 			<ArmorRating_Blunt>34</ArmorRating_Blunt>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_CarapaceHelmet"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.80</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
 
 	<!-- UFR_MedicCarapaceHelmet -->
 	<Operation Class="PatchOperationAdd">
@@ -911,6 +917,12 @@
 		<xpath>Defs/ThingDef[defName="UFR_MedicCarapaceHelmet"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>34</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_MedicCarapaceHelmet"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.80</NightVisionEfficiency_Apparel>
 		</value>
 	</Operation>
 
@@ -952,6 +964,12 @@
 			<ArmorRating_Blunt>34</ArmorRating_Blunt>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_EngineerCarapaceHelmet"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.80</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
 
 	<!-- UFR_MPCarapaceHelmet -->
 	<Operation Class="PatchOperationAdd">
@@ -989,6 +1007,12 @@
 		<xpath>Defs/ThingDef[defName="UFR_MPCarapaceHelmet"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>34</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_MPCarapaceHelmet"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.80</NightVisionEfficiency_Apparel>
 		</value>
 	</Operation>
 
@@ -1030,6 +1054,20 @@
 			<ArmorRating_Blunt>34</ArmorRating_Blunt>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_CommanderCarapaceHelmet"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.80</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UFR_CommanderCarapaceHelmet"]</xpath>
+		<value>
+			<li Class="CombatExtended.ApparelDefExtension">
+				<isRadioPack>true</isRadioPack>
+			</li>
+		</value>
+	</Operation>
 
 	<!-- UFR_AssaultCarapaceHelmet -->
 	<Operation Class="PatchOperationAdd">
@@ -1067,6 +1105,12 @@
 		<xpath>Defs/ThingDef[defName="UFR_AssaultCarapaceHelmet"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>34</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_AssaultCarapaceHelmet"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.80</NightVisionEfficiency_Apparel>
 		</value>
 	</Operation>
 
@@ -1108,6 +1152,20 @@
 			<ArmorRating_Blunt>34</ArmorRating_Blunt>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_ScoutCarapaceHelmet"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.90</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="UFR_ScoutCarapaceHelmet"]</xpath>
+		<value>
+			<li Class="CombatExtended.ApparelDefExtension">
+				<isRadioPack>true</isRadioPack>
+			</li>
+		</value>
+	</Operation>
 
 	<!-- UFR_VeteranCarapaceHelmet -->
 	<Operation Class="PatchOperationAdd">
@@ -1145,6 +1203,12 @@
 		<xpath>Defs/ThingDef[defName="UFR_VeteranCarapaceHelmet"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>34</ArmorRating_Blunt>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_VeteranCarapaceHelmet"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.80</NightVisionEfficiency_Apparel>
 		</value>
 	</Operation>
 

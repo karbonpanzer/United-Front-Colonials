@@ -44,7 +44,7 @@
       <EquipDelay>2</EquipDelay>
     </statBases>
     <apparel>
-      <developmentalStageFilter>Child,Adult</developmentalStageFilter>
+      <developmentalStageFilter>Adult</developmentalStageFilter>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
