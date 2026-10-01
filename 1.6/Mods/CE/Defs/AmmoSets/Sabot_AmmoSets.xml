@@ -24,7 +24,7 @@
 	</CombatExtended.AmmoSetDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR10x28mmETCBase" ParentName="SmallAmmoBase" Abstract="True">
-		<description>Proprietary 10x28mm electrothermal-chemical cartridge used by United Front sidearms and submachine guns.</description>
+		<description>Colonist-built electrothermal-chemical ammo used by advanced PDW designs.</description>
 		<statBases>
 			<Mass>0.012</Mass>
 			<Bulk>0.01</Bulk>
@@ -216,7 +216,7 @@
 	</CombatExtended.AmmoSetDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR14x48mmETCBase" ParentName="SmallAmmoBase" Abstract="True">
-		<description>Proprietary 14x48mm electrothermal-chemical cartridge used by United Front rifles, marksman rifles and light machine guns.</description>
+		<description>Colonist-built electrothermal-chemical ammo used by advanced infantry weapon designs.</description>
 		<statBases>
 			<Mass>0.013</Mass>
 			<Bulk>0.02</Bulk>
@@ -603,7 +603,7 @@
 	</CombatExtended.AmmoSetDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR20x80mmETCBase" ParentName="MediumAmmoBase" Abstract="True">
-		<description>Proprietary 20x80mm electrothermal-chemical cartridge used by United Front anti-materiel rifles and repeating cannons.</description>
+		<description>Colonist-built electrothermal-chemical ammo used by advanced heavy weaponry designs.</description>
 		<statBases>
 			<Mass>0.118</Mass>
 			<Bulk>0.14</Bulk>
@@ -947,7 +947,7 @@
 	</CombatExtended.AmmoSetDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR20x55mmETCBase" ParentName="AmmoBase" Abstract="True">
-		<description>Proprietary 20x55mm electrothermal-chemical shotgun shell used by United Front combat shotguns.</description>
+		<description>Colonist-built electrothermal-chemical ammo used by advanced shotgun designs.</description>
 		<statBases>
 			<Mass>0.051</Mass>
 			<Bulk>0.06</Bulk>
