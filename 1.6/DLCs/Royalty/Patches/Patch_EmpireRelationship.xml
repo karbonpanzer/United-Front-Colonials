@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Fucking Stupid that I have to do this -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+		<value>
+			<li>UFR_Colonists</li>
+			<li>UFR_Occupiers</li>
+		</value>
+	</Operation>
+
+</Patch>
