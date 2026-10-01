@@ -365,6 +365,41 @@
       <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
         <thingDef>RevenantSpine</thingDef>
       </li>
+      
+      <!-- CE Ammo Generation -->      
+      <li Class="StockGenerator_Tag" MayRequire="ceteam.combatextended">
+        <tradeTag>CE_Ammo</tradeTag>
+        <countRange>
+          <min>500</min>
+          <max>2000</max>
+        </countRange>
+        <thingDefCountRange>
+          <min>5</min>
+          <max>9</max>
+        </thingDefCountRange>
+      </li>
+      <li Class="StockGenerator_Tag" MayRequire="ceteam.combatextended">
+        <tradeTag>CE_MediumAmmo</tradeTag>
+        <countRange>
+          <min>30</min>
+          <max>120</max>
+        </countRange>
+        <thingDefCountRange>
+          <min>5</min>
+          <max>8</max>
+        </thingDefCountRange>
+      </li>
+      <li Class="StockGenerator_Tag" MayRequire="ceteam.combatextended">
+        <tradeTag>CE_HeavyAmmo</tradeTag>
+        <countRange>
+          <min>10</min>
+          <max>50</max>
+        </countRange>
+        <thingDefCountRange>
+          <min>4</min>
+          <max>6</max>
+        </thingDefCountRange>
+      </li>
     </stockGenerators>
   </TraderKindDef>
 </Defs>
