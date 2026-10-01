@@ -32,6 +32,7 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting</li>
+			<li>UFR_ETCAmmoSet</li>
 		</tradeTags>
 		<thingCategories>
 			<li>AmmoUFR10x28mmETC</li>
@@ -224,6 +225,7 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting</li>
+			<li>UFR_ETCAmmoSet</li>
 		</tradeTags>
 		<thingCategories>
 			<li>AmmoUFR14x48mmETC</li>
@@ -611,6 +613,7 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting</li>
+			<li>UFR_ETCAmmoSet</li>
 		</tradeTags>
 		<thingCategories>
 			<li>AmmoUFR20x80mmETC</li>
@@ -955,6 +958,7 @@
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
 			<li>CE_AutoEnableCrafting</li>
+			<li>UFR_ETCAmmoSet</li>
 		</tradeTags>
 		<thingCategories>
 			<li>AmmoUFR20x55mmETC</li>
