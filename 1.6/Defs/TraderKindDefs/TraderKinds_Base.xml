@@ -400,6 +400,17 @@
           <max>6</max>
         </thingDefCountRange>
       </li>
+      <li Class="StockGenerator_Tag" MayRequire="ceteam.combatextended">
+        <tradeTag>UFR_ETCAmmoSet</tradeTag>
+        <countRange>
+          <min>30</min>
+          <max>120</max>
+        </countRange>
+        <thingDefCountRange>
+          <min>5</min>
+          <max>8</max>
+        </thingDefCountRange>
+      </li>          
     </stockGenerators>
   </TraderKindDef>
 </Defs>
