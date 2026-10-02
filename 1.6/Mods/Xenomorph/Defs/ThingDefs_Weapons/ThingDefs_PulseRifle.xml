@@ -75,7 +75,7 @@
     <defName>UFR_PulseRifleClassic</defName>
     <label>Pulse Rifle</label>
     <description>A pulse action rifle fitted with an underbarrel grenade launcher. A versatile combat rifle favored by imperial and colonial marine groups. Decent power and range though slower than other weapons.</description>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <graphicData>
       <texPath>UFR/Things/Item/Equipment/m41apulserifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -95,6 +95,7 @@
     <costList>
       <Steel>70</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <verbs>
       <li>
@@ -153,6 +154,7 @@
     </tools>
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
+      <li>SpacerGun</li>
     </weaponTags>
     <recipeMaker>
       <researchPrerequisite>UFR_SpecializedPlasmaCharges</researchPrerequisite>
