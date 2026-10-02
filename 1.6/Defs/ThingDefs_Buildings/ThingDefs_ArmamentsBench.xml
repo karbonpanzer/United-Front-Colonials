@@ -2,7 +2,7 @@
 <Defs>
 
 <ThingDef ParentName="BenchBase">
-    <defName>UFR_ArmamanetsBench</defName>
+    <defName>UFR_ArmamentsBench</defName>
     <label>armaments bench</label>
     <description>A workbench equipped with advanced tools for producing equipment favored by spacer factions.</description>
     <thingClass>Building_WorkTable</thingClass>
