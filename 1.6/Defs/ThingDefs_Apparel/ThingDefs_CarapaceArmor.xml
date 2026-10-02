@@ -21,7 +21,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -111,7 +111,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -217,7 +217,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <apparel>
@@ -286,7 +286,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <apparel>
@@ -334,7 +334,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -425,7 +425,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -509,7 +509,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -600,7 +600,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -684,7 +684,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -775,7 +775,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -859,7 +859,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -954,7 +954,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -1042,7 +1042,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -1165,7 +1165,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -1249,7 +1249,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -1344,7 +1344,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -1428,7 +1428,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -1519,7 +1519,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>FabricationBench</li>
+        <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
