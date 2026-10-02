@@ -8,7 +8,7 @@ using Verse.AI;
 namespace UnitedFront.Patch
 {
     [HarmonyPatch(typeof(ThingWithComps), nameof(ThingWithComps.GetFloatMenuOptions))]
-    public static class FabricationBench_EditColors_FloatMenu
+    public static class ArmamentsBench_EditColors_FloatMenu
     {
         public static IEnumerable<FloatMenuOption> Postfix(IEnumerable<FloatMenuOption> __result,
                                                            ThingWithComps __instance, Pawn selPawn)
@@ -16,7 +16,7 @@ namespace UnitedFront.Patch
             foreach (FloatMenuOption option in __result)
                 yield return option;
 
-            if (__instance.def == null || __instance.def.defName != "FabricationBench")
+            if (__instance.def == null || __instance.def.defName != "UFR_ArmamentsBench")
                 yield break;
 
             if (selPawn == null || !selPawn.RaceProps.Humanlike || !ColorMarkerUtil.Wears(selPawn))
