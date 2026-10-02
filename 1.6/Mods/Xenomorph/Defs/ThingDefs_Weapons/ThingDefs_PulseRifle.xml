@@ -161,6 +161,9 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
+      <recipeUsers>
+        <li>UFR_ArmamentsBench</li>
+      </recipeUsers>
     </recipeMaker>
   </ThingDef>
 
