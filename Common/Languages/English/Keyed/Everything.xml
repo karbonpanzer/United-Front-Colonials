@@ -24,7 +24,7 @@
   <UFR_DevEditColors>Edit colors</UFR_DevEditColors>
   <UFR_DevEditColorsDesc>Open the United Front color editor for this pawn.</UFR_DevEditColorsDesc>
 
-  <!-- Fabrication Bench-->
+  <!-- Armament Bench-->
   <UFR_EditArmor>Change armor role color</UFR_EditArmor>
   <UFR_EditArmorUnreachable>Cannot change role color (unreachable)</UFR_EditArmorUnreachable>
 
