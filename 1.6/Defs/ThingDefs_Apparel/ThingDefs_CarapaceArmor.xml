@@ -12,6 +12,9 @@
       <recipeUsers>
         <li>UFR_ArmamentsBench</li>
       </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>      
     </recipeMaker>  
     <equippedStatOffsets>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
@@ -42,7 +45,8 @@
         <li>Soldier</li>
       </defaultOutfitTags>  
       <tags>         
-        <li>SpacerMilitary</li>         
+        <li>SpacerMilitary</li>
+        <li>UFR_Armor</li>     
       </tags>
     </apparel>
     techLevel>Spacer</techLevel>
@@ -70,6 +74,9 @@
       <recipeUsers>
         <li>UFR_ArmamentsBench</li>
       </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>      
     </recipeMaker>    
     <equippedStatOffsets>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
@@ -97,6 +104,7 @@
       </defaultOutfitTags>
       <tags>         
         <li>SpacerMilitary</li>         
+        <li>UFR_Armor</li>        
       </tags>
     </apparel>
     <techLevel>Spacer</techLevel>
@@ -126,9 +134,6 @@
     </graphicData>
     <recipeMaker>
       <researchPrerequisite>UFR_CarapaceArmor</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
     </recipeMaker>
     <costList>
       <Plasteel>70</Plasteel>
@@ -150,8 +155,6 @@
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceArmor</wornGraphicPath>
       <tags>
-        <li>SpacerMilitary</li>
-        <li>UFR_Armor</li>
         <li>UFR_CarapaceArmor</li>
       </tags>
     </apparel>
@@ -174,9 +177,6 @@
     </graphicData>
     <recipeMaker>
       <researchPrerequisite>UFR_CarapaceArmor</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
     </recipeMaker>
     <costList>
       <Plasteel>22</Plasteel>
@@ -191,15 +191,10 @@
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
       <ArmorRating_Heat>0.4</ArmorRating_Heat>
-      <Insulation_Cold>4</Insulation_Cold>
-      <Insulation_Heat>2</Insulation_Heat>
-      <EquipDelay>2</EquipDelay>
     </statBases>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceHelmet</wornGraphicPath>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_CarapaceArmor</li>        
         <li>UFR_CarapaceHelmet</li>
       </tags>
