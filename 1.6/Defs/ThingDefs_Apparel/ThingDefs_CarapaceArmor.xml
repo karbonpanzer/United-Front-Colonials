@@ -74,7 +74,8 @@
     </apparel>
     <techLevel>Spacer</techLevel>
     <comps>     
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker"/>
+      <li Class="CompProperties_Biocodable"/>
     </comps>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -161,6 +162,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>
     <tradeTags>       
       <li>Armor</li>      
@@ -389,6 +391,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -475,6 +478,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>    
     <tradeTags>       
       <li>Armor</li>       
@@ -564,6 +568,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -650,6 +655,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>   
     <tradeTags>       
       <li>Armor</li>       
@@ -739,6 +745,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -825,6 +832,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>  
     <tradeTags>       
       <li>Armor</li>       
@@ -918,6 +926,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -1008,6 +1017,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>    
     <tradeTags>       
       <li>Armor</li>       
@@ -1129,6 +1139,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -1215,6 +1226,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>     
     <tradeTags>       
       <li>Armor</li>       
@@ -1304,6 +1316,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
       <li Class="CompProperties_CauseHediff_Apparel" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Anomaly">
         <hediff>UFR_StealthFieldEmitter</hediff>
         <part>Torso</part>
@@ -1394,6 +1407,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>     
     <tradeTags>       
       <li>Armor</li>       
@@ -1483,6 +1497,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -1569,6 +1584,7 @@
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
     </comps>
     <tradeTags>       
       <li>Armor</li>       
