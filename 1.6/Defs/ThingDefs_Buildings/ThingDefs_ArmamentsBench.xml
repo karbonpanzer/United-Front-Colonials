@@ -62,10 +62,8 @@
       <li Class="CompProperties_AffectedByFacilities">
         <linkableFacilities>
           <li>ToolCabinet</li>
+          <li MayRequire="VanillaExpanded.VFEProduction">VFE_FabricationCabinet</li>
         </linkableFacilities>
-        <linkableFacilities>
-            <li MayRequire="VanillaExpanded.VFEProduction">VFE_FabricationCabinet</li>
-        <linkableFacilities>
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>

@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- Carapace Armor Parents-->
-  <ThingDef Name="UFR_ApparelArmorCarapaceBase" ParentName="ArmorMachineableBase">
+  <ThingDef Name="UFR_ApparelArmorCarapaceBase" ParentName="ArmorMachineableBase" Abstract="True">
     <colorGenerator Class="ColorGenerator_Single">
       <!-- Near Pure White -->
       <color>(0.95, 0.95, 0.95)</color>
@@ -50,7 +50,7 @@
         <li>UFR_Armor</li>     
       </tags>
     </apparel>
-    techLevel>Spacer</techLevel>
+    <techLevel>Spacer</techLevel>
     <comps>     
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker"/>
       <li Class="CompProperties_Biocodable"/>
@@ -68,7 +68,7 @@
     </thingSetMakerTags>	  
   </ThingDef>  
 
-  <ThingDef Name="UFR_ApparelArmorHelmetCarapaceBase" ParentName="ArmorHelmetMakeableBase">
+  <ThingDef Name="UFR_ApparelArmorHelmetCarapaceBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
     <colorGenerator Class="ColorGenerator_Single">
       <!-- Near Pure White -->
       <color>(0.95, 0.95, 0.95)</color>
@@ -117,7 +117,7 @@
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
       <li Class="CompProperties_Biocodable"/>
     </comps>
-    <thingCategories>
+    <thingCategories Inherit="False">
       <li>ArmorHeadgear</li>
     </thingCategories>
     <tradeTags>       
@@ -274,7 +274,7 @@
         <li>SpacerMilitary</li>         
         <li>UFR_Armor</li>
         <li>UFR_CarapaceBoots</li>
-		<li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>		  
+		    <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>		  
       </tags>
     </apparel>
 	<thingCategories>
@@ -347,7 +347,7 @@
         <li>SpacerMilitary</li>         
         <li>UFR_Armor</li>
         <li>UFR_CarapaceGloves</li>
-	    <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
+	      <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
     </apparel>
 	<thingCategories>
