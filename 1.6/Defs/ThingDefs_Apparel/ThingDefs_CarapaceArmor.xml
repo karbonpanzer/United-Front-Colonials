@@ -270,9 +270,9 @@
         <li>UFR_CarapaceBoots</li>
       </tags>
     </apparel>
-		<thingCategories>
-			<li MayRequire="VanillaExpanded.VARME">VAE_BootsAndGloves</li>
-		</thingCategories>      
+	<thingCategories>
+	  <li MayRequire="VanillaExpanded.VARME">VAE_BootsAndGloves</li>
+	</thingCategories>      
     <tradeTags>       
       <li>Armor</li>       
       <li>HiTechArmor</li>       
@@ -342,9 +342,9 @@
         <li>UFR_CarapaceGloves</li>
       </tags>
     </apparel>
-		<thingCategories>
-			<li MayRequire="VanillaExpanded.VARME">VAE_BootsAndGloves</li>
-		</thingCategories>     
+	<thingCategories>
+	  <li MayRequire="VanillaExpanded.VARME">VAE_BootsAndGloves</li>
+	</thingCategories>     
     <tradeTags>       
       <li>Armor</li>       
       <li>HiTechArmor</li>       
