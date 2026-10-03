@@ -7,7 +7,7 @@
     <description>A workbench equipped with advanced tools for producing equipment favored by spacer factions.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>UFR/Things/Building/ArmamentsBench</texPath>
+      <texPath>UFR/Things/Building/Production/ArmamentsBench/ArmamentsBench</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.5,1.5)</drawSize>
       <damageData>
