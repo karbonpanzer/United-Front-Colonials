@@ -63,6 +63,9 @@
       <li>HiTechArmor</li>
       <li>UFR_Armor</li>
     </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>	  
   </ThingDef>  
 
   <ThingDef Name="UFR_ApparelArmorHelmetCarapaceBase" ParentName="ArmorHelmetMakeableBase">
@@ -121,7 +124,10 @@
       <li>Armor</li>      
        <li>HiTechArmor</li>       
        <li>UFR_Armor</li>     
-    </tradeTags>    
+    </tradeTags>   
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>	  
   </ThingDef>
   
   <!-- Stock Carapace Armor -->
