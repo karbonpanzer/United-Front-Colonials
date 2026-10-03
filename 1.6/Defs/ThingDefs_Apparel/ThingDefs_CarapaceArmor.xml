@@ -8,13 +8,19 @@
       <color>(0.95, 0.95, 0.95)</color>
     </colorGenerator>
     <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <recipeUsers>
         <li>UFR_ArmamentsBench</li>
       </recipeUsers>
     </recipeMaker>  
     <equippedStatOffsets>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
-    </equippedStatOffsets>    
+    </equippedStatOffsets>
+    <statBases>
+      <Insulation_Cold>34</Insulation_Cold>
+      <Insulation_Heat>10</Insulation_Heat>
+      <EquipDelay>6</EquipDelay>
+    </statBases>
     <apparel>
       <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
@@ -60,6 +66,7 @@
       <color>(0.95, 0.95, 0.95)</color>
     </colorGenerator>
     <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <recipeUsers>
         <li>UFR_ArmamentsBench</li>
       </recipeUsers>
@@ -68,7 +75,13 @@
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
     </equippedStatOffsets>
+    <statBases>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
     <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
       <renderSkipFlags>
         <li>Hair</li>
         <li>Beard</li>
@@ -76,7 +89,6 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -112,18 +124,11 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_CarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>70</Plasteel>
@@ -138,54 +143,18 @@
       <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
       <ArmorRating_Heat>0.48</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>10</Insulation_Heat>
-      <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-0.08</MoveSpeed>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceArmor</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Shoulders</li>
-        <li>Neck</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <shellRenderedBehindHead>True</shellRenderedBehindHead>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <soundWear>Wear_PowerArmor</soundWear>
-      <soundRemove>Remove_PowerArmor</soundRemove>
       <tags>
         <li>SpacerMilitary</li>
         <li>UFR_Armor</li>
         <li>UFR_CarapaceArmor</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>     
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker"/>
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <tradeTags>
-      <li>Armor</li>
-      <li>HiTechArmor</li>
-      <li>UFR_Armor</li>
-    </tradeTags>
     <modExtensions>
       <!--white -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -203,18 +172,11 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_CarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>22</Plasteel>
@@ -233,26 +195,8 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>
     <apparel>
-      <renderSkipFlags>
-        <li>Hair</li>
-        <li>Beard</li>
-      </renderSkipFlags>      
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceHelmet</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <tags>         
         <li>SpacerMilitary</li>         
         <li>UFR_Armor</li>
@@ -260,16 +204,6 @@
         <li>UFR_CarapaceHelmet</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-    <tradeTags>       
-      <li>Armor</li>      
-       <li>HiTechArmor</li>       
-       <li>UFR_Armor</li>     
-      </tradeTags>
     <modExtensions>
       <!-- white -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
