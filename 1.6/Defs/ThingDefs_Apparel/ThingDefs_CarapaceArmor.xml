@@ -122,8 +122,8 @@
     </thingCategories>
     <tradeTags>       
       <li>Armor</li>      
-       <li>HiTechArmor</li>       
-       <li>UFR_Armor</li>     
+      <li>HiTechArmor</li>       
+      <li>UFR_Armor</li>     
     </tradeTags>   
     <thingSetMakerTags>
       <li>RewardStandardHighFreq</li>
