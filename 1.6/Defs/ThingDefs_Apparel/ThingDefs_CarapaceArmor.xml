@@ -20,6 +20,7 @@
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <statBases>
+      <Flammability>0.4</Flammability>
       <Insulation_Cold>34</Insulation_Cold>
       <Insulation_Heat>10</Insulation_Heat>
       <EquipDelay>6</EquipDelay>
@@ -83,6 +84,7 @@
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
     </equippedStatOffsets>
     <statBases>
+      <Flammability>0.4</Flammability>
       <Insulation_Cold>4</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
@@ -144,7 +146,6 @@
       <WorkToMake>48000</WorkToMake>
       <MaxHitPoints>300</MaxHitPoints>
       <Mass>8</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
       <ArmorRating_Heat>0.48</ArmorRating_Heat>
@@ -187,7 +188,6 @@
       <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>110</MaxHitPoints>
       <Mass>1.0</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
       <ArmorRating_Heat>0.4</ArmorRating_Heat>
