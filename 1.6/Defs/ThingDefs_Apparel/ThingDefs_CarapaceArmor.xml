@@ -1,8 +1,109 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 
+  <!-- Carapace Armor Parents-->
+  <ThingDef Name="UFR_ApparelArmorCarapaceBase" ParentName="ArmorMachineableBase">
+    <colorGenerator Class="ColorGenerator_Single">
+      <!-- Near Pure White -->
+      <color>(0.95, 0.95, 0.95)</color>
+    </colorGenerator>
+    <recipeMaker>
+      <recipeUsers>
+        <li>UFR_ArmamentsBench</li>
+      </recipeUsers>
+    </recipeMaker>  
+    <equippedStatOffsets>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
+    </equippedStatOffsets>    
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Neck</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <shellRenderedBehindHead>True</shellRenderedBehindHead>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>      
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>  
+      <tags>         
+        <li>SpacerMilitary</li>         
+      </tags>
+    </apparel>
+    techLevel>Spacer</techLevel>
+    <comps>     
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker"/>
+      <li Class="CompProperties_Biocodable"/>
+    </comps> 
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>HiTechArmor</li>
+      <li>UFR_Armor</li>
+    </tradeTags>
+  </ThingDef>  
+
+  <ThingDef Name="UFR_ApparelArmorHelmetCarapaceBase" ParentName="ArmorHelmetMakeableBase">
+    <colorGenerator Class="ColorGenerator_Single">
+      <!-- Near Pure White -->
+      <color>(0.95, 0.95, 0.95)</color>
+    </colorGenerator>
+    <recipeMaker>
+      <recipeUsers>
+        <li>UFR_ArmamentsBench</li>
+      </recipeUsers>
+    </recipeMaker>    
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
+    <apparel>
+      <renderSkipFlags>
+        <li>Hair</li>
+        <li>Beard</li>
+      </renderSkipFlags>      
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <tags>         
+        <li>SpacerMilitary</li>         
+      </tags>
+    </apparel>
+    <techLevel>Spacer</techLevel>
+    <comps>
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingCategories>
+      <li>ArmorHeadgear</li>
+    </thingCategories>
+    <tradeTags>       
+      <li>Armor</li>      
+       <li>HiTechArmor</li>       
+       <li>UFR_Armor</li>     
+    </tradeTags>    
+  </ThingDef>
+  
   <!-- Stock Carapace Armor -->
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_CarapaceArmor</defName>
     <label>carapace armor</label>
     <description>A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection and with an integrated webbing system configured for standard infantry use. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army regulars and urbworld military forces.</description>
@@ -93,7 +194,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_CarapaceHelmet</defName>
     <label>carapace helmet</label>
     <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army regulars and urbworld military forces.</description>
