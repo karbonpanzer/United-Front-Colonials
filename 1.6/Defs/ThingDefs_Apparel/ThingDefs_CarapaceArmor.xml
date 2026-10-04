@@ -17,6 +17,7 @@
       </skillRequirements>      
     </recipeMaker>  
     <equippedStatOffsets>
+      <MoveSpeed>-0.08</MoveSpeed>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <statBases>
@@ -44,6 +45,7 @@
       <soundRemove>Remove_PowerArmor</soundRemove>
       <defaultOutfitTags>
         <li>Soldier</li>
+        <li>Spacefarer</li>
       </defaultOutfitTags>  
       <tags>         
         <li>SpacerMilitary</li>
@@ -106,6 +108,7 @@
       </layers>
       <defaultOutfitTags>
         <li>Soldier</li>
+        <li>Spacefarer</li>
       </defaultOutfitTags>
       <tags>         
         <li>SpacerMilitary</li>         
@@ -156,9 +159,6 @@
       <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
       <ArmorRating_Heat>0.48</ArmorRating_Heat>
     </statBases>
-    <equippedStatOffsets>
-      <MoveSpeed>-0.08</MoveSpeed>
-    </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceArmor</wornGraphicPath>
       <tags>
@@ -214,7 +214,7 @@
   </ThingDef>
 
   <!-- Carapace Boots and Gloves -->
-    <ThingDef ParentName="ApparelMakeableBase">
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>UFR_CarapaceBoots</defName>
     <label>carapace boots</label>
     <description>A set of plasteel-weave plate boots. They provide decent protection and cause no hinderence to the wearer.</description>
@@ -277,9 +277,9 @@
 		    <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>		  
       </tags>
     </apparel>
-	<thingCategories>
-	  <li MayRequire="VanillaExpanded.VARME">VAE_BootsAndGloves</li>
-	</thingCategories>      
+    <thingCategories>
+      <li MayRequire="VanillaExpanded.VARME">VAE_BootsAndGloves</li>
+    </thingCategories>      
     <tradeTags>       
       <li>Armor</li>       
       <li>HiTechArmor</li>       
@@ -350,9 +350,9 @@
 	      <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
     </apparel>
-	<thingCategories>
-	  <li MayRequire="VanillaExpanded.VARME">VAE_BootsAndGloves</li>
-	</thingCategories>     
+    <thingCategories>
+      <li MayRequire="VanillaExpanded.VARME">VAE_BootsAndGloves</li>
+    </thingCategories>     
     <tradeTags>       
       <li>Armor</li>       
       <li>HiTechArmor</li>       
@@ -361,7 +361,7 @@
   </ThingDef>
 
   <!-- Medic Carapace Armor -->
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_MedicCarapaceArmor</defName>
     <label>medic carapace armor</label>
     <description>A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection and with an integrated webbing system configured for providing medical assistance in the field. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army regulars and urbworld military forces and is marked as such.</description>
@@ -370,18 +370,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_MedicCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>70</Plasteel>
@@ -392,59 +382,20 @@
       <WorkToMake>48000</WorkToMake>
       <MaxHitPoints>300</MaxHitPoints>
       <Mass>8</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
       <ArmorRating_Heat>0.48</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>10</Insulation_Heat>
-      <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.08</MoveSpeed>
       <MedicalTendQuality>0.10</MedicalTendQuality>
       <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/MedicCarapaceArmor/MedicCarapaceArmor</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Shoulders</li>
-        <li>Neck</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <shellRenderedBehindHead>True</shellRenderedBehindHead>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <soundWear>Wear_PowerArmor</soundWear>
-      <soundRemove>Remove_PowerArmor</soundRemove>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_MedicCarapaceArmor</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- bright azure -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -453,7 +404,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_MedicCarapaceHelmet</defName>
     <label>medic carapace helmet</label>
     <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army medics and urbworld military forces and is marked as such.</description>
@@ -462,18 +413,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_MedicCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>22</Plasteel>
@@ -484,51 +425,17 @@
       <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>110</MaxHitPoints>
       <Mass>1.0</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
       <ArmorRating_Heat>0.4</ArmorRating_Heat>
-      <Insulation_Cold>4</Insulation_Cold>
-      <Insulation_Heat>2</Insulation_Heat>
-      <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>
     <apparel>
-      <renderSkipFlags>
-        <li>Hair</li>
-        <li>Beard</li>
-      </renderSkipFlags>      
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/MedicCarapaceArmor/MedicCarapaceHelmet</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_MedicCarapaceArmor</li>        
         <li>UFR_MedicCarapaceHelmet</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>    
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- bright azure -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -538,7 +445,7 @@
   </ThingDef>
 
   <!-- Engineer Carapace Armor -->
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_EngineerCarapaceArmor</defName>
     <label>engineer carapace armor</label>
     <description>A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection and with an integrated webbing system configured for combat engineering uses. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army engineers and urbworld military sappers and is marked as such.</description>
@@ -547,18 +454,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_EngineerCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>70</Plasteel>
@@ -569,59 +466,19 @@
       <WorkToMake>48000</WorkToMake>
       <MaxHitPoints>300</MaxHitPoints>
       <Mass>8</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
       <ArmorRating_Heat>0.48</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>10</Insulation_Heat>
-      <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.08</MoveSpeed>
       <ConstructionSpeed>0.10</ConstructionSpeed>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/EngineerCarapaceArmor/EngineerCarapaceArmor</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Shoulders</li>
-        <li>Neck</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <shellRenderedBehindHead>True</shellRenderedBehindHead>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <soundWear>Wear_PowerArmor</soundWear>
-      <soundRemove>Remove_PowerArmor</soundRemove>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_EngineerCarapaceArmor</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- burnt orange -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -630,7 +487,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_EngineerCarapaceHelmet</defName>
     <label>engineer carapace helmet</label>
     <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army engineers and urbworld military sappers and is marked as such.</description>
@@ -639,18 +496,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_EngineerCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>22</Plasteel>
@@ -661,51 +508,18 @@
       <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>110</MaxHitPoints>
       <Mass>1.0</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
       <ArmorRating_Heat>0.4</ArmorRating_Heat>
-      <Insulation_Cold>4</Insulation_Cold>
-      <Insulation_Heat>2</Insulation_Heat>
-      <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>
     <apparel>
-      <renderSkipFlags>
-        <li>Hair</li>
-        <li>Beard</li>
-      </renderSkipFlags>      
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/EngineerCarapaceArmor/EngineerCarapaceHelmet</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_EngineerCarapaceArmor</li>        
         <li>UFR_EngineerCarapaceHelmet</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>   
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- burnt orange -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -715,7 +529,7 @@
   </ThingDef>
 
   <!-- MP Carapace Armor -->
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_MPCarapaceArmor</defName>
     <label>police carapace armor</label>
     <description>A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection and with an integrated webbing system configured for law enforcement uses. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army provosts and urbworld military judges and is marked as such.</description>
@@ -724,18 +538,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_PoliceCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>70</Plasteel>
@@ -746,59 +550,19 @@
       <WorkToMake>48000</WorkToMake>
       <MaxHitPoints>300</MaxHitPoints>
       <Mass>8</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
       <ArmorRating_Heat>0.48</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>10</Insulation_Heat>
-      <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.08</MoveSpeed>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.10</SlaveSuppressionOffset>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/MPCarapaceArmor/MPCarapaceArmor</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Shoulders</li>
-        <li>Neck</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <shellRenderedBehindHead>True</shellRenderedBehindHead>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <soundWear>Wear_PowerArmor</soundWear>
-      <soundRemove>Remove_PowerArmor</soundRemove>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_MPCarapaceArmor</li>        
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories> 
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- dark navy -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -807,7 +571,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_MPCarapaceHelmet</defName>
     <label>police carapace helmet</label>
     <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army provosts and urbworld military judges and is marked as such.</description>
@@ -816,18 +580,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_PoliceCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>22</Plasteel>
@@ -838,51 +592,17 @@
       <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>110</MaxHitPoints>
       <Mass>1.0</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
       <ArmorRating_Heat>0.4</ArmorRating_Heat>
-      <Insulation_Cold>4</Insulation_Cold>
-      <Insulation_Heat>2</Insulation_Heat>
-      <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>
     <apparel>
-      <renderSkipFlags>
-        <li>Hair</li>
-        <li>Beard</li>
-      </renderSkipFlags>      
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/MPCarapaceArmor/MPCarapaceHelmet</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_MPCarapaceArmor</li>        
         <li>UFR_MPCarapaceHelmet</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>  
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- dark navy -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -892,7 +612,7 @@
   </ThingDef>
 
   <!-- Commander Carapace Armor -->
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_CommanderCarapaceArmor</defName>
     <label>commander carapace armor</label>
     <description>A suit of armor, made up of higher quality lightweight plasteel-weave plates which provide more than moderate protection and with an integrated webbing system configured for command uses. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army commanders and urbworld military officers and is marked as such.</description>
@@ -901,18 +621,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_CommanderCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>70</Plasteel>
@@ -924,62 +634,22 @@
       <WorkToMake>48000</WorkToMake>
       <MaxHitPoints>300</MaxHitPoints>
       <Mass>8</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
       <ArmorRating_Heat>0.48</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>10</Insulation_Heat>
-      <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.08</MoveSpeed>
       <SocialImpact>0.15</SocialImpact>
       <PsychicSensitivity>0.05</PsychicSensitivity>
       <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CommanderCarapaceArmor/CommanderCarapaceArmor</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Shoulders</li>
-        <li>Neck</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <shellRenderedBehindHead>True</shellRenderedBehindHead>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <soundWear>Wear_PowerArmor</soundWear>
-      <soundRemove>Remove_PowerArmor</soundRemove>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_CommanderCarapaceArmor</li>        
         <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- gold -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -988,7 +658,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_CommanderCarapaceHelmet</defName>
     <label>commander carapace helmet</label>
     <description>A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army commanders and urbworld military officers and is marked as such.</description>
@@ -997,18 +667,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_CommanderCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>22</Plasteel>
@@ -1020,54 +680,22 @@
       <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>110</MaxHitPoints>
       <Mass>1.0</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
       <ArmorRating_Heat>0.4</ArmorRating_Heat>
-      <Insulation_Cold>4</Insulation_Cold>
-      <Insulation_Heat>2</Insulation_Heat>
-      <EquipDelay>2</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
       <PsychicSensitivity>0.05</PsychicSensitivity>
       <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <apparel>
-      <renderSkipFlags>
-        <li>Hair</li>
-        <li>Beard</li>
-      </renderSkipFlags>      
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CommanderCarapaceArmor/CommanderCarapaceHelmet</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_CommanderCarapaceArmor</li>        
         <li>UFR_CommanderCarapaceHelmet</li>
         <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>    
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- gold -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1077,7 +705,7 @@
   </ThingDef>
 
   <!-- Assault Carapace Armor -->
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_AssaultCarapaceArmor</defName>
     <label>assault carapace armor</label>
     <description>A suit of armor, made up of lightweight plasteel-weave plates which provide moderate protection, additional plates fitted for increased protection, and with an integrated webbing system configured for assault and raiding uses. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army commandos and urbworld military shocktroopers and is marked as such.</description>
@@ -1086,18 +714,8 @@
       <texPath>UFR/Things/Pawn/Humanlike/Armor/AssaultCarapaceArmor/AssaultCarapaceArmor</texPath>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_AssaultCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>85</Plasteel>
@@ -1108,18 +726,13 @@
       <WorkToMake>56000</WorkToMake>
       <MaxHitPoints>320</MaxHitPoints>
       <Mass>11</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
       <ArmorRating_Heat>0.52</ArmorRating_Heat>
-      <Insulation_Cold>38</Insulation_Cold>
-      <Insulation_Heat>12</Insulation_Heat>
-      <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <MoveSpeed>-0.14</MoveSpeed>
       <MeleeDamageFactor>0.10</MeleeDamageFactor>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <verbs>
       <li>
@@ -1154,45 +767,11 @@
       </li>
     </comps>
     <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <shellRenderedBehindHead>True</shellRenderedBehindHead>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/AssaultCarapaceArmor/AssaultCarapaceArmor</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <soundWear>Wear_PowerArmor</soundWear>
-      <soundRemove>Remove_PowerArmor</soundRemove>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
+      <tags>               
         <li>UFR_AssaultCarapaceArmor</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- crimson -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1201,7 +780,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_AssaultCarapaceHelmet</defName>
     <label>assault carapace helmet</label>
     <description>A armored helmet with built in communication system, a protective plasteel-weave plate, and modified to include a face guard. Armor like this is often used by imperial army commandos and urbworld military shocktroopers and is marked as such.</description>
@@ -1210,18 +789,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_AssaultCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>26</Plasteel>
@@ -1232,51 +801,17 @@
       <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>125</MaxHitPoints>
       <Mass>1.6</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.78</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
       <ArmorRating_Heat>0.44</ArmorRating_Heat>
-      <Insulation_Cold>4</Insulation_Cold>
-      <Insulation_Heat>2</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>
     <apparel>
-      <renderSkipFlags>
-        <li>Hair</li>
-        <li>Beard</li>
-      </renderSkipFlags>      
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/AssaultCarapaceArmor/AssaultCarapaceHelmet</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_AssaultCarapaceArmor</li>
         <li>UFR_AssaultCarapacetHelmet</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>     
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>    
-    </tradeTags>
     <modExtensions>
       <!-- crimson -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1286,7 +821,7 @@
   </ThingDef>
 
   <!-- Scout Carapace Armor -->
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_ScoutCarapaceArmor</defName>
     <label>scout carapace armor</label>
     <description>A suit of armor, made up of lightweight plasteel-weave plates which provide moderate protection, featuring a bandoleer for high caliber bullets, and a thermooptical camoflague generator. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army scouts and urbworld military assassins and is marked as such.</description>
@@ -1295,18 +830,8 @@
       <texPath>UFR/Things/Pawn/Humanlike/Armor/ScoutCarapaceArmor/ScoutCarapaceArmor</texPath>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_ScoutCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>75</Plasteel>
@@ -1317,63 +842,25 @@
       <WorkToMake>56000</WorkToMake>
       <MaxHitPoints>280</MaxHitPoints>
       <Mass>11</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
       <ArmorRating_Heat>0.48</ArmorRating_Heat>
-      <Insulation_Cold>38</Insulation_Cold>
-      <Insulation_Heat>12</Insulation_Heat>
-      <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.08</MoveSpeed>
       <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>    
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <shellRenderedBehindHead>True</shellRenderedBehindHead>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/ScoutCarapaceArmor/ScoutCarapaceArmor</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <soundWear>Wear_PowerArmor</soundWear>
-      <soundRemove>Remove_PowerArmor</soundRemove>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
+      <tags>                
         <li>UFR_ScoutCarapaceArmor</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
     <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
       <li Class="CompProperties_CauseHediff_Apparel" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Anomaly">
         <hediff>UFR_StealthFieldEmitter</hediff>
         <part>Torso</part>
       </li>      
     </comps>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>    
-     </tradeTags>
     <modExtensions>
       <!-- olive -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1382,7 +869,7 @@
     </modExtensions>
   </ThingDef> 
  
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_ScoutCarapaceHelmet</defName>
     <label>scout carapace helmet</label>
     <description>A armored helmet with built in communication system, protective plasteel-weave plate, an advanced targeting system, and a oxygen recycler for hazardous environments. Armor like this is often used by imperial army scouts and urbworld assassins and is marked as such.</description>
@@ -1391,18 +878,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_ScoutCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>7</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>26</Plasteel>
@@ -1413,51 +890,17 @@
       <WorkToMake>16000</WorkToMake>
       <MaxHitPoints>105</MaxHitPoints>
       <Mass>1.6</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
       <ArmorRating_Heat>0.4</ArmorRating_Heat>
-      <Insulation_Cold>4</Insulation_Cold>
-      <Insulation_Heat>2</Insulation_Heat>
-      <EquipDelay>3</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>
     <apparel>
-      <renderSkipFlags>
-        <li>Hair</li>
-        <li>Beard</li>
-      </renderSkipFlags>      
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/ScoutCarapaceArmor/ScoutCarapaceHelmet</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_ScoutCarapaceArmor</li>
         <li>UFR_ScoutCarapaceHelmet</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>     
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- olive -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1467,7 +910,7 @@
   </ThingDef>
  
   <!-- Veteran Carapace Armor -->
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_ApparelArmorCarapaceBase">
     <defName>UFR_VeteranCarapaceArmor</defName>
     <label>veteran carapace armor</label>
     <description>A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection, additional plating added in the field and with an integrated webbing system modified by veterans in the field. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army veterans and urbworld mercenaries.</description>
@@ -1476,18 +919,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_VeteranCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>85</Plasteel>
@@ -1498,59 +931,20 @@
       <WorkToMake>48000</WorkToMake>
       <MaxHitPoints>320</MaxHitPoints>
       <Mass>8</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
       <ArmorRating_Heat>0.52</ArmorRating_Heat>
-      <Insulation_Cold>34</Insulation_Cold>
-      <Insulation_Heat>10</Insulation_Heat>
-      <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.08</MoveSpeed>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceArmor</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Shoulders</li>
-        <li>Neck</li>
-        <li>Arms</li>
-        <li>Legs</li>
-      </bodyPartGroups>
-      <shellRenderedBehindHead>True</shellRenderedBehindHead>
-      <layers>
-        <li>Middle</li>
-        <li>Shell</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-      <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <soundWear>Wear_PowerArmor</soundWear>
-      <soundRemove>Remove_PowerArmor</soundRemove>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
-        <li>UFR_VeteranCarapaceArmor</li>
-      </tags>
+        <li>UFR_VeteranCarapaceArmor</li>        
+        <li>UFR_VeteranCarapaceHelmet</li>
+      </tags>      
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-    <thingCategories>
-      <li>ApparelArmor</li>
-    </thingCategories>
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- very dark grey -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
@@ -1559,7 +953,7 @@
     </modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorHelmetMakeableBase">
+  <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
     <defName>UFR_VeteranCarapaceHelmet</defName>
     <label>veteran carapace helmet</label>
     <description>A armored helmet with built in communication system, improvised cheek guards and a protective plasteel-weave plate. Armor like this is often used by imperial army veterans and urbworld mercenaries.</description>
@@ -1568,18 +962,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>UFR_VeteranCarapaceArmor</researchPrerequisite>
-      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <skillRequirements>
-        <Crafting>5</Crafting>
-      </skillRequirements>
-      <recipeUsers Inherit="False">
-        <li>UFR_ArmamentsBench</li>
-      </recipeUsers>
     </recipeMaker>
     <costList>
       <Plasteel>26</Plasteel>
@@ -1590,51 +974,17 @@
       <WorkToMake>12000</WorkToMake>
       <MaxHitPoints>125</MaxHitPoints>
       <Mass>1.0</Mass>
-      <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.78</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
       <ArmorRating_Heat>0.44</ArmorRating_Heat>
-      <Insulation_Cold>4</Insulation_Cold>
-      <Insulation_Heat>2</Insulation_Heat>
-      <EquipDelay>2</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>
     <apparel>
-      <renderSkipFlags>
-        <li>Hair</li>
-        <li>Beard</li>
-      </renderSkipFlags>      
-      <bodyPartGroups>
-        <li>FullHead</li>
-      </bodyPartGroups>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceHelmet</wornGraphicPath>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <layers>
-        <li>Overhead</li>
-      </layers>
-      <defaultOutfitTags>
-        <li>Soldier</li>
-      </defaultOutfitTags>
       <tags>         
-        <li>SpacerMilitary</li>         
-        <li>UFR_Armor</li>
         <li>UFR_VeteranCarapaceArmor</li>        
         <li>UFR_VeteranCarapaceHelmet</li>
       </tags>
     </apparel>
-    <techLevel>Spacer</techLevel>
-    <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
-      <li Class="CompProperties_Biocodable"/>
-    </comps>
-    <tradeTags>       
-      <li>Armor</li>       
-      <li>HiTechArmor</li>       
-      <li>UFR_Armor</li>     
-    </tradeTags>
     <modExtensions>
       <!-- very dark grey -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
