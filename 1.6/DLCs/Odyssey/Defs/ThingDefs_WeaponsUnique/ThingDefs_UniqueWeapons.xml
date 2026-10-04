@@ -6,7 +6,7 @@
     <label>unique sabot pistol</label>
     <description>A sabot pistol with customized parts.</description>
     <graphicData>
-      <texPath>UFR/Things/Item/Equipment/sabotpistol</texPath>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -58,7 +58,7 @@
     <label>unique sabot rifle</label>
     <description>A sabot rifle with customized parts.</description>
     <graphicData>
-      <texPath>UFR/Things/Item/Equipment/sabotassaultrifle</texPath>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotAssaultRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -114,7 +114,7 @@
     <label>unique sabot sniper rifle</label>
     <description>A sabot sniper rifle with customized parts.</description>
     <graphicData>
-      <texPath>UFR/Things/Item/Equipment/sabotsniper</texPath>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotSniper</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -170,7 +170,7 @@
     <label>unique flechette shotgun</label>
     <description>A flechette shotgun with customized parts.</description>
     <graphicData>
-      <texPath>UFR/Things/Item/Equipment/flechetteshotgun</texPath>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/FlechetteShotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
