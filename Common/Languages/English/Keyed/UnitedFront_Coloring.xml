@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Color Settings -->
-  <UnitedFront_Decals_Colours>Armor Colors</UnitedFront_Decals_Colours>
-  <UnitedFront_Zone_Body>Body</UnitedFront_Zone_Body>
-  <UnitedFront_Zone_LeftShoulder>Shoulders</UnitedFront_Zone_LeftShoulder>
-  <UnitedFront_Zone_RightShoulder>Symbol</UnitedFront_Zone_RightShoulder>
+  <!-- Color Menu -->
   <UFR_EditColorsTitle>Edit armor colors - {0}</UFR_EditColorsTitle>
   <UFR_ColorTab_Armor>Armor</UFR_ColorTab_Armor>
   <UFR_ColorTab_Helmet>Helmet</UFR_ColorTab_Helmet>
@@ -19,6 +15,8 @@
   <UFR_Reset>Reset</UFR_Reset>
   <UFR_Accept>Accept</UFR_Accept>
   <UFR_ColorPrimaryLocked>Set at the styling station</UFR_ColorPrimaryLocked>
+  <UFR_ColorSectionRole>Role colors</UFR_ColorSectionRole>
+  <UFR_ColorSectionOther>Ideology colors</UFR_ColorSectionOther>
 
   <!-- Dev Debug Gizmo -->
   <UFR_DevEditColors>Edit colors</UFR_DevEditColors>

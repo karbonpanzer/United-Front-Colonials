@@ -1,40 +1,55 @@
 using System.Collections.Generic;
 using RimWorld;
 using UnitedFront.Comps;
+using UnitedFront.Utils;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
 
 namespace UnitedFront.UI
 {
+    [StaticConstructorOnStartup]
     public sealed class DialogEditColors : Window
     {
         private sealed class Piece
         {
-            public Apparel Apparel;
-            public CompColorMarker Comp;
-            public List<Color> Working;
-            public List<Color> Original;
+            public Apparel Apparel = null!;
+            public CompColorMarker Comp = null!;
+            public List<Color> Working = null!;
+            public List<Color> Original = null!;
         }
 
         private const int ColorCount = 2;
 
         private readonly Pawn _pawn;
         private readonly List<Piece> _pieces = new List<Piece>();
-        private static readonly Color LockedTint = new Color(1f, 1f, 1f, 0.35f);
-        private static readonly Color LockedVeil = new Color(0f, 0f, 0f, 0.45f);
-        private static readonly Color LockedBoxFill = new Color(0.08f, 0.08f, 0.08f, 0.92f);
-        private static readonly Color LockedBoxBorder = new Color(1f, 1f, 1f, 0.45f);
-        private const float LockedBoxPad = 12f;
         private int _sel;
         private bool _committed;
-        private List<Color> _allColors;
+        private List<Color>? _allColors;
 
         private static readonly Vector2 ButSize = new Vector2(200f, 40f);
         private static readonly Vector3 PortraitOffset = new Vector3(0f, 0f, 0.15f);
         private const float PortraitZoom = 1.3f;
         private const float LeftRectPercent = 0.42f;
         private const float TabMargin = 18f;
+
+        private static readonly Color LockedTint = new Color(1f, 1f, 1f, 0.35f);
+        private static readonly Color LockedVeil = new Color(0f, 0f, 0f, 0.45f);
+        private static readonly Color LockedBoxFill = new Color(0.08f, 0.08f, 0.08f, 0.92f);
+        private static readonly Color LockedBoxBorder = new Color(1f, 1f, 1f, 0.45f);
+        private const float LockedBoxPad = 12f;
+
+        private const float SwatchSize = 22f;
+        private const float SwatchPad = 2f;
+        private const float SectionLabelH = 18f;
+        private const float SectionGap = 6f;
+        private static readonly Color SectionLabelColor = new Color(1f, 1f, 1f, 0.6f);
+
+        private static readonly Texture2D FavoriteColorTex =
+            ContentFinder<Texture2D>.Get("UI/Icons/ColorSelector/ColorFavourite");
+
+        private static readonly Texture2D IdeoColorTex =
+            ContentFinder<Texture2D>.Get("UI/Icons/ColorSelector/ColorIdeology");
 
         public override Vector2 InitialSize => new Vector2(1000f, 760f);
 
@@ -51,29 +66,26 @@ namespace UnitedFront.UI
             {
                 foreach (Apparel ap in pawn.apparel.WornApparel)
                 {
-                    CompColorMarker comp = ap.TryGetComp<CompColorMarker>();
+                    CompColorMarker? comp = ap.TryGetComp<CompColorMarker>();
                     if (comp == null) continue;
-
-                    var working = new List<Color>(comp.ZoneColors);
-                    while (working.Count < ColorCount) working.Add(Color.white);
-                    if (working.Count > ColorCount) working.RemoveRange(ColorCount, working.Count - ColorCount);
 
                     _pieces.Add(new Piece
                     {
                         Apparel = ap,
                         Comp = comp,
-                        Working = working,
+                        Working = Normalized(comp.ZoneColors),
                         Original = new List<Color>(comp.ZoneColors)
                     });
                 }
             }
         }
 
-        private static bool IsHelmet(Apparel ap)
+        private static List<Color> Normalized(List<Color> source)
         {
-            List<BodyPartGroupDef> groups = ap.def.apparel?.bodyPartGroups;
-            if (groups == null) return false;
-            return groups.Contains(BodyPartGroupDefOf.UpperHead) || groups.Contains(BodyPartGroupDefOf.FullHead);
+            var list = new List<Color>(source);
+            while (list.Count < ColorCount) list.Add(Color.white);
+            if (list.Count > ColorCount) list.RemoveRange(ColorCount, list.Count - ColorCount);
+            return list;
         }
 
         public override void Close(bool doCloseSound = true)
@@ -156,8 +168,6 @@ namespace UnitedFront.UI
             }
         }
 
-        private bool ZoneLocked(int index) => index == 0 && ModsConfig.IdeologyActive;
-
         private void DrawColorRow(Rect row, Piece p, int index)
         {
             bool locked = ZoneLocked(index);
@@ -178,39 +188,44 @@ namespace UnitedFront.UI
 
             Color c = p.Working[index];
             Color original = c;
-
-            bool hasDefault = TryGetDefaultColor(p, index, out Color defColor);
-            float defaultBlockH = hasDefault ? defaultH + 4f : 0f;
+            Color defColor = p.Comp.DefaultZone(index);
 
             Rect btnRow = new Rect(row.x, row.yMax - btnH, row.width, btnH);
-            Rect palette = new Rect(row.x, row.y + labelH + defaultBlockH, row.width,
-                                    row.height - labelH - defaultBlockH - btnH - gap);
-            
-            if (hasDefault)
+            Rect paletteArea = new Rect(row.x, row.y + labelH + defaultH + 4f, row.width,
+                                        row.height - labelH - defaultH - 4f - btnH - gap);
+
+            Rect defRow = new Rect(row.x, row.y + labelH, row.width, defaultH);
+            Rect swatch = new Rect(defRow.x, defRow.y + 2f, defaultH - 4f, defaultH - 4f);
+            Widgets.DrawBoxSolid(swatch, defColor);
+            Widgets.DrawBox(swatch);
+            if (defColor.IndistinguishableFrom(c)) Widgets.DrawBox(swatch.ExpandedBy(1f), 2);
+
+            Rect defBtn = new Rect(swatch.xMax + 6f, defRow.y, 170f, defaultH);
+            if (Widgets.ButtonText(defBtn, "UFR_ColorDefault".Translate()))
             {
-                Rect defRow = new Rect(row.x, row.y + labelH, row.width, defaultH);
-
-                Rect swatch = new Rect(defRow.x, defRow.y + 2f, defaultH - 4f, defaultH - 4f);
-                Widgets.DrawBoxSolid(swatch, defColor);
-                Widgets.DrawBox(swatch);
-                if (defColor.IndistinguishableFrom(c)) Widgets.DrawBox(swatch.ExpandedBy(1f), 2);
-
-                Rect defBtn = new Rect(swatch.xMax + 6f, defRow.y, 170f, defaultH);
-                if (Widgets.ButtonText(defBtn, "UFR_ColorDefault".Translate()))
-                {
-                    c = defColor;
-                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
-                }
+                c = defColor;
+                SoundDefOf.Tick_Low.PlayOneShotOnCamera();
             }
 
-            float paletteHeight;
-            Widgets.ColorSelector(palette, ref c, AllColors(), out paletteHeight, null, 22, 2);
-            
+            float roleH = SectionHeight(paletteArea.width, UFRColors.Palette.Count);
+
+            Rect roleLabel = new Rect(paletteArea.x, paletteArea.y, paletteArea.width, SectionLabelH);
+            Rect roleRect = new Rect(paletteArea.x, roleLabel.yMax, paletteArea.width, roleH);
+            Rect otherLabel = new Rect(paletteArea.x, roleRect.yMax + SectionGap, paletteArea.width, SectionLabelH);
+            Rect otherRect = new Rect(paletteArea.x, otherLabel.yMax, paletteArea.width,
+                                      paletteArea.yMax - otherLabel.yMax);
+
+            DrawSectionLabel(roleLabel, "UFR_ColorSectionRole".Translate());
+            Widgets.ColorSelector(roleRect, ref c, UFRColors.Palette, out _, null, 22, 2);
+
+            DrawSectionLabel(otherLabel, "UFR_ColorSectionOther".Translate());
+            Widgets.ColorSelector(otherRect, ref c, AllColors(), out _, null, 22, 2, ColorSelecterExtraOnGUI);
+
             List<string> labels = new List<string>();
             List<Color> picks = new List<Color>();
 
             labels.Add("UFR_ColorRandom".Translate());
-            picks.Add(Color.clear);                 
+            picks.Add(Color.clear);
 
             if (TryGetFavoriteColor(_pawn, out Color favColor))
             {
@@ -257,6 +272,37 @@ namespace UnitedFront.UI
             }
         }
 
+        private void ColorSelecterExtraOnGUI(Color color, Rect boxRect)
+        {
+            Texture2D? icon = null;
+            TaggedString tip = default;
+            bool over = Mouse.IsOver(boxRect);
+
+            if (TryGetFavoriteColor(_pawn, out Color fav) && color.IndistinguishableFrom(fav))
+            {
+                icon = FavoriteColorTex;
+                if (over) tip = "FavoriteColorPickerTip".Translate(_pawn.Named("PAWN"));
+            }
+            else if (ModsConfig.IdeologyActive && _pawn.Ideo != null && !Find.IdeoManager.classicMode
+                     && color.IndistinguishableFrom(_pawn.Ideo.ApparelColor))
+            {
+                icon = IdeoColorTex;
+                if (over) tip = "IdeoColorPickerTip".Translate(_pawn.Named("PAWN"));
+            }
+
+            if (icon != null)
+            {
+                Rect position = boxRect.ContractedBy(4f);
+                GUI.color = Color.black.ToTransparent(0.2f);
+                GUI.DrawTexture(new Rect(position.x + 2f, position.y + 2f, position.width, position.height), icon);
+                GUI.color = Color.white.ToTransparent(0.8f);
+                GUI.DrawTexture(position, icon);
+                GUI.color = Color.white;
+            }
+
+            if (!tip.NullOrEmpty()) TooltipHandler.TipRegion(boxRect, tip);
+        }
+
         private static void DrawLockedVeil(Rect row)
         {
             Widgets.DrawBoxSolid(row, LockedVeil);
@@ -286,12 +332,6 @@ namespace UnitedFront.UI
             Text.Anchor = anchor;
         }
 
-        private static bool TryGetDefaultColor(Piece p, int index, out Color c)
-        {
-            c = p.Comp.DefaultZone(index);
-            return true;
-        }
-
         private void DrawBottomButtons(Rect inRect)
         {
             if (Widgets.ButtonText(new Rect(inRect.x, inRect.yMax - ButSize.y, ButSize.x, ButSize.y), "UFR_Cancel".Translate()))
@@ -304,8 +344,7 @@ namespace UnitedFront.UI
             {
                 foreach (Piece p in _pieces)
                 {
-                    p.Working = new List<Color>(p.Original);
-                    while (p.Working.Count < ColorCount) p.Working.Add(Color.white);
+                    p.Working = Normalized(p.Original);
                     p.Comp.PreviewZones(p.Working);
                 }
                 PortraitsCache.SetDirty(_pawn);
@@ -323,48 +362,65 @@ namespace UnitedFront.UI
         {
             if (_allColors != null) return _allColors;
 
-            HashSet<Color> colorSet = new HashSet<Color>();
+            _allColors = new List<Color>();
 
             if (ModsConfig.IdeologyActive && _pawn.Ideo != null && !Find.IdeoManager.classicMode)
-                colorSet.Add(_pawn.Ideo.ApparelColor);
+                AddUnique(_allColors, _pawn.Ideo.ApparelColor);
 
             if (TryGetFavoriteColor(_pawn, out Color favColor))
-                colorSet.Add(favColor);
+                AddUnique(_allColors, favColor);
 
             foreach (ColorDef def in DefDatabase<ColorDef>.AllDefs)
             {
-                if (def.colorType == ColorType.Ideo || def.colorType == ColorType.Misc || def.colorType == ColorType.Structure)
-                {
-                    bool duplicate = false;
-                    foreach (Color c in colorSet)
-                    {
-                        if (c.IndistinguishableFrom(def.color))
-                        {
-                            duplicate = true;
-                            break;
-                        }
-                    }
-                    if (!duplicate)
-                        colorSet.Add(def.color);
-                }
+                bool allowed = def.colorType == ColorType.Ideo
+                            || def.colorType == ColorType.Misc;
+
+                if (allowed) AddUnique(_allColors, def.color);
             }
 
-            _allColors = new List<Color>(colorSet);
-            _allColors.Sort((a, b) =>
-            {
-                Color.RGBToHSV(a, out float hA, out float sA, out _);
-                Color.RGBToHSV(b, out float hB, out float sB, out _);
-                int cmp = hA.CompareTo(hB);
-                return (cmp != 0) ? cmp : sA.CompareTo(sB);
-            });
+            _allColors.SortByColor((Color x) => x);
             return _allColors;
+        }
+
+        private static float SectionHeight(float width, int count)
+        {
+            int perRow = Mathf.Max(1, Mathf.FloorToInt(width / (SwatchSize + SwatchPad * 2f)));
+            int rows = Mathf.CeilToInt(count / (float)perRow);
+            return rows * (SwatchSize + SwatchPad * 2f);
+        }
+
+        private static void DrawSectionLabel(Rect rect, string label)
+        {
+            GameFont font = Text.Font;
+            Color prev = GUI.color;
+            Text.Font = GameFont.Tiny;
+            GUI.color = SectionLabelColor;
+            Widgets.Label(rect, label);
+            GUI.color = prev;
+            Text.Font = font;
+        }
+
+        private static void AddUnique(List<Color> list, Color color)
+        {
+            for (int i = 0; i < list.Count; i++)
+                if (list[i].IndistinguishableFrom(color)) return;
+            list.Add(color);
+        }
+
+        private bool ZoneLocked(int index) => index == 0 && ModsConfig.IdeologyActive;
+
+        private static bool IsHelmet(Apparel ap)
+        {
+            List<BodyPartGroupDef>? groups = ap.def.apparel?.bodyPartGroups;
+            if (groups == null) return false;
+            return groups.Contains(BodyPartGroupDefOf.UpperHead) || groups.Contains(BodyPartGroupDefOf.FullHead);
         }
 
         private static bool TryGetFavoriteColor(Pawn pawn, out Color c)
         {
             c = Color.white;
             if (!ModsConfig.IdeologyActive || pawn?.story == null || pawn.DevelopmentalStage.Baby()) return false;
-            ColorDef def = pawn.story.favoriteColor;
+            ColorDef? def = pawn.story.favoriteColor;
             if (def == null) return false;
             c = def.color;
             return true;
