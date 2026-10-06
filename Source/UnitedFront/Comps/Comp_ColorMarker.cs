@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using RimWorld;
-using UnitedFront.Defs;
 using UnityEngine;
 using Verse;
 
@@ -14,7 +13,7 @@ namespace UnitedFront.Comps
         public CompPropertiesColorMarker Props => (CompPropertiesColorMarker)props;
         public int ZoneCount => Props.zoneCount;
 
-        private CompColorable Colorable => parent.TryGetComp<CompColorable>();
+        private CompColorable? Colorable => parent.TryGetComp<CompColorable>();
 
         private Color BaseColor
         {
@@ -27,16 +26,8 @@ namespace UnitedFront.Comps
 
         public Color DefaultZone(int index)
         {
-            ArmorColorExtension ext = parent.def.GetModExtension<ArmorColorExtension>();
-            if (ext != null)
-            {
-                if (index == 0 && ext.setColorOne) return ext.colorOne;
-                if (index == 1 && ext.setColorTwo) return ext.colorTwo;
-            }
-
-            if (Props.defaultZoneColors != null && index >= 0 && index < Props.defaultZoneColors.Count)
-                return Props.defaultZoneColors[index];
-
+            if (index == 0 && Props.setColorOne) return Props.colorOne;
+            if (index == 1 && Props.setColorTwo) return Props.colorTwo;
             return BaseColor;
         }
 
@@ -61,13 +52,7 @@ namespace UnitedFront.Comps
         {
             ZoneColors ??= new List<Color>();
             while (ZoneColors.Count < ZoneCount)
-            {
-                int i = ZoneColors.Count;
-                Color d = (Props.defaultZoneColors != null && i < Props.defaultZoneColors.Count)
-                    ? Props.defaultZoneColors[i]
-                    : Color.white;
-                ZoneColors.Add(d);
-            }
+                ZoneColors.Add(DefaultZone(ZoneColors.Count));
             if (ZoneColors.Count > ZoneCount)
                 ZoneColors.RemoveRange(ZoneCount, ZoneColors.Count - ZoneCount);
         }
@@ -110,6 +95,7 @@ namespace UnitedFront.Comps
             ZoneColors = new List<Color>(colors);
             _zonesCustomized = true;
             EnsureZoneDefaults();
+            Colorable?.Disable();
             SetDirty();
         }
 

@@ -54,7 +54,6 @@
     </apparel>
     <techLevel>Spacer</techLevel>
     <comps>     
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker"/>
       <li Class="CompProperties_Biocodable"/>
     </comps> 
     <thingCategories>
@@ -117,7 +116,6 @@
     </apparel>
     <techLevel>Spacer</techLevel>
     <comps>
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker" />
       <li Class="CompProperties_Biocodable"/>
     </comps>
     <thingCategories Inherit="False">
@@ -165,12 +163,12 @@
         <li>UFR_CarapaceArmor</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!--white -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.95, 0.95, 0.95)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
@@ -205,12 +203,12 @@
         <li>UFR_CarapaceHelmet</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- white -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.95, 0.95, 0.95)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <!-- Carapace Boots and Gloves -->
@@ -396,12 +394,12 @@
         <li>UFR_MedicCarapaceArmor</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- bright azure -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.12, 0.56, 0.84)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
@@ -436,12 +434,12 @@
         <li>UFR_MedicCarapaceHelmet</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- bright azure -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.12, 0.56, 0.84)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <!-- Engineer Carapace Armor -->
@@ -479,12 +477,12 @@
         <li>UFR_EngineerCarapaceArmor</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- burnt orange -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.85, 0.45, 0.08)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
@@ -520,12 +518,12 @@
         <li>UFR_EngineerCarapaceHelmet</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- burnt orange -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.85, 0.45, 0.08)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <!-- MP Carapace Armor -->
@@ -563,12 +561,12 @@
         <li>UFR_MPCarapaceArmor</li>        
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- dark navy -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.09, 0.16, 0.34)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
@@ -603,12 +601,12 @@
         <li>UFR_MPCarapaceHelmet</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- dark navy -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.09, 0.16, 0.34)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <!-- Commander Carapace Armor -->
@@ -650,12 +648,12 @@
         <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- gold -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.80, 0.65, 0.18)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
@@ -696,12 +694,12 @@
         <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- gold -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.80, 0.65, 0.18)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <!-- Assault Carapace Armor -->
@@ -772,12 +770,12 @@
         <li>UFR_AssaultCarapaceArmor</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- crimson -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.70, 0.12, 0.15)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
@@ -809,15 +807,15 @@
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/AssaultCarapaceArmor/AssaultCarapaceHelmet</wornGraphicPath>
       <tags>         
         <li>UFR_AssaultCarapaceArmor</li>
-        <li>UFR_AssaultCarapacetHelmet</li>
+        <li>UFR_AssaultCarapaceHelmet</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- crimson -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.70, 0.12, 0.15)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <!-- Scout Carapace Armor -->
@@ -861,12 +859,12 @@
         <part>Torso</part>
       </li>      
     </comps>
-    <modExtensions>
+    <comps>
       <!-- olive -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.35, 0.42, 0.20)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef> 
  
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
@@ -901,12 +899,12 @@
         <li>UFR_ScoutCarapaceHelmet</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- olive -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.35, 0.42, 0.20)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
  
   <!-- Veteran Carapace Armor -->
@@ -945,12 +943,12 @@
         <li>UFR_VeteranCarapaceHelmet</li>
       </tags>      
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- very dark grey -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.16, 0.16, 0.17)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
@@ -985,12 +983,12 @@
         <li>UFR_VeteranCarapaceHelmet</li>
       </tags>
     </apparel>
-    <modExtensions>
+    <comps>
       <!-- very dark grey -->
-      <li Class="UnitedFront.Defs.ArmorColorExtension">
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.16, 0.16, 0.17)</colorTwo>
       </li>
-    </modExtensions>
+    </comps>
   </ThingDef>
 
 </Defs>

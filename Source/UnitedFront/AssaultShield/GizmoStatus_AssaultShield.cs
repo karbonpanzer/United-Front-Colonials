@@ -5,9 +5,9 @@ using Verse;
 namespace UnitedFront.AssaultShield
 {
     [StaticConstructorOnStartup]
-    public class Gizmo_UFRShieldStatus : Gizmo
+    public class GizmoStatus_AssaultShield : Gizmo
     {
-        public CompShieldUFR shield;
+        public CompShield_AssaultShield shield;
 
         private static readonly Texture2D FullBarTex =
             SolidColorMaterials.NewSolidColorTexture(new Color(0.2f, 0.6f, 0.9f));
@@ -18,7 +18,7 @@ namespace UnitedFront.AssaultShield
         private static readonly Texture2D EmptyBarTex =
             SolidColorMaterials.NewSolidColorTexture(new Color(0.03f, 0.03f, 0.03f));
 
-        public Gizmo_UFRShieldStatus()
+        public GizmoStatus_AssaultShield()
         {
             Order = -100f;
         }
@@ -71,6 +71,7 @@ namespace UnitedFront.AssaultShield
             }
 
             Text.Font = GameFont.Small;
+            TooltipHandler.TipRegion(inner, "ShieldPersonalTip".Translate());
             return new GizmoResult(GizmoState.Clear);
         }
     }

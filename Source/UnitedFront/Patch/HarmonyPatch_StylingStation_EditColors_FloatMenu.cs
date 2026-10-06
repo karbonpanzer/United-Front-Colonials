@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using HarmonyLib;
+using RimWorld;
 using UnitedFront.Jobs;
 using UnitedFront.Utils;
 using Verse;
@@ -8,7 +9,7 @@ using Verse.AI;
 namespace UnitedFront.Patch
 {
     [HarmonyPatch(typeof(ThingWithComps), nameof(ThingWithComps.GetFloatMenuOptions))]
-    public static class ArmamentsBench_EditColors_FloatMenu
+    public static class HarmonyPatch_StylingStation_EditColors_FloatMenu
     {
         public static IEnumerable<FloatMenuOption> Postfix(IEnumerable<FloatMenuOption> __result,
                                                            ThingWithComps __instance, Pawn selPawn)
@@ -16,7 +17,7 @@ namespace UnitedFront.Patch
             foreach (FloatMenuOption option in __result)
                 yield return option;
 
-            if (__instance.def == null || __instance.def.defName != "UFR_ArmamentsBench")
+            if (__instance is not Building_StylingStation)
                 yield break;
 
             if (selPawn == null || !selPawn.RaceProps.Humanlike || !ColorMarkerUtil.Wears(selPawn))
@@ -31,7 +32,7 @@ namespace UnitedFront.Patch
 
             yield return new FloatMenuOption("UFR_EditArmor".Translate(), delegate
             {
-                Job job = JobMaker.MakeJob(UFR_JobDefOf.UFR_EditColorsAtStation, __instance);
+                Job job = JobMaker.MakeJob(JobDefOf_PaintCarapaceArmor.UFR_EditColorsAtStation, __instance);
                 selPawn.jobs.TryTakeOrderedJob(job, JobTag.Misc);
             });
         }

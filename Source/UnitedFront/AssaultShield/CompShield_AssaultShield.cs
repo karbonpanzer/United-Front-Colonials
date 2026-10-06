@@ -6,7 +6,7 @@ using Verse.Sound;
 
 namespace UnitedFront.AssaultShield
 {
-    public class CompShieldUFR : CompShield
+    public class CompShield_AssaultShield : CompShield
     {
         private const float MaxDamagedJitterDist = 0.06f;
         private const int JitterDurationTicks = 8;
@@ -14,7 +14,7 @@ namespace UnitedFront.AssaultShield
         private Vector3 incomingAngleVect;
         private int lastAbsorbDamageTick = -9999;
 
-        private CompProperties_ShieldUFR PropsUFR => (CompProperties_ShieldUFR)props;
+        private CompProperties_AssaultShield PropsUFR => (CompProperties_AssaultShield)props;
 
         private float EnergyMax => parent.GetStatValue(StatDefOf.EnergyShieldEnergyMax);
 
@@ -54,9 +54,9 @@ namespace UnitedFront.AssaultShield
                 return;
             }
 
-            energy -= dinfo.Amount * Props.energyLossPerDamage;
+            energy -= dinfo.Amount * Props.energyLossPerDamage * EnergyLossMultiplier(dinfo.Def);
 
-            if (energy <= 0f)
+            if (energy < 0f)
             {
                 BreakShield();
             }
@@ -70,10 +70,59 @@ namespace UnitedFront.AssaultShield
 
         public override IEnumerable<Gizmo> CompGetWornGizmosExtra()
         {
-            if (PawnOwner != null && Find.Selector.SingleSelectedThing == PawnOwner)
+            if (IsApparel)
             {
-                yield return new Gizmo_UFRShieldStatus { shield = this };
+                foreach (Gizmo g in StatusGizmos()) yield return g;
             }
+            foreach (Gizmo g in DevGizmos()) yield return g;
+        }
+
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            if (!IsApparel)
+            {
+                foreach (Gizmo g in StatusGizmos()) yield return g;
+            }
+        }
+
+        private IEnumerable<Gizmo> StatusGizmos()
+        {
+            if (PawnOwner == null || Find.Selector.SingleSelectedThing != PawnOwner) yield break;
+
+            bool visibleToPlayer = PawnOwner.Faction == Faction.OfPlayer
+                                || (parent is Pawn p && p.RaceProps.IsMechanoid);
+            if (!visibleToPlayer) yield break;
+
+            yield return new GizmoStatus_AssaultShield { shield = this };
+        }
+
+        private IEnumerable<Gizmo> DevGizmos()
+        {
+            if (!DebugSettings.ShowDevGizmos) yield break;
+
+            yield return new Command_Action
+            {
+                defaultLabel = "DEV: Break",
+                action = BreakShield
+            };
+
+            if (ticksToReset > 0)
+            {
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV: Clear reset",
+                    action = delegate { ticksToReset = 0; }
+                };
+            }
+        }
+
+        private float EnergyLossMultiplier(DamageDef def)
+        {
+            string category = def.armorCategory?.defName;
+            if (category == "Sharp") return PropsUFR.sharpEnergyLossMultiplier;
+            if (category == "Blunt") return PropsUFR.bluntEnergyLossMultiplier;
+            if (category == "Heat") return PropsUFR.heatEnergyLossMultiplier;
+            return 1f;
         }
 
         private void AbsorbDamage(DamageInfo dinfo)

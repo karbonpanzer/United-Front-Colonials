@@ -302,7 +302,6 @@
                 <li>Cloth</li>
             </thingDefs>
         </apparelStuffFilter>
-        <permanentEnemy>true</permanentEnemy>
         <techLevel>Spacer</techLevel>
         <allowedCultures>
             <li>Astropolitan</li>

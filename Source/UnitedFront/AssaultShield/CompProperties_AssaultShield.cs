@@ -5,10 +5,8 @@ using Verse;
 
 namespace UnitedFront.AssaultShield
 {
-    public class CompProperties_ShieldUFR : CompProperties_Shield
+    public class CompProperties_AssaultShield : CompProperties_Shield
     {
-        public Material BubbleMat = null!;
-
         public string bubbleTexPath = null!;
 
         public List<DamageDef> extraBlockedDamageDefs = new List<DamageDef>();
@@ -31,14 +29,18 @@ namespace UnitedFront.AssaultShield
 
         public float breakEffecterScale = 1f;
 
-        public CompProperties_ShieldUFR()
+        private Material bubbleMat;
+
+        public Material BubbleMat => bubbleMat;
+
+        public CompProperties_AssaultShield()
         {
-            compClass = typeof(CompShieldUFR);
+            compClass = typeof(CompShield_AssaultShield);
 
             LongEventHandler.ExecuteWhenFinished(delegate
             {
                 string path = bubbleTexPath.NullOrEmpty() ? "UFR/Other/ShieldBubble" : bubbleTexPath;
-                BubbleMat = MaterialPool.MatFrom(path, ShaderDatabase.TransparentPostLight);
+                bubbleMat = MaterialPool.MatFrom(path, ShaderDatabase.TransparentPostLight);
             });
         }
 

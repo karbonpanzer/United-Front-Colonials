@@ -24,10 +24,12 @@ namespace UnitedFront.Patch
             CompColorMarker comp = apparel.GetComp<CompColorMarker>();
             if (comp == null || comp.ZoneColors.NullOrEmpty()) return;
 
-            Shader shader = ShaderDatabase.CutoutComplex;
-
             string basePath = apparel.WornGraphicPath;
             if (basePath.NullOrEmpty()) return;
+
+            if (!UsesMask(apparel)) return;
+
+            if (bodyType == null) bodyType = BodyTypeDefOf.Male;
 
             ApparelLayerDef last = apparel.def.apparel.LastLayer;
             bool perBodyType = last != ApparelLayerDefOf.Overhead
@@ -38,9 +40,20 @@ namespace UnitedFront.Patch
 
             string path = perBodyType ? basePath + "_" + bodyType.defName : basePath;
 
-            Graphic graphic = MultiColorGraphicUtil.Get(path, null, shader, apparel.def.graphicData.drawSize, comp.DisplayZones());
+            Graphic graphic = MultiColorGraphicUtil.Get(path, null, ShaderDatabase.CutoutComplex,
+                apparel.def.graphicData.drawSize, comp.DisplayZones());
+
             if (graphic != null)
                 rec = new ApparelGraphicRecord(graphic, apparel);
+        }
+
+        private static bool UsesMask(Apparel apparel)
+        {
+            if (apparel.StyleDef?.graphicData.shaderType != null)
+                return apparel.StyleDef.graphicData.shaderType.Shader == ShaderDatabase.CutoutComplex;
+
+            if (apparel.StyleDef == null) return apparel.def.apparel.useWornGraphicMask;
+            return apparel.StyleDef.UseWornGraphicMask;
         }
     }
 }

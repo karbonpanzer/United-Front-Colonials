@@ -13,16 +13,17 @@ namespace UnitedFront.Patch
         public static void Postfix(Thing __instance, ref Graphic __result)
         {
             if (__instance is not Apparel apparel) return;
+            if (apparel.StyleDef?.Graphic != null) return;
 
             CompColorMarker comp = apparel.GetComp<CompColorMarker>();
             if (comp == null || comp.ZoneColors.NullOrEmpty()) return;
 
-            Shader shader = ShaderDatabase.CutoutComplex;
-
             GraphicData gd = apparel.def.graphicData;
             if (gd == null || gd.texPath.NullOrEmpty()) return;
+            if (gd.shaderType?.Shader != ShaderDatabase.CutoutComplex) return;
 
-            __result = MultiColorGraphicUtil.Get(gd.texPath, null, shader, gd.drawSize, comp.DisplayZones(), typeof(Graphic_Single));
+            __result = MultiColorGraphicUtil.Get(gd.texPath, null, ShaderDatabase.CutoutComplex,
+                gd.drawSize, comp.DisplayZones(), typeof(Graphic_Single));
         }
     }
 }
