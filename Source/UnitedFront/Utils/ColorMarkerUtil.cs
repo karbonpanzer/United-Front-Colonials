@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using RimWorld;
 using UnitedFront.Comps;
 using Verse;
@@ -6,20 +7,20 @@ namespace UnitedFront.Utils
 {
     public static class ColorMarkerUtil
     {
-        public static CompColorMarker MarkerOn(Pawn pawn)
+        public static CompColorMarker? FirstMarkerOn(Pawn? pawn)
         {
-            Pawn_ApparelTracker tracker = pawn?.apparel;
+            Pawn_ApparelTracker? tracker = pawn?.apparel;
             if (tracker == null) return null;
 
-            foreach (Apparel t in tracker.WornApparel)
+            List<Apparel> worn = tracker.WornApparel;
+            for (int i = 0; i < worn.Count; i++)
             {
-                if (!t.def.HasComp<CompColorMarker>()) continue;
-                CompColorMarker comp = t.TryGetComp<CompColorMarker>();
+                CompColorMarker? comp = worn[i].TryGetComp<CompColorMarker>();
                 if (comp != null) return comp;
             }
             return null;
         }
 
-        public static bool Wears(Pawn pawn) => MarkerOn(pawn) != null;
+        public static bool Wears(Pawn? pawn) => FirstMarkerOn(pawn) != null;
     }
 }

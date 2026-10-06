@@ -9,7 +9,7 @@ using Verse;
 namespace UnitedFront.Patch
 {
     [HarmonyPatch]
-    public static class HarmonyPatch_ApparelGraphic_CarapaceColor
+    public static class HarmonyPatch_CarapaceColor
     {
         private static MethodBase TargetMethod()
         {

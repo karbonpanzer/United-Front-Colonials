@@ -9,7 +9,7 @@ using Verse.AI;
 namespace UnitedFront.Patch
 {
     [HarmonyPatch(typeof(ThingWithComps), nameof(ThingWithComps.GetFloatMenuOptions))]
-    public static class HarmonyPatch_StylingStation_EditColors_FloatMenu
+    public static class HarmonyPatch_StylingStation_EditColors
     {
         public static IEnumerable<FloatMenuOption> Postfix(IEnumerable<FloatMenuOption> __result,
                                                            ThingWithComps __instance, Pawn selPawn)
