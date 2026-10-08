@@ -649,7 +649,7 @@
         <range>32.9</range>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <soundCast>UFR_Shot_ETCHeavy</soundCast>
+        <soundCast>UFR_Shot_ETCMedium</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
       </li>
