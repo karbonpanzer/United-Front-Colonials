@@ -28,6 +28,7 @@
       <texPath>UFR/Things/Item/Equipment/sabotpistol</texPath>
       <drawSize>1.0</drawSize>
     </graphicData>
+    <uiIconScale>1.5</uiIconScale>
     <techLevel>Spacer</techLevel>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
@@ -607,7 +608,7 @@
     <description>An electrothermal-chemical repeating cannon. Using a plasma cartridge, it fires a dense uranium sabot at high speeds with devastating effect against armored targets.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/sabotautocannon</texPath>
+      <texPath>UFR/Things/Item/Equipment/sabotrotarycannon</texPath>
       <drawSize>1.15</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
