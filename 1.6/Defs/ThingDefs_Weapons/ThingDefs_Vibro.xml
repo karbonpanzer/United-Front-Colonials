@@ -3,11 +3,11 @@
   
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>UFR_Vibrosword</defName>
-    <label>vibrosword</label>
+    <label>frequency sword</label>
     <description>A compositie plasteel sword fitted with a resonator which vibrates the blade at high frequencies. The oscillation of the blade weakens the molecular structure of anything that it cuts, though it is quite heavy.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/vibrosword</texPath>
+      <texPath>UFR/Things/Item/Equipment/frequencysword</texPath>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.0</drawSize>
     </graphicData>
@@ -156,11 +156,11 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>UFR_Vibroblade</defName>
-    <label>vibroblade</label>
+    <label>frequency knife</label>
     <description>A composite plasteel dagger fitted with a small resonator which vibrates the blade at high frequencies. The oscillation of the blade can weaken molecular structures, but the shortness of the blade and small resonator render it not as effective.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/vibroblade</texPath>
+      <texPath>UFR/Things/Item/Equipment/frequencyknife</texPath>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.0</drawSize>
     </graphicData>
@@ -234,11 +234,11 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>UFR_Vibrolance</defName>
-    <label>vibrolance</label>
+    <label>frequency spear</label>
     <description>A composite plasteel spear fitted with an overclocked resonator which vibrates the spearhead at incredibly high frequencies. The oscillation of the blade can not only weaken molecular structures but shatter them. The length of the weapon provides great reach but the weight prevents all but the best from using effectively.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/vibrolance</texPath>
+      <texPath>UFR/Things/Item/Equipment/requencyspear</texPath>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.8</drawSize>
     </graphicData>
@@ -373,11 +373,11 @@
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>UFR_Vibrobuster</defName>
-    <label>vibrobuster</label>
+    <label>frequency greatsword</label>
     <description>A composite plasteel greatsword fitted with an overclocked resonator which vibrates the blade at incredibly high frequencies. The oscillation of the blade not only weakens molecular bonds but with the additional weight can push ever further with cuts. The weight of the weapon requires a skilled warrior to use it effectively.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/vibrobuster</texPath>
+      <texPath>UFR/Things/Item/Equipment/frequencygreatsword</texPath>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.8</drawSize>
     </graphicData>
