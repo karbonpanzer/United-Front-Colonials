@@ -219,7 +219,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotRifle">
     <defName>UFR_SabotRifle</defName>
-    <label>sabot rifle</label>
+    <label>sabot assault rifle</label>
     <description>An electrothermal-chemical assault rifle. Using a plasma cartridge, it fires a dense uranium sabot at high speeds with devastating effect against armored targets.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
@@ -394,7 +394,7 @@
     </tools>
   </ThingDef>
 
-  <!-- Sabot Repeater/LMG -->
+  <!-- Sabot LMG -->
   <ThingDef ParentName="BaseBullet">
     <defName>UFR_Bolt_SabotLMG</defName>
     <label>sabot</label>
@@ -649,7 +649,7 @@
         <range>32.9</range>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <soundCast>UFR_Shot_ETCHeavy</soundCast>
+        <soundCast>UFR_Shot_ETCMedium</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
       </li>
