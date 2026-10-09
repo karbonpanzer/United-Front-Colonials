@@ -85,7 +85,7 @@
     <description>A composite plasteel club fitted with a resonator which vibrates the head at high frequencies. The oscillation of the head weakens molecular structure of anything it hits often shattering its targets, though it is quite heavy.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/vibromaul</texPath>
+      <texPath>UFR/Things/Item/Equipment/frequencyclub</texPath>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.0</drawSize>
     </graphicData>
@@ -238,7 +238,7 @@
     <description>A composite plasteel spear fitted with an overclocked resonator which vibrates the spearhead at incredibly high frequencies. The oscillation of the blade can not only weaken molecular structures but shatter them. The length of the weapon provides great reach but the weight prevents all but the best from using effectively.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/requencyspear</texPath>
+      <texPath>UFR/Things/Item/Equipment/frequencyspear</texPath>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.8</drawSize>
     </graphicData>
@@ -307,7 +307,7 @@
     <description>A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies. The oscillation of the head can not only weaken armor but with the right strike can shatter armor into pieces. The weight of the weapon provides an increased effect on strikes but it is slow to use.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/vibrohammer</texPath>
+      <texPath>UFR/Things/Item/Equipment/frequencyhammer</texPath>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.8</drawSize>
     </graphicData>
