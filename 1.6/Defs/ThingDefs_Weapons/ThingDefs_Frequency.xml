@@ -240,7 +240,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/frequencyspear</texPath>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>1.8</drawSize>
+      <drawSize>1.0</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
     <equippedAngleOffset>-50</equippedAngleOffset>
@@ -309,7 +309,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/frequencyhammer</texPath>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>1.8</drawSize>
+      <drawSize>1.0</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
     <equippedAngleOffset>-50</equippedAngleOffset>
@@ -379,7 +379,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/frequencygreatsword</texPath>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>1.8</drawSize>
+      <drawSize>1.0</drawSize>
     </graphicData>
     <uiIconScale>0.75</uiIconScale>
     <techLevel>Spacer</techLevel>
