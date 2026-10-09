@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="UFR_SabotPistol">
+  <!--ThingDef ParentName="UFR_SabotPistol">
     <defName>UFR_SabotPistol_Unique</defName>
     <label>unique sabot pistol</label>
     <description>A sabot pistol with customized parts.</description>
@@ -51,7 +51,7 @@
     <descriptionHyperlinks>
       <ThingDef>UFR_SabotPistol</ThingDef>
     </descriptionHyperlinks>
-  </ThingDef>
+  </ThingDef-->
 
   <ThingDef ParentName="UFR_SabotRifle">
     <defName>UFR_SabotRifle_Unique</defName>
@@ -109,7 +109,7 @@
     </descriptionHyperlinks>
   </ThingDef>
 
-  <ThingDef ParentName="UFR_SabotSniperRifle">
+  <!--ThingDef ParentName="UFR_SabotSniperRifle">
     <defName>UFR_SabotSniperRifle_Unique</defName>
     <label>unique sabot sniper rifle</label>
     <description>A sabot sniper rifle with customized parts.</description>
@@ -163,7 +163,7 @@
     <descriptionHyperlinks>
       <ThingDef>UFR_SabotSniperRifle</ThingDef>
     </descriptionHyperlinks>
-  </ThingDef>
+  </ThingDef-->
 
   <ThingDef ParentName="UFR_SabotShotgun">
     <defName>UFR_SabotShotgun_Unique</defName>
