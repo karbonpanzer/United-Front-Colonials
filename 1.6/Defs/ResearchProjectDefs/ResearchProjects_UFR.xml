@@ -168,21 +168,7 @@
         </prerequisites>
         <researchViewX>1</researchViewX>
         <researchViewY>4.2</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>UFR_OverclockedResonators</defName>
-        <label>Overclocked Resonators</label>
-        <description>Craft weapons with reinforced structures to handle more powerful resonators, creating larger and more powerful weapons. Note these also require advanced components.</description>
-        <baseCost>2000</baseCost>
-        <tab>UFR_ResearchTab</tab>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>UFR_HighFrequencyResonators</li>
-        </prerequisites>
-        <researchViewX>2</researchViewX>
-        <researchViewY>4.2</researchViewY>
-    </ResearchProjectDef>   
+    </ResearchProjectDef>  
 
     <ResearchProjectDef>
         <defName>UFR_ETCMunitions</defName>
@@ -195,20 +181,6 @@
             <li>UFR_ColonialFabricationMethods</li>
         </prerequisites>
         <researchViewX>1</researchViewX>
-        <researchViewY>5.6</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>UFR_SpecializedPlasmaCharges</defName>
-        <label>Specialized Plasma Charges</label>
-        <description>Refine the electrothermo-chemical plasma charges to be able to fire larger depleted uranium sabots. Note these also require advanced components</description>
-        <baseCost>4000</baseCost>
-        <tab>UFR_ResearchTab</tab>
-        <techLevel>Spacer</techLevel>
-        <prerequisites>
-            <li>UFR_ETCMunitions</li>
-        </prerequisites>
-        <researchViewX>2</researchViewX>
         <researchViewY>5.6</researchViewY>
     </ResearchProjectDef>
 
