@@ -61,6 +61,7 @@
       </li>
     </tools>
     <weaponTags>
+      <li>UltratechMelee</li>
       <li>UFR_StandardMelee</li>
     </weaponTags>
     <weaponClasses>
@@ -133,6 +134,7 @@
       </li>
     </tools>
     <weaponTags>
+      <li>UltratechMelee</li>
       <li>UFR_StandardMelee</li>
     </weaponTags>
     <weaponClasses>
@@ -208,6 +210,7 @@
       </li>
     </tools>
     <weaponTags>
+      <li>UltratechMelee</li>
       <li>UFR_StandardMelee</li>
     </weaponTags>
     <weaponClasses>
@@ -277,6 +280,7 @@
       </li>
     </tools>
     <weaponTags>
+      <li>UltratechMelee</li>
       <li>UFR_EliteMelee</li>
     </weaponTags>
     <weaponClasses>
@@ -345,6 +349,7 @@
       </li>
     </tools>
     <weaponTags>
+      <li>UltratechMelee</li>
       <li>UFR_EliteMelee</li>
     </weaponTags>
     <weaponClasses>
@@ -415,6 +420,7 @@
       </li>
     </tools>
     <weaponTags>
+      <li>UltratechMelee</li>
       <li>UFR_EliteMelee</li>
     </weaponTags>
     <weaponClasses>
