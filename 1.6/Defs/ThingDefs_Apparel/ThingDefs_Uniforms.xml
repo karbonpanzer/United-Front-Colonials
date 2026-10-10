@@ -58,14 +58,14 @@
       </layers>
       <tags>
         <li>IndustrialBasic</li>
-				<li>IndustrialMilitaryAdvanced</li>
+		<li>IndustrialMilitaryAdvanced</li>
         <li>UFR_Uniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>ApparelMisc</li>
     </thingCategories>
@@ -126,7 +126,7 @@
       </layers>
       <tags>
         <li>IndustrialBasic</li>
-				<li>IndustrialMilitaryAdvanced</li>  
+		<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_Headwear</li>
       </tags>
       <defaultOutfitTags>
@@ -136,7 +136,7 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
     </apparel>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <tradeTags>
       <li>Clothing</li>
       <li>UFR_Uniforms</li>
@@ -194,7 +194,7 @@
       </layers>
       <tags>
         <li>IndustrialBasic</li>
-				<li>IndustrialMilitaryAdvanced</li>  
+		<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_Headwear</li>
       </tags>
       <defaultOutfitTags>
@@ -204,7 +204,7 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
     </apparel>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <tradeTags>
       <li>Clothing</li>
       <li>UFR_Uniforms</li>
@@ -262,7 +262,7 @@
       </layers>
       <tags>
         <li>IndustrialBasic</li>
-				<li>IndustrialMilitaryAdvanced</li>  
+		<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_Headwear</li>
       </tags>
       <defaultOutfitTags>
@@ -272,7 +272,7 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
     </apparel>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <tradeTags>
       <li>Clothing</li>
       <li>UFR_Uniforms</li>
@@ -335,7 +335,7 @@
       </layers>
       <tags>
         <li>IndustrialBasic</li>
-				<li>IndustrialMilitaryAdvanced</li>  
+		<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_OfficerHeadwear</li>
       </tags>
       <defaultOutfitTags>
@@ -345,7 +345,7 @@
       <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
     </apparel>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <tradeTags>
       <li>Clothing</li>
       <li>UFR_Uniforms</li>
@@ -400,7 +400,7 @@
       </layers>
       <tags>
         <li>IndustrialBasic</li>
-				<li>IndustrialMilitaryAdvanced</li>  
+		<li>IndustrialMilitaryAdvanced</li>  
         <li>UFR_Headwear</li>
         <li>UFR_VeteranHeadwear</li>
       </tags>
@@ -408,6 +408,7 @@
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+    <techLevel>Spacer</techLevel>
     <tradeTags>
       <li>Clothing</li>
       <li>UFR_Uniforms</li>
