@@ -22,7 +22,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotPistol">
     <defName>UFR_SabotPistol</defName>
     <label>sabot pistol</label>
-    <description>An electrothermal-chemical handgun. A plasma cartridge launches a uranium sabot capable of defeating armor no ordinary sidearm could touch. Compact and reliable, it serves as a backup for high-tech infantry.</description>
+    <description>This high-tech, semi-automatic pistol uses electrothermal-chemical ammunition to fire larger caliber bullets at incredibly fast speeds. The bullets are designed like sabots, providing significant armor penetration. Its compact size and reliability makes it an ideal side arm for close quarters combat.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/sabotpistol</texPath>
@@ -121,7 +121,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotSMG">
     <defName>UFR_SabotSMG</defName>
     <label>sabot smg</label>
-    <description>An electrothermal-chemical submachine gun. It fires uranium sabots in quick bursts, favoring close range over reach. Well suited to clearing rooms and tight corridors.</description>
+    <description>A compact submachine gun built using electrothermal-chemical ammunition. Firing a volley of high velocity sabot rounds, effective against armored targets in close quarters thanks to its size and speed. The sabots are devestating at close range but are inaccurate beyond that.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/sabotsmg</texPath>
@@ -220,7 +220,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotRifle">
     <defName>UFR_SabotRifle</defName>
     <label>sabot assault rifle</label>
-    <description>An electrothermal-chemical assault rifle. The standard-issue sabot weapon, balancing range, fire rate, and armor penetration. A dependable frontline rifle.</description>
+    <description>A service rifle that uses electrothermal-chemical ammunition to fire high power sabots. The sabots are firing at incredibly high velocity which grants it immense armor penetration. The accuracy and reliability has made this rifle quite common among spacer factions.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/sabotassaultrifle</texPath>
@@ -317,7 +317,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotHeavyRifle">
     <defName>UFR_SabotBattleRifle</defName>
     <label>sabot battle rifle</label>
-    <description>An electrothermal-chemical battle rifle. Heavier than the assault rifle, it fires larger sabots for greater penetration at the cost of rate of fire. Favored by designated marksmen.</description>
+    <description>A battle rifle that uses electrothermal-chemical ammunition to fire large caliber bullets accurately. Equiped with a longer, heavier barrel and an advanced optic, it provides greater accuracy but at a cost of speed. In this role, it is often found in the hands of frontiersman and rangers.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/sabotbattlerifle</texPath>
@@ -415,7 +415,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotLMG">
     <defName>UFR_SabotLMG</defName>
     <label>sabot LMG</label>
-    <description>An electrothermal-chemical light machine gun. Belt-fed, it sustains long bursts of sabot fire. Trades spread for focused power against massed or armored targets.</description>
+    <description>A electrothermal-chemical rifle converted for usage as a light machine gun. Drum-fed, it sustains long bursts of sabot fire through its reinforced barrel. Designed for firing large spreads of sabots, making it capable of tearing apart multiple enemies in a single burst.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/sabotlmg</texPath>
@@ -507,7 +507,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotSniperRifle">
     <defName>UFR_SabotSniperRifle</defName>
     <label>sabot sniper rifle</label>
-    <description>An electrothermal-chemical sniper rifle. A long-barreled platform that drives a uranium long-rod to anti-materiel velocities. Heavy, and best fired from a braced position.</description>
+    <description>A specialized electrothermal-chemical rifle designed for extreme-ranges and anti-tank usage. It fires large caliber sabots designed for killing tanks, delievering high damage and armor penetration at massive distance. The heft of the weapon though makes it unwieldy to fire unless you are in a stable firing position.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/sabotsniper</texPath>
@@ -605,7 +605,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotAutocannon">
     <defName>UFR_SabotAutocannon</defName>
     <label>sabot autocannon</label>
-    <description>An electrothermal-chemical rotary cannon. Rotating barrels maintain a continuous stream of sabot fire. Cumbersome to carry, but able to shred hardened targets and armored columns.</description>
+    <description>A massive electrothermal-chemical rotary cannon converted to portable use. It fires anti-tank sabots in devestating bursts. The mass makes it difficult to use for even enhanced soldiers, it is unrivaled in its capacity to destroy everything in front of it.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/sabotrotarycannon</texPath>
@@ -697,7 +697,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotShotgun">
     <defName>UFR_SabotShotgun</defName>
     <label>flechette shotgun</label>
-    <description>An electrothermal-chemical shotgun. Fires a spread of uranium flechettes, effective against soft and lightly armored targets at close range. Semi-automatic cycling makes it a breach-and-clear weapon.</description>
+    <description>A high-tech shotgun designed using electrothermal-chemical shells. To maintain velocity improvements, it fires flechettes rather than shot, delievering powerful damage and armor penetration at close range. Magazine fed, it can fire rapidly, making it ideal for close quarters combat and personal defense.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/flechetteshotgun</texPath>
