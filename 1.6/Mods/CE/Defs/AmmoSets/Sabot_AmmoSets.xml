@@ -24,7 +24,7 @@
 	</CombatExtended.AmmoSetDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR10x32mmETCBase" ParentName="SmallAmmoBase" Abstract="True">
-		<description>Electrothermal-chemical ammo used by advanced PDW designs.</description>
+		<description>Electrothermal-chemical caseless ammo used by advanced PDW designs.</description>
 		<statBases>
 			<Mass>0.012</Mass>
 			<Bulk>0.01</Bulk>
@@ -217,7 +217,7 @@
 	</CombatExtended.AmmoSetDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR8x48mmETCBase" ParentName="SmallAmmoBase" Abstract="True">
-		<description>Electrothermal-chemical ammo used by advanced infantry weapon designs.</description>
+		<description>Electrothermal-chemical caseless ammo used by advanced infantry weapon designs.</description>
 		<statBases>
 			<Mass>0.013</Mass>
 			<Bulk>0.02</Bulk>
@@ -605,7 +605,7 @@
 	</CombatExtended.AmmoSetDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR14x80mmETCBase" ParentName="MediumAmmoBase" Abstract="True">
-		<description>Electrothermal-chemical ammo used by advanced heavy weaponry designs.</description>
+		<description>Electrothermal-chemical caseless ammo used by advanced heavy weaponry designs.</description>
 		<statBases>
 			<Mass>0.118</Mass>
 			<Bulk>0.14</Bulk>
@@ -950,7 +950,7 @@
 	</CombatExtended.AmmoSetDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR12x55mmETCBase" ParentName="AmmoBase" Abstract="True">
-		<description>Electrothermal-chemical ammo used by advanced shotgun designs.</description>
+		<description>Electrothermal-chemical caseless ammo used by advanced shotgun designs.</description>
 		<statBases>
 			<Mass>0.051</Mass>
 			<Bulk>0.06</Bulk>
