@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- Vibrosword -->
+	<!-- Frequencysword -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="UFR_Vibrosword"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencySword"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -42,16 +42,16 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UFR_Vibrosword"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencySword"]/statBases</xpath>
 		<value>
 			<Bulk>4</Bulk>
 			<MeleeCounterParryBonus>0.40</MeleeCounterParryBonus>
 		</value>
 	</Operation>
 
-	<!-- Vibroblade -->
+	<!-- Frequencyblade -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="UFR_Vibroblade"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencyKnife"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -90,16 +90,16 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UFR_Vibroblade"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencyKnife"]/statBases</xpath>
 		<value>
 			<Bulk>2.2</Bulk>
 			<MeleeCounterParryBonus>0.30</MeleeCounterParryBonus>
 		</value>
 	</Operation>
 
-	<!-- Vibrobuster -->
+	<!-- Frequency Greatsword -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="UFR_Vibrobuster"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencyGreatsword"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -128,7 +128,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UFR_Vibrobuster"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencyGreatSword"]/statBases</xpath>
 		<value>
 			<Bulk>6</Bulk>
 			<MeleeCounterParryBonus>0.50</MeleeCounterParryBonus>
@@ -173,9 +173,9 @@
 		</value>
 	</Operation>
 
-	<!-- Vibromaul -->
+	<!-- Frequencymaul -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="UFR_Vibromaul"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencyClub"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -209,16 +209,16 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UFR_Vibromaul"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencyClub"]/statBases</xpath>
 		<value>
 			<Bulk>6</Bulk>
 			<MeleeCounterParryBonus>0.45</MeleeCounterParryBonus>
 		</value>
 	</Operation>
 
-	<!-- Vibrohammer -->
+	<!-- Frequencyhammer -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="UFR_Vibrohammer"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencyHammer"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -246,16 +246,16 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UFR_Vibrohammer"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencyHammer"]/statBases</xpath>
 		<value>
 			<Bulk>8</Bulk>
 			<MeleeCounterParryBonus>0.60</MeleeCounterParryBonus>
 		</value>
 	</Operation>
 
-	<!-- Vibrolance -->
+	<!-- FrequencySpear -->
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="UFR_Vibrolance"]/tools</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencySpear"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -284,7 +284,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UFR_Vibrolance"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencySpear"]/statBases</xpath>
 		<value>
 			<Bulk>10</Bulk>
 			<MeleeCounterParryBonus>1.20</MeleeCounterParryBonus>

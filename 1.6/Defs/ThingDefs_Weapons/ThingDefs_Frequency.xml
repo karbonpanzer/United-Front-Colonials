@@ -2,7 +2,7 @@
 <Defs>
   
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>UFR_Vibrosword</defName>
+    <defName>UFR_FrequencySword</defName>
     <label>frequency sword</label>
     <description>A compositie plasteel sword fitted with a resonator which vibrates the blade at high frequencies. The oscillation of the blade weakens the molecular structure of anything that it cuts, though it is quite heavy.</description>
     <graphicData>
@@ -78,7 +78,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-    <defName>UFR_Vibromaul</defName>
+    <defName>UFR_FrequencyClub</defName>
     <label>frequency club</label>
     <description>A composite plasteel club fitted with a resonator which vibrates the head at high frequencies. The oscillation of the head weakens molecular structure of anything it hits often shattering its targets, though it is quite heavy.</description>
     <graphicData>
@@ -151,13 +151,14 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>UFR_Vibroblade</defName>
+    <defName>UFR_FrequencyKnife</defName>
     <label>frequency knife</label>
     <description>A composite plasteel dagger fitted with a small resonator which vibrates the blade at high frequencies. The oscillation of the blade can weaken molecular structures, but the shortness of the blade and small resonator render it not as effective.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>UFR/Things/Item/Equipment/frequencyknife</texPath>
     </graphicData>
+    <equippedAngleOffset>-65</equippedAngleOffset>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
       <workSkill>Crafting</workSkill>
@@ -227,7 +228,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>UFR_Vibrolance</defName>
+    <defName>UFR_FrequencySpear</defName>
     <label>frequency spear</label>
     <description>A composite plasteel spear fitted with an overclocked resonator which vibrates the spearhead at incredibly high frequencies. The oscillation of the blade can not only weaken molecular structures but shatter them. The length of the weapon provides great reach but the weight prevents all but the best from using effectively.</description>
     <graphicData>
@@ -297,7 +298,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-    <defName>UFR_Vibrohammer</defName>
+    <defName>UFR_FrequencyHammer</defName>
     <label>frequency hammer</label>
     <description>A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies. The oscillation of the head can not only weaken armor but with the right strike can shatter armor into pieces. The weight of the weapon provides an increased effect on strikes but it is slow to use.</description>
     <graphicData>
@@ -367,7 +368,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-    <defName>UFR_Vibrobuster</defName>
+    <defName>UFR_FrequencyGreatsword</defName>
     <label>frequency greatsword</label>
     <description>A composite plasteel greatsword fitted with an overclocked resonator which vibrates the blade at incredibly high frequencies. The oscillation of the blade not only weakens molecular bonds but with the additional weight can push ever further with cuts. The weight of the weapon requires a skilled warrior to use it effectively.</description>
     <graphicData>
