@@ -926,30 +926,30 @@
 	</RecipeDef>
 
 	<!-- ============================================================================ -->
-	<!--  12x55mm ETC  (M401 Shotgun)  -->
+	<!--  20x55mm ETC  (M401 Shotgun)  -->
 	<!-- ============================================================================ -->
 
 <ThingCategoryDef>
-		<defName>AmmoUFR12x55mmETC</defName>
-		<label>12x55mm ETC</label>
+		<defName>AmmoUFR20x55mmETC</defName>
+		<label>20x55mm ETC</label>
 		<parent>AmmoShotguns</parent>
 		<iconPath>UI/Icons/ThingCategories/CaliberShotgun</iconPath>
 	</ThingCategoryDef>
 
 	<CombatExtended.AmmoSetDef>
-		<defName>AmmoSet_UFR12x55mmETC</defName>
-		<label>12x55mm ETC</label>
+		<defName>AmmoSet_UFR20x55mmETC</defName>
+		<label>20x55mm ETC</label>
 		<ammoTypes>
-			<Ammo_UFR12x55mmETC_Flechette>Bullet_UFR12x55mmETC_Flechette</Ammo_UFR12x55mmETC_Flechette>
-			<Ammo_UFR12x55mmETC_Canister>Bullet_UFR12x55mmETC_Canister</Ammo_UFR12x55mmETC_Canister>
-			<Ammo_UFR12x55mmETC_Slug>Bullet_UFR12x55mmETC_Slug</Ammo_UFR12x55mmETC_Slug>
-			<Ammo_UFR12x55mmETC_Beanbag>Bullet_UFR12x55mmETC_Beanbag</Ammo_UFR12x55mmETC_Beanbag>
-			<Ammo_UFR12x55mmETC_EMP>Bullet_UFR12x55mmETC_EMP</Ammo_UFR12x55mmETC_EMP>
+			<Ammo_UFR20x55mmETC_Flechette>Bullet_UFR20x55mmETC_Flechette</Ammo_UFR20x55mmETC_Flechette>
+			<Ammo_UFR20x55mmETC_Canister>Bullet_UFR20x55mmETC_Canister</Ammo_UFR20x55mmETC_Canister>
+			<Ammo_UFR20x55mmETC_Slug>Bullet_UFR20x55mmETC_Slug</Ammo_UFR20x55mmETC_Slug>
+			<Ammo_UFR20x55mmETC_Beanbag>Bullet_UFR20x55mmETC_Beanbag</Ammo_UFR20x55mmETC_Beanbag>
+			<Ammo_UFR20x55mmETC_EMP>Bullet_UFR20x55mmETC_EMP</Ammo_UFR20x55mmETC_EMP>
 		</ammoTypes>
 		<similarTo>AmmoSet_Shotgun</similarTo>
 	</CombatExtended.AmmoSetDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR12x55mmETCBase" ParentName="AmmoBase" Abstract="True">
+	<ThingDef Class="CombatExtended.AmmoDef" Name="UFR20x55mmETCBase" ParentName="AmmoBase" Abstract="True">
 		<description>Electrothermal-chemical caseless ammo used by advanced shotgun designs.</description>
 		<statBases>
 			<Mass>0.051</Mass>
@@ -961,36 +961,36 @@
 			<li>UFR_ETCAmmoSet</li>
 		</tradeTags>
 		<thingCategories>
-			<li>AmmoUFR12x55mmETC</li>
+			<li>AmmoUFR20x55mmETC</li>
 		</thingCategories>
 		<stackLimit>5000</stackLimit>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR12x55mmETCBase">
-		<defName>Ammo_UFR12x55mmETC_Flechette</defName>
-		<label>12x55mm ETC shell (Flechette)</label>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR20x55mmETCBase">
+		<defName>Ammo_UFR20x55mmETC_Flechette</defName>
+		<label>20x55mm ETC shell (Flechette)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Shotgun/Shot</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>BuckShot</ammoClass>
-		<cookOffProjectile>Bullet_UFR12x55mmETC_Flechette</cookOffProjectile>
+		<cookOffProjectile>Bullet_UFR20x55mmETC_Flechette</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR12x55mmETCBase">
-		<defName>Ammo_UFR12x55mmETC_Canister</defName>
-		<label>12x55mm ETC shell (Canister)</label>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR20x55mmETCBase">
+		<defName>Ammo_UFR20x55mmETC_Canister</defName>
+		<label>20x55mm ETC shell (Canister)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Shotgun/Shot</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>BuckShot</ammoClass>
-		<cookOffProjectile>Bullet_UFR12x55mmETC_Canister</cookOffProjectile>
+		<cookOffProjectile>Bullet_UFR20x55mmETC_Canister</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR12x55mmETCBase">
-		<defName>Ammo_UFR12x55mmETC_Slug</defName>
-		<label>12x55mm ETC shell (Slug)</label>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR20x55mmETCBase">
+		<defName>Ammo_UFR20x55mmETC_Slug</defName>
+		<label>20x55mm ETC shell (Slug)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Shotgun/Slug</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -999,12 +999,12 @@
 			<Mass>0.048</Mass>
 		</statBases>
 		<ammoClass>Slug</ammoClass>
-		<cookOffProjectile>Bullet_UFR12x55mmETC_Slug</cookOffProjectile>
+		<cookOffProjectile>Bullet_UFR20x55mmETC_Slug</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR12x55mmETCBase">
-		<defName>Ammo_UFR12x55mmETC_Beanbag</defName>
-		<label>12x55mm ETC shell (Bean)</label>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR20x55mmETCBase">
+		<defName>Ammo_UFR20x55mmETC_Beanbag</defName>
+		<label>20x55mm ETC shell (Bean)</label>
 		<generateAllowChance>0</generateAllowChance>
 		<graphicData>
 			<texPath>Things/Ammo/Shotgun/Beanbag</texPath>
@@ -1014,12 +1014,12 @@
 			<Mass>0.059</Mass>
 		</statBases>
 		<ammoClass>Beanbag</ammoClass>
-		<cookOffProjectile>Bullet_UFR12x55mmETC_Beanbag</cookOffProjectile>
+		<cookOffProjectile>Bullet_UFR20x55mmETC_Beanbag</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR12x55mmETCBase">
-		<defName>Ammo_UFR12x55mmETC_EMP</defName>
-		<label>12x55mm ETC shell (EMP)</label>
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR20x55mmETCBase">
+		<defName>Ammo_UFR20x55mmETC_EMP</defName>
+		<label>20x55mm ETC shell (EMP)</label>
 		<graphicData>
 			<texPath>Things/Ammo/Shotgun/EMP</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -1029,10 +1029,10 @@
 		</statBases>
 		<ammoClass>ElectroSlug</ammoClass>
 		<generateAllowChance>0.5</generateAllowChance>
-		<cookOffProjectile>Bullet_UFR12x55mmETC_EMP</cookOffProjectile>
+		<cookOffProjectile>Bullet_UFR20x55mmETC_EMP</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Name="BaseUFR12x55mmETCBullet" ParentName="BaseBulletCE" Abstract="true">
+	<ThingDef Name="BaseUFR20x55mmETCBullet" ParentName="BaseBulletCE" Abstract="true">
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bullet</damageDef>
 			<speed>83</speed>
@@ -1042,8 +1042,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseUFR12x55mmETCBullet">
-		<defName>Bullet_UFR12x55mmETC_Flechette</defName>
+	<ThingDef ParentName="BaseUFR20x55mmETCBullet">
+		<defName>Bullet_UFR20x55mmETC_Flechette</defName>
 		<label>flechette</label>
 		<graphicData>
 			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
@@ -1060,8 +1060,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseUFR12x55mmETCBullet">
-		<defName>Bullet_UFR12x55mmETC_Canister</defName>
+	<ThingDef ParentName="BaseUFR20x55mmETCBullet">
+		<defName>Bullet_UFR20x55mmETC_Canister</defName>
 		<label>canister shot pellet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
@@ -1078,8 +1078,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseUFR12x55mmETCBullet">
-		<defName>Bullet_UFR12x55mmETC_Slug</defName>
+	<ThingDef ParentName="BaseUFR20x55mmETCBullet">
+		<defName>Bullet_UFR20x55mmETC_Slug</defName>
 		<label>shotgun slug</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_big</texPath>
@@ -1097,8 +1097,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseUFR12x55mmETCBullet">
-		<defName>Bullet_UFR12x55mmETC_Beanbag</defName>
+	<ThingDef ParentName="BaseUFR20x55mmETCBullet">
+		<defName>Bullet_UFR20x55mmETC_Beanbag</defName>
 		<label>beanbag</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_big</texPath>
@@ -1117,8 +1117,8 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseUFR12x55mmETCBullet">
-		<defName>Bullet_UFR12x55mmETC_EMP</defName>
+	<ThingDef ParentName="BaseUFR20x55mmETCBullet">
+		<defName>Bullet_UFR20x55mmETC_EMP</defName>
 		<label>EMP slug</label>
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_big</texPath>
@@ -1138,10 +1138,10 @@
 	</ThingDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_UFR12x55mmETC_Flechette</defName>
-		<label>make 12x55mm ETC (Flechette) shell x200</label>
-		<description>Craft 200 12x55mm ETC (Flechette) shells.</description>
-		<jobString>Making 12x55mm ETC (Flechette) shells.</jobString>
+		<defName>MakeAmmo_UFR20x55mmETC_Flechette</defName>
+		<label>make 20x55mm ETC (Flechette) shell x200</label>
+		<description>Craft 200 20x55mm ETC (Flechette) shells.</description>
+		<jobString>Making 20x55mm ETC (Flechette) shells.</jobString>
 		<ingredients><li>
 	<filter>
 		<thingDefs>
@@ -1156,16 +1156,16 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_UFR12x55mmETC_Flechette>200</Ammo_UFR12x55mmETC_Flechette>
+			<Ammo_UFR20x55mmETC_Flechette>200</Ammo_UFR20x55mmETC_Flechette>
 		</products>
 		<workAmount>2200</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_UFR12x55mmETC_Canister</defName>
-		<label>make 12x55mm ETC (Canister) shell x200</label>
-		<description>Craft 200 12x55mm ETC (Canister) shells.</description>
-		<jobString>Making 12x55mm ETC (Canister) shells.</jobString>
+		<defName>MakeAmmo_UFR20x55mmETC_Canister</defName>
+		<label>make 20x55mm ETC (Canister) shell x200</label>
+		<description>Craft 200 20x55mm ETC (Canister) shells.</description>
+		<jobString>Making 20x55mm ETC (Canister) shells.</jobString>
 		<ingredients><li>
 	<filter>
 		<thingDefs>
@@ -1180,16 +1180,16 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_UFR12x55mmETC_Canister>200</Ammo_UFR12x55mmETC_Canister>
+			<Ammo_UFR20x55mmETC_Canister>200</Ammo_UFR20x55mmETC_Canister>
 		</products>
 		<workAmount>2200</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_UFR12x55mmETC_Slug</defName>
-		<label>make 12x55mm ETC (Slug) shell x200</label>
-		<description>Craft 200 12x55mm ETC (Slug) shells.</description>
-		<jobString>Making 12x55mm ETC (Slug) shells.</jobString>
+		<defName>MakeAmmo_UFR20x55mmETC_Slug</defName>
+		<label>make 20x55mm ETC (Slug) shell x200</label>
+		<description>Craft 200 20x55mm ETC (Slug) shells.</description>
+		<jobString>Making 20x55mm ETC (Slug) shells.</jobString>
 		<ingredients><li>
 	<filter>
 		<thingDefs>
@@ -1204,16 +1204,16 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_UFR12x55mmETC_Slug>200</Ammo_UFR12x55mmETC_Slug>
+			<Ammo_UFR20x55mmETC_Slug>200</Ammo_UFR20x55mmETC_Slug>
 		</products>
 		<workAmount>2000</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_UFR12x55mmETC_Beanbag</defName>
-		<label>make 12x55mm ETC (Beanbag) shell x200</label>
-		<description>Craft 200 12x55mm ETC (Beanbag) shells.</description>
-		<jobString>Making 12x55mm ETC (Beanbag) shells.</jobString>
+		<defName>MakeAmmo_UFR20x55mmETC_Beanbag</defName>
+		<label>make 20x55mm ETC (Beanbag) shell x200</label>
+		<description>Craft 200 20x55mm ETC (Beanbag) shells.</description>
+		<jobString>Making 20x55mm ETC (Beanbag) shells.</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -1239,16 +1239,16 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_UFR12x55mmETC_Beanbag>200</Ammo_UFR12x55mmETC_Beanbag>
+			<Ammo_UFR20x55mmETC_Beanbag>200</Ammo_UFR20x55mmETC_Beanbag>
 		</products>
 		<workAmount>3400</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_UFR12x55mmETC_EMP</defName>
-		<label>make 12x55mm ETC (EMP) shell x200</label>
-		<description>Craft 200 12x55mm ETC (EMP) shells.</description>
-		<jobString>Making 12x55mm ETC (EMP) shells.</jobString>
+		<defName>MakeAmmo_UFR20x55mmETC_EMP</defName>
+		<label>make 20x55mm ETC (EMP) shell x200</label>
+		<description>Craft 200 20x55mm ETC (EMP) shells.</description>
+		<jobString>Making 20x55mm ETC (EMP) shells.</jobString>
 		<researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -1275,7 +1275,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_UFR12x55mmETC_EMP>200</Ammo_UFR12x55mmETC_EMP>
+			<Ammo_UFR20x55mmETC_EMP>200</Ammo_UFR20x55mmETC_EMP>
 		</products>
 		<skillRequirements><Crafting>4</Crafting></skillRequirements>
 		<workAmount>4600</workAmount>
