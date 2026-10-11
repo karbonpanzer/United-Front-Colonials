@@ -12,7 +12,8 @@
 		
 		<!-- Mod Patches -->
 		<li IfModActive="CETeam.CombatExtended">1.6/Mods/CE</li>	
-		<li IfModActive="niz.xenomorphtype">1.6/Mods/Xenomorph</li>		
+		<li IfModActive="niz.xenomorphtype">1.6/Mods/Xenomorph</li>	
+		<li IfModActiveAll="ceteam.combatextended,Ludeon.RimWorld.Odyssey">CE_Odyssey</li>
 	</v1.6>
 
 	<v1.7>
