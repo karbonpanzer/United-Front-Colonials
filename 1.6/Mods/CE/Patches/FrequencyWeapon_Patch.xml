@@ -128,7 +128,7 @@
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UFR_FrequencyGreatSword"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="UFR_FrequencyGreatsword"]/statBases</xpath>
 		<value>
 			<Bulk>6</Bulk>
 			<MeleeCounterParryBonus>0.50</MeleeCounterParryBonus>
