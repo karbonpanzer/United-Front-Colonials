@@ -7,7 +7,7 @@ namespace UnitedFront.Utils
 {
     public static class MultiColorGraphicUtil
     {
-        public static Graphic Get(string texPath, string maskPath, Shader shader,
+        public static Graphic Get(string texPath, string? maskPath, Shader shader,
                                   Vector2 drawSize, IReadOnlyList<Color> colors, Type? graphicClass = null)
         {
             Color colorOne = colors.Count > 0 ? colors[0] : Color.white;

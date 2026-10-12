@@ -11,8 +11,8 @@ namespace UnitedFront.AssaultShield
         private const float MaxDamagedJitterDist = 0.06f;
         private const int JitterDurationTicks = 8;
 
-        private Vector3 incomingAngleVect;
-        private int lastAbsorbDamageTick = -9999;
+        private Vector3 _incomingAngleVect;
+        private int _lastAbsorbDamageTick = -9999;
 
         private CompProperties_AssaultShield PropsUFR => (CompProperties_AssaultShield)props;
 
@@ -118,7 +118,7 @@ namespace UnitedFront.AssaultShield
 
         private float EnergyLossMultiplier(DamageDef def)
         {
-            string category = def.armorCategory?.defName;
+            string? category = def.armorCategory?.defName;
             if (category == "Sharp") return PropsUFR.sharpEnergyLossMultiplier;
             if (category == "Blunt") return PropsUFR.bluntEnergyLossMultiplier;
             if (category == "Heat") return PropsUFR.heatEnergyLossMultiplier;
@@ -129,8 +129,8 @@ namespace UnitedFront.AssaultShield
         {
             if (PawnOwner.Spawned)
             {
-                incomingAngleVect = Vector3Utility.HorizontalVectorFromAngle(dinfo.Angle);
-                Vector3 loc = PawnOwner.TrueCenter() + incomingAngleVect.RotatedBy(180f) * 0.5f;
+                _incomingAngleVect = Vector3Utility.HorizontalVectorFromAngle(dinfo.Angle);
+                Vector3 loc = PawnOwner.TrueCenter() + _incomingAngleVect.RotatedBy(180f) * 0.5f;
 
                 SoundDefOf.EnergyShield_AbsorbDamage.PlayOneShot(
                     new TargetInfo(PawnOwner.Position, PawnOwner.Map));
@@ -145,7 +145,7 @@ namespace UnitedFront.AssaultShield
                 }
             }
 
-            lastAbsorbDamageTick = Find.TickManager.TicksGame;
+            _lastAbsorbDamageTick = Find.TickManager.TicksGame;
             KeepDisplaying();
         }
 
@@ -187,12 +187,12 @@ namespace UnitedFront.AssaultShield
             Vector3 drawPos = PawnOwner.Drawer.DrawPos;
             drawPos.y = AltitudeLayer.MoteOverhead.AltitudeFor();
 
-            int sinceHit = Find.TickManager.TicksGame - lastAbsorbDamageTick;
+            int sinceHit = Find.TickManager.TicksGame - _lastAbsorbDamageTick;
             if (sinceHit < JitterDurationTicks)
             {
                 float jitter = (float)(JitterDurationTicks - sinceHit)
                                / JitterDurationTicks * MaxDamagedJitterDist;
-                drawPos += incomingAngleVect * jitter;
+                drawPos += _incomingAngleVect * jitter;
                 size -= jitter;
             }
 
@@ -204,7 +204,7 @@ namespace UnitedFront.AssaultShield
                 Quaternion.AngleAxis(angle, Vector3.up),
                 new Vector3(size, 1f, size));
 
-            Material mat = PropsUFR.BubbleMat;
+            Material? mat = PropsUFR.BubbleMat;
             if (mat == null)
             {
                 return;

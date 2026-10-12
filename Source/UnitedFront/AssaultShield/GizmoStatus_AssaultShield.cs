@@ -7,7 +7,7 @@ namespace UnitedFront.AssaultShield
     [StaticConstructorOnStartup]
     public class GizmoStatus_AssaultShield : Gizmo
     {
-        public CompShield_AssaultShield shield;
+        public required CompShield_AssaultShield shield;
 
         private static readonly Texture2D FullBarTex =
             SolidColorMaterials.NewSolidColorTexture(new Color(0.2f, 0.6f, 0.9f));

@@ -29,9 +29,9 @@ namespace UnitedFront.AssaultShield
 
         public float breakEffecterScale = 1f;
 
-        private Material bubbleMat;
+        private Material? bubbleMat;
 
-        public Material BubbleMat => bubbleMat;
+        public Material? BubbleMat => bubbleMat;
 
         public CompProperties_AssaultShield()
         {
