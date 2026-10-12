@@ -1,4 +1,4 @@
-<img src="About/Preview.png" alt="Factions" width="640"><br>
+<img src="About/preview.png" alt="Preview" width="640"><br>
 
 <div align="center">
 
