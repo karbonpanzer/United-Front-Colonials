@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ETC/Sabot Weapons -->
+  <SoundDef>
+    <defName>UFR_Shot_ETCSmall</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>UFR/UFR_ETCSmall</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>70~70</volumeRange>
+        <pitchRange>0.98~1.08</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>UFR_Shot_ETCMedium</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>UFR/UFR_ETCMedium</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>70~70</volumeRange>
+        <pitchRange>0.98~1.06</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>UFR_Shot_ETCHeavy</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>UFR/UFR_ETCHeavy</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>70~70</volumeRange>
+        <pitchRange>0.98~1.04</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>UFR_Shot_ETCFlechette</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>UFR/UFR_ETCFlechette</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>80~80</volumeRange>
+        <pitchRange>0.98~1.06</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

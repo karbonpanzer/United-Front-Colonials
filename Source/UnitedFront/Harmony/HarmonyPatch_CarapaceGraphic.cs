@@ -2,10 +2,9 @@ using HarmonyLib;
 using RimWorld;
 using UnitedFront.Comps;
 using UnitedFront.Utils;
-using UnityEngine;
 using Verse;
 
-namespace UnitedFront.Patch
+namespace UnitedFront.Harmony
 {
     [HarmonyPatch(typeof(Thing), nameof(Thing.Graphic), MethodType.Getter)]
     public static class Thing_CarapaceItemGraphic_Patch

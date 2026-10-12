@@ -6,7 +6,7 @@ using UnitedFront.Utils;
 using Verse;
 using Verse.AI;
 
-namespace UnitedFront.Patch
+namespace UnitedFront.Harmony
 {
     [HarmonyPatch(typeof(ThingWithComps), nameof(ThingWithComps.GetFloatMenuOptions))]
     public static class HarmonyPatch_StylingStation_EditColors

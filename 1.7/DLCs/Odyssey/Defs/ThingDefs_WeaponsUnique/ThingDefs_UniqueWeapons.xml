@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!--ThingDef ParentName="UFR_SabotPistol">
+    <defName>UFR_SabotPistol_Unique</defName>
+    <label>unique sabot pistol</label>
+    <description>A sabot pistol with customized parts.</description>
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotPistol</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Pistol</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>sabot pistol</li>
+          <li>pistol</li>
+          <li>sidearm</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_SabotPistol</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef-->
+
+  <ThingDef ParentName="UFR_SabotRifle">
+    <defName>UFR_SabotRifle_Unique</defName>
+    <label>unique sabot rifle</label>
+    <description>A sabot rifle with customized parts.</description>
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotAssaultRifle</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Sighted</li>
+          <li>Rifle</li>
+          <li>BurstFire</li>
+          <li>Attachable</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>sabot rifle</li>
+          <li>assault rifle</li>
+          <li>carbine</li>
+          <li>wargun</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_SabotRifle</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <!--ThingDef ParentName="UFR_SabotSniperRifle">
+    <defName>UFR_SabotSniperRifle_Unique</defName>
+    <label>unique sabot sniper rifle</label>
+    <description>A sabot sniper rifle with customized parts.</description>
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotSniper</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Sighted</li>
+          <li>Scoped</li>
+          <li>Rifle</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>sabot sniper rifle</li>
+          <li>anti-materiel rifle</li>
+          <li>sniper</li>
+          <li>stalker</li>
+          <li>headshotter</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_SabotSniperRifle</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef-->
+
+  <ThingDef ParentName="UFR_SabotShotgun">
+    <defName>UFR_SabotShotgun_Unique</defName>
+    <label>unique flechette shotgun</label>
+    <description>A flechette shotgun with customized parts.</description>
+    <graphicData>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/FlechetteShotgun</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+          <li>Gun</li>
+          <li>Shotgun</li>
+          <li>BurstFire</li>
+          <li>Attachable</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>flechette shotgun</li>
+          <li>shotgun</li>
+          <li>sweeper</li>
+          <li>gutspewer</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>UFR_SabotShotgun</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+</Defs>

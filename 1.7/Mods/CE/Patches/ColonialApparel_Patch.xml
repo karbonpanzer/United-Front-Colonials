@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- UFR_InfantryUniform -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_InfantryUniform"]/statBases</xpath>
+		<value>
+			<Bulk>5</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+
+	<!-- UFR_Hat_Beret -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_Hat_Beret"]/statBases</xpath>
+		<value>
+			<Bulk>1</Bulk>
+		</value>
+	</Operation>
+
+	<!-- UFR_CommanderCap -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="UFR_CommanderCap"]/statBases</xpath>
+		<value>
+			<Bulk>1</Bulk>
+		</value>
+	</Operation>
+
+</Patch>

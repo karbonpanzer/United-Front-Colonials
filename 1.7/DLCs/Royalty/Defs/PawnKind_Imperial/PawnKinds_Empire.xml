@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="UFR_MilitaryBase">
+    <defName>UFR_Empire_HeavyTrooper</defName>
+    <label>heavy trooper</label>
+    <labelPlural>heavy troopers</labelPlural>
+    <defaultFactionType>Empire</defaultFactionType>
+    <apparelColor>(75,75,75)</apparelColor>
+    <combatPower>120</combatPower>
+    <maxGenerationAge>45</maxGenerationAge>
+    <apparelRequired>
+      <li>UFR_CarapaceArmor</li>
+      <li>UFR_CarapaceHelmet</li>
+      <li>UFR_InfantryUniform</li>      
+      <li>UFR_CarapaceGloves</li>
+      <li>UFR_CarapaceBoots</li>      
+    </apparelRequired>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+    <weaponMoney>1000~2500</weaponMoney>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>Gun_ChargeRifle</li>
+    </weaponTags>
+    <techHediffsChance>0.05</techHediffsChance>
+    <techHediffsMoney>200~600</techHediffsMoney>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>ImperialFighter</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>5~11</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+</Defs>
