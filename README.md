@@ -3,9 +3,9 @@
 <div align="center">
 
 <p>The United Front - Colonials is a mod which adds in 2 factions, over a dozen pieces of apparel, and tons of weapons.</p>
+<p>The United Front adds in a new group arriving to the rimworld, which are the "Colonials" who have come to settle the planet and build up their lives on this world. Though they have not come unprepared, protected by the best armor they could afford and using advanced weapons which are state of the art, they will carve out their home and civilize this world.</p>
 
 <img src="Storage/Workshop%20Materials/Final/FactionHeader.png" alt="Factions" width="640"><br>
-<p>The United Front adds in a new group arriving to the rimworld, which are the "Colonials" who have come to settle the planet and build up their lives on this world. Though they have not come unprepared, protected by the best armor they could afford and using advanced weapons which are state of the art, they will carve out their home and civilize this world.</p>
 <img src="Storage/Workshop%20Materials/Final/FactionColonialAdmin.png" alt="Colonial Administration" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/FactionColonialMilitia.png" alt="Colonial Militia" width="640"><br>
 
