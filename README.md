@@ -17,7 +17,7 @@
 <p align="center"><img src="Storage/Workshop%20Materials/Final/Content.png" alt="Content" width="100%"></p>
 
 <table align="center">
-  <tr><td align="center"><img src="Storage/Workshop%20Materials/Final/Armaments%20Bench.png" width="360"><br><b>Armaments Bench</b></td><td align="center"><img src="Storage/Workshop%20Materials/Final/UIColorMenu.png" width="360"><br><b>Armor Color Editor</b></td></tr>
+  <tr><td align="center"><img src="Storage/Workshop%20Materials/Final/Armaments%20Bench.png" width="360"><br><b>Armaments Bench</b></td>
 </table>
 
 <p align="center"><img src="Storage/Workshop%20Materials/Final/ApparelHeader.png" alt="Apparel" width="100%"></p>
@@ -42,6 +42,7 @@
   <tr><td align="center"><img src="Storage/Workshop%20Materials/Final/AssaultCarapaceArmor.png" width="200"><br><b>Assault</b></td><td align="center"><img src="Storage/Workshop%20Materials/Final/CommanderCarapaceArmor.png" width="200"><br><b>Commander</b></td><td align="center"><img src="Storage/Workshop%20Materials/Final/EngineerCarapaceArmor.png" width="200"><br><b>Engineer</b></td></tr>
   <tr><td align="center"><img src="Storage/Workshop%20Materials/Final/MedicCarapaceArmor.png" width="200"><br><b>Medic</b></td><td align="center"><img src="Storage/Workshop%20Materials/Final/PoliceCarapaceArmor.png" width="200"><br><b>Police</b></td><td align="center"><img src="Storage/Workshop%20Materials/Final/ScoutCarapaceArmor.png" width="200"><br><b>Scout</b></td></tr>
   <tr><td align="center"><img src="Storage/Workshop%20Materials/Final/VeteranCarapaceArmor.png" width="200"><br><b>Veteran</b></td></tr>
+  <td align="center"><img src="Storage/Workshop%20Materials/Final/UIColorMenu.png" width="360"><br><b>Armor Color Editor</b></td></tr>
 </table>
 
 <p align="center"><img src="Storage/Workshop%20Materials/Final/WeaponHeader.png" alt="Weapons" width="100%"></p>
