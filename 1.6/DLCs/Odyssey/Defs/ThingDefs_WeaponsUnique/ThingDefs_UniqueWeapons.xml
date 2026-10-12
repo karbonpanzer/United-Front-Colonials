@@ -7,7 +7,7 @@
     <description>A sabot pistol with customized parts.</description>
     <graphicData>
       <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotPistol</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Random</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <comps Inherit="False">
@@ -59,7 +59,7 @@
     <description>A sabot rifle with customized parts.</description>
     <graphicData>
       <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotAssaultRifle</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Random</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <comps Inherit="False">
@@ -115,7 +115,7 @@
     <description>A sabot sniper rifle with customized parts.</description>
     <graphicData>
       <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotSniper</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Random</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <comps Inherit="False">
@@ -171,7 +171,7 @@
     <description>A flechette shotgun with customized parts.</description>
     <graphicData>
       <texPath>UFR/Things/Item/Equipment/UniqueWeapons/FlechetteShotgun</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Random</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <comps Inherit="False">
