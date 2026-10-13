@@ -15,6 +15,7 @@
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugType>embedded</DebugType>
         <OutputPath>..\..\1.7\Assemblies\</OutputPath>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
