@@ -1,4 +1,4 @@
-<h1 align="center">United Front Colonial</h1>
+<img src="About/preview.png" alt="Preview" width="1280"><br>
 
 <div align="center">
 
