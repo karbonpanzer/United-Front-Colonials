@@ -1,0 +1,10 @@
+{
+  "TextureModID": "kp.unitedfront",
+  "ItemDefName": "UFR_FrequencyClub",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.26491237,
+  "BladeStart": 0.46140385,
+  "BladeEnd": 0.7385967,
+  "MeleeWeaponType": 1
+}

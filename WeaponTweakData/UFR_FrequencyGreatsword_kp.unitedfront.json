@@ -1,0 +1,13 @@
+{
+  "TextureModID": "kp.unitedfront",
+  "ItemDefName": "UFR_FrequencyGreatsword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.46073294,
+  "Rotation": 45.0,
+  "ScaleX": 1.25,
+  "ScaleY": 1.25,
+  "BladeStart": 0.18429303,
+  "BladeEnd": 1.26911,
+  "MeleeWeaponType": 6
+}

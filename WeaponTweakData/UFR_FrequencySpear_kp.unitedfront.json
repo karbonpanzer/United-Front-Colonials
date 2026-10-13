@@ -1,0 +1,14 @@
+{
+  "TextureModID": "kp.unitedfront",
+  "ItemDefName": "UFR_FrequencySpear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.21047807,
+  "OffY": -0.012280345,
+  "Rotation": 45.0,
+  "ScaleX": 1.25,
+  "ScaleY": 1.25,
+  "BladeStart": 0.3562641,
+  "BladeEnd": 0.9394076,
+  "MeleeWeaponType": 6
+}

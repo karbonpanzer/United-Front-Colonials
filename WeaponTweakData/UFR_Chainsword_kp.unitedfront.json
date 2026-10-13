@@ -1,0 +1,10 @@
+{
+  "TextureModID": "kp.unitedfront",
+  "ItemDefName": "UFR_Chainsword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.25056958,
+  "BladeStart": 0.17767644,
+  "BladeEnd": 0.7353077,
+  "MeleeWeaponType": 6
+}

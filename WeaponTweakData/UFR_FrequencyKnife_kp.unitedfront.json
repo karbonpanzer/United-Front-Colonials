@@ -1,0 +1,11 @@
+{
+  "TextureModID": "kp.unitedfront",
+  "ItemDefName": "UFR_FrequencyKnife",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.18771887,
+  "HandsMode": 1,
+  "BladeStart": 0.13859701,
+  "BladeEnd": 0.5350878,
+  "MeleeWeaponType": 22
+}
