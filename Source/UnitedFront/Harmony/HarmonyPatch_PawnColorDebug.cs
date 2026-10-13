@@ -1,58 +1,32 @@
-using System.Reflection;
+using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
-using UnitedFront.Comps;
+using UnitedFront.UI;
 using UnitedFront.Utils;
+using UnityEngine;
 using Verse;
 
-namespace UnitedFront.Harmony
+namespace UnitedFront.HarmonyPatches
 {
-    [HarmonyPatch]
-    public static class ApparelGraphic_CarapaceColor_Patch
+    [HarmonyPatch(typeof(Pawn), nameof(Pawn.GetGizmos))]
+    public static class Pawn_GetGizmos_EditColors_Patch
     {
-        private static MethodBase TargetMethod()
+        public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Pawn __instance)
         {
-            return AccessTools.Method(typeof(ApparelGraphicRecordGetter), "TryGetGraphicApparel",
-                new[] { typeof(Apparel), typeof(BodyTypeDef), typeof(bool), typeof(ApparelGraphicRecord).MakeByRefType() });
-        }
+            foreach (Gizmo g in __result)
+                yield return g;
 
-        public static void Postfix(Apparel apparel, BodyTypeDef bodyType, bool forStatue, ref ApparelGraphicRecord rec, bool __result)
-        {
-            if (forStatue || !__result || apparel == null) return;
+            if (!Prefs.DevMode || !DebugSettings.godMode) yield break;
+            if (__instance == null || !__instance.RaceProps.Humanlike) yield break;
+            if (!ColorMarkerUtil.Wears(__instance)) yield break;
 
-            CompColorMarker comp = apparel.GetComp<CompColorMarker>();
-            if (comp == null || comp.ZoneColors.NullOrEmpty()) return;
-
-            string basePath = apparel.WornGraphicPath;
-            if (basePath.NullOrEmpty()) return;
-
-            if (!UsesMask(apparel)) return;
-
-            if (bodyType == null) bodyType = BodyTypeDefOf.Male;
-
-            ApparelLayerDef last = apparel.def.apparel.LastLayer;
-            bool perBodyType = last != ApparelLayerDefOf.Overhead
-                               && last != ApparelLayerDefOf.EyeCover
-                               && !apparel.RenderAsPack()
-                               && basePath != BaseContent.PlaceholderImagePath
-                               && basePath != BaseContent.PlaceholderGearImagePath;
-
-            string path = perBodyType ? basePath + "_" + bodyType.defName : basePath;
-
-            Graphic graphic = MultiColorGraphicUtil.Get(path, null, ShaderDatabase.CutoutComplex,
-                apparel.def.graphicData.drawSize, comp.DisplayZones());
-
-            if (graphic != null)
-                rec = new ApparelGraphicRecord(graphic, apparel);
-        }
-
-        private static bool UsesMask(Apparel apparel)
-        {
-            if (apparel.StyleDef?.graphicData.shaderType != null)
-                return apparel.StyleDef.graphicData.shaderType.Shader == ShaderDatabase.CutoutComplex;
-
-            if (apparel.StyleDef == null) return apparel.def.apparel.useWornGraphicMask;
-            return apparel.StyleDef.UseWornGraphicMask;
+            yield return new Command_Action
+            {
+                defaultLabel = "UFR_DevEditColors".Translate(),
+                defaultDesc = "UFR_DevEditColorsDesc".Translate(),
+                icon = ContentFinder<Texture2D>.Get("UFR/UI/Paint/UFR_CustomizeColor", false),
+                action = () => Find.WindowStack.Add(new DialogEditColors(__instance))
+            };
         }
     }
 }
