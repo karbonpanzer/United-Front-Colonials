@@ -42,7 +42,7 @@
 		<defName>Ammo_UFR5x32mmETC_HV</defName>
 		<label>5x32mm ETC (HV)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Pistol/AP</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotSmall/SabotSmall_HV</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>Sabot</ammoClass>
@@ -53,7 +53,7 @@
 		<defName>Ammo_UFR5x32mmETC_Incendiary</defName>
 		<label>5x32mm ETC (Incendiary)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Rifle/Incendiary</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotSmall/SabotSmall_Inc</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>IncendiaryAP</ammoClass>
@@ -65,7 +65,7 @@
 		<defName>Ammo_UFR5x32mmETC_Fragmentation</defName>
 		<label>5x32mm ETC (Fragmentation)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Pistol/HP</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotSmall/SabotSmall_Frag</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>HollowPoint</ammoClass>
@@ -337,7 +337,7 @@
 		<defName>Ammo_UFR8x48mmETC_HV</defName>
 		<label>8x48mm ETC (HV)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Rifle/Battlerifle/Sabot</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotMedium/SabotMedium_HV</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>Sabot</ammoClass>
@@ -348,7 +348,7 @@
 		<defName>Ammo_UFR8x48mmETC_Incendiary</defName>
 		<label>8x48mm ETC (Incendiary)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Rifle/Battlerifle/Incendiary</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotMedium/SabotMedium_Inc</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>IncendiaryAP</ammoClass>
@@ -360,7 +360,7 @@
 		<defName>Ammo_UFR8x48mmETC_Fragmentation</defName>
 		<label>8x48mm ETC (Fragmentation)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Rifle/Battlerifle/HP</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotMedium/SabotMedium_Frag</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>HollowPoint</ammoClass>
@@ -632,7 +632,7 @@
 		<defName>Ammo_UFR14x80mmETC_HV</defName>
 		<label>14x80mm ETC (HV)</label>
 		<graphicData>
-			<texPath>Things/Ammo/HighCaliber/Sabot</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotLarge/SabotLarge_HV</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>Sabot</ammoClass>
@@ -643,7 +643,7 @@
 		<defName>Ammo_UFR14x80mmETC_Incendiary</defName>
 		<label>14x80mm ETC (Incendiary)</label>
 		<graphicData>
-			<texPath>Things/Ammo/HighCaliber/Incendiary</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotLarge/SabotLarge_Inc</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>IncendiaryAP</ammoClass>
@@ -655,7 +655,7 @@
 		<defName>Ammo_UFR14x80mmETC_Fragmentation</defName>
 		<label>14x80mm ETC (Fragmentation)</label>
 		<graphicData>
-			<texPath>Things/Ammo/HighCaliber/FMJ</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotLarge/SabotLarge_Frag</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>HollowPoint</ammoClass>
@@ -666,7 +666,7 @@
 		<defName>Ammo_UFR14x80mmETC_HE</defName>
 		<label>14x80mm ETC (HE)</label>
 		<graphicData>
-			<texPath>Things/Ammo/HighCaliber/HE</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotLarge/SabotLarge_HE</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>ExplosiveAP</ammoClass>
@@ -1022,7 +1022,7 @@
 		<defName>Ammo_UFR20x55mmETC_Flechette</defName>
 		<label>20x55mm ETC shell (Flechette)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Shotgun/Shot</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotShotgun/SabotShotgun_Flechette</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>UFR_Flechette</ammoClass>
@@ -1033,7 +1033,7 @@
 		<defName>Ammo_UFR20x55mmETC_Slug</defName>
 		<label>20x55mm ETC shell (Slug)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Shotgun/Slug</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotShotgun/SabotShotgun_Slug</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>Slug</ammoClass>
@@ -1044,7 +1044,7 @@
 		<defName>Ammo_UFR20x55mmETC_Canister</defName>
 		<label>20x55mm ETC shell (Canister)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Shotgun/Shot</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotShotgun/SabotShotgun_Cannister</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>BuckShot</ammoClass>
@@ -1055,7 +1055,7 @@
 		<defName>Ammo_UFR20x55mmETC_EMP</defName>
 		<label>20x55mm ETC shell (EMP Slug)</label>
 		<graphicData>
-			<texPath>Things/Ammo/Shotgun/EMP</texPath>
+			<texPath>UFR/Things/Item/Ammo/SabotShotgun/SabotShotgun_EMPSlug</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>ElectroSlug</ammoClass>
