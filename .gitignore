@@ -5,3 +5,4 @@ Source/UnitedFront/.idea
 Source/UnitedFront/obj
 UFR_UnityBuild
 !spec/*.af~lock~
+*.af~lock~
