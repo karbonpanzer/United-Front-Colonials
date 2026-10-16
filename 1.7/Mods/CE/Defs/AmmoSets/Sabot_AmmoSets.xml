@@ -18,7 +18,7 @@
 		<ammoTypes>
 			<Ammo_UFR5x32mmETC_HV>Bullet_UFR5x32mmETC_HV</Ammo_UFR5x32mmETC_HV>
 			<Ammo_UFR5x32mmETC_Incendiary>Bullet_UFR5x32mmETC_Incendiary</Ammo_UFR5x32mmETC_Incendiary>
-			<Ammo_UFR5x32mmETC_Fragmentation>Bullet_UFR5x32mmETC_Fragmentation</Ammo_UFR5x32mmETC_Fragmentation>
+			<Ammo_UFR5x32mmETC_Shredder>Bullet_UFR5x32mmETC_Shredder</Ammo_UFR5x32mmETC_Shredder>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -62,14 +62,14 @@
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR5x32mmETCBase">
-		<defName>Ammo_UFR5x32mmETC_Fragmentation</defName>
-		<label>5x32mm ETC (Fragmentation)</label>
+		<defName>Ammo_UFR5x32mmETC_Shredder</defName>
+		<label>5x32mm ETC (Shredder)</label>
 		<graphicData>
 			<texPath>UFR/Things/Item/Ammo/SabotSmall/SabotSmall_Frag</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>HollowPoint</ammoClass>
-		<cookOffProjectile>Bullet_UFR5x32mmETC_Fragmentation</cookOffProjectile>
+		<cookOffProjectile>Bullet_UFR5x32mmETC_Shredder</cookOffProjectile>
 	</ThingDef>
 
 	<ThingDef Name="BaseUFR5x32mmETCBullet" ParentName="BaseBulletCE" Abstract="true">
@@ -115,13 +115,13 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseUFR5x32mmETCBullet">
-		<defName>Bullet_UFR5x32mmETC_Fragmentation</defName>
-		<label>5x32mm ETC bullet (Fragmentation)</label>
+		<defName>Bullet_UFR5x32mmETC_Shredder</defName>
+		<label>5x32mm ETC bullet (Shredder)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>12</damageAmountBase>
-			<speed>108</speed>
-			<armorPenetrationSharp>3</armorPenetrationSharp>
-			<armorPenetrationBlunt>9.66</armorPenetrationBlunt>
+			<damageAmountBase>13</damageAmountBase>
+			<speed>115</speed>
+			<armorPenetrationSharp>6.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>9.7</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
@@ -249,10 +249,10 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_UFR5x32mmETC_Fragmentation</defName>
-		<label>make 5x32mm ETC (Fragmentation) cartridge x500</label>
-		<description>Craft 500 5x32mm ETC (Fragmentation) cartridges.</description>
-		<jobString>Making 5x32mm ETC (Fragmentation) cartridges.</jobString>
+		<defName>MakeAmmo_UFR5x32mmETC_Shredder</defName>
+		<label>make 5x32mm ETC (Shredder) cartridge x500</label>
+		<description>Craft 500 5x32mm ETC (Shredder) cartridges.</description>
+		<jobString>Making 5x32mm ETC (Shredder) cartridges.</jobString>
 		<researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -288,7 +288,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_UFR5x32mmETC_Fragmentation>500</Ammo_UFR5x32mmETC_Fragmentation>
+			<Ammo_UFR5x32mmETC_Shredder>500</Ammo_UFR5x32mmETC_Shredder>
 		</products>
 		<workAmount>6600</workAmount>
 		<skillRequirements>
@@ -313,7 +313,7 @@
 		<ammoTypes>
 			<Ammo_UFR8x48mmETC_HV>Bullet_UFR8x48mmETC_HV</Ammo_UFR8x48mmETC_HV>
 			<Ammo_UFR8x48mmETC_Incendiary>Bullet_UFR8x48mmETC_Incendiary</Ammo_UFR8x48mmETC_Incendiary>
-			<Ammo_UFR8x48mmETC_Fragmentation>Bullet_UFR8x48mmETC_Fragmentation</Ammo_UFR8x48mmETC_Fragmentation>
+			<Ammo_UFR8x48mmETC_Shredder>Bullet_UFR8x48mmETC_Shredder</Ammo_UFR8x48mmETC_Shredder>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -357,14 +357,14 @@
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR8x48mmETCBase">
-		<defName>Ammo_UFR8x48mmETC_Fragmentation</defName>
-		<label>8x48mm ETC (Fragmentation)</label>
+		<defName>Ammo_UFR8x48mmETC_Shredder</defName>
+		<label>8x48mm ETC (Shredder)</label>
 		<graphicData>
 			<texPath>UFR/Things/Item/Ammo/SabotMedium/SabotMedium_Frag</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>HollowPoint</ammoClass>
-		<cookOffProjectile>Bullet_UFR8x48mmETC_Fragmentation</cookOffProjectile>
+		<cookOffProjectile>Bullet_UFR8x48mmETC_Shredder</cookOffProjectile>
 	</ThingDef>
 
 	<ThingDef Name="BaseUFR8x48mmETCBullet" ParentName="BaseBulletCE" Abstract="true">
@@ -408,13 +408,13 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseUFR8x48mmETCBullet">
-		<defName>Bullet_UFR8x48mmETC_Fragmentation</defName>
-		<label>8x48mm ETC bullet (Fragmentation)</label>
+		<defName>Bullet_UFR8x48mmETC_Shredder</defName>
+		<label>8x48mm ETC bullet (Shredder)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>16</damageAmountBase>
-			<speed>210</speed>
-			<armorPenetrationSharp>5</armorPenetrationSharp>
-			<armorPenetrationBlunt>34.18</armorPenetrationBlunt>
+			<damageAmountBase>17</damageAmountBase>
+			<speed>225</speed>
+			<armorPenetrationSharp>10</armorPenetrationSharp>
+			<armorPenetrationBlunt>34.2</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
@@ -542,10 +542,10 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_UFR8x48mmETC_Fragmentation</defName>
-		<label>make 8x48mm ETC (Fragmentation) cartridge x500</label>
-		<description>Craft 500 8x48mm ETC (Fragmentation) cartridges.</description>
-		<jobString>Making 8x48mm ETC (Fragmentation) cartridges.</jobString>
+		<defName>MakeAmmo_UFR8x48mmETC_Shredder</defName>
+		<label>make 8x48mm ETC (Shredder) cartridge x500</label>
+		<description>Craft 500 8x48mm ETC (Shredder) cartridges.</description>
+		<jobString>Making 8x48mm ETC (Shredder) cartridges.</jobString>
 		<researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -581,7 +581,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_UFR8x48mmETC_Fragmentation>500</Ammo_UFR8x48mmETC_Fragmentation>
+			<Ammo_UFR8x48mmETC_Shredder>500</Ammo_UFR8x48mmETC_Shredder>
 		</products>
 		<workAmount>13600</workAmount>
 		<skillRequirements>
@@ -606,7 +606,7 @@
 		<ammoTypes>
 			<Ammo_UFR14x80mmETC_HV>Bullet_UFR14x80mmETC_HV</Ammo_UFR14x80mmETC_HV>
 			<Ammo_UFR14x80mmETC_Incendiary>Bullet_UFR14x80mmETC_Incendiary</Ammo_UFR14x80mmETC_Incendiary>
-			<Ammo_UFR14x80mmETC_Fragmentation>Bullet_UFR14x80mmETC_Fragmentation</Ammo_UFR14x80mmETC_Fragmentation>
+			<Ammo_UFR14x80mmETC_Shredder>Bullet_UFR14x80mmETC_Shredder</Ammo_UFR14x80mmETC_Shredder>
 			<Ammo_UFR14x80mmETC_HE>Bullet_UFR14x80mmETC_HE</Ammo_UFR14x80mmETC_HE>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
@@ -652,14 +652,14 @@
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR14x80mmETCBase">
-		<defName>Ammo_UFR14x80mmETC_Fragmentation</defName>
-		<label>14x80mm ETC (Fragmentation)</label>
+		<defName>Ammo_UFR14x80mmETC_Shredder</defName>
+		<label>14x80mm ETC (Shredder)</label>
 		<graphicData>
 			<texPath>UFR/Things/Item/Ammo/SabotLarge/SabotLarge_Frag</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<ammoClass>HollowPoint</ammoClass>
-		<cookOffProjectile>Bullet_UFR14x80mmETC_Fragmentation</cookOffProjectile>
+		<cookOffProjectile>Bullet_UFR14x80mmETC_Shredder</cookOffProjectile>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="UFR14x80mmETCBase">
@@ -717,13 +717,13 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseUFR14x80mmETCBullet">
-		<defName>Bullet_UFR14x80mmETC_Fragmentation</defName>
-		<label>14x80mm ETC bullet (Fragmentation)</label>
+		<defName>Bullet_UFR14x80mmETC_Shredder</defName>
+		<label>14x80mm ETC bullet (Shredder)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>49</damageAmountBase>
-			<speed>205</speed>
-			<armorPenetrationSharp>7.1</armorPenetrationSharp>
-			<armorPenetrationBlunt>360.34</armorPenetrationBlunt>
+			<damageAmountBase>51</damageAmountBase>
+			<speed>215</speed>
+			<armorPenetrationSharp>15.7</armorPenetrationSharp>
+			<armorPenetrationBlunt>360.3</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
@@ -868,10 +868,10 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_UFR14x80mmETC_Fragmentation</defName>
-		<label>make 14x80mm ETC (Fragmentation) cartridge x200</label>
-		<description>Craft 200 14x80mm ETC (Fragmentation) cartridges.</description>
-		<jobString>Making 14x80mm ETC (Fragmentation) cartridges.</jobString>
+		<defName>MakeAmmo_UFR14x80mmETC_Shredder</defName>
+		<label>make 14x80mm ETC (Shredder) cartridge x200</label>
+		<description>Craft 200 14x80mm ETC (Shredder) cartridges.</description>
+		<jobString>Making 14x80mm ETC (Shredder) cartridges.</jobString>
 		<researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
 		<ingredients>
 			<li>
@@ -907,7 +907,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_UFR14x80mmETC_Fragmentation>200</Ammo_UFR14x80mmETC_Fragmentation>
+			<Ammo_UFR14x80mmETC_Shredder>200</Ammo_UFR14x80mmETC_Shredder>
 		</products>
 		<workAmount>24200</workAmount>
 		<skillRequirements>
