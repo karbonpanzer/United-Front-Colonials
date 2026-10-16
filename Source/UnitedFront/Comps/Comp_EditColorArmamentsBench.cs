@@ -7,7 +7,7 @@ using Verse.AI;
 
 namespace UnitedFront.Comps
 {
-    public class CompEditColorsStation : ThingComp
+    public class Comp_EditColorArmamentsBench : ThingComp
     {
         public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn selPawn)
         {
