@@ -6,3 +6,18 @@ Source/UnitedFront/obj
 UFR_UnityBuild
 !spec/*.af~lock~
 *.af~lock~
+
+# IntelliJ
+.idea
+*.iml
+
+# Visual Studio
+.vs
+obj
+*.pdb
+*/.vs
+*/obj
+*/*.pdb
+
+# Rider
+*.DotSettings.user
