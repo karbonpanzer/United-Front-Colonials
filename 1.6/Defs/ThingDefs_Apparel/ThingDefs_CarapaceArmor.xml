@@ -48,7 +48,6 @@
         <li>Spacefarer</li>
       </defaultOutfitTags>  
       <tags>         
-        <li>SpacerMilitary</li>
         <li>UFR_Armor</li>     
       </tags>
     </apparel>
@@ -109,8 +108,7 @@
         <li>Soldier</li>
         <li>Spacefarer</li>
       </defaultOutfitTags>
-      <tags>         
-        <li>SpacerMilitary</li>         
+      <tags>                
         <li>UFR_Armor</li>        
       </tags>
     </apparel>
@@ -160,6 +158,7 @@
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceArmor</wornGraphicPath>
       <tags>
+	    <li>SpacerMilitary</li>
         <li>UFR_CarapaceArmor</li>
       </tags>
     </apparel>
@@ -198,7 +197,8 @@
     </statBases>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceHelmet</wornGraphicPath>
-      <tags>         
+      <tags>
+		<li>SpacerMilitary</li>
         <li>UFR_CarapaceArmor</li>        
         <li>UFR_CarapaceHelmet</li>
       </tags>
@@ -272,7 +272,7 @@
         <li>SpacerMilitary</li>         
         <li>UFR_Armor</li>
         <li>UFR_CarapaceBoots</li>
-		    <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>		  
+	    <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>		  
       </tags>
     </apparel>
     <thingCategories>
@@ -345,7 +345,7 @@
         <li>SpacerMilitary</li>         
         <li>UFR_Armor</li>
         <li>UFR_CarapaceGloves</li>
-	      <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
+	    <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
     </apparel>
     <thingCategories>
