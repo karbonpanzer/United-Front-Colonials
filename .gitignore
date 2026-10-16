@@ -1,12 +1,3 @@
-# Ignore the Unity Build storage folder
-Storage/UFR_UnityBuild/
-Storage/Junk Drawer/
-Source/UnitedFront/.idea
-Source/UnitedFront/obj
-UFR_UnityBuild
-!spec/*.af~lock~
-*.af~lock~
-
 # IntelliJ
 .idea
 *.iml
@@ -21,4 +12,11 @@ obj
 
 # Rider
 *.DotSettings.user
+
+
+# Ignore the Unity Build storage folder
 *.af~lock~
+Storage/UFR_UnityBuild/
+Storage/Junk Drawer/
+Source/UnitedFront/.idea
+Source/UnitedFront/obj
