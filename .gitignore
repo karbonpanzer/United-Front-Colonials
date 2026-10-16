@@ -21,3 +21,4 @@ obj
 
 # Rider
 *.DotSettings.user
+*.af~lock~
