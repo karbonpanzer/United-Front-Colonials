@@ -1,38 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<!-- Unique M44 Assault Rifle (8x48mm ETC) -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UFR_SabotRifle_Unique"]/comps</xpath>
+	<!-- ========== Classic Pulse Rifle ========== -->
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>UFR_PulseRifleClassic</defName>
+		<statBases>
+			<Mass>4.5</Mass>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>0.07</ShotSpread>
+			<SwayFactor>1.33</SwayFactor>
+			<Bulk>10.03</Bulk>
+			<WorkToMake>38000</WorkToMake>
+		</statBases>
+		<Properties>
+			<recoilAmount>1.50</recoilAmount>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_473x33mmCaseless_FMJ</defaultProjectile>
+			<warmupTime>1.1</warmupTime>
+			<range>55</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<soundCast>Shot_AssaultRifle</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>95</magazineSize>
+			<reloadTime>4</reloadTime>
+			<ammoSet>AmmoSet_473x33mmCaseless</ammoSet>
+		</AmmoUser>
+		<FireModes>
+			<aimedBurstShotCount>3</aimedBurstShotCount>
+			<aiUseBurstMode>TRUE</aiUseBurstMode>
+			<aiAimMode>AimedShot</aiAimMode>
+		</FireModes>
+		<weaponTags>
+			<li>CE_AI_AR</li>
+		</weaponTags>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="UFR_PulseRifleClassic"]/tools</xpath>
 		<value>
-			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>30</magazineSize>
-				<reloadTime>4</reloadTime>
-				<ammoSet>AmmoSet_UFR8x48mmETC</ammoSet>
-			</li>
-			<li Class="CombatExtended.CompProperties_FireModes">
-				<aimedBurstShotCount>3</aimedBurstShotCount>
-				<aiUseBurstMode>TRUE</aiUseBurstMode>
-				<aiAimMode>AimedShot</aiAimMode>
-			</li>
-			<li Class="CombatExtended.CompProperties_UnderBarrel"/>
+			<tools>
+				<li Class="CombatExtended.ToolCE">
+					<label>stock</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<chanceFactor>1.5</chanceFactor>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>barrel</label>
+					<capacities>
+						<li>Blunt</li>
+					</capacities>
+					<power>5</power>
+					<cooldownTime>2.02</cooldownTime>
+					<armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+				</li>
+				<li Class="CombatExtended.ToolCE">
+					<label>muzzle</label>
+					<capacities>
+						<li>Poke</li>
+					</capacities>
+					<power>8</power>
+					<cooldownTime>1.55</cooldownTime>
+					<armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+					<linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+				</li>
+			</tools>
 		</value>
 	</Operation>
 
-	<!-- Unique M401 Shotgun (20x55mm ETC) -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="UFR_SabotShotgun_Unique"]/comps</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="UFR_PulseRifleClassic"]/comps/li[@Class="CompProperties_EquippableAbilityReloadable"]</xpath>
 		<value>
-			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>6</magazineSize>
-				<reloadOneAtATime>true</reloadOneAtATime>
-				<reloadTime>0.85</reloadTime>
-				<ammoSet>AmmoSet_UFR20x55mmETC</ammoSet>
+			<li Class="CombatExtended.CompProperties_UnderBarrel">
+				<standardLabel>switch to rifle</standardLabel>
+				<underBarrelLabel>switch to grenade launcher</underBarrelLabel>
+				<propsUnderBarrel>
+					<magazineSize>4</magazineSize>
+					<reloadTime>4</reloadTime>
+					<ammoSet>AmmoSet_30x29mmGrenade</ammoSet>
+				</propsUnderBarrel>
+				<verbPropsUnderBarrel>
+					<recoilAmount>2.51</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_30x29mmGrenade_HE</defaultProjectile>
+					<warmupTime>1.1</warmupTime>
+					<range>35</range>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<soundCast>Shot_IncendiaryLauncher</soundCast>
+					<soundCastTail>GunTail_Medium</soundCastTail>
+					<muzzleFlashScale>14</muzzleFlashScale>
+					<burstShotCount>1</burstShotCount>
+				</verbPropsUnderBarrel>
+				<propsFireModesUnderBarrel>
+					<aiUseBurstMode>FALSE</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
+					<aimedBurstShotCount>1</aimedBurstShotCount>
+				</propsFireModesUnderBarrel>
 			</li>
-			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiAimMode>Snapshot</aiAimMode>
+			<li>
+				<compClass>CompEquippable</compClass>
 			</li>
-			<li Class="CombatExtended.CompProperties_UnderBarrel"/>
 		</value>
 	</Operation>
 
