@@ -8,7 +8,7 @@ using Verse;
 namespace UnitedFront.Harmony
 {
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.GetGizmos))]
-    public static class Pawn_GetGizmos_EditColors_Patch
+    public static class HarmonyPatch_PawnColorDebug
     {
         public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Pawn __instance)
         {

@@ -6,7 +6,7 @@ using Verse;
 namespace UnitedFront.Harmony
 {
     [HarmonyPatch(typeof(CompColorable), nameof(CompColorable.SetColor))]
-    public static class Patch_CompColorable_SetColor
+    public static class HarmmonyPatch_CompColorable_SetColor
     {
         public static void Postfix(CompColorable __instance, Color __0)
         {

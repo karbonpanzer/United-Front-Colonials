@@ -7,7 +7,7 @@ using Verse;
 namespace UnitedFront.Harmony
 {
     [HarmonyPatch(typeof(Thing), nameof(Thing.Graphic), MethodType.Getter)]
-    public static class Thing_CarapaceItemGraphic_Patch
+    public static class HarmonyPatch_CarapaceGraphic
     {
         public static void Postfix(Thing __instance, ref Graphic __result)
         {
