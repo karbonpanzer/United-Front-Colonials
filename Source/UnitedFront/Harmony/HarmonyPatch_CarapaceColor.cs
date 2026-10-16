@@ -5,7 +5,7 @@ using UnitedFront.Comps;
 using UnityEngine;
 using Verse;
 
-namespace UnitedFront.Patch
+namespace UnitedFront.Harmony
 {
     [HarmonyPatch]
     public static class ApparelGraphic_CarapaceColor_Patch

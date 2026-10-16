@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnitedFront.Utils
+namespace UnitedFront.Colors
 {
     public static class UFRColors
     {

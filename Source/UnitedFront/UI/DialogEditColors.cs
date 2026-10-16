@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using RimWorld;
+using UnitedFront.Colors;
 using UnitedFront.Comps;
 using UnitedFront.Utils;
 using UnityEngine;

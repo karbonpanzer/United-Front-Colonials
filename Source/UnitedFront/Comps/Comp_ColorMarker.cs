@@ -10,6 +10,8 @@ namespace UnitedFront.Comps
         public List<Color> ZoneColors = new List<Color>();
         private bool _zonesCustomized;
 
+        private const float MinBrightness = 0.3f;
+
         public CompPropertiesColorMarker Props => (CompPropertiesColorMarker)props;
         public int ZoneCount => Props.zoneCount;
 
@@ -59,19 +61,24 @@ namespace UnitedFront.Comps
 
         public Color GetZone(int index) => (index >= 0 && index < ZoneColors.Count) ? ZoneColors[index] : Color.white;
 
+        public static Color Floor(Color colour)
+        {
+            float max = Mathf.Max(colour.r, Mathf.Max(colour.g, colour.b));
+            if (max >= MinBrightness || max <= 0.0001f) return colour;
+
+            float scale = MinBrightness / max;
+            return new Color(Mathf.Min(colour.r * scale, 1f),
+                             Mathf.Min(colour.g * scale, 1f),
+                             Mathf.Min(colour.b * scale, 1f),
+                             colour.a);
+        }
+
         public Color DisplayZone(int index)
         {
-            Color c = GetZone(index);
+            Color c = Floor(GetZone(index));
             if (parent is Apparel ap && ap.WornByCorpse)
                 c = PawnRenderUtility.GetRottenColor(c);
             return c;
-        }
-
-        public List<Color> DisplayZones()
-        {
-            var list = new List<Color>(ZoneColors.Count);
-            for (int i = 0; i < ZoneColors.Count; i++) list.Add(DisplayZone(i));
-            return list;
         }
 
         public void SetZone(int index, Color c, bool markCustomized = true)

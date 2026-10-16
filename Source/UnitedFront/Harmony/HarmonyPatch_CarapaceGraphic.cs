@@ -1,7 +1,7 @@
 using HarmonyLib;
 using RimWorld;
 using UnitedFront.Comps;
-using UnitedFront.Utils;
+using UnityEngine;
 using Verse;
 
 namespace UnitedFront.Harmony
@@ -11,18 +11,21 @@ namespace UnitedFront.Harmony
     {
         public static void Postfix(Thing __instance, ref Graphic __result)
         {
-            if (__instance is not Apparel apparel) return;
+            if (__instance is not Apparel apparel || __result == null) return;
             if (apparel.StyleDef?.Graphic != null) return;
 
             CompColorMarker comp = apparel.GetComp<CompColorMarker>();
-            if (comp == null || comp.ZoneColors.NullOrEmpty()) return;
+            if (comp == null || comp.ZoneColors.Count < 2) return;
 
-            GraphicData gd = apparel.def.graphicData;
-            if (gd == null || gd.texPath.NullOrEmpty()) return;
-            if (gd.shaderType?.Shader != ShaderDatabase.CutoutComplex) return;
+            if (apparel.def.graphicData?.shaderType?.Shader != ShaderDatabase.CutoutComplex) return;
 
-            __result = MultiColorGraphicUtil.Get(gd.texPath, null, ShaderDatabase.CutoutComplex,
-                gd.drawSize, comp.DisplayZones(), typeof(Graphic_Single));
+            Color colorOne = CompColorMarker.Floor(apparel.DrawColor);
+            Color colorTwo = comp.DisplayZone(1);
+
+            if (colorTwo.IndistinguishableFrom(Color.white)) return;
+
+            __result = GraphicDatabase.Get<Graphic_Single>(
+                __result.path, ShaderDatabase.CutoutComplex, __result.drawSize, colorOne, colorTwo);
         }
     }
 }
