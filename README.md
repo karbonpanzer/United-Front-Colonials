@@ -64,7 +64,7 @@
 <p><b>I don't like x,y, or z, fix it!</b><br>Learn how to make a patch and change it yourself.</p>
 
 <img src="Storage/Workshop%20Materials/Final/CreditsHeader.png" alt="Credits" width="640"><br>
-<p><b>Karbonpanzer</b>: Coder/Artist/Editor<br><b>Orion</b>: Big thanks for the Shader even though I did not use it this go around.<br><b>Aelanna</b>: For the tips about sourcing sounds for weapons.</p>
+<p><b>Karbonpanzer</b>: Coder/Artist/Editor<br><b>Orion</b>: Big thanks for the Shader even though I did not use it this go around.<br><b>Aelanna</b>: For the tips about sourcing sounds for weapons.<br><b>Ludeon Studios</b>: For Great Game and the Star Art used in the Preview image.</p>
 <p>(LGPL)<br>(CC BY-NC-SA 4.0)</p>
 
 </div>
