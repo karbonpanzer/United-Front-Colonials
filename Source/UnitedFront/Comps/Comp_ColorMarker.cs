@@ -12,6 +12,9 @@ namespace UnitedFront.Comps
 
         private const float MinBrightness = 0.3f;
 
+        private Graphic? _cachedItemGraphic;
+        private bool _recacheItemGraphic = true;
+
         public CompPropertiesColorMarker Props => (CompPropertiesColorMarker)props;
         public int ZoneCount => Props.zoneCount;
 
@@ -81,6 +84,39 @@ namespace UnitedFront.Comps
             return c;
         }
 
+        public Graphic? ItemGraphic(Graphic fallback)
+        {
+            if (!_recacheItemGraphic) return _cachedItemGraphic;
+
+            _recacheItemGraphic = false;
+            _cachedItemGraphic = BuildItemGraphic() ?? fallback;
+            return _cachedItemGraphic;
+        }
+
+        private Graphic? BuildItemGraphic()
+        {
+            if (parent is not Apparel apparel) return null;
+            if (apparel.StyleDef?.Graphic != null) return null;
+            if (ZoneColors.Count < 2) return null;
+
+            GraphicData gd = parent.def.graphicData;
+            if (gd == null || gd.texPath.NullOrEmpty()) return null;
+            if (gd.shaderType?.Shader != ShaderDatabase.CutoutComplex) return null;
+
+            Color colorOne = Floor(apparel.DrawColor);
+            Color colorTwo = DisplayZone(1);
+            if (colorTwo.IndistinguishableFrom(Color.white)) return null;
+
+            Graphic coloured = GraphicDatabase.Get<Graphic_Single>(
+                gd.texPath, ShaderDatabase.CutoutComplex, gd.drawSize, colorOne, colorTwo);
+
+            if (coloured == null) return null;
+
+            return gd.onGroundRandomRotateAngle > 0.01f
+                ? new Graphic_RandomRotated(coloured, gd.onGroundRandomRotateAngle)
+                : coloured;
+        }
+
         public void SetZone(int index, Color c, bool markCustomized = true)
         {
             EnsureZoneDefaults();
@@ -126,6 +162,9 @@ namespace UnitedFront.Comps
 
         private void SetDirty()
         {
+            _recacheItemGraphic = true;
+            _cachedItemGraphic = null;
+
             if (parent is Apparel ap && ap.Wearer != null)
                 ap.Wearer.Drawer?.renderer?.SetAllGraphicsDirty();
             else
