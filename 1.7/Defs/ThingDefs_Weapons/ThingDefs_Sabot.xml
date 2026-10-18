@@ -17,11 +17,6 @@
       <stoppingPower>0.5</stoppingPower>
       <speed>90</speed>
     </projectile>
-    <comps>
-      <li Class="CompProperties_ProjectileEffecter">
-        <effecterDef>UFR_EffectLaunch_SabotPistol</effecterDef>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotPistol">
@@ -121,11 +116,6 @@
       <stoppingPower>0.5</stoppingPower>
       <speed>95</speed>
     </projectile>
-    <comps>
-      <li Class="CompProperties_ProjectileEffecter">
-        <effecterDef>UFR_EffectLaunch_SabotSMG</effecterDef>
-      </li>
-    </comps>
   </ThingDef>
  
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotSMG">
@@ -225,11 +215,6 @@
       <stoppingPower>1.0</stoppingPower>
       <speed>100</speed>
     </projectile>
-    <comps>
-      <li Class="CompProperties_ProjectileEffecter">
-        <effecterDef>UFR_EffectLaunch_SabotRifle</effecterDef>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotRifle">
@@ -327,11 +312,6 @@
       <stoppingPower>2.0</stoppingPower>
       <speed>110</speed>
     </projectile>
-    <comps>
-      <li Class="CompProperties_ProjectileEffecter">
-        <effecterDef>UFR_EffectLaunch_SabotBattleRifle</effecterDef>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotHeavyRifle">
@@ -430,11 +410,6 @@
       <stoppingPower>1.0</stoppingPower>
       <speed>105</speed>
     </projectile>
-    <comps>
-      <li Class="CompProperties_ProjectileEffecter">
-        <effecterDef>UFR_EffectLaunch_SabotLMG</effecterDef>
-      </li>
-    </comps>
   </ThingDef>
  
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotLMG">
@@ -527,11 +502,6 @@
       <stoppingPower>2.5</stoppingPower>
       <speed>130</speed>
     </projectile>
-    <comps>
-      <li Class="CompProperties_ProjectileEffecter">
-        <effecterDef>UFR_EffectLaunch_SabotSniperRifle</effecterDef>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotSniperRifle">
@@ -630,11 +600,6 @@
       <stoppingPower>1.5</stoppingPower>
       <speed>120</speed>
     </projectile>
-    <comps>
-      <li Class="CompProperties_ProjectileEffecter">
-        <effecterDef>UFR_EffectLaunch_SabotAutocannon</effecterDef>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotAutocannon">
@@ -727,11 +692,6 @@
       <stoppingPower>0.5</stoppingPower>
       <speed>65</speed>
     </projectile>
-    <comps>
-      <li Class="CompProperties_ProjectileEffecter">
-        <effecterDef>UFR_EffectLaunch_SabotShotgun</effecterDef>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotShotgun">
