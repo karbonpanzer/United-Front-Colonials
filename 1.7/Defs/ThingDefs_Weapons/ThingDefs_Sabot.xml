@@ -100,7 +100,7 @@
     </tools>
   </ThingDef>
   
-  <!-- Sabot SMG -->
+  <!-- Sabot SMG >
   <ThingDef ParentName="BaseBullet">
     <defName>UFR_Bolt_SabotSMG</defName>
     <label>sabot</label>
@@ -172,7 +172,7 @@
       <li>SpacerGun</li>
     </weaponTags>
     <weaponClasses>
-      <!-- Lighter than charge rifle, which is considered light. -->
+      <!-- Lighter than charge rifle, which is considered light.>
       <li>RangedLight</li>
       <li>ShortShots</li>
     </weaponClasses>        
@@ -197,7 +197,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-  </ThingDef>
+  </ThingDef-->
 
   <!-- Sabot Rifle -->
   <ThingDef ParentName="BaseBullet">
@@ -296,7 +296,7 @@
     </tools>
   </ThingDef>
 
-  <!-- Sabot Battle Rifle -->
+  <!-- Sabot Battle Rifle>
   <ThingDef ParentName="BaseBullet">
     <defName>UFR_Bolt_SabotHeavyRifle</defName>
     <label>sabot</label>
@@ -394,7 +394,7 @@
     </tools>
   </ThingDef>
 
-  <!-- Sabot LMG -->
+  <!-- Sabot LMG>
   <ThingDef ParentName="BaseBullet">
     <defName>UFR_Bolt_SabotLMG</defName>
     <label>sabot</label>
