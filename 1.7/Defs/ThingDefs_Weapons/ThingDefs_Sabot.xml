@@ -546,7 +546,7 @@
         <burstShotCount>2</burstShotCount>
         <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
         <range>38.9</range>
-        <soundCast>UFR_Shot_ETCHeavy</soundCast>
+        <soundCast>UFR_Shot_ETCAntiMaterial</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
       </li>
@@ -647,7 +647,7 @@
         <range>32.9</range>
         <burstShotCount>6</burstShotCount>
         <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-        <soundCast>UFR_Shot_ETCMedium</soundCast>
+        <soundCast>UFR_Shot_ETCHeavy</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>16</muzzleFlashScale>
       </li>
@@ -736,7 +736,7 @@
         <range>15.9</range>
         <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-        <soundCast>UFR_Shot_ETCFlechette</soundCast>
+        <soundCast>UFR_Shot_ETCShotgun</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>10</muzzleFlashScale>
       </li>

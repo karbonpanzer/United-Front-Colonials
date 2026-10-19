@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- ETC/Sabot Weapons -->
   <SoundDef>
     <defName>UFR_Shot_ETCSmall</defName>
     <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
+    <maxSimultaneous>2</maxSimultaneous>
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>UFR/UFR_ETCSmall</clipFolderPath>
+            <clipFolderPath>Weapon/AutoPistol</clipFolderPath>
           </li>
         </grains>
-        <volumeRange>70~70</volumeRange>
-        <pitchRange>0.98~1.08</pitchRange>
+        <volumeRange>65~65</volumeRange>
+        <pitchRange>0.88~0.93</pitchRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
@@ -23,16 +22,34 @@
   <SoundDef>
     <defName>UFR_Shot_ETCMedium</defName>
     <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
+    <maxSimultaneous>3</maxSimultaneous>
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>UFR/UFR_ETCMedium</clipFolderPath>
+            <clipFolderPath>Weapon/HeavySMG</clipFolderPath>
           </li>
         </grains>
-        <volumeRange>70~70</volumeRange>
-        <pitchRange>0.98~1.06</pitchRange>
+        <volumeRange>50~50</volumeRange>
+        <pitchRange>0.86~0.90</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>UFR_Shot_ETCAntiMaterial</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/SniperRifle</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>75~75</volumeRange>
+        <pitchRange>0.85~0.90</pitchRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
@@ -41,34 +58,34 @@
   <SoundDef>
     <defName>UFR_Shot_ETCHeavy</defName>
     <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
+    <maxSimultaneous>3</maxSimultaneous>
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>UFR/UFR_ETCHeavy</clipFolderPath>
+            <clipFolderPath>Weapon/Minigun</clipFolderPath>
           </li>
         </grains>
         <volumeRange>70~70</volumeRange>
-        <pitchRange>0.98~1.04</pitchRange>
+        <pitchRange>0.74~0.79</pitchRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
   </SoundDef>
 
   <SoundDef>
-    <defName>UFR_Shot_ETCFlechette</defName>
+    <defName>UFR_Shot_ETCShotgun</defName>
     <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
+    <maxSimultaneous>2</maxSimultaneous>
     <subSounds>
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>UFR/UFR_ETCFlechette</clipFolderPath>
+            <clipFolderPath>Weapon/Shotgun/Shot</clipFolderPath>
           </li>
         </grains>
-        <volumeRange>80~80</volumeRange>
-        <pitchRange>0.98~1.06</pitchRange>
+        <volumeRange>75~75</volumeRange>
+        <pitchRange>0.85~0.91</pitchRange>
         <sustainLoop>False</sustainLoop>
       </li>
     </subSounds>
