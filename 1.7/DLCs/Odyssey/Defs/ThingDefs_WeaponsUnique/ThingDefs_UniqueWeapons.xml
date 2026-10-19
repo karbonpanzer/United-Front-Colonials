@@ -167,10 +167,10 @@
 
   <ThingDef ParentName="UFR_SabotShotgun">
     <defName>UFR_SabotShotgun_Unique</defName>
-    <label>unique flechette shotgun</label>
-    <description>A flechette shotgun with customized parts.</description>
+    <label>unique sabot shotgun</label>
+    <description>A sabot shotgun with customized parts.</description>
     <graphicData>
-      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/FlechetteShotgun</texPath>
+      <texPath>UFR/Things/Item/Equipment/UniqueWeapons/SabotShotgun</texPath>
       <graphicClass>Graphic_Random</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>

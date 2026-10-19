@@ -180,7 +180,7 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>UFR_SabotSMG</thingDef>
+                    <thingDef>UFR_SabotPistol</thingDef>
                     <count>1</count>
                     <quality>Normal</quality>
                 </li>

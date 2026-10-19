@@ -74,7 +74,6 @@
       <li>SpacerGun</li>
     </weaponTags>
     <weaponClasses>
-      <!-- Lighter than charge rifle, which is considered light. -->
       <li>RangedLight</li>
     </weaponClasses>       
     <tradeTags>
@@ -100,7 +99,7 @@
     </tools>
   </ThingDef>
   
-  <!-- Sabot SMG >
+  <!-- Sabot SMG>
   <ThingDef ParentName="BaseBullet">
     <defName>UFR_Bolt_SabotSMG</defName>
     <label>sabot</label>
@@ -172,7 +171,6 @@
       <li>SpacerGun</li>
     </weaponTags>
     <weaponClasses>
-      <!-- Lighter than charge rifle, which is considered light.>
       <li>RangedLight</li>
       <li>ShortShots</li>
     </weaponClasses>        
@@ -392,7 +390,7 @@
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
-  </ThingDef>
+  </ThingDef-->
 
   <!-- Sabot LMG>
   <ThingDef ParentName="BaseBullet">
@@ -484,7 +482,7 @@
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
-  </ThingDef>
+  </ThingDef-->
 
   <!-- Sabot Sniper Rifle -->
   <ThingDef ParentName="BaseBullet">
@@ -696,11 +694,11 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun" Name="UFR_SabotShotgun">
     <defName>UFR_SabotShotgun</defName>
-    <label>flechette shotgun</label>
+    <label>sabot shotgun</label>
     <description>A high-tech shotgun designed using electrothermal-chemical shells. To maintain velocity improvements, it fires flechettes rather than shot, delivering powerful damage and armor penetration at close range. Magazine fed, it can fire rapidly, making it ideal for close quarters combat and personal defense.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <texPath>UFR/Things/Item/Equipment/flechetteshotgun</texPath>
+      <texPath>UFR/Things/Item/Equipment/sabotshotgun</texPath>
       <drawSize>1.0</drawSize>
     </graphicData>
     <techLevel>Spacer</techLevel>
@@ -748,7 +746,6 @@
       <li>SpacerGun</li>
     </weaponTags>
     <weaponClasses>
-      <!-- Lighter than charge rifle, which is considered light... but no shotguns are considered light, so not including the tag. -->
       <li>ShortShots</li>
     </weaponClasses>      
     <tradeTags>
