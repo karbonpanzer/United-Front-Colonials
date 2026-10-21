@@ -3,6 +3,11 @@
   <TraderKindDef>
     <defName>Base_UFR_Standard</defName>
     <stockGenerators>
+      <!-- Ferrocrete Bricks for UFRC -->
+      <li Class="StockGenerator_SingleDef" MayRequire="KP.unitedfront.ferrocrete">
+        <thingDef>UFR_FerrocreteBricks</thingDef>
+        <countRange>300~800</countRange>
+      </li>
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>

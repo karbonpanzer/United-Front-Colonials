@@ -35,6 +35,22 @@
                     <hideOffMap>true</hideOffMap>
                     <severityRange>1~1</severityRange>
                 </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>UFR_ColonialFabricationMethods</project>
+                </li>
+
+                <!-- Ferrocrete Bricks for UFRC -->
+                <li Class="ScenPart_StartingResearch" MayRequire="KP.unitedfront.ferrocrete">
+                    <def>StartingResearch</def>
+                    <project>UFR_FerrocreteProduction</project>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="KP.unitedfront.ferrocrete">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_FerrocreteBricks</thingDef>
+                    <count>200</count>
+                </li> 
+
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>UFR_SabotShotgun</thingDef>
@@ -172,6 +188,22 @@
                     <hideOffMap>true</hideOffMap>
                     <severityRange>1~1</severityRange>
                 </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>UFR_ColonialFabricationMethods</project>
+                </li>
+
+                <!-- Ferrocrete Bricks for UFRC -->
+                <li Class="ScenPart_StartingResearch" MayRequire="KP.unitedfront.ferrocrete">
+                    <def>StartingResearch</def>
+                    <project>UFR_FerrocreteProduction</project>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined" MayRequire="KP.unitedfront.ferrocrete">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_FerrocreteBricks</thingDef>
+                    <count>200</count>
+                </li>  
+                                   
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>UFR_SabotShotgun</thingDef>
