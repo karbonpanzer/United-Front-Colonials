@@ -85,6 +85,16 @@
         <pitchRange>0.70~0.75</pitchRange>
         <sustainLoop>False</sustainLoop>
       </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Shotgun/Rack</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>10.58823~10.58823</volumeRange>      
+        <pitchRange>0.9311765~1.137647</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>      
     </subSounds>
   </SoundDef>
 
