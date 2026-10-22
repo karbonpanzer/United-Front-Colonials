@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ShaderDef>
+    <defName>UFR_CutoutCarapace</defName>
+    <shaderProgram>
+      <fragmentShaderFileName>UFR_CutoutCarapace.frag.glsl</fragmentShaderFileName>
+      <transparent>true</transparent>
+      <depthWrite>true</depthWrite>
+      <cullMode>None</cullMode>
+      <renderQueue>2900</renderQueue>
+    </shaderProgram>
+  </ShaderDef>
+
+  <ShaderDef>
+    <defName>UFR_CutoutCarapaceUI</defName>
+    <shaderProgram>
+      <fragmentShaderFileName>UFR_CutoutCarapaceUI.frag.glsl</fragmentShaderFileName>
+      <transparent>true</transparent>
+      <depthTest>false</depthTest>
+      <depthWrite>false</depthWrite>
+      <cullMode>None</cullMode>
+      <renderQueue>3000</renderQueue>
+    </shaderProgram>
+  </ShaderDef>
+
+</Defs>
