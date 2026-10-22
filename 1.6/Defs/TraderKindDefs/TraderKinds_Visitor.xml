@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraderKindDef>
+    <defName>Visitor_UFR_Standard</defName>
+    <label>trader</label>
+    <stockGenerators>
+      <!-- Resources -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>75~300</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>-2~5</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>-3~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineIndustrial</thingDef>
+        <countRange>1~4</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MealSurvivalPack</thingDef>
+        <countRange>3~6</countRange>
+      </li>
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Cloth</li>
+          <li>Chocolate</li>
+        </thingDefs>
+      </li>
+      <!-- Drugs -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+        <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
+        <thingDefCountRange>-1~1</thingDefCountRange>
+        <totalPriceRange>200~400</totalPriceRange>
+      </li>
+      <!-- Techprints -->
+      <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>1</count>
+            <chance>0.5</chance>
+          </li>
+        </countChances>
+      </li>
+      <!-- Weapons -->
+      <li Class="StockGenerator_MarketValue">
+        <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
+        <tradeTag>WeaponRanged</tradeTag>
+        <countRange>0~1</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
+        <categoryDef>WeaponsMelee</categoryDef>
+        <countRange>0~1</countRange>
+      </li>
+      <!-- Apparel -->
+      <li Class="StockGenerator_MarketValue">
+        <countRange>0~1</countRange>
+        <tradeTag>BasicClothing</tradeTag>
+        <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>UFR_Uniforms</tradeTag>
+        <countRange>1~3</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>UFR_Armor</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>-2~1</countRange>
+      </li>
+      <!-- UFR gear -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>UFR_WeaponIndustrial</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>UFR_WeaponMelee</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>-1~1</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>UFR_Utility</tradeTag>
+        <countRange>-2~1</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>UFR_Drugs</tradeTag>
+        <countRange>-5~12</countRange>
+      </li>
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>Art</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>MusicalInstrument</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>UFR_Armor</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>UFR_Uniforms</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>UFR_WeaponIndustrial</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>UFR_WeaponMelee</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>UFR_Drugs</tag>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

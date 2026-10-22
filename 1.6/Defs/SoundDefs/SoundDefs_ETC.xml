@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Sabot Pistol -->
+  <SoundDef>
+    <defName>UFR_Shot_ETCSmall</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/AutoPistol</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>65~65</volumeRange>
+        <pitchRange>0.68~0.73</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>25~25</volumeRange>
+        <pitchRange>0.90~0.95</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- Sabot Rifle -->
+  <SoundDef>
+    <defName>UFR_Shot_ETCMedium</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/AssaultRifle</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>50~50</volumeRange>
+        <pitchRange>0.56~0.60</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>45~45</volumeRange>
+        <pitchRange>0.75~0.80</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- Sabot Shotgun -->
+  <SoundDef>
+    <defName>UFR_Shot_ETCShotgun</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Shotgun/Shot</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>75~75</volumeRange>
+        <pitchRange>0.55~0.61</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>50~50</volumeRange>
+        <pitchRange>0.70~0.75</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Shotgun/Rack</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>10.58823~10.58823</volumeRange>      
+        <pitchRange>0.9311765~1.137647</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>      
+    </subSounds>
+  </SoundDef>
+
+  <!-- Sabot Sniper -->
+  <SoundDef>
+    <defName>UFR_Shot_ETCAntiMaterial</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/SniperRifle</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>75~75</volumeRange>
+        <pitchRange>0.55~0.60</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>60~60</volumeRange>
+        <pitchRange>0.65~0.70</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- Sabot Autocannon -->
+  <SoundDef>
+    <defName>UFR_Shot_ETCHeavy</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>3</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Minigun</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>70~70</volumeRange>
+        <pitchRange>0.54~0.69</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>65~65</volumeRange>
+        <pitchRange>0.60~0.65</pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>
