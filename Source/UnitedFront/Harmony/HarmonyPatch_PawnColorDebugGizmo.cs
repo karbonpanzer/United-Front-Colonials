@@ -7,9 +7,12 @@ using Verse;
 
 namespace UnitedFront.Harmony
 {
+    [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.GetGizmos))]
-    public static class HarmonyPatch_PawnColorDebug
+    public static class HarmonyPatch_PawnColorDebugGizmo
     {
+        private static readonly Texture2D Icon = ContentFinder<Texture2D>.Get("UFR/UI/Paint/UFR_CustomizeColor", false);
+
         public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Pawn __instance)
         {
             foreach (Gizmo g in __result)
@@ -23,7 +26,7 @@ namespace UnitedFront.Harmony
             {
                 defaultLabel = "UFR_DevEditColors".Translate(),
                 defaultDesc = "UFR_DevEditColorsDesc".Translate(),
-                icon = ContentFinder<Texture2D>.Get("UFR/UI/Paint/UFR_CustomizeColor", false),
+                icon = Icon,
                 action = () => Find.WindowStack.Add(new DialogEditColors(__instance))
             };
         }

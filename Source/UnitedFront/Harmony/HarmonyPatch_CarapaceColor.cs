@@ -19,31 +19,21 @@ namespace UnitedFront.Harmony
         public static void Postfix(Apparel apparel, bool forStatue, ref ApparelGraphicRecord rec, bool __result)
         {
             if (forStatue || !__result || apparel == null || rec.graphic == null) return;
+            if (rec.graphic.Shader != ShaderDatabase.CutoutComplex) return;
 
             CompColorMarker comp = apparel.GetComp<CompColorMarker>();
             if (comp == null || comp.ZoneColors.Count < 2) return;
 
-            if (!UsesMask(apparel)) return;
-
-            Color colorOne = apparel.DrawColor;
             Color colorTwo = comp.DisplayZone(1);
-
             if (colorTwo.IndistinguishableFrom(Color.white)) return;
 
+            Color colorOne = CompColorMarker.DisplayPrimary(apparel, rec.graphic.color);
+
             Graphic graphic = GraphicDatabase.Get<Graphic_Multi>(
-                rec.graphic.path, ShaderDatabase.CutoutComplex, rec.graphic.drawSize, colorOne, colorTwo);
+                rec.graphic.path, rec.graphic.Shader, rec.graphic.drawSize, colorOne, colorTwo);
 
             if (graphic != null)
                 rec = new ApparelGraphicRecord(graphic, apparel);
-        }
-
-        private static bool UsesMask(Apparel apparel)
-        {
-            if (apparel.StyleDef?.graphicData.shaderType != null)
-                return apparel.StyleDef.graphicData.shaderType.Shader == ShaderDatabase.CutoutComplex;
-
-            if (apparel.StyleDef == null) return apparel.def.apparel.useWornGraphicMask;
-            return apparel.StyleDef.UseWornGraphicMask;
         }
     }
 }

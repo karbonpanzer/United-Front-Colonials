@@ -24,7 +24,7 @@ namespace UnitedFront.Comps
         {
             get
             {
-                if (parent.Stuff != null) return parent.Stuff.stuffProps.color;
+                if (parent.Stuff != null) return parent.def.GetColorForStuff(parent.Stuff);
                 return parent.def.graphicData != null ? parent.def.graphicData.color : Color.white;
             }
         }
@@ -78,18 +78,25 @@ namespace UnitedFront.Comps
 
         public Color DisplayZone(int index)
         {
-            Color c = Floor(GetZone(index));
             if (parent is Apparel ap && ap.WornByCorpse)
-                c = PawnRenderUtility.GetRottenColor(c);
-            return c;
+                return PawnRenderUtility.GetRottenColor(GetZone(index));
+            return Floor(GetZone(index));
         }
 
-        public Graphic? ItemGraphic(Graphic fallback)
+        public static Color DisplayPrimary(Apparel apparel, Color vanillaColor)
         {
-            if (!_recacheItemGraphic) return _cachedItemGraphic;
+            return apparel.WornByCorpse ? vanillaColor : Floor(vanillaColor);
+        }
 
-            _recacheItemGraphic = false;
-            _cachedItemGraphic = BuildItemGraphic() ?? fallback;
+        public Graphic? ItemGraphic()
+        {
+            if (parent.StyleDef?.Graphic != null) return null;
+
+            if (_recacheItemGraphic)
+            {
+                _recacheItemGraphic = false;
+                _cachedItemGraphic = BuildItemGraphic();
+            }
             return _cachedItemGraphic;
         }
 
@@ -103,11 +110,11 @@ namespace UnitedFront.Comps
             if (gd == null || gd.texPath.NullOrEmpty()) return null;
             if (gd.shaderType?.Shader != ShaderDatabase.CutoutComplex) return null;
 
-            Color colorOne = Floor(apparel.DrawColor);
+            Color colorOne = DisplayPrimary(apparel, apparel.DrawColor);
             Color colorTwo = DisplayZone(1);
             if (colorTwo.IndistinguishableFrom(Color.white)) return null;
 
-            Graphic coloured = GraphicDatabase.Get<Graphic_Single>(
+            Graphic coloured = GraphicDatabase.Get(gd.graphicClass ?? typeof(Graphic_Single),
                 gd.texPath, ShaderDatabase.CutoutComplex, gd.drawSize, colorOne, colorTwo);
 
             if (coloured == null) return null;
@@ -126,10 +133,39 @@ namespace UnitedFront.Comps
             SetDirty();
         }
 
+        public sealed class EditSnapshot
+        {
+            public List<Color> Zones = null!;
+            public bool Customized;
+            public bool ColorableActive;
+            public Color ColorableColor;
+            public Color? DesiredColor;
+        }
+
+        public EditSnapshot BeginEdit()
+        {
+            EnsureZoneDefaults();
+
+            CompColorable? colorable = Colorable;
+            if (colorable != null && colorable.Active && ZoneColors.Count > 0
+                && !ZoneColors[0].IndistinguishableFrom(colorable.Color))
+                ZoneColors[0] = colorable.Color;
+
+            return new EditSnapshot
+            {
+                Zones = new List<Color>(ZoneColors),
+                Customized = _zonesCustomized,
+                ColorableActive = colorable != null && colorable.Active,
+                ColorableColor = colorable?.Color ?? Color.white,
+                DesiredColor = colorable?.DesiredColor
+            };
+        }
+
         public void PreviewZones(List<Color> colors)
         {
             ZoneColors = new List<Color>(colors);
             EnsureZoneDefaults();
+            SyncColorableToPrimary();
             SetDirty();
         }
 
@@ -138,8 +174,35 @@ namespace UnitedFront.Comps
             ZoneColors = new List<Color>(colors);
             _zonesCustomized = true;
             EnsureZoneDefaults();
-            Colorable?.Disable();
+            SyncColorableToPrimary();
             SetDirty();
+        }
+
+        public void RestoreEdit(EditSnapshot snapshot)
+        {
+            ZoneColors = new List<Color>(snapshot.Zones);
+            _zonesCustomized = snapshot.Customized;
+            EnsureZoneDefaults();
+
+            CompColorable? colorable = Colorable;
+            if (colorable != null)
+            {
+                if (snapshot.ColorableActive && colorable.Active
+                    && !colorable.Color.IndistinguishableFrom(snapshot.ColorableColor))
+                    colorable.SetColor(snapshot.ColorableColor);
+
+                colorable.DesiredColor = snapshot.DesiredColor;
+            }
+
+            SetDirty();
+        }
+
+        private void SyncColorableToPrimary()
+        {
+            CompColorable? colorable = Colorable;
+            if (colorable == null || !colorable.Active || ZoneColors.Count == 0) return;
+            if (!colorable.Color.IndistinguishableFrom(ZoneColors[0]))
+                colorable.SetColor(ZoneColors[0]);
         }
 
         public override Color? ForceColor()
@@ -169,6 +232,13 @@ namespace UnitedFront.Comps
                 ap.Wearer.Drawer?.renderer?.SetAllGraphicsDirty();
             else
                 parent.Notify_ColorChanged();
+        }
+
+        public override void Notify_ColorChanged()
+        {
+            base.Notify_ColorChanged();
+            _recacheItemGraphic = true;
+            _cachedItemGraphic = null;
         }
 
         public override void PostExposeData()
