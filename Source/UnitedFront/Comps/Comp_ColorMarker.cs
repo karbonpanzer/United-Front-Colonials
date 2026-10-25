@@ -133,10 +133,39 @@ namespace UnitedFront.Comps
             SetDirty();
         }
 
+        public sealed class EditSnapshot
+        {
+            public List<Color> Zones = null!;
+            public bool Customized;
+            public bool ColorableActive;
+            public Color ColorableColor;
+            public Color? DesiredColor;
+        }
+
+        public EditSnapshot BeginEdit()
+        {
+            EnsureZoneDefaults();
+
+            CompColorable? colorable = Colorable;
+            if (colorable != null && colorable.Active && ZoneColors.Count > 0
+                && !ZoneColors[0].IndistinguishableFrom(colorable.Color))
+                ZoneColors[0] = colorable.Color;
+
+            return new EditSnapshot
+            {
+                Zones = new List<Color>(ZoneColors),
+                Customized = _zonesCustomized,
+                ColorableActive = colorable != null && colorable.Active,
+                ColorableColor = colorable?.Color ?? Color.white,
+                DesiredColor = colorable?.DesiredColor
+            };
+        }
+
         public void PreviewZones(List<Color> colors)
         {
             ZoneColors = new List<Color>(colors);
             EnsureZoneDefaults();
+            SyncColorableToPrimary();
             SetDirty();
         }
 
@@ -145,8 +174,35 @@ namespace UnitedFront.Comps
             ZoneColors = new List<Color>(colors);
             _zonesCustomized = true;
             EnsureZoneDefaults();
-            Colorable?.Disable();
+            SyncColorableToPrimary();
             SetDirty();
+        }
+
+        public void RestoreEdit(EditSnapshot snapshot)
+        {
+            ZoneColors = new List<Color>(snapshot.Zones);
+            _zonesCustomized = snapshot.Customized;
+            EnsureZoneDefaults();
+
+            CompColorable? colorable = Colorable;
+            if (colorable != null)
+            {
+                if (snapshot.ColorableActive && colorable.Active
+                    && !colorable.Color.IndistinguishableFrom(snapshot.ColorableColor))
+                    colorable.SetColor(snapshot.ColorableColor);
+
+                colorable.DesiredColor = snapshot.DesiredColor;
+            }
+
+            SetDirty();
+        }
+
+        private void SyncColorableToPrimary()
+        {
+            CompColorable? colorable = Colorable;
+            if (colorable == null || !colorable.Active || ZoneColors.Count == 0) return;
+            if (!colorable.Color.IndistinguishableFrom(ZoneColors[0]))
+                colorable.SetColor(ZoneColors[0]);
         }
 
         public override Color? ForceColor()

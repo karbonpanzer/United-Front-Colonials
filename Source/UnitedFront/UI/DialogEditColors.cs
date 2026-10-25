@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using RimWorld;
-using UnitedFront.Colors;
 using UnitedFront.Comps;
 using UnitedFront.Utils;
 using UnityEngine;
@@ -18,6 +17,9 @@ namespace UnitedFront.UI
             public CompColorMarker Comp = null!;
             public List<Color> Working = null!;
             public List<Color> Original = null!;
+            public CompColorMarker.EditSnapshot Snapshot = null!;
+            public int ZoneCount;
+            public bool Locked;
         }
 
         private const int ColorCount = 2;
@@ -46,6 +48,26 @@ namespace UnitedFront.UI
         private const float SectionGap = 6f;
         private static readonly Color SectionLabelColor = new Color(1f, 1f, 1f, 0.6f);
 
+        private static readonly List<Color> RolePalette = new List<Color>
+        {
+            new Color(0.95f, 0.95f, 0.95f), // armor white
+            new Color(0.12f, 0.56f, 0.84f), // medic
+            new Color(0.85f, 0.45f, 0.08f), // engineer
+            new Color(0.09f, 0.16f, 0.34f), // police
+            new Color(0.80f, 0.65f, 0.18f), // commander
+            new Color(0.70f, 0.12f, 0.15f), // assault
+            new Color(0.35f, 0.42f, 0.20f), // scout
+            new Color(0.16f, 0.16f, 0.17f), // veteran
+            new Color(0.42f, 0.22f, 0.12f), // heavy
+            new Color(0.38f, 0.45f, 0.52f), // marksman
+            new Color(0.92f, 0.80f, 0.16f), // signals
+            new Color(0.10f, 0.46f, 0.45f), // armored
+            new Color(0.36f, 0.20f, 0.52f), // chaplain
+            new Color(0.66f, 0.56f, 0.36f), // quartermaster
+            new Color(0.56f, 0.74f, 0.18f), // hazmat
+            new Color(0.36f, 0.08f, 0.20f)  // guard
+        };
+
         private static readonly Texture2D FavoriteColorTex =
             ContentFinder<Texture2D>.Get("UI/Icons/ColorSelector/ColorFavourite");
 
@@ -70,22 +92,28 @@ namespace UnitedFront.UI
                     CompColorMarker? comp = ap.TryGetComp<CompColorMarker>();
                     if (comp == null) continue;
 
+                    int zoneCount = Mathf.Clamp(comp.ZoneCount, 1, ColorCount);
+                    CompColorMarker.EditSnapshot snapshot = comp.BeginEdit();
+
                     _pieces.Add(new Piece
                     {
                         Apparel = ap,
                         Comp = comp,
-                        Working = Normalized(comp.ZoneColors),
-                        Original = new List<Color>(comp.ZoneColors)
+                        Snapshot = snapshot,
+                        ZoneCount = zoneCount,
+                        Locked = pawn.apparel.IsLocked(ap),
+                        Working = Normalized(snapshot.Zones, zoneCount),
+                        Original = new List<Color>(snapshot.Zones)
                     });
                 }
             }
         }
 
-        private static List<Color> Normalized(List<Color> source)
+        private static List<Color> Normalized(List<Color> source, int count)
         {
             var list = new List<Color>(source);
-            while (list.Count < ColorCount) list.Add(Color.white);
-            if (list.Count > ColorCount) list.RemoveRange(ColorCount, list.Count - ColorCount);
+            while (list.Count < count) list.Add(Color.white);
+            if (list.Count > count) list.RemoveRange(count, list.Count - count);
             return list;
         }
 
@@ -93,8 +121,8 @@ namespace UnitedFront.UI
         {
             foreach (Piece p in _pieces)
             {
-                if (_committed) p.Comp.CommitZones(p.Working);
-                else p.Comp.PreviewZones(p.Original);
+                if (_committed && !p.Locked) p.Comp.CommitZones(p.Working);
+                else p.Comp.RestoreEdit(p.Snapshot);
             }
             PortraitsCache.SetDirty(_pawn);
             base.Close(doCloseSound);
@@ -160,9 +188,15 @@ namespace UnitedFront.UI
             if (_sel < 0 || _sel >= _pieces.Count) _sel = 0;
             Piece p = _pieces[_sel];
 
+            if (p.Locked)
+            {
+                DrawApparelLocked(rect, p);
+                return;
+            }
+
             float rowGap = 14f;
-            float rowH = (rect.height - rowGap * (ColorCount - 1)) / ColorCount;
-            for (int c = 0; c < ColorCount; c++)
+            float rowH = (rect.height - rowGap * (p.ZoneCount - 1)) / p.ZoneCount;
+            for (int c = 0; c < p.ZoneCount; c++)
             {
                 Rect row = new Rect(rect.x, rect.y + c * (rowH + rowGap), rect.width, rowH);
                 DrawColorRow(row, p, c);
@@ -208,7 +242,7 @@ namespace UnitedFront.UI
                 SoundDefOf.Tick_Low.PlayOneShotOnCamera();
             }
 
-            float roleH = SectionHeight(paletteArea.width, UFRColors.Palette.Count);
+            float roleH = SectionHeight(paletteArea.width, RolePalette.Count);
 
             Rect roleLabel = new Rect(paletteArea.x, paletteArea.y, paletteArea.width, SectionLabelH);
             Rect roleRect = new Rect(paletteArea.x, roleLabel.yMax, paletteArea.width, roleH);
@@ -217,7 +251,7 @@ namespace UnitedFront.UI
                                       paletteArea.yMax - otherLabel.yMax);
 
             DrawSectionLabel(roleLabel, "UFR_ColorSectionRole".Translate());
-            Widgets.ColorSelector(roleRect, ref c, UFRColors.Palette, out _, null, 22, 2);
+            Widgets.ColorSelector(roleRect, ref c, RolePalette, out _, null, 22, 2);
 
             DrawSectionLabel(otherLabel, "UFR_ColorSectionOther".Translate());
             Widgets.ColorSelector(otherRect, ref c, AllColors(), out _, null, 22, 2, ColorSelecterExtraOnGUI);
@@ -261,7 +295,7 @@ namespace UnitedFront.UI
             if (locked)
             {
                 GUI.color = prevGUI;
-                DrawLockedVeil(row);
+                DrawLockedVeil(row, CompColorMarker.DisplayPrimary(p.Apparel, p.Apparel.DrawColor));
                 return;
             }
 
@@ -304,7 +338,16 @@ namespace UnitedFront.UI
             if (!tip.NullOrEmpty()) TooltipHandler.TipRegion(boxRect, tip);
         }
 
-        private static void DrawLockedVeil(Rect row)
+        private void DrawApparelLocked(Rect rect, Piece p)
+        {
+            TextAnchor anchor = Text.Anchor;
+            Text.Anchor = TextAnchor.MiddleCenter;
+            Widgets.Label(rect, ((string)"ApparelLockedCannotRecolor".Translate(_pawn.Named("PAWN"), p.Apparel.Named("APPAREL")))
+                .Colorize(ColorLibrary.RedReadable));
+            Text.Anchor = anchor;
+        }
+
+        private static void DrawLockedVeil(Rect row, Color drawnPrimary)
         {
             Widgets.DrawBoxSolid(row, LockedVeil);
 
@@ -316,7 +359,8 @@ namespace UnitedFront.UI
             string label = "UFR_ColorPrimaryLocked".Translate();
             float maxW = row.width - LockedBoxPad * 4f;
             Vector2 size = Text.CalcSize(label);
-            float boxW = Mathf.Min(size.x, maxW) + LockedBoxPad * 2f;
+            float swatchSize = Text.LineHeight;
+            float boxW = Mathf.Min(size.x, maxW - swatchSize - LockedBoxPad) + swatchSize + LockedBoxPad * 3f;
             float boxH = Mathf.Max(Text.CalcHeight(label, boxW - LockedBoxPad * 2f), size.y) + LockedBoxPad * 2f;
 
             Rect box = new Rect(0f, 0f, boxW, boxH) { center = row.center };
@@ -327,7 +371,12 @@ namespace UnitedFront.UI
             Widgets.DrawBox(box);
             GUI.color = prev;
 
-            Widgets.Label(box.ContractedBy(LockedBoxPad), label);
+            Rect inner = box.ContractedBy(LockedBoxPad);
+            Rect swatch = new Rect(inner.x, inner.center.y - swatchSize / 2f, swatchSize, swatchSize);
+            Widgets.DrawBoxSolid(swatch, drawnPrimary);
+            Widgets.DrawBox(swatch);
+            inner.xMin = swatch.xMax + LockedBoxPad;
+            Widgets.Label(inner, label);
 
             Text.Font = font;
             Text.Anchor = anchor;
@@ -345,7 +394,7 @@ namespace UnitedFront.UI
             {
                 foreach (Piece p in _pieces)
                 {
-                    p.Working = Normalized(p.Original);
+                    p.Working = Normalized(p.Original, p.ZoneCount);
                     p.Comp.PreviewZones(p.Working);
                 }
                 PortraitsCache.SetDirty(_pawn);
@@ -420,8 +469,7 @@ namespace UnitedFront.UI
         private static bool TryGetFavoriteColor(Pawn pawn, out Color c)
         {
             c = Color.white;
-            if (!ModsConfig.IdeologyActive || pawn?.story == null || pawn.DevelopmentalStage.Baby()) return false;
-            ColorDef? def = pawn.story.favoriteColor;
+            ColorDef? def = pawn?.story?.favoriteColor;
             if (def == null) return false;
             c = def.color;
             return true;
