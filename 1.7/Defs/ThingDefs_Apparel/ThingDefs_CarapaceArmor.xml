@@ -763,6 +763,10 @@
         <chargeNoun>frag</chargeNoun>
         <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
       </li>
+      <!-- crimson -->
+      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+        <colorTwo>(0.70, 0.12, 0.15)</colorTwo>
+      </li>
     </comps>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/AssaultCarapaceArmor/AssaultCarapaceArmor</wornGraphicPath>
@@ -770,12 +774,6 @@
         <li>UFR_AssaultCarapaceArmor</li>
       </tags>
     </apparel>
-    <comps>
-      <!-- crimson -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
-        <colorTwo>(0.70, 0.12, 0.15)</colorTwo>
-      </li>
-    </comps>
   </ThingDef>
 
   <ThingDef ParentName="UFR_ApparelArmorHelmetCarapaceBase">
@@ -857,13 +855,11 @@
       <li Class="CompProperties_CauseHediff_Apparel" MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Anomaly">
         <hediff>UFR_StealthFieldEmitter</hediff>
         <part>Torso</part>
-      </li>      
-    </comps>
-    <comps>
+      </li>  
       <!-- olive -->
       <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
         <colorTwo>(0.35, 0.42, 0.20)</colorTwo>
-      </li>
+      </li>		
     </comps>
   </ThingDef> 
  
