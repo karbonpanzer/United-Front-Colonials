@@ -38,12 +38,9 @@
 
 <img src="Storage/Workshop%20Materials/Final/WeaponHeader.png" alt="Weapons" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/SabotPistol.png" alt="Sabot Pistol" width="640"><br>
-<img src="Storage/Workshop%20Materials/Final/SabotSMG.png" alt="Sabot SMG" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/SabotShotgun.png" alt="Sabot Shotgun" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/SabotRifle.png" alt="Sabot Rifle" width="640"><br>
-<img src="Storage/Workshop%20Materials/Final/SabotHeavyRifle.png" alt="Sabot Heavy Rifle" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/SabotSniper.png" alt="Sabot Sniper" width="640"><br>
-<img src="Storage/Workshop%20Materials/Final/SabotLMG.png" alt="Sabot LMG" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/SabotAutoCannon.png" alt="Sabot Autocannon" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/Vibroknife.png" alt="Vibroknife" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/Vibrosword.png" alt="Vibrosword" width="640"><br>
@@ -51,7 +48,6 @@
 <img src="Storage/Workshop%20Materials/Final/Vibromaul.png" alt="Vibromaul" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/Vibrohammer.png" alt="Vibrohammer" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/Vibrobuster.png" alt="Vibrobuster" width="640"><br>
-<img src="Storage/Workshop%20Materials/Final/Chainsword.png" alt="Chainsword" width="640"><br>
 
 <img src="Storage/Workshop%20Materials/Final/ExtrasHeader.png" alt="Extras" width="640"><br>
 <img src="Storage/Workshop%20Materials/Final/Promachus.png" alt="Promachus" width="640"><br>
