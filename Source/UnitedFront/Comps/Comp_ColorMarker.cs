@@ -78,10 +78,14 @@ namespace UnitedFront.Comps
 
         public Color DisplayZone(int index)
         {
-            Color c = Floor(GetZone(index));
             if (parent is Apparel ap && ap.WornByCorpse)
-                c = PawnRenderUtility.GetRottenColor(c);
-            return c;
+                return PawnRenderUtility.GetRottenColor(GetZone(index));
+            return Floor(GetZone(index));
+        }
+
+        public static Color DisplayPrimary(Apparel apparel, Color vanillaColor)
+        {
+            return apparel.WornByCorpse ? vanillaColor : Floor(vanillaColor);
         }
 
         public Graphic? ItemGraphic()
@@ -106,7 +110,7 @@ namespace UnitedFront.Comps
             if (gd == null || gd.texPath.NullOrEmpty()) return null;
             if (gd.shaderType?.Shader != ShaderDatabase.CutoutComplex) return null;
 
-            Color colorOne = Floor(apparel.DrawColor);
+            Color colorOne = DisplayPrimary(apparel, apparel.DrawColor);
             Color colorTwo = DisplayZone(1);
             if (colorTwo.IndistinguishableFrom(Color.white)) return null;
 

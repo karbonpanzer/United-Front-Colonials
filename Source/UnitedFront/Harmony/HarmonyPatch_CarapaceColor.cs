@@ -27,7 +27,7 @@ namespace UnitedFront.Harmony
             Color colorTwo = comp.DisplayZone(1);
             if (colorTwo.IndistinguishableFrom(Color.white)) return;
 
-            Color colorOne = CompColorMarker.Floor(rec.graphic.color);
+            Color colorOne = CompColorMarker.DisplayPrimary(apparel, rec.graphic.color);
 
             Graphic graphic = GraphicDatabase.Get<Graphic_Multi>(
                 rec.graphic.path, rec.graphic.Shader, rec.graphic.drawSize, colorOne, colorTwo);
