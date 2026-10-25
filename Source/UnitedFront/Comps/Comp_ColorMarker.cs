@@ -24,7 +24,7 @@ namespace UnitedFront.Comps
         {
             get
             {
-                if (parent.Stuff != null) return parent.Stuff.stuffProps.color;
+                if (parent.Stuff != null) return parent.def.GetColorForStuff(parent.Stuff);
                 return parent.def.graphicData != null ? parent.def.graphicData.color : Color.white;
             }
         }
@@ -84,12 +84,15 @@ namespace UnitedFront.Comps
             return c;
         }
 
-        public Graphic? ItemGraphic(Graphic fallback)
+        public Graphic? ItemGraphic()
         {
-            if (!_recacheItemGraphic) return _cachedItemGraphic;
+            if (parent.StyleDef?.Graphic != null) return null;
 
-            _recacheItemGraphic = false;
-            _cachedItemGraphic = BuildItemGraphic() ?? fallback;
+            if (_recacheItemGraphic)
+            {
+                _recacheItemGraphic = false;
+                _cachedItemGraphic = BuildItemGraphic();
+            }
             return _cachedItemGraphic;
         }
 
@@ -107,7 +110,7 @@ namespace UnitedFront.Comps
             Color colorTwo = DisplayZone(1);
             if (colorTwo.IndistinguishableFrom(Color.white)) return null;
 
-            Graphic coloured = GraphicDatabase.Get<Graphic_Single>(
+            Graphic coloured = GraphicDatabase.Get(gd.graphicClass ?? typeof(Graphic_Single),
                 gd.texPath, ShaderDatabase.CutoutComplex, gd.drawSize, colorOne, colorTwo);
 
             if (coloured == null) return null;
@@ -169,6 +172,13 @@ namespace UnitedFront.Comps
                 ap.Wearer.Drawer?.renderer?.SetAllGraphicsDirty();
             else
                 parent.Notify_ColorChanged();
+        }
+
+        public override void Notify_ColorChanged()
+        {
+            base.Notify_ColorChanged();
+            _recacheItemGraphic = true;
+            _cachedItemGraphic = null;
         }
 
         public override void PostExposeData()

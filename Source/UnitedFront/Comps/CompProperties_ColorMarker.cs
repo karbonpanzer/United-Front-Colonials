@@ -24,6 +24,9 @@ namespace UnitedFront.Comps
             if (zoneCount < 1)
                 yield return parentDef.defName + " has CompColorMarker with zoneCount below 1.";
 
+            if (zoneCount > 2)
+                yield return parentDef.defName + " has CompColorMarker with zoneCount " + zoneCount + ", but CutoutComplex only renders 2 zones.";
+
             if (parentDef.apparel != null && !parentDef.apparel.useWornGraphicMask)
                 yield return parentDef.defName + " has CompColorMarker but apparel.useWornGraphicMask is false; zone colors will not render on the pawn.";
         }

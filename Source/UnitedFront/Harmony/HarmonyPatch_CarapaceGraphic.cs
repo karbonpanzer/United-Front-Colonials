@@ -15,7 +15,7 @@ namespace UnitedFront.Harmony
             CompColorMarker comp = apparel.GetComp<CompColorMarker>();
             if (comp == null) return;
 
-            __result = comp.ItemGraphic(__result) ?? __result;
+            __result = comp.ItemGraphic() ?? __result;
         }
     }
 }
