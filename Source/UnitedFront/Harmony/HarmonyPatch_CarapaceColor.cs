@@ -22,7 +22,7 @@ namespace UnitedFront.Harmony
             if (rec.graphic.Shader != ShaderDatabase.CutoutComplex) return;
 
             CompColorMarker comp = apparel.GetComp<CompColorMarker>();
-            if (comp == null || comp.ZoneColors.Count < 2) return;
+            if (comp == null || comp.zoneColors.Count < 2) return;
 
             Color colorTwo = comp.DisplayZone(1);
             if (colorTwo.IndistinguishableFrom(Color.white)) return;

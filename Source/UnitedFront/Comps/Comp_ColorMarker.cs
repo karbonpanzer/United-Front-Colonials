@@ -7,13 +7,13 @@ namespace UnitedFront.Comps
 {
     public sealed class CompColorMarker : ThingComp
     {
-        public List<Color> ZoneColors = new List<Color>();
-        private bool _zonesCustomized;
+        public List<Color> zoneColors = new List<Color>();
+        private bool zonesCustomized;
 
         private const float MinBrightness = 0.3f;
 
-        private Graphic? _cachedItemGraphic;
-        private bool _recacheItemGraphic = true;
+        private Graphic? cachedItemGraphic;
+        private bool recacheItemGraphic = true;
 
         public CompPropertiesColorMarker Props => (CompPropertiesColorMarker)props;
         public int ZoneCount => Props.zoneCount;
@@ -44,25 +44,25 @@ namespace UnitedFront.Comps
 
         private void ApplyDefaults()
         {
-            if (_zonesCustomized) return;
+            if (zonesCustomized) return;
 
             EnsureZoneDefaults();
-            for (int i = 0; i < ZoneColors.Count; i++)
-                ZoneColors[i] = DefaultZone(i);
+            for (int i = 0; i < zoneColors.Count; i++)
+                zoneColors[i] = DefaultZone(i);
 
             SetDirty();
         }
 
         private void EnsureZoneDefaults()
         {
-            ZoneColors ??= new List<Color>();
-            while (ZoneColors.Count < ZoneCount)
-                ZoneColors.Add(DefaultZone(ZoneColors.Count));
-            if (ZoneColors.Count > ZoneCount)
-                ZoneColors.RemoveRange(ZoneCount, ZoneColors.Count - ZoneCount);
+            zoneColors ??= new List<Color>();
+            while (zoneColors.Count < ZoneCount)
+                zoneColors.Add(DefaultZone(zoneColors.Count));
+            if (zoneColors.Count > ZoneCount)
+                zoneColors.RemoveRange(ZoneCount, zoneColors.Count - ZoneCount);
         }
 
-        public Color GetZone(int index) => (index >= 0 && index < ZoneColors.Count) ? ZoneColors[index] : Color.white;
+        public Color GetZone(int index) => (index >= 0 && index < zoneColors.Count) ? zoneColors[index] : Color.white;
 
         public static Color Floor(Color colour)
         {
@@ -92,19 +92,19 @@ namespace UnitedFront.Comps
         {
             if (parent.StyleDef?.Graphic != null) return null;
 
-            if (_recacheItemGraphic)
+            if (recacheItemGraphic)
             {
-                _recacheItemGraphic = false;
-                _cachedItemGraphic = BuildItemGraphic();
+                recacheItemGraphic = false;
+                cachedItemGraphic = BuildItemGraphic();
             }
-            return _cachedItemGraphic;
+            return cachedItemGraphic;
         }
 
         private Graphic? BuildItemGraphic()
         {
             if (parent is not Apparel apparel) return null;
             if (apparel.StyleDef?.Graphic != null) return null;
-            if (ZoneColors.Count < 2) return null;
+            if (zoneColors.Count < 2) return null;
 
             GraphicData gd = parent.def.graphicData;
             if (gd == null || gd.texPath.NullOrEmpty()) return null;
@@ -127,19 +127,19 @@ namespace UnitedFront.Comps
         public void SetZone(int index, Color c, bool markCustomized = true)
         {
             EnsureZoneDefaults();
-            if (index < 0 || index >= ZoneColors.Count) return;
-            ZoneColors[index] = c;
-            if (markCustomized) _zonesCustomized = true;
+            if (index < 0 || index >= zoneColors.Count) return;
+            zoneColors[index] = c;
+            if (markCustomized) zonesCustomized = true;
             SetDirty();
         }
 
         public sealed class EditSnapshot
         {
-            public List<Color> Zones = null!;
-            public bool Customized;
-            public bool ColorableActive;
-            public Color ColorableColor;
-            public Color? DesiredColor;
+            public List<Color> zones = null!;
+            public bool customized;
+            public bool colorableActive;
+            public Color colorableColor;
+            public Color? desiredColor;
         }
 
         public EditSnapshot BeginEdit()
@@ -147,23 +147,23 @@ namespace UnitedFront.Comps
             EnsureZoneDefaults();
 
             CompColorable? colorable = Colorable;
-            if (colorable != null && colorable.Active && ZoneColors.Count > 0
-                && !ZoneColors[0].IndistinguishableFrom(colorable.Color))
-                ZoneColors[0] = colorable.Color;
+            if (colorable != null && colorable.Active && zoneColors.Count > 0
+                && !zoneColors[0].IndistinguishableFrom(colorable.Color))
+                zoneColors[0] = colorable.Color;
 
             return new EditSnapshot
             {
-                Zones = new List<Color>(ZoneColors),
-                Customized = _zonesCustomized,
-                ColorableActive = colorable != null && colorable.Active,
-                ColorableColor = colorable?.Color ?? Color.white,
-                DesiredColor = colorable?.DesiredColor
+                zones = new List<Color>(zoneColors),
+                customized = zonesCustomized,
+                colorableActive = colorable != null && colorable.Active,
+                colorableColor = colorable?.Color ?? Color.white,
+                desiredColor = colorable?.DesiredColor
             };
         }
 
         public void PreviewZones(List<Color> colors)
         {
-            ZoneColors = new List<Color>(colors);
+            zoneColors = new List<Color>(colors);
             EnsureZoneDefaults();
             SyncColorableToPrimary();
             SetDirty();
@@ -171,8 +171,8 @@ namespace UnitedFront.Comps
 
         public void CommitZones(List<Color> colors)
         {
-            ZoneColors = new List<Color>(colors);
-            _zonesCustomized = true;
+            zoneColors = new List<Color>(colors);
+            zonesCustomized = true;
             EnsureZoneDefaults();
             SyncColorableToPrimary();
             SetDirty();
@@ -180,18 +180,18 @@ namespace UnitedFront.Comps
 
         public void RestoreEdit(EditSnapshot snapshot)
         {
-            ZoneColors = new List<Color>(snapshot.Zones);
-            _zonesCustomized = snapshot.Customized;
+            zoneColors = new List<Color>(snapshot.zones);
+            zonesCustomized = snapshot.customized;
             EnsureZoneDefaults();
 
             CompColorable? colorable = Colorable;
             if (colorable != null)
             {
-                if (snapshot.ColorableActive && colorable.Active
-                    && !colorable.Color.IndistinguishableFrom(snapshot.ColorableColor))
-                    colorable.SetColor(snapshot.ColorableColor);
+                if (snapshot.colorableActive && colorable.Active
+                    && !colorable.Color.IndistinguishableFrom(snapshot.colorableColor))
+                    colorable.SetColor(snapshot.colorableColor);
 
-                colorable.DesiredColor = snapshot.DesiredColor;
+                colorable.DesiredColor = snapshot.desiredColor;
             }
 
             SetDirty();
@@ -200,15 +200,15 @@ namespace UnitedFront.Comps
         private void SyncColorableToPrimary()
         {
             CompColorable? colorable = Colorable;
-            if (colorable == null || !colorable.Active || ZoneColors.Count == 0) return;
-            if (!colorable.Color.IndistinguishableFrom(ZoneColors[0]))
-                colorable.SetColor(ZoneColors[0]);
+            if (colorable == null || !colorable.Active || zoneColors.Count == 0) return;
+            if (!colorable.Color.IndistinguishableFrom(zoneColors[0]))
+                colorable.SetColor(zoneColors[0]);
         }
 
         public override Color? ForceColor()
         {
-            if (ZoneColors.Count == 0) return null;
-            return ZoneColors[0];
+            if (zoneColors.Count == 0) return null;
+            return zoneColors[0];
         }
 
         public void SyncPrimaryFromColorable(Color dyed)
@@ -216,17 +216,17 @@ namespace UnitedFront.Comps
             if (props == null) return;
 
             EnsureZoneDefaults();
-            if (ZoneColors.Count == 0 || ZoneColors[0].IndistinguishableFrom(dyed)) return;
+            if (zoneColors.Count == 0 || zoneColors[0].IndistinguishableFrom(dyed)) return;
 
-            ZoneColors[0] = dyed;
-            _zonesCustomized = true;
+            zoneColors[0] = dyed;
+            zonesCustomized = true;
             SetDirty();
         }
 
         private void SetDirty()
         {
-            _recacheItemGraphic = true;
-            _cachedItemGraphic = null;
+            recacheItemGraphic = true;
+            cachedItemGraphic = null;
 
             if (parent is Apparel ap && ap.Wearer != null)
                 ap.Wearer.Drawer?.renderer?.SetAllGraphicsDirty();
@@ -237,15 +237,15 @@ namespace UnitedFront.Comps
         public override void Notify_ColorChanged()
         {
             base.Notify_ColorChanged();
-            _recacheItemGraphic = true;
-            _cachedItemGraphic = null;
+            recacheItemGraphic = true;
+            cachedItemGraphic = null;
         }
 
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Collections.Look(ref ZoneColors, "UnitedFrontZoneColors", LookMode.Value);
-            Scribe_Values.Look(ref _zonesCustomized, "UnitedFrontZonesCustomized", false);
+            Scribe_Collections.Look(ref zoneColors, "UnitedFrontZoneColors", LookMode.Value);
+            Scribe_Values.Look(ref zonesCustomized, "UnitedFrontZonesCustomized", false);
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
                 EnsureZoneDefaults();

@@ -13,22 +13,22 @@ namespace UnitedFront.UI
     {
         private sealed class Piece
         {
-            public Apparel Apparel = null!;
-            public CompColorMarker Comp = null!;
-            public List<Color> Working = null!;
-            public List<Color> Original = null!;
-            public CompColorMarker.EditSnapshot Snapshot = null!;
-            public int ZoneCount;
-            public bool Locked;
+            public Apparel apparel = null!;
+            public CompColorMarker comp = null!;
+            public List<Color> working = null!;
+            public List<Color> original = null!;
+            public CompColorMarker.EditSnapshot snapshot = null!;
+            public int zoneCount;
+            public bool locked;
         }
 
         private const int ColorCount = 2;
 
-        private readonly Pawn _pawn;
-        private readonly List<Piece> _pieces = new List<Piece>();
-        private int _sel;
-        private bool _committed;
-        private List<Color>? _allColors;
+        private readonly Pawn pawn;
+        private readonly List<Piece> pieces = new List<Piece>();
+        private int sel;
+        private bool committed;
+        private List<Color>? allColors;
 
         private static readonly Vector2 ButSize = new Vector2(200f, 40f);
         private static readonly Vector3 PortraitOffset = new Vector3(0f, 0f, 0.15f);
@@ -78,7 +78,7 @@ namespace UnitedFront.UI
 
         public DialogEditColors(Pawn pawn)
         {
-            _pawn = pawn;
+            this.pawn = pawn;
             forcePause = true;
             doCloseX = true;
             closeOnAccept = false;
@@ -95,15 +95,15 @@ namespace UnitedFront.UI
                     int zoneCount = Mathf.Clamp(comp.ZoneCount, 1, ColorCount);
                     CompColorMarker.EditSnapshot snapshot = comp.BeginEdit();
 
-                    _pieces.Add(new Piece
+                    pieces.Add(new Piece
                     {
-                        Apparel = ap,
-                        Comp = comp,
-                        Snapshot = snapshot,
-                        ZoneCount = zoneCount,
-                        Locked = pawn.apparel.IsLocked(ap),
-                        Working = Normalized(snapshot.Zones, zoneCount),
-                        Original = new List<Color>(snapshot.Zones)
+                        apparel = ap,
+                        comp = comp,
+                        snapshot = snapshot,
+                        zoneCount = zoneCount,
+                        locked = pawn.apparel.IsLocked(ap),
+                        working = Normalized(snapshot.zones, zoneCount),
+                        original = new List<Color>(snapshot.zones)
                     });
                 }
             }
@@ -119,26 +119,26 @@ namespace UnitedFront.UI
 
         public override void Close(bool doCloseSound = true)
         {
-            foreach (Piece p in _pieces)
+            foreach (Piece p in pieces)
             {
-                if (_committed && !p.Locked) p.Comp.CommitZones(p.Working);
-                else p.Comp.RestoreEdit(p.Snapshot);
+                if (committed && !p.locked) p.comp.CommitZones(p.working);
+                else p.comp.RestoreEdit(p.snapshot);
             }
-            PortraitsCache.SetDirty(_pawn);
+            PortraitsCache.SetDirty(pawn);
             base.Close(doCloseSound);
         }
 
         public override void DoWindowContents(Rect inRect)
         {
-            if (_pawn.Destroyed) { Close(false); return; }
+            if (pawn.Destroyed) { Close(false); return; }
 
             Text.Font = GameFont.Medium;
             Rect titleRect = new Rect(inRect) { height = Text.LineHeight * 2f };
-            Widgets.Label(titleRect, "UFR_EditColorsTitle".Translate(_pawn.Name.ToStringShort));
+            Widgets.Label(titleRect, "UFR_EditColorsTitle".Translate(pawn.Name.ToStringShort));
             Text.Font = GameFont.Small;
             inRect.yMin = titleRect.yMax + 4f;
 
-            if (_pieces.Count == 0)
+            if (pieces.Count == 0)
             {
                 Widgets.NoneLabelCenteredVertically(new Rect(inRect.x, inRect.y, inRect.width, inRect.height - ButSize.y));
                 DrawBottomButtons(inRect);
@@ -163,7 +163,7 @@ namespace UnitedFront.UI
             Widgets.BeginGroup(rect);
             Rect inner = new Rect(0f, 0f, rect.width, rect.height).ContractedBy(4f);
             RenderTexture portrait = PortraitsCache.Get(
-                _pawn, new Vector2(inner.width, inner.height), Rot4.South,
+                pawn, new Vector2(inner.width, inner.height), Rot4.South,
                 PortraitOffset, PortraitZoom,
                 supersample: true, compensateForUIScale: true,
                 renderHeadgear: true, renderClothes: true);
@@ -173,30 +173,30 @@ namespace UnitedFront.UI
 
         private void DrawRight(Rect rect)
         {
-            var tabs = new List<TabRecord>(_pieces.Count);
-            for (int i = 0; i < _pieces.Count; i++)
+            var tabs = new List<TabRecord>(pieces.Count);
+            for (int i = 0; i < pieces.Count; i++)
             {
                 int idx = i;
-                string label = IsHelmet(_pieces[i].Apparel) ? "UFR_ColorTab_Helmet".Translate() : "UFR_ColorTab_Armor".Translate();
-                tabs.Add(new TabRecord(label, () => _sel = idx, _sel == i));
+                string label = IsHelmet(pieces[i].apparel) ? "UFR_ColorTab_Helmet".Translate() : "UFR_ColorTab_Armor".Translate();
+                tabs.Add(new TabRecord(label, () => sel = idx, sel == i));
             }
 
             Widgets.DrawMenuSection(rect);
             TabDrawer.DrawTabs(rect, tabs);
             rect = rect.ContractedBy(TabMargin);
 
-            if (_sel < 0 || _sel >= _pieces.Count) _sel = 0;
-            Piece p = _pieces[_sel];
+            if (sel < 0 || sel >= pieces.Count) sel = 0;
+            Piece p = pieces[sel];
 
-            if (p.Locked)
+            if (p.locked)
             {
                 DrawApparelLocked(rect, p);
                 return;
             }
 
             float rowGap = 14f;
-            float rowH = (rect.height - rowGap * (p.ZoneCount - 1)) / p.ZoneCount;
-            for (int c = 0; c < p.ZoneCount; c++)
+            float rowH = (rect.height - rowGap * (p.zoneCount - 1)) / p.zoneCount;
+            for (int c = 0; c < p.zoneCount; c++)
             {
                 Rect row = new Rect(rect.x, rect.y + c * (rowH + rowGap), rect.width, rowH);
                 DrawColorRow(row, p, c);
@@ -221,9 +221,9 @@ namespace UnitedFront.UI
             Widgets.Label(new Rect(row.x, row.y, row.width, labelH),
                 index == 0 ? "UFR_ColorPrimary".Translate() : "UFR_ColorSecondary".Translate());
 
-            Color c = p.Working[index];
+            Color c = p.working[index];
             Color original = c;
-            Color defColor = p.Comp.DefaultZone(index);
+            Color defColor = p.comp.DefaultZone(index);
 
             Rect btnRow = new Rect(row.x, row.yMax - btnH, row.width, btnH);
             Rect paletteArea = new Rect(row.x, row.y + labelH + defaultH + 4f, row.width,
@@ -262,15 +262,15 @@ namespace UnitedFront.UI
             labels.Add("UFR_ColorRandom".Translate());
             picks.Add(Color.clear);
 
-            if (TryGetFavoriteColor(_pawn, out Color favColor))
+            if (TryGetFavoriteColor(pawn, out Color favColor))
             {
                 labels.Add("UFR_ColorFavorite".Translate());
                 picks.Add(favColor);
             }
-            if (ModsConfig.IdeologyActive && _pawn.Ideo != null && !Find.IdeoManager.classicMode)
+            if (ModsConfig.IdeologyActive && pawn.Ideo != null && !Find.IdeoManager.classicMode)
             {
                 labels.Add("UFR_ColorIdeoligion".Translate());
-                picks.Add(_pawn.Ideo.ApparelColor);
+                picks.Add(pawn.Ideo.ApparelColor);
             }
 
             float btnGap = 6f;
@@ -295,15 +295,15 @@ namespace UnitedFront.UI
             if (locked)
             {
                 GUI.color = prevGUI;
-                DrawLockedVeil(row, CompColorMarker.DisplayPrimary(p.Apparel, p.Apparel.DrawColor));
+                DrawLockedVeil(row, CompColorMarker.DisplayPrimary(p.apparel, p.apparel.DrawColor));
                 return;
             }
 
             if (!original.IndistinguishableFrom(c))
             {
-                p.Working[index] = c;
-                p.Comp.PreviewZones(p.Working);
-                PortraitsCache.SetDirty(_pawn);
+                p.working[index] = c;
+                p.comp.PreviewZones(p.working);
+                PortraitsCache.SetDirty(pawn);
             }
         }
 
@@ -313,16 +313,16 @@ namespace UnitedFront.UI
             TaggedString tip = default;
             bool over = Mouse.IsOver(boxRect);
 
-            if (TryGetFavoriteColor(_pawn, out Color fav) && color.IndistinguishableFrom(fav))
+            if (TryGetFavoriteColor(pawn, out Color fav) && color.IndistinguishableFrom(fav))
             {
                 icon = FavoriteColorTex;
-                if (over) tip = "FavoriteColorPickerTip".Translate(_pawn.Named("PAWN"));
+                if (over) tip = "FavoriteColorPickerTip".Translate(pawn.Named("PAWN"));
             }
-            else if (ModsConfig.IdeologyActive && _pawn.Ideo != null && !Find.IdeoManager.classicMode
-                     && color.IndistinguishableFrom(_pawn.Ideo.ApparelColor))
+            else if (ModsConfig.IdeologyActive && pawn.Ideo != null && !Find.IdeoManager.classicMode
+                     && color.IndistinguishableFrom(pawn.Ideo.ApparelColor))
             {
                 icon = IdeoColorTex;
-                if (over) tip = "IdeoColorPickerTip".Translate(_pawn.Named("PAWN"));
+                if (over) tip = "IdeoColorPickerTip".Translate(pawn.Named("PAWN"));
             }
 
             if (icon != null)
@@ -342,7 +342,7 @@ namespace UnitedFront.UI
         {
             TextAnchor anchor = Text.Anchor;
             Text.Anchor = TextAnchor.MiddleCenter;
-            Widgets.Label(rect, ((string)"ApparelLockedCannotRecolor".Translate(_pawn.Named("PAWN"), p.Apparel.Named("APPAREL")))
+            Widgets.Label(rect, ((string)"ApparelLockedCannotRecolor".Translate(pawn.Named("PAWN"), p.apparel.Named("APPAREL")))
                 .Colorize(ColorLibrary.RedReadable));
             Text.Anchor = anchor;
         }
@@ -386,50 +386,50 @@ namespace UnitedFront.UI
         {
             if (Widgets.ButtonText(new Rect(inRect.x, inRect.yMax - ButSize.y, ButSize.x, ButSize.y), "UFR_Cancel".Translate()))
             {
-                _committed = false;
+                committed = false;
                 Close();
             }
 
             if (Widgets.ButtonText(new Rect(inRect.xMin + inRect.width / 2f - ButSize.x / 2f, inRect.yMax - ButSize.y, ButSize.x, ButSize.y), "UFR_Reset".Translate()))
             {
-                foreach (Piece p in _pieces)
+                foreach (Piece p in pieces)
                 {
-                    p.Working = Normalized(p.Original, p.ZoneCount);
-                    p.Comp.PreviewZones(p.Working);
+                    p.working = Normalized(p.original, p.zoneCount);
+                    p.comp.PreviewZones(p.working);
                 }
-                PortraitsCache.SetDirty(_pawn);
+                PortraitsCache.SetDirty(pawn);
                 SoundDefOf.Tick_Low.PlayOneShotOnCamera();
             }
 
             if (Widgets.ButtonText(new Rect(inRect.xMax - ButSize.x, inRect.yMax - ButSize.y, ButSize.x, ButSize.y), "UFR_Accept".Translate()))
             {
-                _committed = true;
+                committed = true;
                 Close();
             }
         }
 
         private List<Color> AllColors()
         {
-            if (_allColors != null) return _allColors;
+            if (allColors != null) return allColors;
 
-            _allColors = new List<Color>();
+            allColors = new List<Color>();
 
-            if (ModsConfig.IdeologyActive && _pawn.Ideo != null && !Find.IdeoManager.classicMode)
-                AddUnique(_allColors, _pawn.Ideo.ApparelColor);
+            if (ModsConfig.IdeologyActive && pawn.Ideo != null && !Find.IdeoManager.classicMode)
+                AddUnique(allColors, pawn.Ideo.ApparelColor);
 
-            if (TryGetFavoriteColor(_pawn, out Color favColor))
-                AddUnique(_allColors, favColor);
+            if (TryGetFavoriteColor(pawn, out Color favColor))
+                AddUnique(allColors, favColor);
 
             foreach (ColorDef def in DefDatabase<ColorDef>.AllDefs)
             {
                 bool allowed = def.colorType == ColorType.Ideo
                             || def.colorType == ColorType.Misc;
 
-                if (allowed) AddUnique(_allColors, def.color);
+                if (allowed) AddUnique(allColors, def.color);
             }
 
-            _allColors.SortByColor((Color x) => x);
-            return _allColors;
+            allColors.SortByColor((Color x) => x);
+            return allColors;
         }
 
         private static float SectionHeight(float width, int count)
