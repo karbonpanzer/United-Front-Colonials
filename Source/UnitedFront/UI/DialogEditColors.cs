@@ -295,7 +295,7 @@ namespace UnitedFront.UI
             if (locked)
             {
                 GUI.color = prevGUI;
-                DrawLockedVeil(row, CompColorMarker.DisplayPrimary(p.apparel, p.apparel.DrawColor));
+                DrawLockedVeil(row, p.apparel.DrawColor);
                 return;
             }
 
