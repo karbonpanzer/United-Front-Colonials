@@ -10,10 +10,6 @@ namespace UnitedFront.Comps
         public List<Color> zoneColors = new List<Color>();
         private bool zonesCustomized;
 
-        private const float MinBrightness = 0.3f;
-
-        private Graphic? cachedItemGraphic;
-        private bool recacheItemGraphic = true;
 
         public CompPropertiesColorMarker Props => (CompPropertiesColorMarker)props;
         public int ZoneCount => Props.zoneCount;
@@ -64,64 +60,11 @@ namespace UnitedFront.Comps
 
         public Color GetZone(int index) => (index >= 0 && index < zoneColors.Count) ? zoneColors[index] : Color.white;
 
-        public static Color Floor(Color colour)
-        {
-            float max = Mathf.Max(colour.r, Mathf.Max(colour.g, colour.b));
-            if (max >= MinBrightness || max <= 0.0001f) return colour;
-
-            float scale = MinBrightness / max;
-            return new Color(Mathf.Min(colour.r * scale, 1f),
-                             Mathf.Min(colour.g * scale, 1f),
-                             Mathf.Min(colour.b * scale, 1f),
-                             colour.a);
-        }
-
         public Color DisplayZone(int index)
         {
             if (parent is Apparel ap && ap.WornByCorpse)
                 return PawnRenderUtility.GetRottenColor(GetZone(index));
-            return Floor(GetZone(index));
-        }
-
-        public static Color DisplayPrimary(Apparel apparel, Color vanillaColor)
-        {
-            return apparel.WornByCorpse ? vanillaColor : Floor(vanillaColor);
-        }
-
-        public Graphic? ItemGraphic()
-        {
-            if (parent.StyleDef?.Graphic != null) return null;
-
-            if (recacheItemGraphic)
-            {
-                recacheItemGraphic = false;
-                cachedItemGraphic = BuildItemGraphic();
-            }
-            return cachedItemGraphic;
-        }
-
-        private Graphic? BuildItemGraphic()
-        {
-            if (parent is not Apparel apparel) return null;
-            if (apparel.StyleDef?.Graphic != null) return null;
-            if (zoneColors.Count < 2) return null;
-
-            GraphicData gd = parent.def.graphicData;
-            if (gd == null || gd.texPath.NullOrEmpty()) return null;
-            if (gd.shaderType?.Shader != ShaderDatabase.CutoutComplex) return null;
-
-            Color colorOne = DisplayPrimary(apparel, apparel.DrawColor);
-            Color colorTwo = DisplayZone(1);
-            if (colorTwo.IndistinguishableFrom(Color.white)) return null;
-
-            Graphic coloured = GraphicDatabase.Get(gd.graphicClass ?? typeof(Graphic_Single),
-                gd.texPath, ShaderDatabase.CutoutComplex, gd.drawSize, colorOne, colorTwo);
-
-            if (coloured == null) return null;
-
-            return gd.onGroundRandomRotateAngle > 0.01f
-                ? new Graphic_RandomRotated(coloured, gd.onGroundRandomRotateAngle)
-                : coloured;
+            return GetZone(index);
         }
 
         public void SetZone(int index, Color c, bool markCustomized = true)
@@ -225,20 +168,7 @@ namespace UnitedFront.Comps
 
         private void SetDirty()
         {
-            recacheItemGraphic = true;
-            cachedItemGraphic = null;
-
-            if (parent is Apparel ap && ap.Wearer != null)
-                ap.Wearer.Drawer?.renderer?.SetAllGraphicsDirty();
-            else
-                parent.Notify_ColorChanged();
-        }
-
-        public override void Notify_ColorChanged()
-        {
-            base.Notify_ColorChanged();
-            recacheItemGraphic = true;
-            cachedItemGraphic = null;
+            parent.Notify_ColorChanged();
         }
 
         public override void PostExposeData()
@@ -256,5 +186,6 @@ namespace UnitedFront.Comps
             base.Notify_Equipped(pawn);
             ApplyDefaults();
         }
+
     }
 }
