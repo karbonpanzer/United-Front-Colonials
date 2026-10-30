@@ -27,13 +27,13 @@
 <img src="Storage/WorkshopMaterials/ShieldBelt.png" alt="Shield Belt" width="640"><br>
 
 <img src="Storage/WorkshopMaterials/VariantArmorsDescriptor.png" alt="Armor Variants" width="640"><br>
-<img src="Storage/WorkshopMaterials/AssaultCarapaceArmor.png" alt="Assault Carapace Armor" width="640"><br>
-<img src="Storage/WorkshopMaterials/CommanderCarapaceArmor.png" alt="Commander Carapace Armor" width="640"><br>
 <img src="Storage/WorkshopMaterials/EngineerCarapaceArmor.png" alt="Engineer Carapace Armor" width="640"><br>
 <img src="Storage/WorkshopMaterials/MedicCarapaceArmor.png" alt="Medic Carapace Armor" width="640"><br>
 <img src="Storage/WorkshopMaterials/PoliceCarapaceArmor.png" alt="Police Carapace Armor" width="640"><br>
+<img src="Storage/WorkshopMaterials/CommanderCarapaceArmor.png" alt="Commander Carapace Armor" width="640"><br>
 <img src="Storage/WorkshopMaterials/ScoutCarapaceArmor.png" alt="Scout Carapace Armor" width="640"><br>
 <img src="Storage/WorkshopMaterials/VeteranCarapaceArmor.png" alt="Veteran Carapace Armor" width="640"><br>
+<img src="Storage/WorkshopMaterials/AssaultCarapaceArmor.png" alt="Assault Carapace Armor" width="640"><br>
 <img src="Storage/WorkshopMaterials/UIColorMenu.png" alt="Armor Color Editor" width="640"><br>
 
 <img src="Storage/WorkshopMaterials/WeaponHeader.png" alt="Weapons" width="640"><br>
