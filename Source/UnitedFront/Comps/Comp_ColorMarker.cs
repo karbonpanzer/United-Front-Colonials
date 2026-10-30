@@ -12,9 +12,9 @@ namespace UnitedFront.Comps
     {
         private static readonly Texture2D DevEditColorsIcon = ContentFinder<Texture2D>.Get("UFR/UI/Paint/UFR_CustomizeColor", false);
 
+        // Zone was used because this project originally started with a custom shader and using Zones for areas instead of the usual colorOne and colorTwo, I was an idiot starting with this.
         public List<Color> zoneColors = new List<Color>();
         private bool zonesCustomized;
-
 
         public CompProperties_ColorMarker Props => (CompProperties_ColorMarker)props;
         public int ZoneCount => Props.zoneCount;
@@ -70,15 +70,6 @@ namespace UnitedFront.Comps
             if (parent is Apparel ap && ap.WornByCorpse)
                 return PawnRenderUtility.GetRottenColor(GetZone(index));
             return GetZone(index);
-        }
-
-        public void SetZone(int index, Color c, bool markCustomized = true)
-        {
-            EnsureZoneDefaults();
-            if (index < 0 || index >= zoneColors.Count) return;
-            zoneColors[index] = c;
-            if (markCustomized) zonesCustomized = true;
-            SetDirty();
         }
 
         public sealed class EditSnapshot
@@ -184,12 +175,6 @@ namespace UnitedFront.Comps
 
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
                 EnsureZoneDefaults();
-        }
-
-        public override void Notify_Equipped(Pawn pawn)
-        {
-            base.Notify_Equipped(pawn);
-            ApplyDefaults();
         }
 
         public override IEnumerable<Gizmo> CompGetWornGizmosExtra()
