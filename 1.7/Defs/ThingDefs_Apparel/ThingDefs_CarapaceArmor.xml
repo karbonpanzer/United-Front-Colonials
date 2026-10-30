@@ -164,7 +164,7 @@
     </apparel>
     <comps>
       <!--white -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.95, 0.95, 0.95)</colorTwo>
       </li>
     </comps>
@@ -205,7 +205,7 @@
     </apparel>
     <comps>
       <!-- white -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.95, 0.95, 0.95)</colorTwo>
       </li>
     </comps>
@@ -396,7 +396,7 @@
     </apparel>
     <comps>
       <!-- bright azure -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.12, 0.56, 0.84)</colorTwo>
       </li>
     </comps>
@@ -436,7 +436,7 @@
     </apparel>
     <comps>
       <!-- bright azure -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.12, 0.56, 0.84)</colorTwo>
       </li>
     </comps>
@@ -479,7 +479,7 @@
     </apparel>
     <comps>
       <!-- burnt orange -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.85, 0.45, 0.08)</colorTwo>
       </li>
     </comps>
@@ -520,7 +520,7 @@
     </apparel>
     <comps>
       <!-- burnt orange -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.85, 0.45, 0.08)</colorTwo>
       </li>
     </comps>
@@ -563,7 +563,7 @@
     </apparel>
     <comps>
       <!-- dark navy -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.09, 0.16, 0.34)</colorTwo>
       </li>
     </comps>
@@ -603,7 +603,7 @@
     </apparel>
     <comps>
       <!-- dark navy -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.09, 0.16, 0.34)</colorTwo>
       </li>
     </comps>
@@ -650,7 +650,7 @@
     </apparel>
     <comps>
       <!-- gold -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.80, 0.65, 0.18)</colorTwo>
       </li>
     </comps>
@@ -696,7 +696,7 @@
     </apparel>
     <comps>
       <!-- gold -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.80, 0.65, 0.18)</colorTwo>
       </li>
     </comps>
@@ -764,7 +764,7 @@
         <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
       </li>
       <!-- crimson -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.70, 0.12, 0.15)</colorTwo>
       </li>
     </comps>
@@ -810,7 +810,7 @@
     </apparel>
     <comps>
       <!-- crimson -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.70, 0.12, 0.15)</colorTwo>
       </li>
     </comps>
@@ -857,7 +857,7 @@
         <part>Torso</part>
       </li>  
       <!-- olive -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.35, 0.42, 0.20)</colorTwo>
       </li>		
     </comps>
@@ -897,7 +897,7 @@
     </apparel>
     <comps>
       <!-- olive -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.35, 0.42, 0.20)</colorTwo>
       </li>
     </comps>
@@ -941,7 +941,7 @@
     </apparel>
     <comps>
       <!-- very dark grey -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.16, 0.16, 0.17)</colorTwo>
       </li>
     </comps>
@@ -981,7 +981,7 @@
     </apparel>
     <comps>
       <!-- very dark grey -->
-      <li Class="UnitedFront.Comps.CompPropertiesColorMarker">
+      <li Class="UnitedFront.Comps.CompProperties_ColorMarker">
         <colorTwo>(0.16, 0.16, 0.17)</colorTwo>
       </li>
     </comps>
