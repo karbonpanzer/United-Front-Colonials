@@ -4,7 +4,7 @@ using Verse;
 
 namespace UnitedFront.Comps
 {
-    public sealed class CompPropertiesColorMarker : CompProperties
+    public sealed class CompProperties_ColorMarker : CompProperties
     {
         public int zoneCount = 2;
 
@@ -14,7 +14,7 @@ namespace UnitedFront.Comps
         public bool setColorTwo = true;
         public Color colorTwo = new Color(0.2f, 0.2f, 0.2f);
 
-        public CompPropertiesColorMarker() => compClass = typeof(CompColorMarker);
+        public CompProperties_ColorMarker() => compClass = typeof(Comp_ColorMarker);
 
         public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
         {

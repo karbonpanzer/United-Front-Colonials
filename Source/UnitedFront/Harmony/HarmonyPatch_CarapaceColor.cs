@@ -1,7 +1,6 @@
 using System.Reflection;
 using HarmonyLib;
 using RimWorld;
-using UnitedFront.Comps;
 using UnityEngine;
 using Verse;
 
@@ -18,20 +17,13 @@ namespace UnitedFront.Harmony
 
         public static void Postfix(Apparel apparel, bool forStatue, ref ApparelGraphicRecord rec, bool __result)
         {
-            if (forStatue || !__result || apparel == null || rec.graphic == null) return;
+            if (forStatue || !__result || rec.graphic == null) return;
             if (rec.graphic.Shader != ShaderDatabase.CutoutComplex) return;
 
-            CompColorMarker comp = apparel.GetComp<CompColorMarker>();
-            if (comp == null || comp.zoneColors.Count < 2) return;
+            Color colorTwo = apparel.DrawColorTwo;
+            if (colorTwo.IndistinguishableFrom(rec.graphic.colorTwo)) return;
 
-            Color colorTwo = comp.DisplayZone(1);
-            if (colorTwo.IndistinguishableFrom(Color.white)) return;
-
-            Graphic graphic = GraphicDatabase.Get<Graphic_Multi>(
-                rec.graphic.path, rec.graphic.Shader, rec.graphic.drawSize, rec.graphic.color, colorTwo);
-
-            if (graphic != null)
-                rec = new ApparelGraphicRecord(graphic, apparel);
+            rec = new ApparelGraphicRecord(rec.graphic.GetColoredVersion(rec.graphic.Shader, rec.graphic.color, colorTwo), apparel);
         }
     }
 }

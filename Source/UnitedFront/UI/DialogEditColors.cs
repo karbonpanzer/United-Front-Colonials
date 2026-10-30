@@ -1,23 +1,23 @@
 using System.Collections.Generic;
 using RimWorld;
-using UnitedFront.Comps;
-using UnitedFront.Utils;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
+using UnitedFront.Comps;
+using UnitedFront.Utils;
 
 namespace UnitedFront.UI
 {
     [StaticConstructorOnStartup]
-    public sealed class DialogEditColors : Window
+    public sealed class Dialog_EditColors : Window
     {
         private sealed class Piece
         {
             public Apparel apparel = null!;
-            public CompColorMarker comp = null!;
+            public Comp_ColorMarker comp = null!;
             public List<Color> working = null!;
             public List<Color> original = null!;
-            public CompColorMarker.EditSnapshot snapshot = null!;
+            public Comp_ColorMarker.EditSnapshot snapshot = null!;
             public int zoneCount;
             public bool locked;
         }
@@ -76,7 +76,7 @@ namespace UnitedFront.UI
 
         public override Vector2 InitialSize => new Vector2(1000f, 760f);
 
-        public DialogEditColors(Pawn pawn)
+        public Dialog_EditColors(Pawn pawn)
         {
             this.pawn = pawn;
             forcePause = true;
@@ -89,11 +89,11 @@ namespace UnitedFront.UI
             {
                 foreach (Apparel ap in pawn.apparel.WornApparel)
                 {
-                    CompColorMarker? comp = ap.TryGetComp<CompColorMarker>();
+                    Comp_ColorMarker? comp = ap.TryGetComp<Comp_ColorMarker>();
                     if (comp == null) continue;
 
                     int zoneCount = Mathf.Clamp(comp.ZoneCount, 1, ColorCount);
-                    CompColorMarker.EditSnapshot snapshot = comp.BeginEdit();
+                    Comp_ColorMarker.EditSnapshot snapshot = comp.BeginEdit();
 
                     pieces.Add(new Piece
                     {

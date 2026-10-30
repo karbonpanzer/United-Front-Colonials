@@ -4,9 +4,9 @@ using Verse;
 namespace UnitedFront.Harmony
 {
     [StaticConstructorOnStartup]
-    public static class HarmonyBootstrap
+    public static class Harmony_Bootstrap
     {
-        static HarmonyBootstrap()
+        static Harmony_Bootstrap()
         {
             new HarmonyLib.Harmony("UnitedFront").PatchAll();
             Log.Message("[UnitedFront] Harmony patches applied.");

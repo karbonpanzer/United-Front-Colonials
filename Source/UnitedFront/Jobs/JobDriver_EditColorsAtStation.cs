@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using UnitedFront.UI;
 using Verse;
 using Verse.AI;
+using UnitedFront.UI;
 
 namespace UnitedFront.Jobs
 {
@@ -19,7 +19,7 @@ namespace UnitedFront.Jobs
 
             yield return Toils_General.Do(delegate
             {
-                Find.WindowStack.Add(new DialogEditColors(pawn));
+                Find.WindowStack.Add(new Dialog_EditColors(pawn));
             });
         }
     }

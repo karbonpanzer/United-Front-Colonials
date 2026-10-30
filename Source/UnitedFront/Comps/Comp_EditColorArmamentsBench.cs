@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using RimWorld;
-using UnitedFront.Jobs;
-using UnitedFront.Utils;
 using Verse;
 using Verse.AI;
+using UnitedFront.Jobs;
+using UnitedFront.Utils;
 
 namespace UnitedFront.Comps
 {

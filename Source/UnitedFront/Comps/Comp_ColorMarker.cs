@@ -2,16 +2,21 @@ using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using UnitedFront.UI;
+using UnitedFront.Utils;
 
 namespace UnitedFront.Comps
 {
-    public sealed class CompColorMarker : ThingComp
+    [StaticConstructorOnStartup]
+    public sealed class Comp_ColorMarker : ThingComp
     {
+        private static readonly Texture2D DevEditColorsIcon = ContentFinder<Texture2D>.Get("UFR/UI/Paint/UFR_CustomizeColor", false);
+
         public List<Color> zoneColors = new List<Color>();
         private bool zonesCustomized;
 
 
-        public CompPropertiesColorMarker Props => (CompPropertiesColorMarker)props;
+        public CompProperties_ColorMarker Props => (CompProperties_ColorMarker)props;
         public int ZoneCount => Props.zoneCount;
 
         private CompColorable? Colorable => parent.TryGetComp<CompColorable>();
@@ -187,5 +192,23 @@ namespace UnitedFront.Comps
             ApplyDefaults();
         }
 
+        public override IEnumerable<Gizmo> CompGetWornGizmosExtra()
+        {
+            foreach (Gizmo gizmo in base.CompGetWornGizmosExtra())
+                yield return gizmo;
+
+            if (!Prefs.DevMode || !DebugSettings.godMode) yield break;
+
+            Pawn? wearer = (parent as Apparel)?.Wearer;
+            if (wearer == null || !wearer.RaceProps.Humanlike || ColorMarkerUtil.FirstMarkerOn(wearer) != this) yield break;
+
+            yield return new Command_Action
+            {
+                defaultLabel = "UFR_DevEditColors".Translate(),
+                defaultDesc = "UFR_DevEditColorsDesc".Translate(),
+                icon = DevEditColorsIcon,
+                action = () => Find.WindowStack.Add(new Dialog_EditColors(wearer))
+            };
+        }
     }
 }
