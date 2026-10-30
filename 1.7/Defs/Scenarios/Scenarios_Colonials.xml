@@ -3,9 +3,9 @@
     <ScenarioDef ParentName="ScenarioBase">
         <defName>UFR_Colonization</defName>
         <label>Colonization Efforts</label>
-        <description>Looking for opportunity away from home, you three have chosen to embark on a colonization effort. With the government subsidizing your efforts you arrive with decent stores of resources but will be expected to make a life here. You don't care about this though, because this spot is yours.</description>
+        <description>Looking for opportunity away from home, you five have chosen to embark on a colonization effort. With the government subsidizing your efforts you arrive with decent stores of resources but will be expected to make a life here. You don't care about this though, because this spot is yours.</description>
         <scenario>
-            <summary>Three colonists try and make it work - a twist on the classic Rimworld experience.</summary>
+            <summary>five colonists try and make it work - a twist on the classic Rimworld experience.</summary>
             <playerFaction>
                 <def>PlayerFaction</def>
                 <factionDef>UFR_Colonists</factionDef>
@@ -13,7 +13,7 @@
             <parts>
                 <li Class="ScenPart_GameStartDialog">
                     <def>GameStartDialog</def>
-                    <text>Looking for opportunity away from home, you three have chosen to embark on a colonization effort.\n\nWith the government subsidizing your efforts you arrive with decent stores of resources but will be expected to make a life here.\n\nYou don't care about this though, because this spot is yours.</text>
+                    <text>Looking for opportunity away from home, you five have chosen to embark on a colonization effort.\n\nWith the government subsidizing your efforts you arrive with decent stores of resources but will be expected to make a life here.\n\nYou don't care about this though, because this spot is yours.</text>
                     <closeSound>GameStartSting</closeSound>
                 </li>
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
