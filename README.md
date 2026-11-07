@@ -1,4 +1,7 @@
 <p align="center"><img src="About/preview.png" alt="United Front - Colonials" width="1280"></p>
+<p align="center"><img src="About/Screenshot1_Armor.png" alt="Armor" width="1280"></p>
+<p align="center"><img src="About/Screenshot2_Weapons.png" alt="Weapons" width="1280"></p>
+<p align="center"><img src="About/Screenshot3_Goodies.png" alt="Goodies" width="1280"></p>
 
 # United Front - Colonials
 
