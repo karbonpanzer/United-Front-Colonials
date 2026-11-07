@@ -1,66 +1,113 @@
-<img src="About/preview.png" alt="Preview" width="1280"><br>
+<p align="center"><img src="About/preview.png" alt="United Front - Colonials" width="1280"></p>
+<p align="center"><img src="About/Screenshot1_Armor.png" alt="Armor" width="1280"></p>
+<p align="center"><img src="About/Screenshot2_Weapons.png" alt="Weapons" width="1280"></p>
+<p align="center"><img src="About/Screenshot3_Goodies.png" alt="Goodies" width="1280"></p>
 
-<div align="center">
+# United Front - Colonials
 
-<p>The United Front - Colonials is a mod which adds in 2 factions, over a dozen pieces of apparel, and tons of weapons.</p>
-<p>The United Front adds in a new group arriving to the rimworld, which are the "Colonials" who have come to settle the planet and build up their lives on this world. Though they have not come unprepared, protected by the best armor they could afford and using advanced weapons which are state of the art, they will carve out their home and civilize this world.</p>
+The United Front - Colonials is a mod which adds in 2 factions, over a dozen pieces of apparel, and tons of weapons.
 
-<img src="Storage/WorkshopMaterials/FactionHeader.png" alt="Factions" width="640"><br>
-<img src="Storage/WorkshopMaterials/FactionColonialAdmin.png" alt="Colonial Administration" width="640"><br>
-<img src="Storage/WorkshopMaterials/FactionColonialMilitia.png" alt="Colonial Militia" width="640"><br>
+The United Front adds in a new group arriving to the rimworld, which are the "Colonials" who have come to settle the planet and build up their lives on this world. Though they have not come unprepared, protected by the best armor they could afford and using advanced weapons which are state of the art, they will carve out their home and civilize this world.
 
-<img src="Storage/WorkshopMaterials/ScenarioHeader.png" alt="Scenarios" width="640"><br>
-<img src="Storage/WorkshopMaterials/ScenarioColonization.png" alt="Colonization" width="640"><br>
-<img src="Storage/WorkshopMaterials/ScenarioOccupation.png" alt="Occupation" width="640"><br>
+## Factions
 
-<img src="Storage/WorkshopMaterials/Content.png" alt="Content" width="640"><br>
-<img src="Storage/WorkshopMaterials/Armaments%20Bench.png" alt="Armaments Bench" width="640"><br>
+- **Colonial Administration** - A faction of colonists from a spacer civilization who are part of a colonization effort on this rimworld.
+- **Colonial Militia** - A heavily armed faction from a spacer civilization who were formally part of the colonization efforts.
 
-<img src="Storage/WorkshopMaterials/ApparelHeader.png" alt="Apparel" width="640"><br>
-<img src="Storage/WorkshopMaterials/CarapaceHelmet.png" alt="Carapace Helmet" width="640"><br>
-<img src="Storage/WorkshopMaterials/CarapaceArmor.png" alt="Carapace Armor" width="640"><br>
-<img src="Storage/WorkshopMaterials/CarapaceGloves.png" alt="Carapace Gloves" width="640"><br>
-<img src="Storage/WorkshopMaterials/CarapaceBoots.png" alt="Carapace Boots" width="640"><br>
-<img src="Storage/WorkshopMaterials/InfantryUniform.png" alt="Infantry Uniform" width="640"><br>
-<img src="Storage/WorkshopMaterials/InfantryBeret.png" alt="Infantry Beret" width="640"><br>
-<img src="Storage/WorkshopMaterials/OfficerCap.png" alt="Officer Cap" width="640"><br>
-<img src="Storage/WorkshopMaterials/ShieldBelt.png" alt="Shield Belt" width="640"><br>
+## Scenarios
 
-<img src="Storage/WorkshopMaterials/VariantArmorsDescriptor.png" alt="Armor Variants" width="640"><br>
-<img src="Storage/WorkshopMaterials/EngineerCarapaceArmor.png" alt="Engineer Carapace Armor" width="640"><br>
-<img src="Storage/WorkshopMaterials/MedicCarapaceArmor.png" alt="Medic Carapace Armor" width="640"><br>
-<img src="Storage/WorkshopMaterials/PoliceCarapaceArmor.png" alt="Police Carapace Armor" width="640"><br>
-<img src="Storage/WorkshopMaterials/CommanderCarapaceArmor.png" alt="Commander Carapace Armor" width="640"><br>
-<img src="Storage/WorkshopMaterials/ScoutCarapaceArmor.png" alt="Scout Carapace Armor" width="640"><br>
-<img src="Storage/WorkshopMaterials/VeteranCarapaceArmor.png" alt="Veteran Carapace Armor" width="640"><br>
-<img src="Storage/WorkshopMaterials/AssaultCarapaceArmor.png" alt="Assault Carapace Armor" width="640"><br>
-<img src="Storage/WorkshopMaterials/UIColorMenu.png" alt="Armor Color Editor" width="640"><br>
+- **Colonization Efforts** - Looking for opportunity away from home, you five have chosen to embark on a colonization effort.
+- **Occupation Force** - Under the orders of your government in their efforts to expand. The five of you were sent to scout this world for the eventual coming of the fleet.
 
-<img src="Storage/WorkshopMaterials/WeaponHeader.png" alt="Weapons" width="640"><br>
-<img src="Storage/WorkshopMaterials/SabotPistol.png" alt="Sabot Pistol" width="640"><br>
-<img src="Storage/WorkshopMaterials/SabotShotgun.png" alt="Sabot Shotgun" width="640"><br>
-<img src="Storage/WorkshopMaterials/SabotRifle.png" alt="Sabot Rifle" width="640"><br>
-<img src="Storage/WorkshopMaterials/SabotSniper.png" alt="Sabot Sniper" width="640"><br>
-<img src="Storage/WorkshopMaterials/SabotAutoCannon.png" alt="Sabot Autocannon" width="640"><br>
-<img src="Storage/WorkshopMaterials/Vibroknife.png" alt="Vibroknife" width="640"><br>
-<img src="Storage/WorkshopMaterials/Vibrosword.png" alt="Vibrosword" width="640"><br>
-<img src="Storage/WorkshopMaterials/Vibrospear.png" alt="Vibrospear" width="640"><br>
-<img src="Storage/WorkshopMaterials/Vibromaul.png" alt="Vibromaul" width="640"><br>
-<img src="Storage/WorkshopMaterials/Vibrohammer.png" alt="Vibrohammer" width="640"><br>
-<img src="Storage/WorkshopMaterials/Vibrobuster.png" alt="Vibrobuster" width="640"><br>
+**Research** (in The United Front research tab):
+- Colonial Fabrication Methods (prereq: Fabrication)
+- Carapace Armor (prereq: Colonial Fabrication Methods)
+- Medic Carapace Armor (prereq: Carapace Armor)
+- Engineer Carapace Armor (prereq: Carapace Armor)
+- Police Carapace Armor (prereq: Carapace Armor)
+- Scout Carapace Armor (prereq: Carapace Armor)
+- Assault Carapace Armor (prereq: Carapace Armor)
+- Veteran Carapace Armor (prereq: Carapace Armor)
+- Commander Carapace Armor (prereq: Carapace Armor)
+- Colonial Uniforms (prereq: Complex Clothing)
+- Modified Shields (prereq: Shield Belt)
+- High-Frequency Resonators (prereq: Colonial Fabrication Methods)
+- Electrothermal-Chemical Munitions (prereq: Colonial Fabrication Methods)
 
-<img src="Storage/WorkshopMaterials/ExtrasHeader.png" alt="Extras" width="640"><br>
-<img src="Storage/WorkshopMaterials/Promachus.png" alt="Promachus" width="640"><br>
+## Apparel
 
-<img src="Storage/WorkshopMaterials/FAQHeader.png" alt="FAQ" width="640"><br>
-<p><b>Why do they look like knockoff Clone/Storm Troopers?</b><br>Because I wanted to make them paintable and so everything is white and masked to make it so. Which is 90% of what Clone/Stormtrooper designs.</p>
-<p><b>Where is the CE Patch?</b><br>Included, kinda rough but I am not a CE user.</p>
-<p><b>Besides CE, can you make a patch for x,y, or z?</b><br>Post it in the suggestion thread! I am more than happy to make a patch if an error occurs between mods or you think that it would benefit from having patch.</p>
-<p><b>I have a variant idea! Where can I put it?</b><br>Post it in the suggestions thread. Otherwise I don't get notifications for it and it will fall in the cracks and be gone forever.</p>
-<p><b>I don't like x,y, or z, fix it!</b><br>Learn how to make a patch and change it yourself.</p>
+- **Carapace Armor** - A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection and with an integrated webbing system configured for standard infantry use. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army regulars and urbworld military forces.
+- **Carapace Helmet** - A armored helmet with built in communication system and a protective plasteel-weave plate. Armor like this is often used by imperial army regulars and urbworld military forces.
+- **Carapace Boots** - A set of plasteel-weave plate boots. They provide decent protection and cause no hinderence to the wearer.
+- **Carapace Gloves** - A set of plasteel-weave plate gloves. They provide decent protection and cause no hinderence to the wearer.
+- **Medic Carapace Armor and Helmet** - Medical tend quality +10%.
+- **Engineer Carapace Armor and Helmet** - Construction speed +10%.
+- **Police Carapace Armor and Helmet** - Slave suppression +10%.
+- **Commander Carapace Armor and Helmet** - Social impact +15%, psychic sensitivity +10%, neural heat recovery +0.066.
+- **Assault Carapace Armor and Helmet** - Melee damage +10%. Can throw frag grenades (8 charges, refilled with frag grenades).
+- **Scout Carapace Armor and Helmet** - Shooting accuracy +0.5. Grants the stealth field ability, turning the wearer invisible for a short time; using a weapon collapses the field.
+- **Veteran Carapace Armor and Helmet** - Pain shock threshold +10%.
+- **Assault Shield Belt** - A modified projectile-repulsion device. It will still attempt to stop incoming projectiles and shrapnel but has been enhanced to provide stranger protection against heat and to allow the wearer to fire while the shield is active. The cost though is that it takes longer to recharge, the shield is weaker, and shuts down instantly if hit by EMP.
+- **Infantry Uniform** - A jumpsuit featuring various pockets and designed to be accomodating in most environments.
+- **Beret** - A soft, round, cap made from fabrics and often used my imperial army personal and urbworld artists.
+- **Commander Cap** - A hat featuring a short visor, a polished leather strap, and high quality fabrics. Often worn by imperial army commanders and urbworld dictators.
 
-<img src="Storage/WorkshopMaterials/CreditsHeader.png" alt="Credits" width="640"><br>
-<p><b>Karbonpanzer</b>: Coder/Artist/Editor<br><b>Orion</b>: Big thanks for the Shader even though I did not use it this go around.<br><b>Aelanna</b>: For the tips about sourcing sounds for weapons.<br><b>Ludeon Studios</b>: For Great Game and the Star Art used in the Preview image.</p>
-<p>(LGPL)<br>(CC BY-NC-SA 4.0)</p>
+## Weapons
 
-</div>
+- **Sabot Pistol** - This high-tech, semi-automatic pistol uses electrothermal-chemical ammunition to fire larger caliber bullets at incredibly fast speeds.
+- **Sabot Shotgun** - A high-tech shotgun designed using electrothermal-chemical shells. +Unique variant available (Odyssey).
+- **Sabot Assault Rifle** - A service rifle that uses electrothermal-chemical ammunition to fire high power sabots. +Unique variant available (Odyssey).
+- **Sabot Sniper Rifle** - A specialized electrothermal-chemical rifle designed for extreme-ranges and anti-tank usage.
+- **Sabot Autocannon** - A massive electrothermal-chemical rotary cannon converted to portable use.
+- **Frequency Knife** - A composite plasteel dagger fitted with a small resonator which vibrates the blade at high frequencies.
+- **Frequency Sword** - A compositie plasteel sword fitted with a resonator which vibrates the blade at high frequencies.
+- **Frequency Spear** - A composite plasteel spear fitted with an overclocked resonator which vibrates the spearhead at incredibly high frequencies.
+- **Frequency Club** - A composite plasteel club fitted with a resonator which vibrates the head at high frequencies. Its strikes also deal EMP damage.
+- **Frequency Hammer** - A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies.
+- **Frequency Greatsword** - A composite plasteel greatsword fitted with an overclocked resonator which vibrates the blade at incredibly high frequencies.
+- **Pulse Rifle** (with Alien | Xenomorphs) - A pulse action rifle fitted with an underbarrel grenade launcher.
+
+## Extras
+
+- **Armaments Bench** - A workbench equipped with advanced tools for producing equipment favored by spacer factions.
+- **Promachus** - A manufactured cocktail of alcohol, painkillers, and radioactive materials for usage by assault troops.
+
+## Combat Extended
+
+<p align="center"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2890901044"><img src="https://raw.githubusercontent.com/CombatExtended-Continued/CombatExtended/master/Media/Badge_CE_compatible.png" alt="Combat Extended compatible"></a></p>
+
+United Front - Colonials has built-in Combat Extended support, no separate patch needed.
+
+| Weapon | Ammo | Role |
+|---|---|---|
+| Sabot Pistol | 5x32mm ETC (12) | Sidearm |
+| Sabot Shotgun | 20x55mm ETC (6) | Close quarters |
+| Sabot Assault Rifle | 8x48mm ETC (30) | Assault rifle |
+| Sabot Sniper Rifle | 14x80mm ETC (5) | Long-range precision |
+| Sabot Autocannon | 14x80mm ETC (30) | Heavy support |
+| Pulse Rifle (with Xenomorphtypes) | 4.73x33mm Caseless (95) | Assault rifle with grenade launcher |
+
+## FAQ
+
+**Why do they look like knockoff Clone/Storm Troopers?**  
+Because I wanted to make them paintable and so everything is white and masked to make it so. Which is 90% of what Clone/Stormtrooper designs.
+
+**Can you make a patch for another mod?**  
+Post it in the suggestions thread. I'm happy to patch conflicts or mods that would benefit from it.
+
+**I don't like something, fix it!**  
+Learn how to make a patch and change it yourself.
+
+**I have a suggestion/improvement!**  
+Leave a comment, if I make a thread for it people will never use it.
+
+## Credits
+
+**Karbonpanzer** - Coder, artist and editor  
+**Orion** - Big thanks for the Shader even though I did not use it this go around.  
+**Aelanna** - For the tips about sourcing sounds for weapons.  
+**Ludeon Studios** - For Great Game and the Star Art used in the Preview image.  
+
+[GitHub repository](https://github.com/karbonpanzer/United-Front-Colonials)
+
+Code licensed under LGPL. Art licensed under CC BY-NC-SA 4.0.
