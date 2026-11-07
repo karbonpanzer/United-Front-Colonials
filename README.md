@@ -16,10 +16,10 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 
 ## Scenarios
 
-- **Colonization Efforts** - Looking for opportunity away from home, you five have chosen to embark on a colonization effort. With the government subsidizing your efforts you arrive with decent stores of resources but will be expected to make a life here. You don't care about this though, because this spot is yours.
-- **Occupation Force** - Under the orders of your government in their efforts to expand. The five of you were sent to scout this world for the eventual coming of the fleet. Equipped with the best that the army could afford your goal is to establish a foothold for those who will come later. Since you start with five armored and armed people, this is an easy start.
+- **Colonization Efforts** - Looking for opportunity away from home, you five have chosen to embark on a colonization effort.
+- **Occupation Force** - Under the orders of your government in their efforts to expand. The five of you were sent to scout this world for the eventual coming of the fleet.
 
-## Research (in The United Front research tab):
+**Research** (in The United Front research tab):
 - Colonial Fabrication Methods (prereq: Fabrication)
 - Carapace Armor (prereq: Colonial Fabrication Methods)
 - Medic Carapace Armor (prereq: Carapace Armor)
@@ -54,25 +54,23 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 
 ## Weapons
 
-- **Sabot Pistol** - This high-tech, semi-automatic pistol uses electrothermal-chemical ammunition to fire larger caliber bullets at incredibly fast speeds. The bullets are designed like sabots, providing significant armor penetration. Its compact size and reliability makes it an ideal side arm for close quarters combat.
-- **Sabot Shotgun** - A high-tech shotgun designed using electrothermal-chemical shells. To maintain velocity improvements, it fires flechettes rather than shot, delivering powerful damage and armor penetration at close range. Magazine fed, it can fire rapidly, making it ideal for close quarters combat and personal defense.
-- **Sabot Assault Rifle** - A service rifle that uses electrothermal-chemical ammunition to fire high power sabots. The sabots are firing at incredibly high velocity which grants it immense armor penetration. The accuracy and reliability has made this rifle quite common among spacer factions.
-- **Sabot Sniper Rifle** - A specialized electrothermal-chemical rifle designed for extreme-ranges and anti-tank usage. It fires large caliber sabots designed for killing tanks, delivering high damage and armor penetration at massive distance. The heft of the weapon though makes it unwieldy to fire unless you are in a stable firing position.
-- **Sabot Autocannon** - A massive electrothermal-chemical rotary cannon converted to portable use. It fires anti-tank sabots in devastating bursts. The mass makes it difficult to use for even enhanced soldiers, it is unrivaled in its capacity to destroy everything in front of it.
-- **Frequency Knife** - A composite plasteel dagger fitted with a small resonator which vibrates the blade at high frequencies. The oscillation of the blade can weaken molecular structures, but the shortness of the blade and small resonator render it not as effective.
-- **Frequency Sword** - A compositie plasteel sword fitted with a resonator which vibrates the blade at high frequencies. The oscillation of the blade weakens the molecular structure of anything that it cuts, though it is quite heavy.
-- **Frequency Spear** - A composite plasteel spear fitted with an overclocked resonator which vibrates the spearhead at incredibly high frequencies. The oscillation of the blade can not only weaken molecular structures but shatter them. The length of the weapon provides great reach but the weight prevents all but the best from using effectively.
-- **Frequency Club** - A composite plasteel club fitted with a resonator which vibrates the head at high frequencies. The oscillation of the head weakens molecular structure of anything it hits often shattering its targets, though it is quite heavy.
-- **Frequency Hammer** - A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies. The oscillation of the head can not only weaken armor but with the right strike can shatter armor into pieces. The weight of the weapon provides an increased effect on strikes but it is slow to use.
-- **Frequency Greatsword** - A composite plasteel greatsword fitted with an overclocked resonator which vibrates the blade at incredibly high frequencies. The oscillation of the blade not only weakens molecular bonds but with the additional weight can push ever further with cuts. The weight of the weapon requires a skilled warrior to use it effectively.
-- **Unique Sabot Rifle** (Odyssey) - A sabot rifle with customized parts.
-- **Unique Sabot Shotgun** (Odyssey) - A sabot shotgun with customized parts.
-- **Pulse Rifle** (with Xenomorphtypes) - A pulse action rifle fitted with an underbarrel grenade launcher. A versatile combat rifle favored by imperial and colonial marine groups. Decent power and range though slower than other weapons.
+- **Sabot Pistol** - This high-tech, semi-automatic pistol uses electrothermal-chemical ammunition to fire larger caliber bullets at incredibly fast speeds.
+- **Sabot Shotgun** - A high-tech shotgun designed using electrothermal-chemical shells. +Unique variant available (Odyssey).
+- **Sabot Assault Rifle** - A service rifle that uses electrothermal-chemical ammunition to fire high power sabots. +Unique variant available (Odyssey).
+- **Sabot Sniper Rifle** - A specialized electrothermal-chemical rifle designed for extreme-ranges and anti-tank usage.
+- **Sabot Autocannon** - A massive electrothermal-chemical rotary cannon converted to portable use.
+- **Frequency Knife** - A composite plasteel dagger fitted with a small resonator which vibrates the blade at high frequencies.
+- **Frequency Sword** - A compositie plasteel sword fitted with a resonator which vibrates the blade at high frequencies.
+- **Frequency Spear** - A composite plasteel spear fitted with an overclocked resonator which vibrates the spearhead at incredibly high frequencies.
+- **Frequency Club** - A composite plasteel club fitted with a resonator which vibrates the head at high frequencies. Its strikes also deal EMP damage.
+- **Frequency Hammer** - A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies.
+- **Frequency Greatsword** - A composite plasteel greatsword fitted with an overclocked resonator which vibrates the blade at incredibly high frequencies.
+- **Pulse Rifle** (with Xenomorphtypes) - A pulse action rifle fitted with an underbarrel grenade launcher.
 
 ## Extras
 
 - **Armaments Bench** - A workbench equipped with advanced tools for producing equipment favored by spacer factions.
-- **Promachus** - A manufactured cocktail of alcohol, painkillers, and radioactive materials for usage by assault troops. It possesses a chemically sweet flavor, though it should not be drunk recreationally. Excessive consumption can lead to alcohol blackouts, seizures, psychosis, addiction, and even death.
+- **Promachus** - A manufactured cocktail of alcohol, painkillers, and radioactive materials for usage by assault troops.
 
 ## Combat Extended
 
