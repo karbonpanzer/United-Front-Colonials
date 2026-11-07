@@ -65,7 +65,7 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 - **Frequency Club** - A composite plasteel club fitted with a resonator which vibrates the head at high frequencies. Its strikes also deal EMP damage.
 - **Frequency Hammer** - A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies.
 - **Frequency Greatsword** - A composite plasteel greatsword fitted with an overclocked resonator which vibrates the blade at incredibly high frequencies.
-- **Pulse Rifle** (with Xenomorphtypes) - A pulse action rifle fitted with an underbarrel grenade launcher.
+- **Pulse Rifle** (with Alien | Xenomorphs) - A pulse action rifle fitted with an underbarrel grenade launcher.
 
 ## Extras
 
