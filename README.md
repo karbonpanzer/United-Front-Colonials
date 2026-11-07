@@ -64,12 +64,10 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 - **Frequency Spear** - A composite plasteel spear fitted with an overclocked resonator which vibrates the spearhead at incredibly high frequencies.
 - **Frequency Club** - A composite plasteel club fitted with a resonator which vibrates the head at high frequencies. Its strikes also deal EMP damage.
 - **Frequency Hammer** - A composite plasteel warhammer fitted with a overclocked resonator which vibrates the head at incredibly high frequencies.
-- **Frequency Greatsword** - A composite plasteel greatsword fitted with an overclocked resonator which vibrates the blade at incredibly high frequencies.
-- **Pulse Rifle** (with Alien | Xenomorphs) - A pulse action rifle fitted with an underbarrel grenade launcher.
 
 ## Extras
 
-- **Armaments Bench** - A workbench equipped with advanced tools for producing equipment favored by spacer factions.
+- **Armaments Bench** - A workbench needed to produce Carapace Armor, Sabot, and Frequency weapons..
 - **Promachus** - A manufactured cocktail of alcohol, painkillers, and radioactive materials for usage by assault troops.
 
 ## Combat Extended
