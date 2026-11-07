@@ -16,7 +16,7 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 
 ## Scenarios
 
-- **Colonization Efforts** - Looking for opportunity away from home, you five have chosen to embark on a colonization effort.
+- **Colonization Efforts** - Looking for opportunity away from home, you four have chosen to embark on a colonization effort.
 - **Occupation Force** - Under the orders of your government in their efforts to expand. The five of you were sent to scout this world for the eventual coming of the fleet.
 
 **Research** (in The United Front research tab):
