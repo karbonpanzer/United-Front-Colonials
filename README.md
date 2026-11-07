@@ -19,7 +19,7 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 - **Colonization Efforts** - Looking for opportunity away from home, you five have chosen to embark on a colonization effort. With the government subsidizing your efforts you arrive with decent stores of resources but will be expected to make a life here. You don't care about this though, because this spot is yours.
 - **Occupation Force** - Under the orders of your government in their efforts to expand. The five of you were sent to scout this world for the eventual coming of the fleet. Equipped with the best that the army could afford your goal is to establish a foothold for those who will come later. Since you start with five armored and armed people, this is an easy start.
 
-**Research** (in The United Front research tab):
+## Research (in The United Front research tab):
 - Colonial Fabrication Methods (prereq: Fabrication)
 - Carapace Armor (prereq: Colonial Fabrication Methods)
 - Medic Carapace Armor (prereq: Carapace Armor)
