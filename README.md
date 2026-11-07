@@ -1,4 +1,7 @@
 <img src="About/preview.png" alt="Preview" width="1280"><br>
+<img src="About/Screenshot1_Armor.png" alt="Armor" width="1280"><br>
+<img src="About/Screenshot2_Weapons.png" alt="Weapons" width="1280"><br>
+<img src="About/Screenshot3_Goodies.png" alt="Goodies" width="1280"><br>
 
 <div align="center">
 
