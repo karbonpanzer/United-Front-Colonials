@@ -76,14 +76,14 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 
 United Front - Colonials has built-in Combat Extended support, no separate patch needed.
 
-| Weapon | Ammo | Role |
-|---|---|---|
-| Sabot Pistol | 5x32mm ETC (12) | Sidearm |
-| Sabot Shotgun | 20x55mm ETC (6) | Close quarters |
-| Sabot Assault Rifle | 8x48mm ETC (30) | Assault rifle |
-| Sabot Sniper Rifle | 14x80mm ETC (5) | Long-range precision |
-| Sabot Autocannon | 14x80mm ETC (30) | Heavy support |
-| Pulse Rifle (with Xenomorphtypes) | 4.73x33mm Caseless (95) | Assault rifle with grenade launcher |
+| Weapon | Ammo |
+|---|---|
+| Sabot Pistol | 5x32mm ETC (12) |
+| Sabot Shotgun | 20x55mm ETC (6) |
+| Sabot Assault Rifle | 8x48mm ETC (30) |
+| Sabot Sniper Rifle | 14x80mm ETC (5) |
+| Sabot Autocannon | 14x80mm ETC (30) |
+| Pulse Rifle (with Xenomorphtypes) | 4.73x33mm Caseless (95)|
 
 ## FAQ
 
