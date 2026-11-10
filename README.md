@@ -103,7 +103,8 @@ Leave a comment, if I make a thread for it people will never use it.
 
 **Karbonpanzer** - Coder, artist and editor  
 **Orion** - Big thanks for the Shader even though I did not use it this go around.  
-**Aelanna** - For the tips about sourcing sounds for weapons.  
+**Aelanna** - For the tips about sourcing sounds for weapons. 
+**Detvisor** - Many of your textures served as inspiration.
 **Ludeon Studios** - For Great Game and the Star Art used in the Preview image.  
 
 [GitHub repository](https://github.com/karbonpanzer/United-Front-Colonials)
