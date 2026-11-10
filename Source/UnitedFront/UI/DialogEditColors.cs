@@ -316,13 +316,13 @@ namespace UnitedFront.UI
             if (TryGetFavoriteColor(pawn, out Color fav) && color.IndistinguishableFrom(fav))
             {
                 icon = FavoriteColorTex;
-                if (over) tip = "FavoriteColorPickerTip".Translate(pawn.Named("PAWN"));
+                if (over) tip = "UFR_FavoriteColorPickerTip".Translate(pawn.Named("PAWN"));
             }
             else if (ModsConfig.IdeologyActive && pawn.Ideo != null && !Find.IdeoManager.classicMode
                      && color.IndistinguishableFrom(pawn.Ideo.ApparelColor))
             {
                 icon = IdeoColorTex;
-                if (over) tip = "IdeoColorPickerTip".Translate(pawn.Named("PAWN"));
+                if (over) tip = "UFR_IdeoColorPickerTip".Translate(pawn.Named("PAWN"));
             }
 
             if (icon != null)
@@ -342,7 +342,7 @@ namespace UnitedFront.UI
         {
             TextAnchor anchor = Text.Anchor;
             Text.Anchor = TextAnchor.MiddleCenter;
-            Widgets.Label(rect, ((string)"ApparelLockedCannotRecolor".Translate(pawn.Named("PAWN"), p.apparel.Named("APPAREL")))
+            Widgets.Label(rect, ((string)"UFR_ApparelLockedCannotRecolor".Translate(pawn.Named("PAWN"), p.apparel.Named("APPAREL")))
                 .Colorize(ColorLibrary.RedReadable));
             Text.Anchor = anchor;
         }

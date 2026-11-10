@@ -17,6 +17,9 @@
   <UFR_ColorPrimaryLocked>Set at the styling station</UFR_ColorPrimaryLocked>
   <UFR_ColorSectionRole>Role colors</UFR_ColorSectionRole>
   <UFR_ColorSectionOther>Ideology colors</UFR_ColorSectionOther>
+  <UFR_FavoriteColorPickerTip>{PAWN_labelShort}'s favorite color.</UFR_FavoriteColorPickerTip>
+  <UFR_IdeoColorPickerTip>{PAWN_labelShort}'s ideoligion color.</UFR_IdeoColorPickerTip>
+  <UFR_ApparelLockedCannotRecolor>{PAWN_labelShort} can't recolor {APPAREL_label} because it is locked.</UFR_ApparelLockedCannotRecolor>
 
   <!-- Dev Debug Gizmo -->
   <UFR_DevEditColors>Edit colors</UFR_DevEditColors>
@@ -32,5 +35,6 @@
 
   <!-- Assault Shield -->
   <UFR_ShieldRecharging>Recharging {0}s</UFR_ShieldRecharging>
+  <UFR_ShieldPersonalTip>Assault shield energy. Blocks incoming projectiles while it has energy, then recharges over time.</UFR_ShieldPersonalTip>
 
 </LanguageData>

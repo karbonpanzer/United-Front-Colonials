@@ -71,7 +71,7 @@ namespace UnitedFront.AssaultShield
             }
 
             Text.Font = GameFont.Small;
-            TooltipHandler.TipRegion(inner, "ShieldPersonalTip".Translate());
+            TooltipHandler.TipRegion(inner, "UFR_ShieldPersonalTip".Translate());
             return new GizmoResult(GizmoState.Clear);
         }
     }

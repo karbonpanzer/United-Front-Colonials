@@ -10,7 +10,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/AutoPistol</clipFolderPath>
+            <clipFolderPath>Weapon/Autopistol</clipFolderPath>
           </li>
         </grains>
         <volumeRange>65~65</volumeRange>
@@ -20,7 +20,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+            <clipFolderPath>Weapon/Autocannon</clipFolderPath>
           </li>
         </grains>
         <volumeRange>25~25</volumeRange>
@@ -49,7 +49,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+            <clipFolderPath>Weapon/Autocannon</clipFolderPath>
           </li>
         </grains>
         <volumeRange>45~45</volumeRange>
@@ -78,7 +78,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+            <clipFolderPath>Weapon/Autocannon</clipFolderPath>
           </li>
         </grains>
         <volumeRange>50~50</volumeRange>
@@ -117,7 +117,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+            <clipFolderPath>Weapon/Autocannon</clipFolderPath>
           </li>
         </grains>
         <volumeRange>60~60</volumeRange>
@@ -136,7 +136,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/Minigun</clipFolderPath>
+            <clipFolderPath>Weapon/Minigun/Shot</clipFolderPath>
           </li>
         </grains>
         <volumeRange>70~70</volumeRange>
@@ -146,7 +146,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Folder">
-            <clipFolderPath>Weapon/AutoCannon</clipFolderPath>
+            <clipFolderPath>Weapon/Autocannon</clipFolderPath>
           </li>
         </grains>
         <volumeRange>65~65</volumeRange>

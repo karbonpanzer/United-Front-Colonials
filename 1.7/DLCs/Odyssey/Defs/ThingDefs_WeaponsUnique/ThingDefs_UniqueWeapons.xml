@@ -44,6 +44,8 @@
     <generateAllowChance>0</generateAllowChance>
     <possessionCount>0</possessionCount>
     <tradeability>Sellable</tradeability>
+    <weaponTags Inherit="False" />
+    <tradeTags Inherit="False" />
     <thingSetMakerTags Inherit="False">
       <li>RewardStandardLowFreq</li>
       <li>UniqueWeapon</li>
@@ -99,6 +101,8 @@
     <generateAllowChance>0</generateAllowChance>
     <possessionCount>0</possessionCount>
     <tradeability>Sellable</tradeability>
+    <weaponTags Inherit="False" />
+    <tradeTags Inherit="False" />
     <thingSetMakerTags Inherit="False">
       <li>RewardStandardLowFreq</li>
       <li>UniqueWeapon</li>

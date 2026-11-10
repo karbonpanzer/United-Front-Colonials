@@ -75,11 +75,6 @@
       </li>
       <!-- UFR gear -->
       <li Class="StockGenerator_Tag">
-        <tradeTag>UFR_WeaponIndustrial</tradeTag>
-        <thingDefCountRange>1~2</thingDefCountRange>
-        <countRange>0~1</countRange>
-      </li>
-      <li Class="StockGenerator_Tag">
         <tradeTag>UFR_WeaponMelee</tradeTag>
         <thingDefCountRange>1~2</thingDefCountRange>
         <countRange>-1~1</countRange>
@@ -105,9 +100,6 @@
       </li>
       <li Class="StockGenerator_BuyTradeTag">
         <tag>UFR_Uniforms</tag>
-      </li>
-      <li Class="StockGenerator_BuyTradeTag">
-        <tag>UFR_WeaponIndustrial</tag>
       </li>
       <li Class="StockGenerator_BuyTradeTag">
         <tag>UFR_WeaponMelee</tag>

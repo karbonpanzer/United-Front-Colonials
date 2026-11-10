@@ -2,7 +2,7 @@
 <Defs>
     <ScenarioDef ParentName="ScenarioBase">
         <defName>UFR_Colonization</defName>
-        <label>Colonization Efforts</label>
+        <label>Colonists</label>
         <description>Looking for opportunity away from home, you five have chosen to embark on a colonization effort. With the government subsidizing your efforts you arrive with decent stores of resources but will be expected to make a life here. You don't care about this though, because this spot is yours.</description>
         <scenario>
             <summary>Four colonists try and make it work - a twist on the classic Rimworld experience.</summary>
@@ -155,7 +155,7 @@
 
     <ScenarioDef ParentName="ScenarioBase">
         <defName>UFR_Occupation</defName>
-        <label>Occupation Force</label>
+        <label>Occupation</label>
         <description>Under the orders of your government in their efforts to expand. The five of you were sent to scout this world for the eventual coming of the fleet. Equipped with the best that the army could afford your goal is to establish a foothold for those who will come later.\n\nSince you start with five armored and armed people, this is an easy start.</description>
         <scenario>
             <summary>Five soldiers attempt to occupy the world. Very Easy</summary>
