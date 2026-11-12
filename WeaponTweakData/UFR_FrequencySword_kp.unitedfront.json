@@ -4,7 +4,8 @@
   "ItemType": "ThingDef",
   "ItemTypeNamespace": "Verse",
   "OffX": 0.37368464,
+  "HandsMode": 1,
   "BladeStart": 0.15964913,
   "BladeEnd": 0.83333325,
-  "MeleeWeaponType": 6
+  "MeleeWeaponType": 54
 }
