@@ -74,7 +74,7 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 
 <p align="center"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2890901044"><img src="https://raw.githubusercontent.com/CombatExtended-Continued/CombatExtended/master/Media/Badge_CE_compatible.png" alt="Combat Extended compatible"></a></p>
 
-United Front - Colonials has built-in Combat Extended support, no separate patch needed.
+United Front - Colonials has built-in Combat Extended support, no separate patch needed. Though suggestions are welcome to improve the patch.
 
 | Weapon | Ammo |
 |---|---|
