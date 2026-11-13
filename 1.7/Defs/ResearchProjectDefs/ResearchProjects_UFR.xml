@@ -24,7 +24,6 @@
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>UFR_ColonialFabricationMethods</li>
-            <li>AdvancedFabrication</li>
         </prerequisites>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <researchViewX>1</researchViewX>
@@ -189,7 +188,6 @@
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>UFR_ColonialFabricationMethods</li>
-            <li>AdvancedFabrication</li>
         </prerequisites>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <researchViewX>1</researchViewX>
