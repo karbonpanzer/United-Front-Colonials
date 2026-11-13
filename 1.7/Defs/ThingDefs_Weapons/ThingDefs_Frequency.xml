@@ -47,18 +47,18 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>26</power>
+        <power>22</power>
         <cooldownTime>2.4</cooldownTime>
-        <armorPenetration>0.50</armorPenetration>
+        <armorPenetration>0.45</armorPenetration>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>24</power>
+        <power>20</power>
         <cooldownTime>2.4</cooldownTime>
-        <armorPenetration>0.50</armorPenetration>
+        <armorPenetration>0.45</armorPenetration>
       </li>
     </tools>
     <weaponTags>
@@ -125,12 +125,13 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>31</power>
+        <armorPenetration>0.40</armorPenetration>
+        <power>27</power>
         <cooldownTime>3</cooldownTime>
         <extraMeleeDamages>
           <li>
             <def>EMP</def>
-            <amount>9</amount>
+            <amount>6</amount>
           </li>
         </extraMeleeDamages>
       </li>
@@ -198,18 +199,18 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>20</power>
+        <power>16</power>
         <cooldownTime>1.8</cooldownTime>
-        <armorPenetration>0.40</armorPenetration>
+        <armorPenetration>0.35</armorPenetration>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>19</power>
+        <power>15</power>
         <cooldownTime>1.8</cooldownTime>
-        <armorPenetration>0.40</armorPenetration>
+        <armorPenetration>0.35</armorPenetration>
       </li>
     </tools>
     <weaponTags>
@@ -269,9 +270,9 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>34</power>
+        <power>27</power>
         <cooldownTime>2.6</cooldownTime>
-        <armorPenetration>0.55</armorPenetration>
+        <armorPenetration>0.50</armorPenetration>
       </li>
       <li>
         <label>shaft</label>
@@ -338,9 +339,9 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>38</power>
+        <power>29</power>
         <cooldownTime>3.0</cooldownTime>
-        <armorPenetration>0.45</armorPenetration>
+        <armorPenetration>0.40</armorPenetration>
       </li>
       <li>
         <label>haft</label>
@@ -409,9 +410,9 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>42</power>
+        <power>33</power>
         <cooldownTime>3.2</cooldownTime>
-        <armorPenetration>0.55</armorPenetration>
+        <armorPenetration>0.50</armorPenetration>
       </li>
       <li>
         <label>flat</label>
