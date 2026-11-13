@@ -207,7 +207,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>14</damageAmountBase>
-      <armorPenetrationBase>0.40</armorPenetrationBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
       <stoppingPower>1.0</stoppingPower>
       <speed>100</speed>
     </projectile>
@@ -242,10 +242,10 @@
       <WorkToMake>45000</WorkToMake>
       <Mass>3.8</Mass>
       <MarketValue>2400</MarketValue>
-      <AccuracyTouch>0.70</AccuracyTouch>
-      <AccuracyShort>0.80</AccuracyShort>
-      <AccuracyMedium>0.75</AccuracyMedium>
-      <AccuracyLong>0.60</AccuracyLong>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.55</AccuracyMedium>
+      <AccuracyLong>0.45</AccuracyLong>
       <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
@@ -494,7 +494,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>45</damageAmountBase>
-      <armorPenetrationBase>0.80</armorPenetrationBase>
+      <armorPenetrationBase>0.50</armorPenetrationBase>
       <stoppingPower>2.5</stoppingPower>
       <speed>130</speed>
     </projectile>
@@ -590,7 +590,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>22</damageAmountBase>
-      <armorPenetrationBase>0.60</armorPenetrationBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
       <stoppingPower>1.5</stoppingPower>
       <speed>120</speed>
     </projectile>
