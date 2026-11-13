@@ -135,6 +135,30 @@
     </techHediffsTags>
   </PawnKindDef>
 
+  <PawnKindDef Name="UFR_LineConscript" ParentName="UFR_MilitaryBase" Abstract="True">
+    <itemQuality>Poor</itemQuality>
+    <techHediffsChance>0.02</techHediffsChance>
+    <techHediffsMoney>300~600</techHediffsMoney>
+    <weaponMoney>300~900</weaponMoney>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+    <apparelMoney>100~300</apparelMoney>
+    <apparelRequired>
+      <li>UFR_InfantryUniform</li>
+    </apparelRequired>
+    <apparelTags Inherit="False">
+      <li>UFR_Headwear</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>2~6</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
   <PawnKindDef Name="UFR_LineInfantryRanged" ParentName="UFR_MilitaryBase" Abstract="True">
     <techHediffsChance>0.05</techHediffsChance>
     <techHediffsMoney>800~1200</techHediffsMoney>
@@ -507,4 +531,4 @@
     </inventoryOptions>
   </PawnKindDef>
 
-</Defs> 
+</Defs>

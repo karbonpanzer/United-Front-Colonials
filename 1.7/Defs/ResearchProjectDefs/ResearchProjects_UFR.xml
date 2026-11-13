@@ -24,7 +24,9 @@
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>UFR_ColonialFabricationMethods</li>
+            <li>AdvancedFabrication</li>
         </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <researchViewX>1</researchViewX>
         <researchViewY>1.4</researchViewY>
     </ResearchProjectDef>
@@ -109,6 +111,10 @@
         <prerequisites>
             <li>UFR_CarapaceArmor</li>
         </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
         <researchViewX>3</researchViewX>
         <researchViewY>2.8</researchViewY>
     </ResearchProjectDef>
@@ -123,6 +129,10 @@
         <prerequisites>
             <li>UFR_CarapaceArmor</li>
         </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
         <researchViewX>3</researchViewX>
         <researchViewY>1.4</researchViewY>
     </ResearchProjectDef>    
@@ -179,8 +189,28 @@
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>UFR_ColonialFabricationMethods</li>
+            <li>AdvancedFabrication</li>
         </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <researchViewX>1</researchViewX>
+        <researchViewY>5.6</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>UFR_HeavyETCMunitions</defName>
+        <label>Heavy Electrothermal-Chemical Munitions</label>
+        <description>Build heavy electrothermal-chemical weapons which fire heavy sabots at anti-materiel velocities. Note these also require advanced components.</description>
+        <baseCost>3200</baseCost>
+        <tab>UFR_ResearchTab</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>UFR_ETCMunitions</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <researchViewX>2</researchViewX>
         <researchViewY>5.6</researchViewY>
     </ResearchProjectDef>
 

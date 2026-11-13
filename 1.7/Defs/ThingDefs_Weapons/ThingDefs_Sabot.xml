@@ -13,7 +13,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>14</damageAmountBase>
-      <armorPenetrationBase>1.2</armorPenetrationBase>
+      <armorPenetrationBase>0.30</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>90</speed>
     </projectile>
@@ -61,8 +61,6 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>UFR_Bolt_SabotPistol</defaultProjectile>
         <warmupTime>0.9</warmupTime>
-        <burstShotCount>2</burstShotCount>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <range>22.9</range>
         <soundCast>UFR_Shot_ETCSmall</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
@@ -209,7 +207,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>14</damageAmountBase>
-      <armorPenetrationBase>1.4</armorPenetrationBase>
+      <armorPenetrationBase>0.40</armorPenetrationBase>
       <stoppingPower>1.0</stoppingPower>
       <speed>100</speed>
     </projectile>
@@ -257,7 +255,7 @@
         <defaultProjectile>UFR_Bolt_SabotRifle</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>26.9</range>
-        <burstShotCount>4</burstShotCount>
+        <burstShotCount>3</burstShotCount>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <soundCast>UFR_Shot_ETCMedium</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -495,8 +493,8 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>40</damageAmountBase>
-      <armorPenetrationBase>2.0</armorPenetrationBase>
+      <damageAmountBase>45</damageAmountBase>
+      <armorPenetrationBase>0.80</armorPenetrationBase>
       <stoppingPower>2.5</stoppingPower>
       <speed>130</speed>
     </projectile>
@@ -514,7 +512,7 @@
     <techLevel>Spacer</techLevel>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyETCMunitions</researchPrerequisite>
       <skillRequirements>
         <Crafting>12</Crafting>
       </skillRequirements>
@@ -543,8 +541,6 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>UFR_Bolt_SabotSniperRifle</defaultProjectile>
         <warmupTime>2.4</warmupTime>
-        <burstShotCount>2</burstShotCount>
-        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
         <range>38.9</range>
         <soundCast>UFR_Shot_ETCAntiMaterial</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -594,7 +590,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>22</damageAmountBase>
-      <armorPenetrationBase>2.0</armorPenetrationBase>
+      <armorPenetrationBase>0.60</armorPenetrationBase>
       <stoppingPower>1.5</stoppingPower>
       <speed>120</speed>
     </projectile>
@@ -612,7 +608,7 @@
     <techLevel>Spacer</techLevel>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyETCMunitions</researchPrerequisite>
       <skillRequirements>
         <Crafting>12</Crafting>
       </skillRequirements>
@@ -686,7 +682,7 @@
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>11</damageAmountBase>
-      <armorPenetrationBase>1.15</armorPenetrationBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
       <stoppingPower>0.5</stoppingPower>
       <speed>65</speed>
     </projectile>

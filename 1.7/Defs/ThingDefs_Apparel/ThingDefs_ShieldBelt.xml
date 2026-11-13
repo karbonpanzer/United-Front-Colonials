@@ -16,8 +16,8 @@
       <Mass>3</Mass>
       <WorkToMake>16000</WorkToMake>
       <Flammability>0.4</Flammability>
-      <EnergyShieldEnergyMax>3.0</EnergyShieldEnergyMax>
-      <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate>
+      <EnergyShieldEnergyMax>0.8</EnergyShieldEnergyMax>
+      <EnergyShieldRechargeRate>0.08</EnergyShieldRechargeRate>
       <EquipDelay>2</EquipDelay>
     </statBases>
     <costList>
@@ -68,9 +68,9 @@
         <lowEnergyPulseThreshold>0.25</lowEnergyPulseThreshold>
         <blocksRangedWeapons>false</blocksRangedWeapons>
         <blocksExplosiveDamage>true</blocksExplosiveDamage>
-        <energyLossPerDamage>0.01</energyLossPerDamage>
+        <energyLossPerDamage>0.033</energyLossPerDamage>
         <startingTicksToReset>4800</startingTicksToReset>
-        <energyOnReset>2.0</energyOnReset>
+        <energyOnReset>0.25</energyOnReset>
         <minDrawSize>2.00</minDrawSize>
         <maxDrawSize>2.90</maxDrawSize>
         <breakFlashScale>2.0</breakFlashScale>

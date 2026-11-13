@@ -316,9 +316,6 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2.5</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
-    </equippedStatOffsets>
     <recipeMaker>
       <researchPrerequisite>UFR_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -837,7 +834,7 @@
     <statBases>
       <WorkToMake>56000</WorkToMake>
       <MaxHitPoints>280</MaxHitPoints>
-      <Mass>11</Mass>
+      <Mass>8</Mass>
       <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
       <ArmorRating_Heat>0.48</ArmorRating_Heat>

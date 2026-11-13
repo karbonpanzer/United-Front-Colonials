@@ -122,12 +122,20 @@
     </PawnKindDef>
 
     <!-- Fighter -->
+    <PawnKindDef ParentName="UFR_LineConscript">
+        <defName>UFR_Rough_Conscript</defName>
+        <label>conscript</label>
+        <labelPlural>conscripts</labelPlural>
+        <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
+        <combatPower>55</combatPower>
+    </PawnKindDef>
+
     <PawnKindDef ParentName="UFR_LineInfantryRanged">
         <defName>UFR_Rough_Infantry_Ranged</defName>
         <label>mercenary</label>
         <labelPlural>mercenaries</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>105</combatPower>
+        <combatPower>125</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_LineInfantryMelee">
@@ -135,7 +143,7 @@
         <label>mercenary</label>
         <labelPlural>mercenaries</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>105</combatPower>
+        <combatPower>125</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_LineVeteranRanged">
@@ -143,7 +151,7 @@
         <label>legionaire</label>
         <labelPlural>legionaires</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>130</combatPower>
+        <combatPower>150</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
     </PawnKindDef>
@@ -153,7 +161,7 @@
         <label>legionaire</label>
         <labelPlural>legionaires</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>130</combatPower>
+        <combatPower>150</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <weaponMoney>3700~5000</weaponMoney>
@@ -164,7 +172,7 @@
         <label>captain</label>
         <labelPlural>captains</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>105</combatPower>
+        <combatPower>140</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_MedicBase">
@@ -172,7 +180,7 @@
         <label>surgeon</label>
         <labelPlural>surgeons</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>110</combatPower>
+        <combatPower>120</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_EngineerBase">
@@ -180,7 +188,7 @@
         <label>sapper</label>
         <labelPlural>sappers</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>110</combatPower>
+        <combatPower>120</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_ScoutBase">
@@ -188,8 +196,8 @@
         <label>assassin</label>
         <labelPlural>assassins</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>110</combatPower>
-        <weaponMoney>1950~2550</weaponMoney>
+        <combatPower>130</combatPower>
+        <weaponMoney>3000~6000</weaponMoney>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_ShocktrooperBase">
@@ -197,7 +205,7 @@
         <label>berserker</label>
         <labelPlural>berserkers</labelPlural>
         <defaultFactionType>UFR_ColonialMilitia</defaultFactionType>
-        <combatPower>140</combatPower>
+        <combatPower>160</combatPower>
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>40</maxGenerationAge>
     </PawnKindDef>

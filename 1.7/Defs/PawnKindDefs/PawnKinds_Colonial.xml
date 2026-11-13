@@ -121,12 +121,20 @@
     </PawnKindDef>
 
     <!-- Fighter -->
+    <PawnKindDef ParentName="UFR_LineConscript">
+        <defName>UFR_Civil_Conscript</defName>
+        <label>conscript</label>
+        <labelPlural>conscripts</labelPlural>
+        <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
+        <combatPower>55</combatPower>
+    </PawnKindDef>
+
     <PawnKindDef ParentName="UFR_LineInfantryRanged">
         <defName>UFR_Civil_Infantry_Ranged</defName>
         <label>infantry</label>
         <labelPlural>infantry</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>105</combatPower>
+        <combatPower>125</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_LineInfantryMelee">
@@ -134,7 +142,7 @@
         <label>infantry</label>
         <labelPlural>infantry</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>105</combatPower>
+        <combatPower>125</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_LineVeteranRanged">
@@ -142,7 +150,7 @@
         <label>veteran</label>
         <labelPlural>veterans</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>130</combatPower>
+        <combatPower>150</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
     </PawnKindDef>
@@ -152,7 +160,7 @@
         <label>veteran</label>
         <labelPlural>veterans</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>130</combatPower>
+        <combatPower>150</combatPower>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
     </PawnKindDef>
@@ -162,7 +170,7 @@
         <label>commander</label>
         <labelPlural>commanders</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>105</combatPower>
+        <combatPower>140</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_MedicBase">
@@ -170,7 +178,7 @@
         <label>medic</label>
         <labelPlural>medics</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>110</combatPower>
+        <combatPower>120</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_EngineerBase">
@@ -178,7 +186,7 @@
         <label>engineer</label>
         <labelPlural>engineers</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>110</combatPower>
+        <combatPower>120</combatPower>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_ScoutBase">
@@ -186,8 +194,8 @@
         <label>marksman</label>
         <labelPlural>marksmen</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>110</combatPower>
-        <weaponMoney>1950~2550</weaponMoney>
+        <combatPower>130</combatPower>
+        <weaponMoney>3000~6000</weaponMoney>
     </PawnKindDef>
 
     <PawnKindDef ParentName="UFR_ShocktrooperBase">
@@ -195,7 +203,7 @@
         <label>shocktrooper</label>
         <labelPlural>shocktroopers</labelPlural>
         <defaultFactionType>UFR_ColonialAdministration</defaultFactionType>
-        <combatPower>140</combatPower>
+        <combatPower>160</combatPower>
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>40</maxGenerationAge>
     </PawnKindDef>

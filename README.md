@@ -33,6 +33,7 @@ The United Front adds in a new group arriving to the rimworld, which are the "Co
 - Modified Shields (prereq: Shield Belt)
 - High-Frequency Resonators (prereq: Colonial Fabrication Methods)
 - Electrothermal-Chemical Munitions (prereq: Colonial Fabrication Methods)
+- Heavy Electrothermal-Chemical Munitions (prereq: Electrothermal-Chemical Munitions)
 
 ## Apparel
 

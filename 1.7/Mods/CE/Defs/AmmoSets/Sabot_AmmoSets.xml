@@ -385,7 +385,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>13</damageAmountBase>
 			<speed>225</speed>
-			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationSharp>14</armorPenetrationSharp>
 			<armorPenetrationBlunt>34.18</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -396,7 +396,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>10</damageAmountBase>
 			<speed>225</speed>
-			<armorPenetrationSharp>20</armorPenetrationSharp>
+			<armorPenetrationSharp>14</armorPenetrationSharp>
 			<armorPenetrationBlunt>34.18</armorPenetrationBlunt>
 			<secondaryDamage>
 				<li>
@@ -413,7 +413,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>17</damageAmountBase>
 			<speed>225</speed>
-			<armorPenetrationSharp>10</armorPenetrationSharp>
+			<armorPenetrationSharp>7</armorPenetrationSharp>
 			<armorPenetrationBlunt>34.2</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -749,7 +749,7 @@
 		<label>make 14x80mm ETC (HV) cartridge x200</label>
 		<description>Craft 200 14x80mm ETC (HV) cartridges.</description>
 		<jobString>Making 14x80mm ETC (HV) cartridges.</jobString>
-		<researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
+		<researchPrerequisite>UFR_HeavyETCMunitions</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -806,7 +806,7 @@
 		<label>make 14x80mm ETC (Incendiary) cartridge x200</label>
 		<description>Craft 200 14x80mm ETC (Incendiary) cartridges.</description>
 		<jobString>Making 14x80mm ETC (Incendiary) cartridges.</jobString>
-		<researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
+		<researchPrerequisite>UFR_HeavyETCMunitions</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -872,7 +872,7 @@
 		<label>make 14x80mm ETC (Shredder) cartridge x200</label>
 		<description>Craft 200 14x80mm ETC (Shredder) cartridges.</description>
 		<jobString>Making 14x80mm ETC (Shredder) cartridges.</jobString>
-		<researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
+		<researchPrerequisite>UFR_HeavyETCMunitions</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -920,7 +920,7 @@
 		<label>make 14x80mm ETC (HE) cartridge x200</label>
 		<description>Craft 200 14x80mm ETC (HE) cartridges.</description>
 		<jobString>Making 14x80mm ETC (HE) cartridges.</jobString>
-		<researchPrerequisite>UFR_ETCMunitions</researchPrerequisite>
+		<researchPrerequisite>UFR_HeavyETCMunitions</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>

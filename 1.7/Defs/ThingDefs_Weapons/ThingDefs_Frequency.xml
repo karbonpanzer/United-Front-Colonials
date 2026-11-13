@@ -116,7 +116,7 @@
         <capacities>
           <li>Poke</li>
         </capacities>
-        <power>15</power>
+        <power>9</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -199,7 +199,7 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>16</power>
+        <power>13</power>
         <cooldownTime>1.8</cooldownTime>
         <armorPenetration>0.35</armorPenetration>
       </li>
@@ -208,7 +208,7 @@
         <capacities>
           <li>Stab</li>
         </capacities>
-        <power>15</power>
+        <power>12</power>
         <cooldownTime>1.8</cooldownTime>
         <armorPenetration>0.35</armorPenetration>
       </li>
@@ -257,7 +257,7 @@
     <costList>
       <Steel>55</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
-      <ComponentSpacer>4</ComponentSpacer>
+      <ComponentSpacer>3</ComponentSpacer>
       <Plasteel>20</Plasteel>
     </costList>
     <statBases>
@@ -326,7 +326,7 @@
     <costList>
       <Steel>60</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
-      <ComponentSpacer>4</ComponentSpacer>
+      <ComponentSpacer>3</ComponentSpacer>
       <Plasteel>20</Plasteel>
     </costList>
     <statBases>
@@ -396,8 +396,8 @@
     </recipeMaker>
     <costList>
       <Steel>70</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-      <ComponentSpacer>5</ComponentSpacer>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>3</ComponentSpacer>
       <Plasteel>25</Plasteel>
     </costList>
     <statBases>

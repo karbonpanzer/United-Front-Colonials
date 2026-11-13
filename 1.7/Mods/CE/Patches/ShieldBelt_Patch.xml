@@ -13,14 +13,14 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="UFR_AssaultShieldBelt"]/statBases/EnergyShieldEnergyMax</xpath>
 		<value>
-			<EnergyShieldEnergyMax>2.75</EnergyShieldEnergyMax>
+			<EnergyShieldEnergyMax>1.2</EnergyShieldEnergyMax>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="UFR_AssaultShieldBelt"]/statBases/EnergyShieldRechargeRate</xpath>
 		<value>
-			<EnergyShieldRechargeRate>0.089</EnergyShieldRechargeRate>
+			<EnergyShieldRechargeRate>0.12</EnergyShieldRechargeRate>
 		</value>
 	</Operation>
 

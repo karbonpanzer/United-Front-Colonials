@@ -170,6 +170,7 @@
                 <kindDef>Combat</kindDef>
                 <commonality>45</commonality>
                 <options>
+                    <UFR_Civil_Conscript>10</UFR_Civil_Conscript>
                     <UFR_Civil_Infantry_Ranged>15</UFR_Civil_Infantry_Ranged>
                     <UFR_Civil_Infantry_Melee>6</UFR_Civil_Infantry_Melee>
                     <UFR_Civil_Veteran_Ranged>8</UFR_Civil_Veteran_Ranged>
@@ -185,6 +186,7 @@
                 <kindDef>Combat</kindDef>
                 <commonality>35</commonality>
                 <options>
+                    <UFR_Civil_Conscript>12</UFR_Civil_Conscript>
                     <UFR_Civil_Infantry_Ranged>20</UFR_Civil_Infantry_Ranged>
                     <UFR_Civil_Infantry_Melee>10</UFR_Civil_Infantry_Melee>
                     <UFR_Civil_Marksman>4</UFR_Civil_Marksman>
@@ -231,6 +233,7 @@
                 <kindDef>Settlement</kindDef>
                 <options>
                     <UFR_Civil_Settler>20</UFR_Civil_Settler>
+                    <UFR_Civil_Conscript>6</UFR_Civil_Conscript>
                     <UFR_Civil_Laborer>12</UFR_Civil_Laborer>
                     <UFR_Civil_Engineer>4</UFR_Civil_Engineer>
                     <UFR_Civil_Medic>4</UFR_Civil_Medic>
@@ -362,6 +365,7 @@
                 <kindDef>Combat</kindDef>
                 <commonality>45</commonality>
                 <options>
+                    <UFR_Rough_Conscript>10</UFR_Rough_Conscript>
                     <UFR_Rough_Infantry_Ranged>15</UFR_Rough_Infantry_Ranged>
                     <UFR_Rough_Infantry_Melee>6</UFR_Rough_Infantry_Melee>
                     <UFR_Rough_Veteran_Ranged>8</UFR_Rough_Veteran_Ranged>
@@ -377,6 +381,7 @@
                 <kindDef>Combat</kindDef>
                 <commonality>35</commonality>
                 <options>
+                    <UFR_Rough_Conscript>12</UFR_Rough_Conscript>
                     <UFR_Rough_Infantry_Ranged>20</UFR_Rough_Infantry_Ranged>
                     <UFR_Rough_Infantry_Melee>10</UFR_Rough_Infantry_Melee>
                     <UFR_Rough_Marksman>4</UFR_Rough_Marksman>
@@ -423,6 +428,7 @@
                 <kindDef>Settlement</kindDef>
                 <options>
                     <UFR_Rough_Settler>20</UFR_Rough_Settler>
+                    <UFR_Rough_Conscript>6</UFR_Rough_Conscript>
                     <UFR_Rough_Laborer>12</UFR_Rough_Laborer>
                     <UFR_Rough_Engineer>4</UFR_Rough_Engineer>
                     <UFR_Rough_Medic>4</UFR_Rough_Medic>

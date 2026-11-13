@@ -102,7 +102,7 @@
 					<capacities>
 						<li>Cut</li>
 					</capacities>
-					<power>21</power>
+					<power>17</power>
 					<cooldownTime>0.70</cooldownTime>
 					<armorPenetrationBlunt>2.2</armorPenetrationBlunt>
 					<armorPenetrationSharp>12</armorPenetrationSharp>
@@ -113,7 +113,7 @@
 					<capacities>
 						<li>Stab</li>
 					</capacities>
-					<power>12</power>
+					<power>10</power>
 					<cooldownTime>0.80</cooldownTime>
 					<armorPenetrationBlunt>1.0</armorPenetrationBlunt>
 					<armorPenetrationSharp>12</armorPenetrationSharp>
