@@ -3,9 +3,9 @@
 <p align="center"><img src="About/Screenshot2_Weapons.png" alt="Weapons" width="1280"></p>
 <p align="center"><img src="About/Screenshot3_Goodies.png" alt="Goodies" width="1280"></p>
 
-# United Front - Concord
+# United Front - Concordia
 
-The United Front - Concord is a mod which adds in 2 factions, over a dozen pieces of apparel, and tons of weapons.
+The United Front - Concordia is a mod which adds in 2 factions, over a dozen pieces of apparel, and tons of weapons.
 
 The United Front adds in a new group arriving to the rimworld, which are the "Colonials" who have come to settle the planet and build up their lives on this world. Though they have not come unprepared, protected by the best armor they could afford and using advanced weapons which are state of the art, they will carve out their home and civilize this world.
 
